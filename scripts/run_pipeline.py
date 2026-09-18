@@ -11,6 +11,7 @@ import re
 import shutil
 import sys
 import tempfile
+import unicodedata
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -31,9 +32,15 @@ from source_catalog_io import (  # noqa: E402
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PIPELINE_PATH = ROOT / "pipeline" / "pipeline.v1.json"
+PIPELINE_DEFINITIONS = {
+    "0.1.0": ROOT / "pipeline" / "pipeline.v1.json",
+    "0.1.1": ROOT / "pipeline" / "pipeline.v1.1.json",
+    "0.1.2": ROOT / "pipeline" / "pipeline.v1.2.json",
+}
+DEFAULT_PIPELINE_VERSION = "0.1.2"
 CONTRACT_DIR = ROOT / "pipeline" / "contracts"
 PROMPT_DIR = ROOT / "pipeline" / "prompts"
+DEDUP_RETRIEVAL_PATH = ROOT / "pipeline" / "retrieval" / "dedup_candidates.v1.json"
 RIGHTS_DIR = ROOT / "data" / "rights_reviews"
 DEFAULT_RECORD_DIR = ROOT / "data" / "run_records"
 
@@ -82,13 +89,19 @@ def utc_now() -> str:
     return datetime.now(timezone.utc).replace(microsecond=0).isoformat()
 
 
-def definition() -> dict[str, Any]:
-    return load_json(PIPELINE_PATH)
+def definition(pipeline_version: str = DEFAULT_PIPELINE_VERSION) -> dict[str, Any]:
+    path = PIPELINE_DEFINITIONS.get(pipeline_version)
+    if path is None:
+        raise SystemExit(f"unsupported pipeline version: {pipeline_version}")
+    value = load_json(path)
+    if value.get("pipeline_version") != pipeline_version:
+        raise SystemExit(f"pipeline definition version mismatch: {path}")
+    return value
 
 
 def stages_for(run: dict[str, Any]) -> list[dict[str, Any]]:
     key = "article_stages" if run["run_kind"] == "article" else "case_stages"
-    return definition()[key]
+    return definition(run["pipeline_version"])[key]
 
 
 def stage_definition(run: dict[str, Any], stage_id: str) -> dict[str, Any]:
@@ -209,6 +222,23 @@ def validate_semantics(
     if stage_id == "rights_check":
         if response["rights_review_id"] != run["rights_review_id"]:
             raise SystemExit("rights_check must use the run rights_review_id")
+        expected_outputs = set(stage_definition(run, stage_id)["depends_on"])
+        checked_outputs = [item["output_id"] for item in response["checks"]]
+        if len(checked_outputs) != len(set(checked_outputs)):
+            raise SystemExit("rights_check output_id values must be unique")
+        missing_outputs = sorted(expected_outputs - set(checked_outputs))
+        if missing_outputs:
+            raise SystemExit(f"rights_check is missing required outputs: {missing_outputs}")
+        unknown_outputs = sorted(set(checked_outputs) - expected_outputs)
+        if unknown_outputs:
+            raise SystemExit(f"rights_check contains undeclared outputs: {unknown_outputs}")
+        if response["gate_result"] == "pass":
+            failed_checks = [
+                item["output_id"] for item in response["checks"]
+                if item["policy_result"] != "pass"
+            ]
+            if failed_checks:
+                raise SystemExit(f"rights_check cannot pass failed outputs: {failed_checks}")
         review = parse_simple_yaml(Path(run["rights_review_path"]))
         policy = review.get("public_display_policy", "")
         if policy.startswith("full_"):
@@ -242,6 +272,149 @@ def write_run(run: dict[str, Any], run_dir: Path) -> None:
     atomic_json(record_dir / f"{run['run_id']}.json", sanitized_record(run))
 
 
+def normalized_dedup_value(value: Any) -> str:
+    normalized = unicodedata.normalize("NFKC", str(value)).strip().casefold()
+    return re.sub(r"\s+", " ", normalized)
+
+
+def dedup_features(
+    extraction: dict[str, Any], tagging: dict[str, Any]
+) -> dict[str, Any]:
+    persons: set[str] = set()
+    for person in tagging.get("persons", []):
+        if person.get("name_status") in {"anonymous", "unknown", "redacted"}:
+            continue
+        for field in ("display_name", "source_name"):
+            value = normalized_dedup_value(person.get(field, ""))
+            if value:
+                persons.add(value)
+
+    places: set[str] = set()
+    for place in tagging.get("places", []):
+        for field in ("display_name", "source_name"):
+            value = normalized_dedup_value(place.get(field, ""))
+            if value:
+                places.add(value)
+
+    dates: set[str] = set()
+    for fact in extraction.get("case_facts", []):
+        if fact.get("fact_type") != "date":
+            continue
+        for field in ("date_value", "normalized_value"):
+            value = normalized_dedup_value(fact.get(field, ""))
+            if value:
+                dates.add(value)
+
+    tags: dict[str, str] = {}
+    for item in tagging.get("tags", []):
+        value = normalized_dedup_value(item.get("tag", ""))
+        if value:
+            tags[value] = item.get("tag_class", "default")
+    return {"persons": persons, "places": places, "dates": dates, "tags": tags}
+
+
+def score_dedup_candidate(
+    current: dict[str, Any], candidate: dict[str, Any], same_source_entry: bool,
+    config: dict[str, Any],
+) -> tuple[int, list[str]]:
+    weights = config["weights"]
+    score = 0
+    reasons: list[str] = []
+    if same_source_entry:
+        score += weights["same_source_entry"]
+        reasons.append("same_source_entry")
+
+    for value in sorted(current["persons"] & candidate["persons"]):
+        score += weights["person_exact"]
+        reasons.append(f"person_exact:{value}")
+    place_matches = sorted(current["places"] & candidate["places"])
+    date_matches = sorted(current["dates"] & candidate["dates"])
+    for value in date_matches:
+        score += weights["date_exact"]
+        reasons.append(f"date_exact:{value}")
+    for value in place_matches:
+        score += weights["place_exact"]
+        reasons.append(f"place_exact:{value}")
+    if place_matches and date_matches:
+        score += weights["place_and_date"]
+        reasons.append("place_and_date")
+
+    ignored_classes = set(config["ignored_tag_classes"])
+    tag_weights = weights["tag_by_class"]
+    for value in sorted(set(current["tags"]) & set(candidate["tags"])):
+        tag_class = current["tags"].get(value) or candidate["tags"].get(value) or "default"
+        if tag_class in ignored_classes:
+            continue
+        score += tag_weights.get(tag_class, tag_weights["default"])
+        reasons.append(f"tag_exact:{tag_class}:{value}")
+    return score, reasons
+
+
+def dedup_candidate_context(run: dict[str, Any], run_dir: Path) -> dict[str, Any]:
+    config = load_json(DEDUP_RETRIEVAL_PATH)
+    current_extraction = load_stage_output(run, run_dir, "case_extraction")
+    current_tagging = load_stage_output(run, run_dir, "entity_tagging")
+    current_features = dedup_features(current_extraction, current_tagging)
+    runtime_root = Path(run["parent_article_run_path"]).parent
+
+    latest_by_case: dict[str, tuple[Path, dict[str, Any]]] = {}
+    for candidate_run_path in runtime_root.glob("*/cases/*/run.json"):
+        candidate_run = load_json(candidate_run_path)
+        candidate_case_id = candidate_run.get("case_id", "")
+        if (
+            candidate_run.get("run_kind") != "case"
+            or candidate_run.get("status") != "completed"
+            or not candidate_case_id
+            or candidate_case_id == run["case_id"]
+        ):
+            continue
+        previous = latest_by_case.get(candidate_case_id)
+        if previous is None or candidate_run.get("updated_at", "") > previous[1].get("updated_at", ""):
+            latest_by_case[candidate_case_id] = (candidate_run_path.parent, candidate_run)
+
+    scored: list[dict[str, Any]] = []
+    for candidate_case_id, (candidate_dir, candidate_run) in latest_by_case.items():
+        extraction = load_json(output_path(candidate_dir, "case_extraction"))
+        tagging = load_json(output_path(candidate_dir, "entity_tagging"))
+        candidate_features = dedup_features(extraction, tagging)
+        score, reasons = score_dedup_candidate(
+            current_features,
+            candidate_features,
+            candidate_run.get("source_entry_id") == run["source_entry_id"],
+            config,
+        )
+        if score < config["minimum_score"]:
+            continue
+        scored.append({
+            "candidate_case_id": candidate_case_id,
+            "source_id": candidate_run.get("source_id", ""),
+            "source_entry_id": candidate_run.get("source_entry_id", ""),
+            "pipeline_version": candidate_run.get("pipeline_version", ""),
+            "external_processing": candidate_run.get("external_processing", "blocked"),
+            "selection_score": score,
+            "selection_reasons": reasons,
+            "case_facts": extraction.get("case_facts", []),
+            "persons": tagging.get("persons", []),
+            "places": tagging.get("places", []),
+            "tags": tagging.get("tags", []),
+        })
+    scored.sort(key=lambda item: (-item["selection_score"], item["candidate_case_id"]))
+    selected = scored[:config["limit"]]
+    requires_local = any(item["external_processing"] != "allowed" for item in selected)
+    metadata = {
+        "retrieval_version": config["retrieval_version"],
+        "scope": config["scope"],
+        "eligible_completed_case_count": len(latest_by_case),
+        "scored_candidate_count": len(scored),
+        "selected_candidate_count": len(selected),
+        "limit": config["limit"],
+        "minimum_score": config["minimum_score"],
+        "requires_local_adapter": requires_local,
+        "selection_rules": config["selection_rules"],
+    }
+    return {"metadata": metadata, "candidates": selected}
+
+
 def request_payload(run: dict[str, Any], run_dir: Path, stage: dict[str, Any]) -> dict[str, Any]:
     inputs: dict[str, Any] = {
         "source_entry": load_json(Path(run["source_entry_path"])),
@@ -256,6 +429,10 @@ def request_payload(run: dict[str, Any], run_dir: Path, stage: dict[str, Any]) -
             inputs[dependency] = load_json(dependency_path)
         else:
             inputs[dependency] = run["stages"][dependency]
+    if stage["id"] == "deduplication" and run["pipeline_version"] == "0.1.2":
+        retrieval = dedup_candidate_context(run, run_dir)
+        inputs["dedup_candidate_retrieval"] = retrieval["metadata"]
+        inputs["dedup_candidates"] = retrieval["candidates"]
     inputs["rights_review"] = parse_simple_yaml(Path(run["rights_review_path"]))
     prompt_path = PROMPT_DIR / stage["prompt"]
     return {
@@ -276,6 +453,21 @@ def next_ready_stage(run: dict[str, Any]) -> str:
     return ""
 
 
+def publication_blockers(run: dict[str, Any], run_dir: Path) -> list[str]:
+    blockers: list[str] = []
+    factual = load_stage_output(run, run_dir, "factual_check")
+    rights = load_stage_output(run, run_dir, "rights_check")
+    if factual["gate_result"] != "pass":
+        blockers.append("factual_check_failed")
+    if rights["gate_result"] != "pass":
+        blockers.append("rights_check_failed")
+    if run["pipeline_version"] == "0.1.2":
+        dedup = load_stage_output(run, run_dir, "deduplication")
+        if dedup["decision"] not in {"no_match", "distinct_case"}:
+            blockers.append(f"deduplication_unresolved:{dedup['decision']}")
+    return blockers
+
+
 def refresh(run: dict[str, Any], run_dir: Path) -> None:
     for stage in stages_for(run):
         stage_id = stage["id"]
@@ -285,14 +477,15 @@ def refresh(run: dict[str, Any], run_dir: Path) -> None:
         if not all(run["stages"][dep]["status"] == "completed" for dep in stage["depends_on"]):
             continue
         if stage_id == "publication_packaging":
-            factual = load_stage_output(run, run_dir, "factual_check")
             rights = load_stage_output(run, run_dir, "rights_check")
             publish_status = rights["allowed_display_scope"]
-            if factual["gate_result"] != "pass" or rights["gate_result"] != "pass":
+            blockers = publication_blockers(run, run_dir)
+            if blockers:
                 publish_status = "withheld"
             package = {
                 "case_id": run["case_id"],
                 "publish_status": publish_status,
+                "withheld_reasons": blockers,
                 "included_output_ids": ["reader_generation", "creator_analysis"],
                 "provenance": {
                     "run_id": run["run_id"],
@@ -307,8 +500,19 @@ def refresh(run: dict[str, Any], run_dir: Path) -> None:
         if stage.get("executor") == "deterministic":
             raise SystemExit(f"deterministic stage has no runner implementation: {stage_id}")
         request_path = run_dir / "requests" / f"{stage_id}.json"
-        atomic_json(request_path, request_payload(run, run_dir, stage))
+        payload = request_payload(run, run_dir, stage)
+        atomic_json(request_path, payload)
         state.update({"status": "ready", "request_hash": sha256_file(request_path)})
+        retrieval = payload["inputs"].get("dedup_candidate_retrieval")
+        if retrieval:
+            state["external_processing"] = (
+                "blocked" if retrieval["requires_local_adapter"] else run["external_processing"]
+            )
+            candidate_text = json.dumps(
+                payload["inputs"]["dedup_candidates"], ensure_ascii=False,
+                sort_keys=True, separators=(",", ":"),
+            )
+            state["candidate_set_hash"] = sha256_text(candidate_text)
 
 
 def rights_precheck(entry: dict[str, Any], entry_path: Path) -> dict[str, Any]:
@@ -434,7 +638,7 @@ def spawn_case_runs(article_run: dict[str, Any], article_dir: Path, candidates: 
     record_dir = Path(article_run["record_dir"])
     preexisting = article_run.get("preexisting_case_ids", [])
     case_ids = preexisting if len(preexisting) == len(candidates) else allocate_case_ids(len(candidates), record_dir)
-    pipeline = definition()
+    pipeline = definition(article_run["pipeline_version"])
     for case_id, candidate in zip(case_ids, candidates):
         child_id = f"{article_run['run_id']}-{case_id}"
         child_dir = article_dir / "cases" / case_id
@@ -508,8 +712,9 @@ def accept_response(args: argparse.Namespace) -> None:
     state = run["stages"][args.stage]
     if state["status"] != "ready":
         raise SystemExit(f"stage is not ready: {args.stage} ({state['status']})")
-    if args.adapter != "local" and run["external_processing"] != "allowed":
-        raise SystemExit("external adapter blocked by source and rights policy")
+    stage_processing = state.get("external_processing", run["external_processing"])
+    if args.adapter != "local" and stage_processing != "allowed":
+        raise SystemExit("external adapter blocked for this stage by source or candidate rights policy")
     response = load_json(args.response.resolve())
     contract = load_json(CONTRACT_DIR / stage["contract"])
     validate_contract(response, contract, run, run_dir)

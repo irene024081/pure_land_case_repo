@@ -41,7 +41,7 @@ data/legacy_m2/             historical review fixtures, not canonical records
 
 ## Authority
 
-Domain field definitions live in `../schemas/`. Executable stage order lives in `../pipeline/pipeline.v1.json`. This document defines relationships and ownership boundaries and must not duplicate complete field lists.
+Domain field definitions live in `../schemas/`. The current executable stage order lives in `../pipeline/pipeline.v1.2.json`, while historical Runs retain their recorded definition version. This document defines relationships and ownership boundaries and must not duplicate complete field lists.
 
 ## Publication Rule
 

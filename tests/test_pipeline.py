@@ -73,7 +73,13 @@ class PipelineTest(unittest.TestCase):
 
     def test_rights_policy_cannot_be_relaxed_by_run_command(self) -> None:
         entry_path = ROOT / "data/source_entries/public/ENT000001.normalized.json"
-        result = pipeline.rights_precheck(pipeline.load_json(entry_path), entry_path)
+        config, rows = pipeline.read_catalog("SRC0001")
+        ready_row = dict(rows[0])
+        ready_row["pipeline_status"] = "ready"
+        with patch.object(pipeline, "read_catalog", return_value=(config, [ready_row])), patch.object(
+            pipeline, "find_entry_row", return_value=ready_row
+        ):
+            result = pipeline.rights_precheck(pipeline.load_json(entry_path), entry_path)
         self.assertEqual(result["external_processing"], "blocked")
         self.assertEqual(result["review"]["rights_review_id"], "RR0005")
 
@@ -87,13 +93,129 @@ class PipelineTest(unittest.TestCase):
             run = {
                 "case_id": "CASETEST001", "rights_review_id": "RRTEST",
                 "rights_review_path": str(rights_path),
+                "run_kind": "case", "pipeline_version": "0.1.0",
             }
             response = {
                 "case_id": "CASETEST001", "rights_review_id": "RRTEST",
                 "allowed_display_scope": "public",
+                "gate_result": "pass",
+                "checks": [{
+                    "output_id": "reader_generation", "quotation_status": "none",
+                    "expression_similarity_risk": "low", "policy_result": "pass",
+                }],
             }
             with self.assertRaisesRegex(SystemExit, "exceeds source rights policy"):
                 pipeline.validate_semantics("rights_check", response, run, Path(temp))
+
+    def test_pipeline_definitions_remain_version_addressable(self) -> None:
+        old = pipeline.definition("0.1.0")
+        previous = pipeline.definition("0.1.1")
+        current = pipeline.definition("0.1.2")
+        old_rights = next(stage for stage in old["case_stages"] if stage["id"] == "rights_check")
+        previous_rights = next(stage for stage in previous["case_stages"] if stage["id"] == "rights_check")
+        previous_factual = next(stage for stage in previous["case_stages"] if stage["id"] == "factual_check")
+        current_factual = next(stage for stage in current["case_stages"] if stage["id"] == "factual_check")
+        self.assertEqual(old_rights["depends_on"], ["reader_generation"])
+        self.assertEqual(previous_rights["depends_on"], ["reader_generation", "creator_analysis"])
+        self.assertEqual(previous_factual["depends_on"], ["reader_generation", "creator_analysis"])
+        self.assertEqual(
+            current_factual["depends_on"],
+            ["case_extraction", "reader_generation", "creator_analysis"],
+        )
+
+    def test_dedup_retrieval_selects_completed_exact_match_and_protects_rights(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            current_article = root / "RUN-CURRENT"
+            current_dir = current_article / "cases" / "CASECURRENT"
+            candidate_dir = root / "RUN-OLD" / "cases" / "CASEOLD"
+            for directory in (current_dir / "outputs", candidate_dir / "outputs"):
+                directory.mkdir(parents=True)
+
+            current_extraction = {
+                "case_id": "CASECURRENT",
+                "case_facts": [{"fact_type": "date", "date_value": "1653"}],
+            }
+            current_tagging = {
+                "case_id": "CASECURRENT",
+                "persons": [{
+                    "display_name": "陈妪", "source_name": "陈妪", "name_status": "partial",
+                }],
+                "places": [{"display_name": "常熟", "source_name": "常熟"}],
+                "tags": [{"tag": "name_recitation", "tag_class": "practice"}],
+            }
+            candidate_extraction = {
+                "case_id": "CASEOLD",
+                "case_facts": [{"fact_type": "date", "date_value": "1653"}],
+            }
+            candidate_tagging = {
+                "case_id": "CASEOLD",
+                "persons": [{
+                    "display_name": "陈妪", "source_name": "陈妪", "name_status": "partial",
+                }],
+                "places": [{"display_name": "常熟", "source_name": "常熟"}],
+                "tags": [{"tag": "name_recitation", "tag_class": "practice"}],
+            }
+            pipeline.atomic_json(current_dir / "outputs/case_extraction.json", current_extraction)
+            pipeline.atomic_json(current_dir / "outputs/entity_tagging.json", current_tagging)
+            pipeline.atomic_json(candidate_dir / "outputs/case_extraction.json", candidate_extraction)
+            pipeline.atomic_json(candidate_dir / "outputs/entity_tagging.json", candidate_tagging)
+            pipeline.atomic_json(candidate_dir / "run.json", {
+                "run_id": "RUN-OLD-CASEOLD", "run_kind": "case", "status": "completed",
+                "case_id": "CASEOLD", "source_id": "SRCOLD", "source_entry_id": "ENTOLD",
+                "pipeline_version": "0.1.1", "external_processing": "blocked",
+                "updated_at": "2026-09-01T00:00:00+00:00",
+            })
+            run = {
+                "case_id": "CASECURRENT", "source_entry_id": "ENTCURRENT",
+                "parent_article_run_path": str(current_article),
+                "run_kind": "case", "pipeline_version": "0.1.2",
+            }
+
+            context = pipeline.dedup_candidate_context(run, current_dir)
+
+            self.assertEqual(context["metadata"]["eligible_completed_case_count"], 1)
+            self.assertEqual(context["metadata"]["selected_candidate_count"], 1)
+            self.assertEqual(context["candidates"][0]["candidate_case_id"], "CASEOLD")
+            self.assertIn("person_exact:陈妪", context["candidates"][0]["selection_reasons"])
+            self.assertTrue(context["metadata"]["requires_local_adapter"])
+
+    def test_rights_check_must_cover_every_declared_output(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            rights_path = Path(temp) / "RR.yml"
+            rights_path.write_text(
+                "rights_review_id: RRTEST\npublic_display_policy: full_normalized_historical_text\n",
+                encoding="utf-8",
+            )
+            run = {
+                "case_id": "CASETEST001", "rights_review_id": "RRTEST",
+                "rights_review_path": str(rights_path),
+                "run_kind": "case", "pipeline_version": "0.1.1",
+            }
+            response = {
+                "case_id": "CASETEST001", "rights_review_id": "RRTEST",
+                "allowed_display_scope": "public", "gate_result": "pass",
+                "checks": [{
+                    "output_id": "reader_generation", "quotation_status": "none",
+                    "expression_similarity_risk": "low", "policy_result": "pass",
+                }],
+            }
+            with self.assertRaisesRegex(SystemExit, "creator_analysis"):
+                pipeline.validate_semantics("rights_check", response, run, Path(temp))
+
+    def test_unresolved_deduplication_withholds_v012_publication(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            run_dir = Path(temp)
+            outputs = run_dir / "outputs"
+            outputs.mkdir()
+            pipeline.atomic_json(outputs / "factual_check.json", {"gate_result": "pass"})
+            pipeline.atomic_json(outputs / "rights_check.json", {"gate_result": "pass"})
+            pipeline.atomic_json(outputs / "deduplication.json", {"decision": "needs_human_review"})
+            run = {"run_kind": "case", "pipeline_version": "0.1.2"}
+
+            blockers = pipeline.publication_blockers(run, run_dir)
+
+            self.assertEqual(blockers, ["deduplication_unresolved:needs_human_review"])
 
     def test_article_fans_out_to_case_and_completes(self) -> None:
         with tempfile.TemporaryDirectory() as temp:
@@ -146,12 +268,24 @@ class PipelineTest(unittest.TestCase):
                     "reader_generation": {"case_id": case_id, "reader_summary": "甲念佛。", "paragraphs": [{"paragraph_id": "P0001", "content": "资料记载，甲念佛。", "supporting_case_fact_ids": [f"{case_id}-FACT0001"], "supporting_source_segment_ids": ["ENTTEST001-SEG0001"]}]},
                     "creator_analysis": {"case_id": case_id, "creator_metadata": {"video_fit_level": "low"}, "interpretation_angles": [{"angle_id": "ANGTEST001", "title": "资料中的念佛行为", "core_claim": "资料只明确记载甲念佛。", "audience": ["researcher"], "supporting_case_fact_ids": [f"{case_id}-FACT0001"], "supporting_source_segment_ids": ["ENTTEST001-SEG0001"], "doctrinal_boundary": "No doctrinal conclusion is established."}]},
                     "factual_check": {"case_id": case_id, "unsupported_claim_count": 0, "contradicted_claim_count": 0, "gate_result": "pass", "claims": [{"claim_id": "CLMTEST001", "claim_text": "甲念佛。", "source_output": "reader_generation", "supporting_case_fact_ids": [f"{case_id}-FACT0001"], "supporting_source_segment_ids": ["ENTTEST001-SEG0001"], "verdict": "supported"}]},
-                    "rights_check": {"case_id": case_id, "rights_review_id": "RRTEST", "gate_result": "pass", "allowed_display_scope": "public", "checks": [{"output_id": "reader_generation", "quotation_status": "none", "expression_similarity_risk": "low", "policy_result": "pass"}]},
+                    "rights_check": {"case_id": case_id, "rights_review_id": "RRTEST", "gate_result": "pass", "allowed_display_scope": "public", "checks": [{"output_id": "reader_generation", "quotation_status": "none", "expression_similarity_risk": "low", "policy_result": "pass"}, {"output_id": "creator_analysis", "quotation_status": "none", "expression_similarity_risk": "low", "policy_result": "pass"}]},
                 }
                 for stage in ("case_extraction", "entity_tagging", "deduplication", "reader_generation", "creator_analysis", "factual_check", "rights_check"):
                     self.accept(case_dir, root, stage, responses[stage])
                 package = pipeline.load_json(case_dir / "outputs/publication_packaging.json")
                 self.assertEqual(package["publish_status"], "public")
+                self.assertEqual(package["withheld_reasons"], [])
+                dedup_request = pipeline.load_json(case_dir / "requests/deduplication.json")
+                self.assertEqual(
+                    dedup_request["inputs"]["dedup_candidate_retrieval"]["retrieval_version"],
+                    "dedup_candidates/v1",
+                )
+                self.assertEqual(dedup_request["inputs"]["dedup_candidates"], [])
+                factual_request = pipeline.load_json(case_dir / "requests/factual_check.json")
+                self.assertIn("case_extraction", factual_request["inputs"])
+                rights_request = pipeline.load_json(case_dir / "requests/rights_check.json")
+                self.assertIn("reader_generation", rights_request["inputs"])
+                self.assertIn("creator_analysis", rights_request["inputs"])
                 self.assertTrue((record_dir / f"{article['run_id']}.json").exists())
                 final_article = pipeline.load_json(article_dir / "run.json")
                 self.assertEqual(final_article["status"], "completed")

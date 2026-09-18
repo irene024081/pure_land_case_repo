@@ -1,0 +1,88 @@
+{
+  "run_id": "RUN-ENT000001-M2A-P011-CASE000001",
+  "run_kind": "case",
+  "pipeline_id": "pure-land-content-pipeline",
+  "pipeline_version": "0.1.1",
+  "source_id": "SRC0001",
+  "source_entry_id": "ENT000001",
+  "source_entry_hash": "71eaac499ea2173a5b3f1d349f1af300a5bdf1bba800c3534c51ff64a20c31ef",
+  "source_catalog_article_id": "SRC0001-ART000001",
+  "rights_review_id": "RR0005",
+  "external_processing": "blocked",
+  "case_id": "CASE000001",
+  "candidate_id": "ENT000001-CAND0001",
+  "parent_article_run_id": "RUN-ENT000001-M2A-P011",
+  "created_at": "2026-09-18T01:59:55+00:00",
+  "updated_at": "2026-09-18T02:01:32+00:00",
+  "status": "completed",
+  "stages": {
+    "case_extraction": {
+      "status": "completed",
+      "request_hash": "1456bb52085ce902282bfaa7b2a334a7c21f9fd3fffda330d68b2f1c805ef535",
+      "completed_at": "2026-09-18T01:59:55+00:00",
+      "adapter": "local",
+      "model": "codex-gpt5",
+      "response_hash": "a5babaf465c092b647671fa028ca5fd1b62b0138ad91d13006d4c3e40bc6f855",
+      "output_hash": "b44b4790d13adef912b6bc667626f72377c8e34cb1ca60994d3c04e8d5549b0f"
+    },
+    "entity_tagging": {
+      "status": "completed",
+      "request_hash": "5d44261f932b9da3567f83a5f6f595e84c6fd42d882beaf5d7e8e900a37045ae",
+      "completed_at": "2026-09-18T01:59:56+00:00",
+      "adapter": "local",
+      "model": "codex-gpt5",
+      "response_hash": "0bc00adfef490580c9a2b4fedcb743c1747772e61745d9003052895b8a96d2ae",
+      "output_hash": "aa543802f764302003fbe27ef446410c9f43b1a764d75418c75d7e70dde9ed0e"
+    },
+    "deduplication": {
+      "status": "completed",
+      "request_hash": "ad60b088933203a90ab3cb037e049848d0280476dd3e35bdddf449a8d8145426",
+      "completed_at": "2026-09-18T01:59:56+00:00",
+      "adapter": "local",
+      "model": "codex-gpt5",
+      "response_hash": "13142774dbcf4e2459cd2bdc388b936cd4449349bed156a861351f9504547e99",
+      "output_hash": "13142774dbcf4e2459cd2bdc388b936cd4449349bed156a861351f9504547e99"
+    },
+    "reader_generation": {
+      "status": "completed",
+      "request_hash": "bd1dfa9dff3a31efdd42f5c0933b6ed500d50693f74a6d2931b4f71159f7dd89",
+      "completed_at": "2026-09-18T01:59:56+00:00",
+      "adapter": "local",
+      "model": "codex-gpt5",
+      "response_hash": "e824c82d17cc9c625d148a80d258b39f6598bf178bffbb69a9bf07a1727af3d0",
+      "output_hash": "e3b15074c86c9dedd4aa859edd7d6d67df5e607eb4482f9053030b9ae08ba970"
+    },
+    "creator_analysis": {
+      "status": "completed",
+      "request_hash": "65df92eee08cc54e6b384d8f993263ac675196a79a4b54fd94b14e63082fb8b4",
+      "completed_at": "2026-09-18T01:59:56+00:00",
+      "adapter": "local",
+      "model": "codex-gpt5",
+      "response_hash": "7b4035300cfc9279e6d72b750e74197898ed98d41e4cde2c216fee7312739239",
+      "output_hash": "a58259c3ceb82dc86247f61f2d297e05a17c7a03f3a7e20ae084ec37e7f8fc41"
+    },
+    "factual_check": {
+      "status": "completed",
+      "request_hash": "fb4a9df208ce1c9b9d30038ceb15fb411399b7934c7885d1df565f510e3a000a",
+      "completed_at": "2026-09-18T02:01:32+00:00",
+      "adapter": "local",
+      "model": "codex-gpt5",
+      "response_hash": "43af34180482444c2c62dd531ac968cd5a3756485af88ac12772fdfd37654bef",
+      "output_hash": "be979403a19810c3373736478e1f4404982798bb0bbbbebe4a29b5b67608dbc1"
+    },
+    "rights_check": {
+      "status": "completed",
+      "request_hash": "603e374adf8036f64812395ef60f7537b679c4e08090aa91e0a2d19bb83daf86",
+      "completed_at": "2026-09-18T02:01:32+00:00",
+      "adapter": "local",
+      "model": "codex-gpt5",
+      "response_hash": "abdff3f92fe0ef9c8c2a40062e1388b519d0b69e5fe0a2795a5474f5fcffa3aa",
+      "output_hash": "abdff3f92fe0ef9c8c2a40062e1388b519d0b69e5fe0a2795a5474f5fcffa3aa"
+    },
+    "publication_packaging": {
+      "status": "completed",
+      "completed_at": "2026-09-18T02:01:32+00:00",
+      "output_hash": "d75dbc1fce996eb4b14a9ad5a6ae7c22adcd9841a8879d28d32de4d20696c7f0"
+    }
+  }
+}

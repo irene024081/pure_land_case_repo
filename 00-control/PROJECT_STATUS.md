@@ -1,6 +1,6 @@
 # Project Status
 
-状态：v0.1 Pipeline foundation 准备提交。Article Run、Case fan-out、Case Run、版权预检和可追溯运行记录已实现；真实 AI baseline 尚未运行。
+状态：Pipeline `0.1.2` 已就绪，M2A 首个真实 baseline 已完成。下一阶段是 M2B unseen article test。
 
 已完成：
 
@@ -42,6 +42,15 @@
 - Catalog 状态由 Runner 在创建、推进、失败和完成时同步更新。
 - 完整运行载荷保存在忽略目录，脱敏后的运行版本、状态、模型和哈希保存在可提交的 `data/run_records/`。
 - 已将早期 M0/M1/M2 讨论稿、旧流程和五个 Markdown Case Pack 移入历史目录；当前架构文档压缩为实体边界、六步流程和 Adapter 说明。
+- 已完成 M2A：`ENT000001` 生成一个候选并沿用 `CASE000001`，Article Run 与 Case Run 全部完成。
+- 首个 baseline 包含 8 个原文分段、22 条原子事实、4 段读者文本、2 个创作角度和 22 条事实检查声明；unsupported 与 contradicted 均为 0。
+- Pipeline `0.1.1` 将 `creator_analysis` 纳入版权检查输入，并强制版权账本覆盖发布包中的全部输出。
+- 已将 `RUN-ENT000001-M2A-P011` 与对应 Case Run 的脱敏记录登记为首个 machine-accepted regression baseline。
+- Pipeline `0.1.2` 已加入版本化去重候选检索；候选、分数、命中理由、范围和候选集合哈希进入 Request 与 Run 状态。
+- 去重候选包含受限数据时，该 Stage 自动禁止外部 Adapter；检索不会自动合并案例。
+- Pipeline `0.1.2` 已让事实检查直接读取 `case_extraction`，并在去重身份未解决时将发布包设为 `withheld`。
+- 已区分执行阻断、发布门槛和非阻塞质量问题，并建立 `KNOWN_ISSUES.md`。
+- 已登记当前面向读者和创作者的 Output 及尚未实现的界面，见 `10-publication-interface/OUTPUT_INVENTORY.md`。
 
 进行中：
 
@@ -72,13 +81,14 @@
 - 主题到案例推荐的排序权重如何定义。
 - 现代版权来源默认先采用 public_excerpt_only，需要逐案复核。
 - 每个 source 的 extractor 质量需要在批量导入前逐源验证。
-- 首个实际 AI adapter 和模型尚未选定；runner 当前只生成标准请求并接收标准响应，不持有 API 密钥。
+- M2A 使用声明为 `local` 的 `codex-gpt5` 生成标准响应；runner 仍未实现自动 API adapter，也不持有 API 密钥。
+- `reader_generation/v1` 的转述较平，`creator_analysis/v1` 的角度可能过泛；两项暂作为预览质量问题，M2B 后再设计 v2。
+- 当前去重候选检索只扫描同一运行根目录中的已完成 Case Run，并使用精确结构化值；正式案例索引和模糊召回留到 M2D。
 
 下一步：
 
-- 使用 `scripts/run_pipeline.py` 为 ENT000001 创建首个 Article Run，完成分段、候选检测和自动 Case fan-out。
-- 将首个通过的 Article Run 与 Case Run 设为 baseline，然后以相同 Pipeline 运行 ENT000002-ENT000005。
-- 对五条结果执行固定回归指标，修订 prompt 时创建新版本，不覆盖 v1。
+- 执行 M2B：选择一条标准条目、一条复杂或多案例条目，以及一个新公版或开放许可 Source 的条目。
+- 对 unseen results 执行固定回归指标；修订 prompt 时创建新版本，不覆盖已使用版本。
 - 建立第一批经过核对的净土教理引用，包含经论、祖师文献和明确归因的法师讲解。
 - 选择一条 M2 案例试做 `dharma_case_commentary`，生成逐条 claim ledger 并执行完整发布检查。
 - 在公开发布前联系四个现代来源的权利人或机构，确认内部保存、AI处理、翻译和公开摘录范围。

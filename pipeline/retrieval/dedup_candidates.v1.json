@@ -1,0 +1,32 @@
+{
+  "retrieval_version": "dedup_candidates/v1",
+  "scope": "completed_local_case_runs",
+  "limit": 20,
+  "minimum_score": 15,
+  "weights": {
+    "same_source_entry": 100,
+    "person_exact": 100,
+    "place_and_date": 50,
+    "date_exact": 30,
+    "place_exact": 15,
+    "tag_by_class": {
+      "reported_sign": 8,
+      "event": 8,
+      "case_type": 8,
+      "occupation": 8,
+      "practice": 4,
+      "doctrinal_topic": 3,
+      "default": 2
+    }
+  },
+  "ignored_tag_classes": [
+    "evidence_property",
+    "source_property"
+  ],
+  "selection_rules": [
+    "Use exact normalized structured values only; do not use fuzzy narrative matching.",
+    "Exclude the current case and any run that is not completed.",
+    "Keep only the most recently updated completed run for each candidate case ID.",
+    "Retrieval supplies comparison candidates and must never merge cases automatically."
+  ]
+}

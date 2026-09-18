@@ -2,7 +2,7 @@
 
 This plan starts after the v0.1 foundation commit.
 
-## M2A: First Real Baseline
+## M2A: First Real Baseline (Completed 2026-09-18)
 
 Goal: complete one real Article Run and its Case Run locally with ENT000001.
 
@@ -22,7 +22,16 @@ Exit criteria:
 - Catalog, local Run, and tracked Run Record agree;
 - publication package follows RR0005.
 
-## M2B: Unseen Article Test
+Accepted result:
+
+- Pipeline `0.1.1`, Article Run `RUN-ENT000001-M2A-P011`, and Case Run `RUN-ENT000001-M2A-P011-CASE000001` completed.
+- `CASE000001` was reused after one case candidate was detected.
+- Eight segments cover all 155 source characters; 22 case facts and 22 checked content claims resolve to retained evidence IDs.
+- Unsupported and contradicted claim counts are zero. Rights checks cover both published outputs, and the RR0005 package scope is `public`.
+- `data/baselines/M2A_ENT000001_P011.json` is the first machine-accepted regression baseline.
+- Deduplication was limited to `current_request_only`; corpus candidate retrieval remains required before a corpus-wide no-match decision.
+
+## M2B: Unseen Article Test (Ready)
 
 Goal: test generalization without changing v1 prompts.
 
@@ -31,6 +40,17 @@ Select three new items:
 1. a standard item from an existing structured Source;
 2. a complex item with commentary, multiple reporters, or multiple cases;
 3. an item from a new public-domain or open-license Source.
+
+Precondition completed on 2026-09-18:
+
+- Pipeline `0.1.2` adds deterministic dedup candidate retrieval to the request builder.
+- Candidate selection rules are versioned in `pipeline/retrieval/dedup_candidates.v1.json`.
+- Each Request records selected candidates, scores, reasons, scope, and a candidate-set hash.
+- Restricted candidate content forces the deduplication Stage to use a local Adapter.
+- `factual_check` now receives `case_extraction` directly.
+- The v1 semantic Prompts remain unchanged so M2B can measure generalization before prompt tuning.
+
+Known non-blocking quality issues are tracked in `KNOWN_ISSUES.md`. In particular, `reader_generation/v1` is faithful but not yet sufficiently engaging, and `creator_analysis/v1` can produce generic angles. Record these failures during M2B and design v2 only after the three unseen results are comparable.
 
 Run each through inventory, capture, Article Run, fan-out, and Case Runs. Record failures before designing v2 prompts.
 

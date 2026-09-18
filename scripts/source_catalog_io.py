@@ -134,10 +134,15 @@ def find_article(source_id: str, article_id: str) -> tuple[dict[str, str], dict[
     return config, matches[0]
 
 
-def update_article(source_id: str, article_id: str, changes: dict[str, str]) -> dict[str, str]:
-    source_dir = CATALOG_ROOT / source_id
+def update_article(
+    source_id: str,
+    article_id: str,
+    changes: dict[str, str],
+    catalog_root: Path = CATALOG_ROOT,
+) -> dict[str, str]:
+    source_dir = catalog_root / source_id
     catalog_path = source_dir / "articles.csv"
-    config, rows = read_catalog(source_id)
+    config, rows = read_catalog(source_id, catalog_root)
     del config
     matches = [row for row in rows if row["article_id"] == article_id]
     if len(matches) != 1:
@@ -154,7 +159,7 @@ def update_article(source_id: str, article_id: str, changes: dict[str, str]) -> 
             mode="w", encoding="utf-8", newline="", dir=source_dir, delete=False
         ) as handle:
             temp_name = handle.name
-            writer = csv.DictWriter(handle, fieldnames=FIELDS)
+            writer = csv.DictWriter(handle, fieldnames=FIELDS, lineterminator="\n")
             writer.writeheader()
             writer.writerows(rows)
             handle.flush()

@@ -1,0 +1,54 @@
+{
+  "baseline_id": "M2A-ENT000001-P011",
+  "status": "machine_accepted",
+  "accepted_at": "2026-09-18",
+  "pipeline_version": "0.1.1",
+  "source_id": "SRC0001",
+  "source_entry_id": "ENT000001",
+  "case_id": "CASE000001",
+  "article_run": {
+    "run_id": "RUN-ENT000001-M2A-P011",
+    "record_path": "data/run_records/RUN-ENT000001-M2A-P011.json",
+    "record_sha256": "249dec8bcf2efe5cc6eb9a28ab904e7a5b86cf2593c48839d3e700a7cb822b12",
+    "stage_output_hashes": {
+      "source_segmentation": "e273e5f417fb1a46a27a8582093200f6c1ed3b469a95890bee8ce3dcfc7861b8",
+      "case_detection": "74d420ff6708473cdaf2076e5aaecbd3fa6065f716edfaa56d5da17a75676c0e"
+    }
+  },
+  "case_run": {
+    "run_id": "RUN-ENT000001-M2A-P011-CASE000001",
+    "record_path": "data/run_records/RUN-ENT000001-M2A-P011-CASE000001.json",
+    "record_sha256": "bb9654ec6744c24ae35c425865aef70c9e0f812ea4e0e3b2575d0f3e8dea9edd",
+    "stage_output_hashes": {
+      "case_extraction": "b44b4790d13adef912b6bc667626f72377c8e34cb1ca60994d3c04e8d5549b0f",
+      "entity_tagging": "aa543802f764302003fbe27ef446410c9f43b1a764d75418c75d7e70dde9ed0e",
+      "deduplication": "13142774dbcf4e2459cd2bdc388b936cd4449349bed156a861351f9504547e99",
+      "reader_generation": "e3b15074c86c9dedd4aa859edd7d6d67df5e607eb4482f9053030b9ae08ba970",
+      "creator_analysis": "a58259c3ceb82dc86247f61f2d297e05a17c7a03f3a7e20ae084ec37e7f8fc41",
+      "factual_check": "be979403a19810c3373736478e1f4404982798bb0bbbbebe4a29b5b67608dbc1",
+      "rights_check": "abdff3f92fe0ef9c8c2a40062e1388b519d0b69e5fe0a2795a5474f5fcffa3aa",
+      "publication_packaging": "d75dbc1fce996eb4b14a9ad5a6ae7c22adcd9841a8879d28d32de4d20696c7f0"
+    }
+  },
+  "metrics": {
+    "source_character_count": 155,
+    "source_segment_count": 8,
+    "case_fact_count": 22,
+    "person_count": 3,
+    "place_count": 1,
+    "tag_count": 12,
+    "reader_paragraph_count": 4,
+    "interpretation_angle_count": 2,
+    "checked_claim_count": 22,
+    "unsupported_claim_count": 0,
+    "contradicted_claim_count": 0,
+    "rights_checked_output_ids": ["reader_generation", "creator_analysis"],
+    "rights_gate_result": "pass",
+    "publish_status": "public"
+  },
+  "known_limitations": [
+    "Deduplication used current_request_only scope because no comparison candidate records were supplied.",
+    "The baseline is machine checked and has not received optional human content review.",
+    "Full runtime payloads remain in ignored local storage; tracked records retain stage versions and hashes."
+  ]
+}
