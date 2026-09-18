@@ -1,0 +1,7 @@
+.DS_Store
+*.tmp
+*.log
+__pycache__/
+.venv/
+data/source_entries/restricted/
+data/pipeline_runs/

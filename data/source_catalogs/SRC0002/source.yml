@@ -1,0 +1,16 @@
+source_id: SRC0002
+catalog_version: 1.0.0
+catalog_status: active
+inventory_status: partial
+inventory_scope: M2 pilot item only; book table of contents not yet cataloged
+last_inventory_scan_at: 2026-09-17
+default_language: zh-Hans
+inventory_adapter: pdf_toc
+inventory_refresh_policy: on_new_edition
+entry_adapter: pdf_page_range
+extractor_name: extract_pdf_entry.py
+rights_review_id: RR0001
+storage_class: local_restricted
+external_processing_default: blocked
+batch_selection_field: pipeline_status
+notes: Page-range extraction requires boundary review before source-wide use.

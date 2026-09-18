@@ -1,0 +1,36 @@
+rights_review_id: RR0001
+source_id: SRC0002
+rights_status: legal_review_required
+rights_holder: multiple_or_unconfirmed
+original_author: varies_by_article
+publisher_or_platform: Donglin Temple edition hosted by Jingtumen
+license_type: no_explicit_license_found
+license_url:
+terms_url: https://jingtumen.com/
+terms_checked_at: 2026-09-17
+source_jurisdiction: China
+intended_publication_jurisdictions: global_web
+internal_retention_basis: provisional_research_copy_from_publisher-provided_download
+automated_access_policy: manual_download_page_available; bulk_policy_unknown
+ai_processing_policy: unknown
+external_ai_processing_policy: blocked_until_provider_review
+allowed_ai_providers:
+provider_data_retention_requirement: unknown
+provider_training_opt_out_required: true
+cross_border_transfer_status: unknown
+public_display_policy: metadata_summary_locator_and_minimal_excerpt
+allowed_excerpt_scope: minimal_quotation_only_pending_permission
+translation_policy: permission_or_legal_review_required
+commercial_use_policy: permission_required
+dataset_distribution_policy: prohibited_without_permission
+independent_factual_account_policy: provisional_publication_after_item_and_output_review
+dharma_commentary_policy: provisional_publication_after_doctrinal_rights_and_output_review
+expression_similarity_threshold: low
+substitution_risk_threshold: low
+applicable_jurisdictions: China_source; global_web_publication
+legal_exception_basis:
+review_evidence: Jingtumen home repost statement; download page; PDF publication note and final circulation dedication
+reviewed_by: AI-assisted operational review
+reviewed_at: 2026-09-17
+next_review_at: on_permission_response_or_before_publication
+notes: The host statement does not establish rights over every underlying periodical article in the compiled PDF.

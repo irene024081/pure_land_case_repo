@@ -1,0 +1,36 @@
+rights_review_id: RR0004
+source_id: SRC0005
+rights_status: restricted_internal
+rights_holder: Purelanders_and_or_identified_contributors
+original_author: item contributors
+publisher_or_platform: Purelanders
+license_type: permission_required
+license_url: https://purelanders.com/contact-us/
+terms_url: https://purelanders.com/
+terms_checked_at: 2026-09-17
+source_jurisdiction: Singapore
+intended_publication_jurisdictions: global_web
+internal_retention_basis: provisional_research_copy; legal_basis_not_confirmed
+automated_access_policy: copying_restricted_by_site_notice
+ai_processing_policy: unknown
+external_ai_processing_policy: blocked_until_provider_review
+allowed_ai_providers:
+provider_data_retention_requirement: unknown
+provider_training_opt_out_required: true
+cross_border_transfer_status: unknown
+public_display_policy: metadata_summary_link_and_minimal_excerpt
+allowed_excerpt_scope: minimal_quotation_only; permission_for_recirculation
+translation_policy: permission_required_for_publication
+commercial_use_policy: permission_required
+dataset_distribution_policy: prohibited_without_permission
+independent_factual_account_policy: brief_facts_only_after_item_and_output_review
+dharma_commentary_policy: permission_or_legal_review_required_when_case_detail_is_substantial
+expression_similarity_threshold: low
+substitution_risk_threshold: low
+applicable_jurisdictions: Singapore_source; global_web_publication
+legal_exception_basis:
+review_evidence: site copyright and no-copy notice; English recirculation permission statement; selected testimony page
+reviewed_by: AI-assisted operational review
+reviewed_at: 2026-09-17
+next_review_at: on_permission_response_or_before_publication
+notes: Do not publish full text, substantial translation, or close substitute rendering without permission review.

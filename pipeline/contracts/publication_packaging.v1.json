@@ -1,0 +1,1 @@
+{"contract_version":"1.0.0","stage":"publication_packaging","required_top_level":["case_id","publish_status","included_output_ids","provenance"],"array_rules":{},"allowed_values":{"publish_status":["internal","public","public_excerpt_only","withheld"]},"reference_rules":[]}

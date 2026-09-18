@@ -1,0 +1,16 @@
+source_id: SRC0003
+catalog_version: 1.0.0
+catalog_status: active
+inventory_status: partial
+inventory_scope: M2 pilot item only; story archive pagination not yet cataloged
+last_inventory_scan_at: 2026-09-17
+default_language: zh-Hant
+inventory_adapter: paginated_html
+inventory_refresh_policy: weekly_incremental
+entry_adapter: html_article
+extractor_name: extract_plbtw_article.py
+rights_review_id: RR0002
+storage_class: local_restricted
+external_processing_default: blocked
+batch_selection_field: pipeline_status
+notes: Simplified and traditional pages may be parallel versions.

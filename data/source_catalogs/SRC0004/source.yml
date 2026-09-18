@@ -1,0 +1,16 @@
+source_id: SRC0004
+catalog_version: 1.0.0
+catalog_status: active
+inventory_status: partial
+inventory_scope: M2 pilot item only; article indexes not yet cataloged
+last_inventory_scan_at: 2026-09-17
+default_language: zh-Hans
+inventory_adapter: paginated_html
+inventory_refresh_policy: weekly_incremental
+entry_adapter: html_article
+extractor_name: extract_plb_sea_article.py
+rights_review_id: RR0003
+storage_class: local_restricted
+external_processing_default: blocked
+batch_selection_field: pipeline_status
+notes: Embedded language versions are parallel texts, not separate cases.

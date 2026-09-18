@@ -1,0 +1,36 @@
+rights_review_id: RR0005
+source_id: SRC0001
+rights_status: public_domain_verified
+rights_holder: public_domain_historical_text
+original_author: 彭希涑
+publisher_or_platform: Dazhouxian delivery copy; CBETA-compatible cross-check
+license_type: public_domain_historical_text
+license_url:
+terms_url: https://www.dazhouxian.com/
+terms_checked_at: 2026-09-17
+source_jurisdiction: historical China; current delivery site jurisdiction unconfirmed
+intended_publication_jurisdictions: global_web
+internal_retention_basis: public_domain_historical_text
+automated_access_policy: use retained normalized entry; do not reuse site code or assets
+ai_processing_policy: allowed_for_normalized_public_domain_text
+external_ai_processing_policy: allowed_for_normalized_public_domain_text_only
+allowed_ai_providers: provider_must_meet_project_data_controls
+provider_data_retention_requirement: disclose_and_record_before_use
+provider_training_opt_out_required: true
+cross_border_transfer_status: record_provider_region_before_use
+public_display_policy: full_normalized_historical_text
+allowed_excerpt_scope: full_historical_text
+translation_policy: allowed_with_source_and_translation_provenance
+commercial_use_policy: historical_text_allowed; verify delivery-site assets separately
+dataset_distribution_policy: normalized_historical_text_allowed
+independent_factual_account_policy: allowed
+dharma_commentary_policy: allowed_subject_to_factual_and_doctrinal_checks
+expression_similarity_threshold: normal
+substitution_risk_threshold: normal
+applicable_jurisdictions: global_web_publication
+legal_exception_basis:
+review_evidence: Qing-period source text and source-entry manifest; modern delivery assets excluded
+reviewed_by: AI-assisted operational review
+reviewed_at: 2026-09-17
+next_review_at: before changing retained edition or delivery source
+notes: Public-domain status applies to the historical text. It does not automatically cover modern annotations, site code, images, or editorial assets.

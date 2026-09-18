@@ -1,0 +1,36 @@
+rights_review_id: RR0002
+source_id: SRC0003
+rights_status: legal_review_required
+rights_holder: unconfirmed
+original_author: oral narrator and recorder identified per item
+publisher_or_platform: Chinese Pure Land Buddhist Association / Pure Land Buddhism Foundation website
+license_type: no_explicit_license_found_for_testimony_pages
+license_url:
+terms_url:
+terms_checked_at: 2026-09-17
+source_jurisdiction: Taiwan
+intended_publication_jurisdictions: global_web
+internal_retention_basis: provisional_research_copy
+automated_access_policy: unknown
+ai_processing_policy: unknown
+external_ai_processing_policy: blocked_until_provider_review
+allowed_ai_providers:
+provider_data_retention_requirement: unknown
+provider_training_opt_out_required: true
+cross_border_transfer_status: unknown
+public_display_policy: metadata_summary_link_and_minimal_excerpt
+allowed_excerpt_scope: minimal_quotation_only_pending_permission
+translation_policy: permission_or_legal_review_required
+commercial_use_policy: permission_required
+dataset_distribution_policy: prohibited_without_permission
+independent_factual_account_policy: provisional_publication_after_item_and_output_review
+dharma_commentary_policy: provisional_publication_after_doctrinal_rights_and_output_review
+expression_similarity_threshold: low
+substitution_risk_threshold: low
+applicable_jurisdictions: Taiwan_source; global_web_publication
+legal_exception_basis:
+review_evidence: site home and retained article inspected; no applicable license found
+reviewed_by: AI-assisted operational review
+reviewed_at: 2026-09-17
+next_review_at: on_permission_response_or_before_publication
+notes: Reprint language found in separately identified books must not be generalized to all website content.

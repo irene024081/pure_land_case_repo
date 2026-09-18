@@ -1,0 +1,21 @@
+{
+  "pipeline_id": "pure-land-content-pipeline",
+  "pipeline_version": "0.1.0",
+  "article_stages": [
+    {"id": "source_registration", "executor": "deterministic", "prompt": null, "contract": null, "depends_on": []},
+    {"id": "rights_precheck", "executor": "deterministic", "prompt": null, "contract": null, "depends_on": ["source_registration"]},
+    {"id": "source_capture", "executor": "deterministic", "prompt": null, "contract": null, "depends_on": ["rights_precheck"]},
+    {"id": "source_segmentation", "executor": "ai", "prompt": "source_segmentation/v1.md", "contract": "source_segmentation.v1.json", "depends_on": ["source_capture"]},
+    {"id": "case_detection", "executor": "ai", "prompt": "case_detection/v1.md", "contract": "case_detection.v1.json", "depends_on": ["source_segmentation"]}
+  ],
+  "case_stages": [
+    {"id": "case_extraction", "executor": "ai", "prompt": "case_extraction/v1.md", "contract": "case_extraction.v1.json", "depends_on": []},
+    {"id": "entity_tagging", "executor": "ai", "prompt": "entity_tagging/v1.md", "contract": "entity_tagging.v1.json", "depends_on": ["case_extraction"]},
+    {"id": "deduplication", "executor": "ai", "prompt": "deduplication/v1.md", "contract": "deduplication.v1.json", "depends_on": ["case_extraction", "entity_tagging"]},
+    {"id": "reader_generation", "executor": "ai", "prompt": "reader_generation/v1.md", "contract": "reader_generation.v1.json", "depends_on": ["case_extraction", "deduplication"]},
+    {"id": "creator_analysis", "executor": "ai", "prompt": "creator_analysis/v1.md", "contract": "creator_analysis.v1.json", "depends_on": ["case_extraction", "entity_tagging"]},
+    {"id": "factual_check", "executor": "ai", "prompt": "factual_check/v1.md", "contract": "factual_check.v1.json", "depends_on": ["reader_generation", "creator_analysis"]},
+    {"id": "rights_check", "executor": "ai", "prompt": "rights_check/v1.md", "contract": "rights_check.v1.json", "depends_on": ["reader_generation"]},
+    {"id": "publication_packaging", "executor": "deterministic", "prompt": null, "contract": "publication_packaging.v1.json", "depends_on": ["factual_check", "rights_check"]}
+  ]
+}

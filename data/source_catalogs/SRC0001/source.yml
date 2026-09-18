@@ -1,0 +1,16 @@
+source_id: SRC0001
+catalog_version: 1.0.0
+catalog_status: active
+inventory_status: partial
+inventory_scope: M2 pilot item only; source-wide extractor found 70 entries in the selected section
+last_inventory_scan_at: 2026-09-16
+default_language: zh-Hans
+inventory_adapter: static_headings
+inventory_refresh_policy: on_edition_or_extractor_change
+entry_adapter: classical_entry
+extractor_name: extract_dazhouxian_entries.py
+rights_review_id: RR0005
+storage_class: tracked_public
+external_processing_default: blocked
+batch_selection_field: pipeline_status
+notes: Public-domain historical text only; exclude modern site code and assets.
