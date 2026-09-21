@@ -39,7 +39,9 @@
 
 - SRC0302《念佛感应录》系列（T01 SRC0301）↔ SRC0090–SRC0097《念佛感应录》第一至八集（T01 SRC0086–0093）。T01 先按单集登记、后又登记了整个系列。
 
-## (b) 与五个 M2 试点来源的映射（请确认无误）
+## (b) 与五个 M2 试点来源的映射 —— resolved 2026-09-21
+
+负责人已于 2026-09-21 在聊天中确认：下表五个试点映射全部无误。原表保留如下（存档）：
 
 | repo ID（现行，不变） | 试点来源 | 匹配到的 T01 条目 | 匹配依据 |
 |---|---|---|---|
@@ -64,7 +66,7 @@
 
 `MVP_SOURCE_LIST.csv`（43 条，2026-09-21 由 T01 MVP 清单映射生成）中有以下待确认项：
 
-1. **T01 SRC0386 无对照、无法映射**：《现代往生录》系列（雪心编辑室／雪心基金会），MVP 清单中标 PILOT，但超出已恢复的 385 条范围（T01 编号止于 SRC0385），`source_id_map.csv` 中无记录，`MVP_SOURCE_LIST.csv` 中其 `repo_source_id` 留空。该条疑似与 SRC0140 雪心文教基金会网站／雪心助念团数据库（T01 SRC0138）相关，请确认是同一来源家族还是新来源；若为新来源需补登记并分配 repo 编号。
+1. ~~**T01 SRC0386 无对照、无法映射**~~ **resolved 2026-09-21**：负责人确认《现代往生录》系列（雪心编辑室／雪心基金会）是独立新来源，已补登记为 repo SRC0386（`source_registry_v1.csv` / `source_id_map.csv` / `MVP_SOURCE_LIST.csv` 三处均已更新）。注意它与 SRC0140 雪心文教基金会网站／雪心助念团数据库的关系（出版物 vs 网站）尚未标注，留待后续审核。
 2. **MVP 的 PILOT 标记与现行 M2 试点体系不一致**：MVP 清单标 PILOT 的为 T01 SRC0019（莲池《往生集》→ repo SRC0024）、SRC0133（→ repo SRC0003，与现行试点一致）、SRC0334（Purelanders → repo SRC0334）、SRC0344（《引路宝镜》→ repo SRC0344）。~~其中 T01 SRC0334 正是上文 (a) 中 Purelanders 疑似重复条目……请确认 MVP 清单里的 Purelanders 试点条目应指向哪一个。~~ **resolved 2026-09-21**：负责人确认 MVP 的 Purelanders 试点指向 repo SRC0005；T01 SRC0334 已合并入 SRC0005，`MVP_SOURCE_LIST.csv` 中该行 repo_source_id 已改为 SRC0005 并加注。T01 SRC0019、SRC0344 在现行体系中不是试点（仍待确认是否保留其 T01 时代 PILOT 语义）。
 3. **BACKUP_PILOT / HOLD_VERIFY**：T01 SRC0110《当代念佛感应集》（→ repo SRC0002，现行试点）在 MVP 中为 BACKUP_PILOT；T01 SRC0004 飞锡《往生净土传》（→ repo SRC0009，佚失书）为 HOLD_VERIFY。
 4. MVP 清单的 `current_cp` 与主注册表 CP 评级可能存在差异（MVP 是 T01 后期的重评结果），已按 MVP 文件原样写入 `MVP_SOURCE_LIST.csv` 的 `collection_priority` 列，未与 `source_registry_v1.csv` 对齐。
@@ -79,3 +81,34 @@
 - SRC0113 弘化（现代复刊）与 SRC0063 弘化月刊：同名刊物的不同时期版本。
 - SRC0111 狮子吼（台湾复刊）与 SRC0123 狮子吼（槟城本）是不同地区版本。
 - 净土圣贤录三编：SRC0001（= T01 SRC0023）、SRC0029（续编）、SRC0060（三编）是三部不同著作。
+
+## (e) URL 回填记录（2026-09-21）
+
+从 `notes/chatgpt_transcripts/2026-09-15_整理净土资料来源.md` 提取对话中明确写出的来源 URL，回填 `source_registry_v1.csv` 新增的 `url` 列。只回填对话中明确写出的；对应不上注册表条目的不猜。
+
+### 已回填（3 条）
+
+| repo ID | 来源 | URL | 出处 |
+|---|---|---|---|
+| SRC0177 | 十方圆通寺官方网站 | https://www.around-all-the-world.com/ | 2026-09-15 对话第 159 条消息（url 标记「十方圆通寺官网」） |
+| SRC0315 | 「佛教見聞錄」 | https://www.buddhist-experience.org/ | 2026-09-15 对话第 105 条消息（助手纠正正式名称并给出网址）；第 159 条消息再次出现。注意：注册表原名称记的是 buddhist-experience.org.tw，对话给出的是 .org，域名差异待核实 |
+| SRC0333 | PureLandBuddhism.org | https://purelandbuddhism.org/ | 2026-09-15 对话第 83 条消息（第九节标题「慧净体系英文官网 PureLandBuddhism.org」，域名明确写出但未给完整 URL 标记） |
+
+### 试点来源：对话中出现了 URL，但 `source_directory_v1.csv` 已有，以该文件为准，未重复回填
+
+- SRC0003（PLBTW）：对话第 83 条消息给出 https://plb.tw/；`source_directory_v1.csv` 已录 https://plb.tw/tc/story_1.aspx。
+- SRC0004（PLB-SEA）：对话第 159 条消息给出 https://www.plb-sea.org/dharma/stories；`source_directory_v1.csv` 已录同地址。
+- SRC0005（Purelanders）：对话第 83、159 条消息给出 https://purelanders.com/；`source_directory_v1.csv` 已录具体案例页 URL。
+
+### 对话中明确写出 URL、但注册表无对应条目，未回填（4 条）
+
+按规则不猜测归属，登记在此供后续补登记：
+
+| URL | 对话中的来源名 | 出处 | 未回填原因 |
+|---|---|---|---|
+| https://www.pure-land-buddhism.com/ | Pure Land Buddhism 英文资料站（设 Rebirth Cases 栏目） | 第 83 条消息第十节 | 注册表无对应条目；SRC0159「净宗讲堂 YouTube / Pure Land Buddhism」是 YouTube 频道，不能确认同主体 |
+| https://www.duongvecoitinh.com/category/guong-vang-sanh/ | Đường Về Cõi Tịnh：Gương Vãng Sanh（越南，40+ 页往生实例目录） | 第 83 条消息 | 注册表越南条目（SRC0297–0299 等）均为书籍，无此网站 |
+| https://www.niemphat.vn/ | Niệm Phật 越南念佛资料站 | 第 83 条消息 | 注册表无对应条目 |
+| https://www.amitabha-terre-pure.net/ | Amitabha Terre Pure 法语净土站（设 Anecdotes Véridiques Amitabha 栏目） | 第 83 条消息 | 注册表法语条目 SRC0336 是 jodoshinshu.fr，域名不同，不能合并 |
+
+以上 4 条是 T01 对话讨论过但未进入三份注册表导出的来源，建议补登记（分配新 repo 编号 SRC0387 起），待负责人确认。

@@ -1,386 +1,387 @@
-repo_source_id,source_name,aliases,t01_section,region,language,source_type,role,collection_priority,automation_priority,date_or_range,notes,registry_status,review_status
-SRC0001,净土圣贤录,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pilot_mapped
-SRC0002,当代念佛感应集,,T01-2 Part 2C｜中国大陆1949后／改革开放后纸本来源,,,,,,,,,FORMAL_SELECTED,pilot_mapped
-SRC0003,净土宗官方网站（中华净土宗协会／净土宗文教基金会）,,T01-2 Part 3｜中文互联网／寺院／莲社／助念团／投稿平台,,,,,,,,,FORMAL_SELECTED,pilot_mapped
-SRC0004,净土宗 Pure Land Buddhism Southeast Asia,,T01-2 Part 3B｜中文网站长尾／地方助念团／迁移与失效网站,,,,,,,,,FORMAL_SELECTED,pilot_mapped
-SRC0005,Purelanders.com 现代 Pure Land testimonials / support-chanting 系列,Purelanders.com — Testimonies / PPF Testimonies,,新加坡／英语世界,,现代英文往生/助念见证系列,CORE case channel / DISCOVERY site,CP1,AP1,至少2011前后持续；现代testimonial编号已至[123]以上,tradition_or_context=沈时安／净行会体系 | cp_at_registration=CP1 | cp_current=CP1 | key_note: 不少由家属/参与者直接撰写，涉及医院、安宁疗护、临终助念与遗体瑞相 | possible_duplicate_of:SRC0334 | alias_of_t01:SRC0334; dedup_confirmed:owner 2026-09-21 | 吸收 SRC0334 记录：大型英文净土 testimonies / 感应集合,REGISTERED,pilot_mapped
-SRC0006,净土论,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0007,往生西方净土瑞应传,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0008,往生西方净土瑞应删传,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0009,往生净土传（唐飞锡，五卷）,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,佚失／目录著录,FORMAL_SELECTED,pending_review
-SRC0010,并州往生记,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,佚失／引文残存,FORMAL_SELECTED,pending_review
-SRC0011,往生西方略传（宋遵式）,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,佚失,FORMAL_SELECTED,pending_review
-SRC0012,往生净土略传（宋清月）,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,佚失,FORMAL_SELECTED,pending_review
-SRC0013,净土往生传（宋戒珠）,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0014,新修净土往生传／新修往生传（宋王古）,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0015,新编古今往生净土宝珠集,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0016,净土往生传（南宋海印，十二卷）,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,佚失,FORMAL_SELECTED,pending_review
-SRC0017,随愿往生集／新编随愿往生集,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,中国本土散佚／残存影响材料,FORMAL_SELECTED,pending_review
-SRC0018,东林十八高贤传,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0019,龙舒增广净土文,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0020,乐邦文类,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0021,乐邦遗稿,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0022,庐山莲宗宝鉴,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0023,诸上善人咏,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0024,往生集（明袾宏）,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0025,净土晨钟,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0026,西归直指,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0027,西舫汇征,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0028,染香集,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0029,净土圣贤录续编,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0030,种莲集,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0031,修西闻见录,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0032,居士传,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0033,善女人传,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0034,法华经显应录,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0035,名僧传,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,原书佚失,FORMAL_SELECTED,pending_review
-SRC0036,名僧传抄,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0037,高僧传,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0038,比丘尼传,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0039,续高僧传,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0040,宋高僧传,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0041,新修科分六学僧传,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0042,大明高僧传,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0043,补续高僧传,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0044,高僧摘要,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0045,佛祖统纪,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0046,佛祖历代通载,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0047,释氏稽古略,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0048,神僧传,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0049,法苑珠林,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0050,冥祥记,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,残缺／重辑传承,FORMAL_SELECTED,pending_review
-SRC0051,集神州三宝感通录,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0052,三宝感应要略录,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0053,冥报记,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0054,释门自镜录,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0055,现果随录,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0056,见闻录（智旭）,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0057,六道集,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0058,太平广记,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0059,近代往生传,,T01-2 Part 2A｜民国中文纸本文献与佛教期刊,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0060,净土圣贤录三编,,T01-2 Part 2A｜民国中文纸本文献与佛教期刊,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0061,净业月刊,,T01-2 Part 2A｜民国中文纸本文献与佛教期刊,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0062,净土宗月刊,,T01-2 Part 2A｜民国中文纸本文献与佛教期刊,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0063,弘化月刊,,T01-2 Part 2A｜民国中文纸本文献与佛教期刊,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0064,佛学半月刊,,T01-2 Part 2A｜民国中文纸本文献与佛教期刊,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0065,海潮音,,T01-2 Part 2A｜民国中文纸本文献与佛教期刊,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0066,世界佛教居士林林刊,,T01-2 Part 2A｜民国中文纸本文献与佛教期刊,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0067,佛学丛报,,T01-2 Part 2A｜民国中文纸本文献与佛教期刊,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0068,佛教月报,,T01-2 Part 2A｜民国中文纸本文献与佛教期刊,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0069,觉社丛书,,T01-2 Part 2A｜民国中文纸本文献与佛教期刊,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0070,弘法月刊,,T01-2 Part 2A｜民国中文纸本文献与佛教期刊,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0071,觉有情,,T01-2 Part 2A｜民国中文纸本文献与佛教期刊,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0072,妙法轮,,T01-2 Part 2A｜民国中文纸本文献与佛教期刊,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0073,佛教日报,,T01-2 Part 2A｜民国中文纸本文献与佛教期刊,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0074,中国佛教会会报／中国佛教会月刊,,T01-2 Part 2A｜民国中文纸本文献与佛教期刊,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0075,念佛感应见闻记,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,possible_duplicate_of:SRC0304 | merged_into:SRC0304; merged_by:owner; date:2026-09-21,merged,duplicate_review
-SRC0076,菩提树／Bodhedrum,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,possible_duplicate_of:SRC0314 | merged_into:SRC0314; merged_by:owner; date:2026-09-21,merged,duplicate_review
-SRC0077,慈光半月刊,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0078,明伦月刊,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,possible_duplicate_of:SRC0313 | merged_into:SRC0313; merged_by:owner; date:2026-09-21,merged,duplicate_review
-SRC0079,近代往生随闻录,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,possible_duplicate_of:SRC0307 | merged_into:SRC0307; merged_by:owner; date:2026-09-21,merged,duplicate_review
-SRC0080,现代往生见闻录（第一、二集）,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,possible_duplicate_of:SRC0306 | merged_into:SRC0306; merged_by:owner; date:2026-09-21,merged,duplicate_review
-SRC0081,当代往生见闻纪实,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0082,e世纪往生传,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,possible_duplicate_of:SRC0308 | merged_into:SRC0308; merged_by:owner; date:2026-09-21,merged,duplicate_review
-SRC0083,新世代念佛往生录,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,possible_duplicate_of:SRC0309 | merged_into:SRC0309; merged_by:owner; date:2026-09-21,merged,duplicate_review
-SRC0084,莲池海会念佛往生见闻记,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,possible_duplicate_of:SRC0312 | merged_into:SRC0312; merged_by:owner; date:2026-09-21,merged,duplicate_review
-SRC0085,不可思议之念佛功德——黄锡勋医师的生平与往生经过,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0086,念佛感应记（林慈超）,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,possible_duplicate_of:SRC0305 | merged_into:SRC0305; merged_by:owner; date:2026-09-21,merged,duplicate_review
-SRC0087,遇见弥陀：学佛感应记,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0088,笑着进入七宝池,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0089,癌细胞变快乐佛细胞,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0090,念佛感应录 第一集,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,possible_duplicate_of:SRC0302 | child_of:SRC0302（念佛感应录系列父条目）; dedup_confirmed:owner 2026-09-21,FORMAL_SELECTED,duplicate_review
-SRC0091,念佛感应录 第二集,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,possible_duplicate_of:SRC0302 | child_of:SRC0302（念佛感应录系列父条目）; dedup_confirmed:owner 2026-09-21,FORMAL_SELECTED,duplicate_review
-SRC0092,念佛感应录 第三集,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,possible_duplicate_of:SRC0302 | child_of:SRC0302（念佛感应录系列父条目）; dedup_confirmed:owner 2026-09-21,FORMAL_SELECTED,duplicate_review
-SRC0093,念佛感应录 第四集,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,possible_duplicate_of:SRC0302 | child_of:SRC0302（念佛感应录系列父条目）; dedup_confirmed:owner 2026-09-21,FORMAL_SELECTED,duplicate_review
-SRC0094,念佛感应录 第五集,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,possible_duplicate_of:SRC0302 | child_of:SRC0302（念佛感应录系列父条目）; dedup_confirmed:owner 2026-09-21,FORMAL_SELECTED,duplicate_review
-SRC0095,念佛感应录 第六集,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,possible_duplicate_of:SRC0302 | child_of:SRC0302（念佛感应录系列父条目）; dedup_confirmed:owner 2026-09-21,FORMAL_SELECTED,duplicate_review
-SRC0096,念佛感应录 第七集,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,possible_duplicate_of:SRC0302 | child_of:SRC0302（念佛感应录系列父条目）; dedup_confirmed:owner 2026-09-21,FORMAL_SELECTED,duplicate_review
-SRC0097,念佛感应录 第八集,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,possible_duplicate_of:SRC0302 | child_of:SRC0302（念佛感应录系列父条目）; dedup_confirmed:owner 2026-09-21,FORMAL_SELECTED,duplicate_review
-SRC0098,念佛癒病（一）,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,possible_duplicate_of:SRC0303 | merged_into:SRC0303; merged_by:owner; date:2026-09-21,merged,duplicate_review
-SRC0099,动物往生佛国记,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0100,净土宗双月刊,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0101,香港佛教,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0102,内明,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0103,台湾佛教,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0104,觉世,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0105,普门杂志,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0106,人生,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0107,佛教文化季刊,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0108,中国佛教月刊,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0109,今日佛教,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0110,慧炬,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0111,狮子吼（台湾复刊）,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0112,净土,,T01-2 Part 2C｜中国大陆1949后／改革开放后纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0113,弘化（现代复刊）,,T01-2 Part 2C｜中国大陆1949后／改革开放后纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0114,慈护,,T01-2 Part 2C｜中国大陆1949后／改革开放后纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0115,现代佛学,,T01-2 Part 2C｜中国大陆1949后／改革开放后纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0116,法音,,T01-2 Part 2C｜中国大陆1949后／改革开放后纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0117,佛教文化,,T01-2 Part 2C｜中国大陆1949后／改革开放后纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0118,上海佛教,,T01-2 Part 2C｜中国大陆1949后／改革开放后纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0119,江苏佛教,,T01-2 Part 2C｜中国大陆1949后／改革开放后纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0120,广东佛教,,T01-2 Part 2C｜中国大陆1949后／改革开放后纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0121,法炬,,T01-2 Part 2C｜中国大陆1949后／改革开放后纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0122,寒山寺,,T01-2 Part 2C｜中国大陆1949后／改革开放后纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0123,狮子吼（槟城本）,,T01-2 Part 2D｜港澳、新加坡、马来西亚及海外华语纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0124,人海灯,,T01-2 Part 2D｜港澳、新加坡、马来西亚及海外华语纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0125,觉音／华南觉音,,T01-2 Part 2D｜港澳、新加坡、马来西亚及海外华语纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0126,无尽灯,,T01-2 Part 2D｜港澳、新加坡、马来西亚及海外华语纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0127,南洋佛教,,T01-2 Part 2D｜港澳、新加坡、马来西亚及海外华语纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0128,狮城潮音,,T01-2 Part 2D｜港澳、新加坡、马来西亚及海外华语纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0129,佛教文摘,,T01-2 Part 2D｜港澳、新加坡、马来西亚及海外华语纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0130,大马佛教研究,,T01-2 Part 2D｜港澳、新加坡、马来西亚及海外华语纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0131,佛联汇讯,,T01-2 Part 2D｜港澳、新加坡、马来西亚及海外华语纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0132,莲觉,,T01-2 Part 2D｜港澳、新加坡、马来西亚及海外华语纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0133,星洲中国佛学,,T01-2 Part 2D｜港澳、新加坡、马来西亚及海外华语纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0134,人间佛教（星洲本）,,T01-2 Part 2D｜港澳、新加坡、马来西亚及海外华语纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0135,佛教人间（星洲本）,,T01-2 Part 2D｜港澳、新加坡、马来西亚及海外华语纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0136,台中佛教莲社官方网站,,T01-2 Part 3｜中文互联网／寺院／莲社／助念团／投稿平台,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0137,庐山东林寺官方网站／东林祖庭网络平台,,T01-2 Part 3｜中文互联网／寺院／莲社／助念团／投稿平台,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0138,苏州弘化社官方网站,,T01-2 Part 3｜中文互联网／寺院／莲社／助念团／投稿平台,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0139,守月亮海外净土网,,T01-2 Part 3｜中文互联网／寺院／莲社／助念团／投稿平台,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0140,雪心文教基金会网站／雪心助念团数据库,,T01-2 Part 3｜中文互联网／寺院／莲社／助念团／投稿平台,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0141,马来西亚净宗学会官方网站,,T01-2 Part 3｜中文互联网／寺院／莲社／助念团／投稿平台,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0142,新加坡佛教居士林官网,,T01-2 Part 3｜中文互联网／寺院／莲社／助念团／投稿平台,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0143,澳洲净宗学院官网,,T01-2 Part 3｜中文互联网／寺院／莲社／助念团／投稿平台,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0144,净空老法师专集网站,,T01-2 Part 3｜中文互联网／寺院／莲社／助念团／投稿平台,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0145,华藏净宗弘化网,,T01-2 Part 3｜中文互联网／寺院／莲社／助念团／投稿平台,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0146,香港佛陀教育协会官网,,T01-2 Part 3｜中文互联网／寺院／莲社／助念团／投稿平台,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0147,佛陀教育基金会官网,,T01-2 Part 3｜中文互联网／寺院／莲社／助念团／投稿平台,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0148,佛弟子文库,,T01-2 Part 3｜中文互联网／寺院／莲社／助念团／投稿平台,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0149,佛教导航,,T01-2 Part 3｜中文互联网／寺院／莲社／助念团／投稿平台,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0150,佛教在线／中华佛教在线,,T01-2 Part 3｜中文互联网／寺院／莲社／助念团／投稿平台,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0151,报佛恩网／般若文海,,T01-2 Part 3｜中文互联网／寺院／莲社／助念团／投稿平台,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0152,净土宗活动资讯网,,T01-2 Part 3B｜中文网站长尾／地方助念团／迁移与失效网站,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0153,庐山龙泉寺「极乐之光」网站,,T01-2 Part 3B｜中文网站长尾／地方助念团／迁移与失效网站,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0154,新加坡净宗学会网站,,T01-2 Part 3B｜中文网站长尾／地方助念团／迁移与失效网站,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0155,檀香寺助念网页 / Than Hsiang Zhu Nian Homepage,,T01-2 Part 3B｜中文网站长尾／地方助念团／迁移与失效网站,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0156,台湾助念团网站（郭文芳助念团 Google Sites）,,T01-2 Part 3B｜中文网站长尾／地方助念团／迁移与失效网站,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0157,弘愿寺历史官方网站,,T01-2 Part 3B｜中文网站长尾／地方助念团／迁移与失效网站,,,,,,,,历史网站／已失效或迁移,FORMAL_SELECTED,pending_review
-SRC0158,净土宗官方 YouTube 影音（Plbamt）,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0159,净宗讲堂 YouTube / Pure Land Buddhism,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0160,东林法音 YouTube,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0161,东林法音「念佛感应故事」播放列表,,T01-3｜YouTube／法师来信型来源,,,,,,,,parent=SRC0159,FORMAL_SELECTED,pending_review
-SRC0162,净宗法师「信函」,,T01-3｜YouTube／法师来信型来源,,,,,,,,parent=SRC0133,FORMAL_SELECTED,pending_review
-SRC0163,净宗法师「念佛问答」,,T01-3｜YouTube／法师来信型来源,,,,,,,,parent=SRC0133,FORMAL_SELECTED,pending_review
-SRC0164,净空老法师影音图文检索中心,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0165,《学佛答问》系列,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0166,净土宗「念佛感应故事（真实案例）」视频系列,,T01-3｜YouTube／法师来信型来源,,,,,,,,parent=SRC0158,FORMAL_SELECTED,pending_review
-SRC0167,净土宗台北念佛会 YouTube,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0168,悟道法师佛法交流专页「莲友留言」,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0169,悟道法师《佛学问答》影音系列,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0170,华藏净宗弘化网 YouTube,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0171,马来西亚净宗学会 YouTube,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0172,定弘法师说法频道,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0173,熏闻成种｜成德法师学习分享平台,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0174,华藏净宗弘化网影音专区／数字影音库,,T01-3｜YouTube／法师来信型来源,,,,,,,,关联／parent=SRC0143,FORMAL_SELECTED,pending_review
-SRC0175,Podcast《净土宗弘愿法门－光明遍照 唯摄念佛》,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0176,十方圆通寺 道晟法师 YouTube,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0177,十方圆通寺官方网站,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0178,Podcast《笃定往生的净土法门》道晟师父讲座,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0179,Pure Land Buddhism USA 净土宗美国 YouTube,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0180,法界佛陀教育学院 YouTube,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0181,文殊讲堂｜慧律法师官方影音资料库,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0182,文殊讲堂 Vimeo / wenshuykl,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0183,道证法师网络专辑（般若文海／报佛恩网）,,T01-3｜YouTube／法师来信型来源,,,,,,,,保存型子来源；关联SRC0149,FORMAL_SELECTED,pending_review
-SRC0184,道证法师《毛毛虫变蝴蝶》系列,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0185,智随法师文章｜念佛感应篇,,T01-3｜YouTube／法师来信型来源,,,,,,,,parent=SRC0133,FORMAL_SELECTED,pending_review
-SRC0186,智随法师文章｜往生记实篇,,T01-3｜YouTube／法师来信型来源,,,,,,,,parent=SRC0133,FORMAL_SELECTED,pending_review
-SRC0187,净土宗加州念佛会 / Pure Land Buddhist Association 官网,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0188,日本往生極楽記,,T01-4 Part 1｜日本历史核心来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0189,続本朝往生伝,,T01-4 Part 1｜日本历史核心来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0190,拾遺往生伝,,T01-4 Part 1｜日本历史核心来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0191,後拾遺往生伝,,T01-4 Part 1｜日本历史核心来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0192,三外往生伝／三外往生記,,T01-4 Part 1｜日本历史核心来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0193,本朝新修往生伝,,T01-4 Part 1｜日本历史核心来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0194,念仏往生伝,,T01-4 Part 1｜日本历史核心来源,,,,,,,,残卷,FORMAL_SELECTED,pending_review
-SRC0195,今選往生伝,,T01-4 Part 1｜日本历史核心来源,,,,,,,,散佚,FORMAL_SELECTED,pending_review
-SRC0196,扶桑寄帰往生伝,,T01-4 Part 1｜日本历史核心来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0197,女人往生伝,,T01-4 Part 1｜日本历史核心来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0198,緇白往生伝,,T01-4 Part 1｜日本历史核心来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0199,貞伝上人東域念仏利益伝,,T01-4 Part 1｜日本历史核心来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0200,現証往生伝,,T01-4 Part 1｜日本历史核心来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0201,新撰往生伝,,T01-4 Part 1｜日本历史核心来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0202,近世念仏往生伝,,T01-4 Part 1｜日本历史核心来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0203,淡海往生伝／近世淡海念仏往生伝,,T01-4 Part 1｜日本历史核心来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0204,明治往生伝,,T01-4 Part 1｜日本历史核心来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0205,明教新誌,,T01-4 Part 1｜日本历史核心来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0206,親聞妙好人伝,,T01-4 Part 1｜日本历史核心来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0207,妙好人伝（二巻本）,,T01-4 Part 1｜日本历史核心来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0208,新続妙好人伝,,T01-4 Part 1｜日本历史核心来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0209,妙好人伝（五巻本）,,T01-4 Part 1｜日本历史核心来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0210,続妙好人伝,,T01-4 Part 1｜日本历史核心来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0211,三井往生伝,,T01-4 Part 1B｜日本近世／明治往生传补漏,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0212,近世往生伝,,T01-4 Part 1B｜日本近世／明治往生传补漏,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0213,日本古今往生略伝,,T01-4 Part 1B｜日本近世／明治往生传补漏,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0214,浄土勧化三国往生伝,,T01-4 Part 1B｜日本近世／明治往生传补漏,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0215,新聞顕験往生伝,,T01-4 Part 1B｜日本近世／明治往生传补漏,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0216,総誉安西法師往生記,,T01-4 Part 1B｜日本近世／明治往生传补漏,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0217,遂懐往生伝,,T01-4 Part 1B｜日本近世／明治往生传补漏,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0218,孝感冥祥録,,T01-4 Part 1B｜日本近世／明治往生传补漏,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0219,親聞往生験記,,T01-4 Part 1B｜日本近世／明治往生传补漏,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0220,随聞往生伝,,T01-4 Part 1B｜日本近世／明治往生传补漏,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0221,近世南紀念仏往生伝,,T01-4 Part 1B｜日本近世／明治往生传补漏,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0222,日課念仏投宿編,,T01-4 Part 1B｜日本近世／明治往生传补漏,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0223,新撰念仏往生験記,,T01-4 Part 1B｜日本近世／明治往生传补漏,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0224,新選往生験記追加別伝,,T01-4 Part 1B｜日本近世／明治往生传补漏,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0225,専念往生伝,,T01-4 Part 1B｜日本近世／明治往生传补漏,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0226,入水往生伝,,T01-4 Part 1B｜日本近世／明治往生传补漏,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0227,尾陽往生伝,,T01-4 Part 1B｜日本近世／明治往生传补漏,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0228,拾遺専念往生伝,,T01-4 Part 1B｜日本近世／明治往生传补漏,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0229,三河往生験記,,T01-4 Part 1B｜日本近世／明治往生传补漏,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0230,遺身往生伝,,T01-4 Part 1B｜日本近世／明治往生传补漏,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0231,浄土宗公式サイト,,T01-4 Part 2｜日本现代来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0232,浄土宗新聞,,T01-4 Part 2｜日本现代来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0233,季刊『かるな』,,T01-4 Part 2｜日本现代来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0234,公式チャンネル浄土宗,,T01-4 Part 2｜日本现代来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0235,浄土宗全書テキストデータベース,,T01-4 Part 2｜日本现代来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0236,新纂浄土宗大辞典,,T01-4 Part 2｜日本现代来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0237,浄土宗総合研究所,,T01-4 Part 2｜日本现代来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0238,知恩院公式サイト,,T01-4 Part 2｜日本现代来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0239,知恩院公式YouTube,,T01-4 Part 2｜日本现代来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0240,増上寺公式サイト,,T01-4 Part 2｜日本现代来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0241,増上寺公式YouTube,,T01-4 Part 2｜日本现代来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0242,浄土真宗本願寺派公式サイト,,T01-4 Part 2｜日本现代来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0243,本願寺新報,,T01-4 Part 2｜日本现代来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0244,本願寺公式Webブロードキャスト／YouTube,,T01-4 Part 2｜日本现代来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0245,真宗大谷派 東本願寺公式サイト,,T01-4 Part 2｜日本现代来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0246,同朋新聞,,T01-4 Part 2｜日本现代来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0247,月刊『真宗』,,T01-4 Part 2｜日本现代来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0248,真宗大谷派 東本願寺公式YouTube,,T01-4 Part 2｜日本现代来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0249,しんらん交流館 YouTube,,T01-4 Part 2｜日本现代来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0250,真宗聖典検索,,T01-4 Part 2｜日本现代来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0251,真宗会館 YouTube,,T01-4 Part 2｜日本现代来源,,,,,,,,,FORMAL_SELECTED,pending_review
-SRC0252,正宣寺 寺报《光寿》,,,日本,,地方寺报,DISCOVERY,CP3,AP1,1994-03-01创刊－现在,tradition_or_context=本愿寺派／大阪 | cp_at_registration=CP1 | cp_current=CP3 | key_note: 已确认现代妙好人文章；纸本寺报→官网再刊链,REGISTERED,pending_review
-SRC0253,教念寺《教念寺新报》,,,日本,,地方寺报,DISCOVERY,CP1,AP2,1992－现在,tradition_or_context=本愿寺派／埼玉・新座 | cp_at_registration=CP1 | cp_current=(blank) | key_note: 1992创刊、月刊；后续重标为普通寺报型，最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review
-SRC0254,教念寺《ふうむ》,,,日本,,地方寺报,DISCOVERY,CP2,AP3,创刊年Unknown；现为春・秋号,tradition_or_context=本愿寺派／埼玉 | cp_at_registration=CP2 | cp_current=(blank) | key_note: 与《教念寺新报》不同系列；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review
-SRC0255,善巧寺「寺报」,,,日本,,地方寺报,DISCOVERY,CP1,AP1,1977－现在,tradition_or_context=本愿寺派／富山・黑部 | cp_at_registration=CP1 | cp_current=(blank) | key_note: 季刊、长期数字档案；案例并非主体，最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review
-SRC0256,守纲寺报《清风》,,,日本,,地方寺报,DISCOVERY,CP3,AP1,连续50年以上；2025年No.630,tradition_or_context=真宗大谷派／爱知・丰田 | cp_at_registration=CP1 | cp_current=CP3 | key_note: 已确认现代妙好人、来访者经历、闻法生活等个案,REGISTERED,pending_review
-SRC0257,《愿长寺报》,,,日本,,地方寺报,DISCOVERY,CP3,AP4,至少20世纪末以前开始；宗门报道时已169号,tradition_or_context=真宗大谷派／岐阜 | cp_at_registration=CP1 | cp_current=CP3 | key_note: 已确认住职写入失女、前坊守等信仰经历,REGISTERED,pending_review
-SRC0258,春日山蓮浄寺だより,,,日本,,地方寺报,DISCOVERY,CP2,AP4,创刊年Unknown；2026年约161号,tradition_or_context=真宗大谷派／新潟 | cp_at_registration=CP2 | cp_current=(blank) | key_note: 记录寺院日常、门徒关系、葬仪；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review
-SRC0259,金光寺寺报《慧光》,,,日本,,地方寺报,DISCOVERY,CP3,AP2,至少2022年第254号；2025年第283号,tradition_or_context=浄土真宗系／宫崎・五ヶ濑 | cp_at_registration=CP1 | cp_current=CP3 | key_note: 索引可检出妙好人、临终、葬仪、往生等用语,REGISTERED,pending_review
-SRC0260,教心寺寺报《サーサナ》,,,日本,,地方寺报,DISCOVERY,CP2,AP2,至少2007-12－现在；2025年第69号,tradition_or_context=真宗大谷派／名古屋 | cp_at_registration=CP2 | cp_current=(blank) | key_note: 地方机关刊；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review
-SRC0261,万行寺寺报,,,日本,,地方寺报,DISCOVERY,CP2,AP1,创刊年Unknown；2022年第128号，2026年第177号,tradition_or_context=本愿寺派／长野・佐久 | cp_at_registration=CP2 | cp_current=(blank) | key_note: 原寺报→note抽取再刊；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review
-SRC0262,常髙寺寺报《あまね》,,,日本,,地方寺报,DISCOVERY,CP2,AP1,约2020－现在,tradition_or_context=本愿寺派／爱媛・今治 | cp_at_registration=CP2 | cp_current=(blank) | key_note: 官网保存第1号起PDF；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review
-SRC0263,《顺光寺だより》,,,日本,,地方寺报,DISCOVERY,CP2,AP1,2015-12-01－现在,tradition_or_context=本愿寺派／岛根・松江 | cp_at_registration=CP2 | cp_current=(blank) | key_note: 历号与PDF完整；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review
-SRC0264,极乐寺寺报《安心》,,,日本,,地方寺报,DISCOVERY,CP1,AP2,至少2016－现在,tradition_or_context=浄土宗西山禅林寺派／岐阜 | cp_at_registration=CP1 | cp_current=(blank) | key_note: 主题含往生・安心・念佛；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review
-SRC0265,顺正寺寺报《遊煩悩林》,,,日本,,地方寺报,DISCOVERY,CP2,AP1,至少2018－现在,tradition_or_context=真宗大谷派／东京・练马 | cp_at_registration=CP2 | cp_current=(blank) | key_note: 定期寺报；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review
-SRC0266,道善寺だより,,,日本,,地方寺报,DISCOVERY,CP2,AP2,创刊年Unknown；2022年第23号,tradition_or_context=真宗大谷派／富山・五箇山 | cp_at_registration=CP2 | cp_current=(blank) | key_note: 赤尾道宗相关寺院；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review
-SRC0267,愿成寺寺报《大心海》,,,日本,,地方寺报,DISCOVERY,CP3,AP3,至少2019-01,tradition_or_context=真宗大谷派／名古屋教区第30组 | cp_at_registration=CP3 | cp_current=(blank) | key_note: 连续性未确认；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review
-SRC0268,一心寺寺报《夢と望》,,,日本,,地方寺报,DISCOVERY,CP3,AP4,至少2017-05,tradition_or_context=真宗大谷派／名古屋教区第30组 | cp_at_registration=CP3 | cp_current=(blank) | key_note: 在线样本有限；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review
-SRC0269,常念寺寺报《おあしす》,,,日本,,地方寺报,DISCOVERY,CP3,AP4,至少2007-02,tradition_or_context=真宗大谷派／名古屋教区第30组 | cp_at_registration=CP3 | cp_current=(blank) | key_note: 数字残片型；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review
-SRC0270,法光寺寺报《煩悩林》,,,日本,,地方寺报,DISCOVERY,CP3,AP4,至少2005-11,tradition_or_context=真宗大谷派／名古屋教区第30组 | cp_at_registration=CP3 | cp_current=(blank) | key_note: 纸本原源存在；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review
-SRC0271,真宗大谷派名古屋教区第30组「寺報を読む」,,,日本,,寺报聚合/数字保存入口,INFRASTRUCTURE / DISCOVERY,CP2,AP1,网站至少2011－,tradition_or_context=真宗大谷派／爱知 | cp_at_registration=CP2 | cp_current=(blank) | key_note: 聚合源，不是各寺报首发；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review
-SRC0272,専教寺寺报,,,日本,,地方寺报,DISCOVERY,CP3,AP1,2026新年号第84号,tradition_or_context=地方净土真宗寺院 | cp_at_registration=CP1 | cp_current=CP3 | key_note: 已确认前住职住院、死亡、密葬、往生等第一人称记录,REGISTERED,pending_review
-SRC0273,真宗大谷派浄影寺《法蔵》,,,日本,,地方寺报,DISCOVERY,CP3,AP2,至少2006－约2018,tradition_or_context=真宗大谷派 | cp_at_registration=CP1 | cp_current=CP3 | key_note: 保存住职对已故门徒及念佛生活的直接回忆,REGISTERED,pending_review
-SRC0274,浄心寺・草加松原開教所《もとみち》,,,日本,,地方寺报,DISCOVERY,CP3,AP2,创刊时间未充分确认,tradition_or_context=净土真宗系 | cp_at_registration=CP3 | cp_current=(blank) | key_note: 有独立寺报栏目；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review
-SRC0275,教覚寺寺报,,,日本,,地方寺报,DISCOVERY,CP2,AP3,2023－现在,tradition_or_context=净土真宗系 | cp_at_registration=CP2 | cp_current=(blank) | key_note: 年刊；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review
-SRC0276,妙蓮寺寺报《流水》,,,日本,,地方寺报,DISCOVERY,CP2,AP3,2026年第100号,tradition_or_context=净土真宗系 | cp_at_registration=CP2 | cp_current=(blank) | key_note: 跨两代住职；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review
-SRC0277,静蓮寺・正定寺共同寺报《和顔愛語》,,,日本,,地方寺报,DISCOVERY,CP2,AP1,2020-09创刊；2026年第23号,tradition_or_context=姊妹寺院共同刊 | cp_at_registration=CP2 | cp_current=(blank) | key_note: 两寺共同一刊，不重复建Source；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review
-SRC0278,浄土宗摂取山念佛寺寺报《摂取》,,,日本,,地方寺报,DISCOVERY,CP1,AP1,至少2016－现在；2026年第80/81号,tradition_or_context=浄土宗 | cp_at_registration=CP1 | cp_current=(blank) | key_note: 含极乐净土、念佛等主题；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review
-SRC0279,光源寺《光源寺新報》,,,日本,,地方寺报,DISCOVERY,CP1,AP4,1961创刊；2016年第100号,tradition_or_context=净土真宗系 | cp_at_registration=CP1 | cp_current=(blank) | key_note: 长期纸本链，但案例并非主体；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review
-SRC0280,天真寺《月刊天真》,,,日本,,月刊寺报,DISCOVERY,CP1,AP1,2013年第439号；持续至2026,tradition_or_context=净土真宗系 | cp_at_registration=CP1 | cp_current=(blank) | key_note: 超长连续刊；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review
-SRC0281,浄土宗大雲寺《寿光》,,,日本,,地方寺报,DISCOVERY,CP2,AP3,2025年第50号,tradition_or_context=浄土宗 | cp_at_registration=CP2 | cp_current=(blank) | key_note: 地方浄土宗出版源；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review
-SRC0282,石狩・髙陵山光明寺《光明寺寺報》,,,日本,,地方寺报,DISCOVERY,CP1,AP2,2016-03创刊,tradition_or_context=净土真宗系／北海道 | cp_at_registration=CP1 | cp_current=(blank) | key_note: 曾讨论临终念佛、门徒葬仪、往生成仏；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review
-SRC0283,法雲寺《ともしび → ともしび2》,,,日本,,地方寺报,DISCOVERY,CP1,AP1,1981-06《ともしび》创刊；2014改版,tradition_or_context=净土真宗系 | cp_at_registration=CP1 | cp_current=(blank) | key_note: 同一寺报连续出版链；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review
-SRC0284,浄覚寺寺报《じゅこう》,,,日本,,地方寺报,DISCOVERY,CP2,AP1,2019-05-01创刊；2026年第88号,tradition_or_context=净土真宗系 | cp_at_registration=CP2 | cp_current=(blank) | key_note: 月刊、数字档案规整；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review
-SRC0285,本愿寺派那珂组门徒推进员广报《領解》,,,日本,,门徒广报,DISCOVERY,CP3,AP1,2022创刊；至少至2025年第4号,tradition_or_context=本愿寺派／那珂组 | cp_at_registration=CP1 | cp_current=CP3 | key_note: 由门徒推进员主体编辑，具第一人称信仰经验潜力,REGISTERED,pending_review
-SRC0286,《覚円寺だより》,,,日本,,地方寺报,DISCOVERY,CP1,AP2,2017-11创刊,tradition_or_context=净土真宗系 | cp_at_registration=CP1 | cp_current=(blank) | key_note: 纸本旧号→2025起note回填；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review
-SRC0287,信光寺寺报《濟波》,,,日本,,地方寺报,DISCOVERY,CP1,AP4,1983-01创刊；2009年第126号,tradition_or_context=净土真宗系 | cp_at_registration=CP1 | cp_current=(blank) | key_note: 门徒妇人参与编辑；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review
-SRC0288,《専徳寺報》,,,日本,,地方寺报,DISCOVERY,CP1,AP3,1957创刊,tradition_or_context=净土真宗系 | cp_at_registration=CP1 | cp_current=(blank) | key_note: 近70年连续地方寺报链；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review
-SRC0289,《西福寺だより》,,,日本,,地方寺报,DISCOVERY,CP1,AP4,1977创刊,tradition_or_context=净土真宗系 | cp_at_registration=CP1 | cp_current=(blank) | key_note: 长期纸本刊物；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review
-SRC0290,廣間山眞願寺寺报《響》,,,日本,,地方寺报,DISCOVERY,CP3,AP1,1997-03创刊；2021年第50号,tradition_or_context=净土真宗系 | cp_at_registration=CP1 | cp_current=CP3 | key_note: 已确认死别、看取、念佛、净土再会等直接生命经验,REGISTERED,pending_review
-SRC0291,新潟・真宗寺寺报,,,日本,,地方寺报,DISCOVERY,CP2,AP3,至少2013创刊号后有多号,tradition_or_context=净土真宗系／新潟 | cp_at_registration=CP2 | cp_current=(blank) | key_note: 网络档案残缺；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review
-SRC0292,隆尭《称名念仏奇特現証集》,,,日本,,念佛奇特/灵验案例集,CORE,CP1,AP3,1420–1431成立；21话,tradition_or_context=中世净土教 | cp_at_registration=CP1 | cp_current=CP1 | key_note: 作者近江周边见闻，含念佛奇特、灵梦、病者临终正念等,REGISTERED,pending_review
-SRC0293,华光会信仰杂志《華光》,,,日本,,信仰体验杂志,CORE,CP1,AP3,1941-11-15创刊－现在,tradition_or_context=真宗／华光会 | cp_at_registration=CP1 | cp_current=CP1 | key_note: 长期刊载信仰体験記、感想集、临终/求道手记,REGISTERED,pending_review
-SRC0294,伊藤康善《療養と求道》,,,日本,,疗养/求道病例与体验集,CORE,CP1,AP4,约1942,tradition_or_context=真宗／华光会系 | cp_at_registration=CP1 | cp_current=CP1 | key_note: 结核疗养所病床说法、求道、回心具体病例/体验,REGISTERED,pending_review
-SRC0295,伊藤康善《仏敵―求道物語》,,,日本,,个人求道体验记录,CORE,CP2,AP4,原版至少1938；2003复刻,tradition_or_context=真宗 | cp_at_registration=CP2 | cp_current=CP2 | key_note: 个人求道/信心获得体验，规模小但原创性强,REGISTERED,pending_review
-SRC0296,山崎隆弘「21世紀に生きる妙好人列伝」,,,日本,,现代妙好人连续列传,CORE,CP1,AP1,2015–2024约120回,tradition_or_context=现代真宗 | cp_at_registration=CP1 | cp_current=CP1 | key_note: 现代妙好人、信仰体验、疾病与临终见闻；首发载体仍待精确确认,REGISTERED,pending_review
-SRC0297,Thích Trí Tịnh「Truyện vãng sanh có chứng nghiệm」,,,越南,,越南本土往生实证个案集,CORE,CP1,,earliest known print至少1957；后收入2006《Hương Sen Vạn Đức》,tradition_or_context=越南净土佛教 | cp_at_registration=CP1 | cp_current=CP1 | key_note: 作者刻意记录越南本土亲知往生案例,REGISTERED,pending_review
-SRC0298,Nhóm Liên Hữu Miền Nam Đất Việt《Chuyện Vãng Sanh Ở Việt Nam》,,,越南,,现代往生案例集,CORE,CP1,,2008已有Part1录音；2014修订书面汇编,tradition_or_context=越南净土佛教 | cp_at_registration=CP1 | cp_current=CP1 | key_note: 从书、录音及亲赴往生者家庭采访搜集；大型现代越南案例集,REGISTERED,pending_review
-SRC0299,Cư sĩ Tịnh Hải《Những Chuyện Niệm Phật Vãng Sanh Lưu Xá Lợi》,,,越南／海外越南,,念佛往生/舍利案例集,CORE,CP1,,2000美国出版；主要搜集1995–2000案例,tradition_or_context=越南语净土圈 | cp_at_registration=CP1 | cp_current=CP1 | key_note: 作者联系家属、寺院取得材料与照片；后大量转载,REGISTERED,pending_review
-SRC0300,허응 보우《권념요록／勸念要錄》,,,韩国,,往生灵验谈编纂,CORE / DISCOVERY,CP1,,现存1637刊本；11篇往生灵验谈,tradition_or_context=朝鲜时代净土佛教 | cp_at_registration=CP1 | cp_current=CP1 | key_note: 约10篇可追中国源；需分离韩国编纂传播与CASE原产地,REGISTERED,pending_review
-SRC0301,서길수《극락 간 사람들：한국 왕생전》,,,韩国,,韩国往生二手汇编/索引,CORE / DISCOVERY,CP1,,2022；100名人物,tradition_or_context=韩国净土研究 | cp_at_registration=CP1 | cp_current=CP1 | key_note: 14年研究汇集100名韩国往生人物；CASE阶段逐案追earliest source,REGISTERED,pending_review
-SRC0302,《念佛感应录》系列,,,中文世界／台湾,,现代念佛感应系列案例集,CORE,CP1,,第1集2006初版；至少至第8集2026,tradition_or_context=中华净土宗协会／净土宗文教基金会 | cp_at_registration=CP1 | cp_current=CP1 | key_note: 连续收录现世感应、治病、免难、梦感、念佛/助念/超度往生等 | possible_duplicate_of:SRC0090（系列条目；T01 SRC0086–SRC0093 已按单集分别登记） | parent_of:SRC0090-SRC0097（念佛感应录第一至八集）; dedup_confirmed:owner 2026-09-21,REGISTERED,duplicate_review
-SRC0303,《念佛癒病（一）》,,,中文世界／台湾,,念佛治病案例集,CORE,CP1,,现代出版；约108则,tradition_or_context=净土宗编辑部 | cp_at_registration=CP1 | cp_current=CP1 | key_note: 按疾病分类收念佛治病/起死回生案例；与《念佛感应录》有重叠 | possible_duplicate_of:SRC0098 | alias_of_t01:SRC0094; dedup_confirmed:owner 2026-09-21,REGISTERED,duplicate_review
-SRC0304,林看治《念佛感应见闻记》,,,中文世界／台湾,,亲见亲闻感应案例集,CORE,CP1,,1967-02-08《菩提樹》第171期起连载；1969-07完结；1969-08单行本,tradition_or_context=台湾净土信仰圈 | cp_at_registration=CP1 | cp_current=CP1 | key_note: 记录十余年亲见亲闻，70余则，含治病、免难、临终、往生瑞相 | possible_duplicate_of:SRC0075 | alias_of_t01:SRC0071; dedup_confirmed:owner 2026-09-21,REGISTERED,duplicate_review
-SRC0305,林慈超《念佛感应记》,,,中文世界／台湾,,念佛感应/往生案例集,CORE,CP2,,1998台湾初版,tradition_or_context=台湾净土信仰圈 | cp_at_registration=CP2 | cp_current=CP2 | key_note: 含个人感应、念佛灵异及往生四众资料 | possible_duplicate_of:SRC0086 | alias_of_t01:SRC0082; dedup_confirmed:owner 2026-09-21,REGISTERED,duplicate_review
-SRC0306,福建莆田广化寺佛经流通处《现代往生见闻录》一、二集,,,中文世界／中国大陆,,现代往生大型案例集,CORE,CP1,,1990年代前后；两集初版先后年份待核版权页,tradition_or_context=莆田广化寺 | cp_at_registration=CP1 | cp_current=CP1 | key_note: 一集约138位、二集约100位现代四众往生资料 | possible_duplicate_of:SRC0080 | alias_of_t01:SRC0076; dedup_confirmed:owner 2026-09-21,REGISTERED,duplicate_review
-SRC0307,宽律法师《近代往生随闻录》,,,中文世界,,近代往生案例集,CORE,CP1,,约1987,tradition_or_context=近现代净土佛教 | cp_at_registration=CP1 | cp_current=CP1 | key_note: 收集八年、100余名近代往生实例 | possible_duplicate_of:SRC0079 | alias_of_t01:SRC0075; dedup_confirmed:owner 2026-09-21,REGISTERED,duplicate_review
-SRC0308,学谦居士《e世纪往生传》,,,中文世界／台湾,,现代海内外往生案例集,CORE,CP1,,约2002年底编印,tradition_or_context=台南市净宗学会体系 | cp_at_registration=CP1 | cp_current=CP1 | key_note: 约25篇现代海内外往生实例，多为家属/同修目击 | possible_duplicate_of:SRC0082 | alias_of_t01:SRC0078; dedup_confirmed:owner 2026-09-21,REGISTERED,duplicate_review
-SRC0309,学谦居士《新世代念佛往生录》,,,中文世界／台湾,,现代往生案例集,CORE,CP1,,2004,tradition_or_context=台南市净宗学会体系 | cp_at_registration=CP1 | cp_current=CP1 | key_note: 《e世纪往生传》姊妹书，十余篇较新案例，多由各地净宗学会供稿 | possible_duplicate_of:SRC0083 | alias_of_t01:SRC0079; dedup_confirmed:owner 2026-09-21,REGISTERED,duplicate_review
-SRC0310,廖荣尉《妙音居士往生见闻记》,,,中文世界／台湾,,单一深描往生案例,CORE,CP2,,约1993,tradition_or_context=现代净土信仰圈 | cp_at_registration=CP2 | cp_current=CP2 | key_note: 记录其父念佛、病床助念、断气后助念、舍利等,REGISTERED,pending_review
-SRC0311,台中慈明寺《慈明月刊》之“往生事迹连续刊载链”,,,中文世界／台湾,,杂志连续往生栏目,DISCOVERY（栏目为CORE-level）,CP2,,《慈明》1964创刊；往生连续刊载具体卷期待锁定,tradition_or_context=台中慈明寺 | cp_at_registration=CP2 | cp_current=CP2 | key_note: 曾连续三年刊载127人往生事迹，后合辑成书,REGISTERED,pending_review
-SRC0312,《蓮池海會—念佛往生見聞記》,,,中文世界／台湾,,助念亲历/往生见闻案例集,CORE,CP1,AP2,原始录影/VCD→文字整理/书→约2003数字化,tradition_or_context=台中莲社 | cp_at_registration=CP1 | cp_current=CP1 | key_note: 黄德川长期参与助念，据亲见亲闻录影后转写 | possible_duplicate_of:SRC0084 | alias_of_t01:SRC0080; dedup_confirmed:owner 2026-09-21,REGISTERED,duplicate_review
-SRC0313,《明倫月刊》“念佛往生／助念案例链”,,,中文世界／台湾,,综合月刊中的案例链,DISCOVERY,CP2,AP2,长期刊载；具体期号可追,tradition_or_context=台中莲社 | cp_at_registration=CP2 | cp_current=CP2 | key_note: 有多例念佛往生、助念后身体柔软等个案 | possible_duplicate_of:SRC0078 | alias_of_t01:SRC0074; dedup_confirmed:owner 2026-09-21,REGISTERED,duplicate_review
-SRC0314,《菩提樹》杂志,,,中文世界／台湾,,综合佛教杂志/上游首发载体,DISCOVERY,CP2,AP3,1967-02-08起刊载SRC0303；1969-07-08完结,tradition_or_context=台湾佛教期刊 | cp_at_registration=CP2 | cp_current=CP2 | key_note: SRC0303《念佛感应见闻记》的更早首发载体 | possible_duplicate_of:SRC0076 | alias_of_t01:SRC0072; dedup_confirmed:owner 2026-09-21,REGISTERED,duplicate_review
-SRC0315,「佛教見聞錄」buddhist-experience.org.tw,,,中文世界／台湾,,案例聚合/发现站,CORE-aggregator / DISCOVERY,CP2,AP1,现代网络来源,tradition_or_context=中文网络佛教经验站 | cp_at_registration=CP2 | cp_current=CP2 | key_note: 按阿弥陀佛、临终助念等类别汇集案例；原创与转载混合,REGISTERED,pending_review
-SRC0316,《佛菩薩探訪錄》,,,中文世界／台湾,,佛菩萨感应今人今事案例集,CORE,CP2,AP2,现代出版,tradition_or_context=慈雲雜誌社 | cp_at_registration=CP2 | cp_current=CP2 | key_note: 分险难、消灾、愈病、往生、综合感应等,REGISTERED,pending_review
-SRC0317,《慈雲》杂志,,,中文世界／台湾,,综合佛教杂志/上游首发载体,DISCOVERY,CP2,AP3,1976-07-30创刊、月刊,tradition_or_context=慈雲雜誌社 | cp_at_registration=CP2 | cp_current=CP2 | key_note: SRC0315上游首发载体之一,REGISTERED,pending_review
-SRC0318,佛學多媒體資料庫 buda.idv.tw“往生見聞”影音保存层,,,中文世界／台湾,,旧影音保存/发现基础设施,INFRASTRUCTURE / DISCOVERY,CP3,AP1,保存约1999–2006等早期RealMedia/WMV,tradition_or_context=佛学多媒体资料库 | cp_at_registration=CP3 | cp_current=CP3 | key_note: 保存李秀芬、李庆和、陈俊彦、魏国兴、王松山、苏进才、妙音居士等旧影音链,REGISTERED,pending_review
-SRC0319,《염불보권문 / 念佛普勸文》,,,韩国,,念佛劝文/往生故事编纂,CORE / DISCOVERY,CP2,AP3,现知1704龙门寺本；后有1741/1764/1765/1776等刊本,tradition_or_context=韩国净土佛教 | cp_at_registration=CP2 | cp_current=CP2 | key_note: 含往生故事与念佛实践；多继承中国叙事，需分离传播与原产地,REGISTERED,pending_review
-SRC0320,《안양암지 / 安養庵誌》,,,韩国,,寺志中的灵验/往生上游案例源,CORE,CP1,AP4,安震湖编，1958，约142页,tradition_or_context=安养庵 | cp_at_registration=CP1 | cp_current=CP1 | key_note: 含“当寺灵验实记”等；韩国往生传中日治时期安养庵7案上游来源,REGISTERED,pending_review
-SRC0321,洪仁杓《연종집요 / 蓮宗集要》,,,韩国,,综合净土著作中的往生例,DISCOVERY,CP3,AP2,现代资料称1960初刊；确切初版待实物核,tradition_or_context=韩国净土佛教 | cp_at_registration=CP3 | cp_current=CP3 | key_note: 含“往生的例／念佛而往生的例”，但本土原创密度有限,REGISTERED,pending_review
-SRC0322,韩国语“나무아미타불”案例聚合生态,,,韩国,,韩国语案例聚合生态,CORE-aggregator / DISCOVERY,CP2,AP1,现站约1436篇；含约104篇极乐往生案例、134篇念佛感应录,tradition_or_context=慧蓮；Tistory/旧Daum等 | cp_at_registration=CP2 | cp_current=CP2 | key_note: 大量转载/翻译但常保存上游线索；同一内容生态不因域名迁移重复编号,REGISTERED,pending_review
-SRC0323,《Vajra Bodhi Sea / 金剛菩提海》,,,美国／海外华人英语生态,,中英双语综合佛教月刊,DISCOVERY,CP3,AP1,1970-04创刊；1992起中英对照,tradition_or_context=法界佛教总会／万佛圣城 | cp_at_registration=CP3 | cp_current=CP3 | key_note: 跨数十年反复刊载美国/海外华人第一人称临终、念佛、往生、感应记录,REGISTERED,pending_review
-SRC0324,Muryoko / nembutsu.info — Speaking Personally,,,英国/澳洲系,英语,,CORE,CP2,Unknown,,第一人称 spiritual journey 栏目,FROZEN,pending_review
-SRC0325,Three Wheels News / Newsletter Archive,,,英国,英语,,CORE,CP1,Unknown,,真宗道场通讯；皈依、念佛体验与 retreat 自述,FROZEN,pending_review
-SRC0326,Pure Land Life,,,全球 / 浄土宗海外,英语,,CORE,CP1,Unknown,,READERS’ VOICES；跨国第一人称经历,FROZEN,pending_review
-SRC0327,Wheel of Dharma,,,美国 / BCA,英语/日语,,CORE,CP1,Unknown,,BCA 官方月刊；长期档案与第一人称投稿,FROZEN,pending_review
-SRC0328,BCA Connect — Sangha Voices,,,美国,英语,,CORE,CP2,Unknown,,Web-native 第一人称信仰、临终、丧亲叙事,FROZEN,pending_review
-SRC0329,Higashi Honganji USA — Lay Voices,,,美国,英语,,CORE,CP1,Unknown,,Lay Voices 个人入信与真宗体验,FROZEN,pending_review
-SRC0330,Living in Gratitude — 100 Years of Buddha Dharma in Canada,,,加拿大,英语,,CORE,CP2,Unknown,,百年纪念个人文章集；真宗生命史,FROZEN,pending_review
-SRC0331,Nenju News,,,加拿大,英语,,CORE,CP2,Unknown,,JSBTC 官方刊物；Tokudo、丧亲与个人经验,FROZEN,pending_review
-SRC0332,The Young Buddhist Editorial — Personal Reflections / Humans of Buddhism,,,北美,英语,,CORE,CP2,Unknown,,青年佛教徒个人经验与身份叙事,FROZEN,pending_review
-SRC0333,PureLandBuddhism.org,,,国际,英语,,CORE,CP1,Unknown,,善导系英文净土平台；个人转宗、临终、疾病见证,FROZEN,pending_review
-SRC0334,Purelanders.com — Testimonies / PPF Testimonies,,,新加坡→全球,英语为主,,CORE,CP1,Unknown,,大型英文净土 testimonies / 感应集合 | possible_duplicate_of:SRC0005 | merged_into:SRC0005; merged_by:owner; date:2026-09-21,merged,duplicate_review
-SRC0335,Buddhistische Gemeinschaft Jodo Shinshu Deutschland / BGJD,,,德国,德语,,CORE,CP2,Unknown,,德国真宗皈依、念佛实践与个人反思,FROZEN,pending_review
-SRC0336,Bouddhisme Jōdo Shinshū / jodoshinshu.fr,,,法国,法语,,CORE,CP2,Unknown,,法国真宗实践、Kikyoshiki 与个人经历,FROZEN,pending_review
-SRC0337,Sangha Luso-Hispana Jinen-kō,,,西班牙 / 葡语圈 / 拉美,西语/葡语/英语,,CORE,CP2,Unknown,,跨国线上真宗 Sangha；成员个人路径,FROZEN,pending_review
-SRC0338,Revista Coração Confiante,,,巴西,葡语,,CORE,CP1,Unknown,,南美大谷派官方刊物；访谈与个人生命历程,FROZEN,pending_review
-SRC0339,Bom Amigo / Comunicado Mensal do Templo,,,巴西,葡语/日语,,CORE,CP2,Unknown,,SRC0338 上游历史刊物；provenance 价值高,FROZEN,pending_review
-SRC0340,Rainbow Sangha Brasil — Depoimentos,,,巴西,葡语,,CORE,CP2,Unknown,,第一人称信众生活与信仰见证,FROZEN,pending_review
-SRC0341,George Gatenby — The Way of Jodo Shinshu / Notes on the Nembutsu,,,澳大利亚,英语,,CORE,CP2,Unknown,,早期英文真宗网络资料与单一作者反思,FROZEN,pending_review
-SRC0342,Paths of Practice: Conversations on Journeys into Buddhism,,,国际,英语,,DISCOVERY,CP3,Unknown,,Podcast；佛教个人 journey，含真宗受访者,FROZEN,pending_review
-SRC0343,The Taste of the Nembutsu / HHMH Messages,,,夏威夷 / 美国,英语,,CORE,CP2,Unknown,,部长文章与信众口述历史,FROZEN,pending_review
-SRC0344,《藏汉平凡人往生极乐世界故事集·引路宝镜》,,,藏区 / 中国,中文（源于藏地调查）,,CORE,CP1,Unknown,,59个往生故事；藏地49、汉地10；田野采访型核心资料,FROZEN,pending_review
-SRC0345,Amitabha Path — True Accounts of Going to Pureland,,,国际,英语,,DISCOVERY,CP2,Unknown,,SRC0344 英文传播/翻译层,FROZEN,pending_review
-SRC0346,British Library EAP — Tibetan Delog manuscript corpus,,,藏区 / 喜马拉雅,藏文,,INFRASTRUCTURE,CP1,Unknown,,Delog 写本群；earliest-surviving witness 基础设施,FROZEN,pending_review
-SRC0347,Delok Lingza Chökyi / Lingza Choskyit 写本传统,,,藏区,藏文,,CORE,CP2,Unknown,,历史 delog 传统；死亡与他界见闻,FROZEN,pending_review
-SRC0348,Delok Karma Wangzin 写本传统,,,藏区,藏文,,CORE,CP2,Unknown,,历史 delog 死亡/还阳/他界叙事,FROZEN,pending_review
-SRC0349,Dawa Drolma — Delog: Journey to Realms Beyond Death,,,西藏 / 英语出版,藏文传统/英语,,CORE,CP1,Unknown,,现代重要 delog 叙事；含 Pure Realm,FROZEN,pending_review
-SRC0350,"Tulku Thondup — Peaceful Death, Joyful Rebirth",,,国际 / 藏传,英语,,DISCOVERY,CP2,Unknown,,综合 delog、口传、firsthand accounts 与 Pure Land rebirth,FROZEN,pending_review
-SRC0351,Lotsawa House — Delog / Sukhāvatī corpus,,,国际 / 藏传,英语/藏文,,DISCOVERY,CP1,Unknown,,藏文净土愿文、delog 与传播材料入口,FROZEN,pending_review
-SRC0352,Treasury of Lives — Delok biographies,,,国际 / 藏传,英语,,DISCOVERY,CP2,Unknown,,学术人物索引；作品、人物与 BDRC 关联,FROZEN,pending_review
-SRC0353,BDRC / BUDA,,,国际 / 藏文佛教,多语,,INFRASTRUCTURE,CP1,Unknown,,藏文/佛教文献数字档案与全文检索基础设施,FROZEN,pending_review
-SRC0354,Geshe Jampa Tinley — 《К Ясному Свету》,,,俄罗斯 / 布里亚特,俄语,,CORE,CP2,Unknown,,阿弥陀净土、临终与本地死亡叙事,FROZEN,pending_review
-SRC0355,Geshe Jampa Tinley — 《Смерть. Жизнь после смерти. Пхова》,,,俄罗斯 / 布里亚特,俄语,,CORE,CP2,Unknown,,死亡、死后、颇瓦及临终叙事,FROZEN,pending_review
-SRC0356,Журнал «Дже Цонкапа»,,,俄罗斯,俄语,,DISCOVERY,CP3,Unknown,,本土佛教刊物；弟子回忆、逝者纪念、社群口述入口,FROZEN,pending_review
-SRC0357,Журнал «Буддизм России»,,,俄罗斯,俄语,,DISCOVERY,CP3,Unknown,,俄罗斯佛教历史刊物与人物/社群资料,FROZEN,pending_review
-SRC0358,Kalmyk Scientific Center RAS — Oirat Sukhāvatī manuscript corpus,,,卡尔梅克 / 俄罗斯,卫拉特文/俄语研究,,INFRASTRUCTURE,CP2,Unknown,,Oirat Sukhāvatī 写本与历史实践,FROZEN,pending_review
-SRC0359,Kathmandu Hongwanji,,,尼泊尔,英语/尼泊尔本地语境,,CORE,CP2,Unknown,,现代净土真宗转宗与生命史节点,FROZEN,pending_review
-SRC0360,Buddhist Study Center / HHMH — Sonam Wangdi Bhutia 2017 Summer Session,,,夏威夷 / 尼泊尔-锡金关联,英语,,CORE,CP2,Unknown,,Sonam Wangdi Bhutia 五讲口述生命史,FROZEN,pending_review
-SRC0361,Todd T. Lewis — “Sukhāvatī Traditions in Newar Buddhism” (1996),,,尼泊尔 / Kathmandu Valley,英语,,CORE,CP2,Unknown,,Newar 本土 Sukhāvatī 传统田野研究,FROZEN,pending_review
-SRC0362,British Library EAP1296 — Newar Sukhāvatī manuscript corpus,,,尼泊尔,梵文/Newar,,INFRASTRUCTURE,CP2,Unknown,,Newar Sukhāvatī 写本数字化,FROZEN,pending_review
-SRC0363,"Digital Sanskrit Buddhist Canon / Nagarjuna Institute, Nepal",,,尼泊尔 / 南亚,梵文/英语,,INFRASTRUCTURE,CP2,Unknown,,梵文佛典与 Sukhāvatīvyūha 数字文本,FROZEN,pending_review
-SRC0364,SAMHiTA — South Asian Manuscript Histories and Textual Archive,,,南亚,多语,,INFRASTRUCTURE,CP2,Unknown,,南亚佛教手稿 provenance 基础设施,FROZEN,pending_review
-SRC0365,"Dewachen Lhakang, Namo Buddha Monastery",,,尼泊尔,藏文/英语,,DISCOVERY,CP3,Unknown,,亡者阿弥陀佛修法与愿生极乐实践节点,FROZEN,pending_review
-SRC0366,Buddhistdoor en Español,,,西语世界 / 拉美,西语,,DISCOVERY,CP2,Unknown,,拉美净土宗传播与访谈高效入口,FROZEN,pending_review
-SRC0367,"Furaibo Nembutsu Dojo, Buenos Aires",,,阿根廷,西语,,CORE,CP2,Unknown,,布宜诺斯艾利斯本土念佛节点,FROZEN,pending_review
-SRC0368,LA NACION — Gustavo Aoki direct interview/profile corpus,,,阿根廷,西语,,CORE,CP2,Unknown,,Gustavo Aoki 第一人称生命史与转折经历,FROZEN,pending_review
-SRC0369,"Lisette Morales Aldana — Conversión, identidad y compromiso en dos grupos budistas japoneses en la ciudad de México (2002)",,,墨西哥,西语,,DISCOVERY,CP2,Unknown,,净土真宗 conversion 研究；全文访问待确认,FROZEN,pending_review
-SRC0370,Catón E. Carini — “Southern Dharma: Outlines of Buddhism in Argentina”,,,阿根廷,英语/西语研究语境,,DISCOVERY,CP3,Unknown,,阿根廷佛教生态与地方资料发现入口,FROZEN,pending_review
-SRC0371,Tierra Pura de la Luz Serena / budismojapones.com,,,波多黎各,西语,,CORE,CP2,Unknown,,西语第一人称宗教经历与念佛信仰,FROZEN,pending_review
-SRC0372,Budismo Tierra Pura para Todos,,,西语世界,西语,,DISCOVERY,CP2,Unknown,,中文净土往生/感应材料翻译传播层,FROZEN,pending_review
-SRC0373,Budismo de La Tierra Pura Online / budismolatinoamerica.com,,,拉美,西语,,DISCOVERY,CP3,Unknown,,西语参与者 testimonial 与净土传播,FROZEN,pending_review
-SRC0374,Amidaji International Temple — Spiritual Biographies of Amidaji Members,,,国际,英语/多语,,CORE,CP1,Unknown,,结构化国际第一人称 spiritual biographies,FROZEN,pending_review
-SRC0375,Amida-shu / Community of Amida Buddhists archive,,,英语世界 / 国际,英语,,CORE/DISCOVERY,CP2,Unknown,,西方 Pure Land 修行者、团体形成史与个人转宗,FROZEN,pending_review
-SRC0376,South America Hongwanji Federation / official web corpus,,,南美,葡语/西语/日语,,DISCOVERY,CP3,Unknown,,本愿寺派南美官方网络与地方寺院入口,FROZEN,pending_review
-SRC0377,British Library EAP813 — Disappearing book heritage of Siberian Buddhists,,,西伯利亚 / 布里亚特,蒙古文/藏文等,,INFRASTRUCTURE,CP2,Unknown,,阿弥陀佛祈愿、愿生 Sukhāvatī 与极乐描述手稿群,FROZEN,pending_review
-SRC0378,Zsuzsa Majer (2018) — Preliminary Notes on Tibetan After-Death Rites and their Texts in Mongolian Buddhist Practice,,,蒙古,英语（研究蒙古实践）,,CORE/DISCOVERY,CP2,Unknown,,现代蒙古亡者仪轨；为亡者祈生阿弥陀佛 Sukhāvatī,FROZEN,pending_review
-SRC0379,Zsuzsa Majer (2018) — Lagwī molom…helping them to a better one in Sukhāvatī,,,蒙古,英语（研究蒙古实践）,,CORE,CP3,Unknown,,蒙古愿文与往生 Sukhāvatī 实践,FROZEN,pending_review
-SRC0380,"Karénina Kollmar-Paulenz (2025) — A Catalogue of the Mongolian Manuscripts and Xylographs of the Ernst-Collection, Sukhāvatī entries 120–124",,,蒙古文献 / 欧洲收藏,英语/蒙古文,,INFRASTRUCTURE,CP2,Unknown,,Ernst Collection 中 Sukhāvatī 文献与蒙古原创描述,FROZEN,pending_review
-SRC0381,Tümer Karaayak (2021) — Eski Uygurca Abitaki Metinlerinin Söz Varlığı,,,中亚 / 古回鹘,土耳其语/古回鹘文,,CORE/INFRASTRUCTURE,CP2,Unknown,,汇集多地古回鹘阿弥陀/净土写本,FROZEN,pending_review
-SRC0382,Jōdo-shū — Hōnen: A Collection of Buddhist Sermons by Jodo Shu Priests from around the World,,,国际 / 澳洲案例,英语,,CORE,CP2,Unknown,,澳洲净土宗临终关怀/净土开示个案,FROZEN,pending_review
-SRC0383,Amitabha Hospice Service / Peaceful Passing NZ source family,,,新西兰,英语,,DISCOVERY,CP3,Unknown,,佛教临终关怀；公开资料与非公开逐访报告潜力,FROZEN,pending_review
-SRC0384,Pure Land of Amitabha Buddha Hospice / Pure Land Home Hospice South Australia,,,澳大利亚,英语,,DISCOVERY,CP3,Unknown,,佛教价值基础居家临终关怀,FROZEN,pending_review
-SRC0385,Amitofo Care Centre Africa — periodical / annual-report corpus,,,非洲多国,英语/中文等,,DISCOVERY,CP3,Unknown,,非洲儿童与毕业生第一人称生活材料；阿弥陀经与佛教课诵传播,FROZEN,pending_review
+repo_source_id,source_name,aliases,t01_section,region,language,source_type,role,collection_priority,automation_priority,date_or_range,notes,registry_status,review_status,url
+SRC0001,净土圣贤录,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pilot_mapped,
+SRC0002,当代念佛感应集,,T01-2 Part 2C｜中国大陆1949后／改革开放后纸本来源,,,,,,,,,FORMAL_SELECTED,pilot_mapped,
+SRC0003,净土宗官方网站（中华净土宗协会／净土宗文教基金会）,,T01-2 Part 3｜中文互联网／寺院／莲社／助念团／投稿平台,,,,,,,,,FORMAL_SELECTED,pilot_mapped,
+SRC0004,净土宗 Pure Land Buddhism Southeast Asia,,T01-2 Part 3B｜中文网站长尾／地方助念团／迁移与失效网站,,,,,,,,,FORMAL_SELECTED,pilot_mapped,
+SRC0005,Purelanders.com 现代 Pure Land testimonials / support-chanting 系列,Purelanders.com — Testimonies / PPF Testimonies,,新加坡／英语世界,,现代英文往生/助念见证系列,CORE case channel / DISCOVERY site,CP1,AP1,至少2011前后持续；现代testimonial编号已至[123]以上,tradition_or_context=沈时安／净行会体系 | cp_at_registration=CP1 | cp_current=CP1 | key_note: 不少由家属/参与者直接撰写，涉及医院、安宁疗护、临终助念与遗体瑞相 | possible_duplicate_of:SRC0334 | alias_of_t01:SRC0334; dedup_confirmed:owner 2026-09-21 | 吸收 SRC0334 记录：大型英文净土 testimonies / 感应集合,REGISTERED,pilot_mapped,
+SRC0006,净土论,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0007,往生西方净土瑞应传,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0008,往生西方净土瑞应删传,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0009,往生净土传（唐飞锡，五卷）,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,佚失／目录著录,FORMAL_SELECTED,pending_review,
+SRC0010,并州往生记,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,佚失／引文残存,FORMAL_SELECTED,pending_review,
+SRC0011,往生西方略传（宋遵式）,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,佚失,FORMAL_SELECTED,pending_review,
+SRC0012,往生净土略传（宋清月）,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,佚失,FORMAL_SELECTED,pending_review,
+SRC0013,净土往生传（宋戒珠）,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0014,新修净土往生传／新修往生传（宋王古）,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0015,新编古今往生净土宝珠集,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0016,净土往生传（南宋海印，十二卷）,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,佚失,FORMAL_SELECTED,pending_review,
+SRC0017,随愿往生集／新编随愿往生集,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,中国本土散佚／残存影响材料,FORMAL_SELECTED,pending_review,
+SRC0018,东林十八高贤传,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0019,龙舒增广净土文,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0020,乐邦文类,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0021,乐邦遗稿,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0022,庐山莲宗宝鉴,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0023,诸上善人咏,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0024,往生集（明袾宏）,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0025,净土晨钟,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0026,西归直指,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0027,西舫汇征,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0028,染香集,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0029,净土圣贤录续编,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0030,种莲集,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0031,修西闻见录,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0032,居士传,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0033,善女人传,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0034,法华经显应录,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0035,名僧传,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,原书佚失,FORMAL_SELECTED,pending_review,
+SRC0036,名僧传抄,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0037,高僧传,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0038,比丘尼传,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0039,续高僧传,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0040,宋高僧传,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0041,新修科分六学僧传,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0042,大明高僧传,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0043,补续高僧传,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0044,高僧摘要,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0045,佛祖统纪,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0046,佛祖历代通载,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0047,释氏稽古略,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0048,神僧传,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0049,法苑珠林,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0050,冥祥记,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,残缺／重辑传承,FORMAL_SELECTED,pending_review,
+SRC0051,集神州三宝感通录,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0052,三宝感应要略录,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0053,冥报记,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0054,释门自镜录,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0055,现果随录,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0056,见闻录（智旭）,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0057,六道集,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0058,太平广记,,T01-2 Part 1｜中国古代文献来源池,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0059,近代往生传,,T01-2 Part 2A｜民国中文纸本文献与佛教期刊,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0060,净土圣贤录三编,,T01-2 Part 2A｜民国中文纸本文献与佛教期刊,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0061,净业月刊,,T01-2 Part 2A｜民国中文纸本文献与佛教期刊,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0062,净土宗月刊,,T01-2 Part 2A｜民国中文纸本文献与佛教期刊,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0063,弘化月刊,,T01-2 Part 2A｜民国中文纸本文献与佛教期刊,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0064,佛学半月刊,,T01-2 Part 2A｜民国中文纸本文献与佛教期刊,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0065,海潮音,,T01-2 Part 2A｜民国中文纸本文献与佛教期刊,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0066,世界佛教居士林林刊,,T01-2 Part 2A｜民国中文纸本文献与佛教期刊,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0067,佛学丛报,,T01-2 Part 2A｜民国中文纸本文献与佛教期刊,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0068,佛教月报,,T01-2 Part 2A｜民国中文纸本文献与佛教期刊,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0069,觉社丛书,,T01-2 Part 2A｜民国中文纸本文献与佛教期刊,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0070,弘法月刊,,T01-2 Part 2A｜民国中文纸本文献与佛教期刊,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0071,觉有情,,T01-2 Part 2A｜民国中文纸本文献与佛教期刊,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0072,妙法轮,,T01-2 Part 2A｜民国中文纸本文献与佛教期刊,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0073,佛教日报,,T01-2 Part 2A｜民国中文纸本文献与佛教期刊,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0074,中国佛教会会报／中国佛教会月刊,,T01-2 Part 2A｜民国中文纸本文献与佛教期刊,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0075,念佛感应见闻记,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,possible_duplicate_of:SRC0304 | merged_into:SRC0304; merged_by:owner; date:2026-09-21,merged,duplicate_review,
+SRC0076,菩提树／Bodhedrum,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,possible_duplicate_of:SRC0314 | merged_into:SRC0314; merged_by:owner; date:2026-09-21,merged,duplicate_review,
+SRC0077,慈光半月刊,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0078,明伦月刊,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,possible_duplicate_of:SRC0313 | merged_into:SRC0313; merged_by:owner; date:2026-09-21,merged,duplicate_review,
+SRC0079,近代往生随闻录,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,possible_duplicate_of:SRC0307 | merged_into:SRC0307; merged_by:owner; date:2026-09-21,merged,duplicate_review,
+SRC0080,现代往生见闻录（第一、二集）,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,possible_duplicate_of:SRC0306 | merged_into:SRC0306; merged_by:owner; date:2026-09-21,merged,duplicate_review,
+SRC0081,当代往生见闻纪实,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0082,e世纪往生传,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,possible_duplicate_of:SRC0308 | merged_into:SRC0308; merged_by:owner; date:2026-09-21,merged,duplicate_review,
+SRC0083,新世代念佛往生录,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,possible_duplicate_of:SRC0309 | merged_into:SRC0309; merged_by:owner; date:2026-09-21,merged,duplicate_review,
+SRC0084,莲池海会念佛往生见闻记,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,possible_duplicate_of:SRC0312 | merged_into:SRC0312; merged_by:owner; date:2026-09-21,merged,duplicate_review,
+SRC0085,不可思议之念佛功德——黄锡勋医师的生平与往生经过,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0086,念佛感应记（林慈超）,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,possible_duplicate_of:SRC0305 | merged_into:SRC0305; merged_by:owner; date:2026-09-21,merged,duplicate_review,
+SRC0087,遇见弥陀：学佛感应记,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0088,笑着进入七宝池,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0089,癌细胞变快乐佛细胞,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0090,念佛感应录 第一集,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,possible_duplicate_of:SRC0302 | child_of:SRC0302（念佛感应录系列父条目）; dedup_confirmed:owner 2026-09-21,FORMAL_SELECTED,duplicate_review,
+SRC0091,念佛感应录 第二集,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,possible_duplicate_of:SRC0302 | child_of:SRC0302（念佛感应录系列父条目）; dedup_confirmed:owner 2026-09-21,FORMAL_SELECTED,duplicate_review,
+SRC0092,念佛感应录 第三集,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,possible_duplicate_of:SRC0302 | child_of:SRC0302（念佛感应录系列父条目）; dedup_confirmed:owner 2026-09-21,FORMAL_SELECTED,duplicate_review,
+SRC0093,念佛感应录 第四集,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,possible_duplicate_of:SRC0302 | child_of:SRC0302（念佛感应录系列父条目）; dedup_confirmed:owner 2026-09-21,FORMAL_SELECTED,duplicate_review,
+SRC0094,念佛感应录 第五集,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,possible_duplicate_of:SRC0302 | child_of:SRC0302（念佛感应录系列父条目）; dedup_confirmed:owner 2026-09-21,FORMAL_SELECTED,duplicate_review,
+SRC0095,念佛感应录 第六集,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,possible_duplicate_of:SRC0302 | child_of:SRC0302（念佛感应录系列父条目）; dedup_confirmed:owner 2026-09-21,FORMAL_SELECTED,duplicate_review,
+SRC0096,念佛感应录 第七集,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,possible_duplicate_of:SRC0302 | child_of:SRC0302（念佛感应录系列父条目）; dedup_confirmed:owner 2026-09-21,FORMAL_SELECTED,duplicate_review,
+SRC0097,念佛感应录 第八集,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,possible_duplicate_of:SRC0302 | child_of:SRC0302（念佛感应录系列父条目）; dedup_confirmed:owner 2026-09-21,FORMAL_SELECTED,duplicate_review,
+SRC0098,念佛癒病（一）,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,possible_duplicate_of:SRC0303 | merged_into:SRC0303; merged_by:owner; date:2026-09-21,merged,duplicate_review,
+SRC0099,动物往生佛国记,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0100,净土宗双月刊,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0101,香港佛教,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0102,内明,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0103,台湾佛教,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0104,觉世,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0105,普门杂志,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0106,人生,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0107,佛教文化季刊,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0108,中国佛教月刊,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0109,今日佛教,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0110,慧炬,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0111,狮子吼（台湾复刊）,,T01-2 Part 2B｜战后台湾／香港及华语近现代纸本文献,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0112,净土,,T01-2 Part 2C｜中国大陆1949后／改革开放后纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0113,弘化（现代复刊）,,T01-2 Part 2C｜中国大陆1949后／改革开放后纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0114,慈护,,T01-2 Part 2C｜中国大陆1949后／改革开放后纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0115,现代佛学,,T01-2 Part 2C｜中国大陆1949后／改革开放后纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0116,法音,,T01-2 Part 2C｜中国大陆1949后／改革开放后纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0117,佛教文化,,T01-2 Part 2C｜中国大陆1949后／改革开放后纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0118,上海佛教,,T01-2 Part 2C｜中国大陆1949后／改革开放后纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0119,江苏佛教,,T01-2 Part 2C｜中国大陆1949后／改革开放后纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0120,广东佛教,,T01-2 Part 2C｜中国大陆1949后／改革开放后纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0121,法炬,,T01-2 Part 2C｜中国大陆1949后／改革开放后纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0122,寒山寺,,T01-2 Part 2C｜中国大陆1949后／改革开放后纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0123,狮子吼（槟城本）,,T01-2 Part 2D｜港澳、新加坡、马来西亚及海外华语纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0124,人海灯,,T01-2 Part 2D｜港澳、新加坡、马来西亚及海外华语纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0125,觉音／华南觉音,,T01-2 Part 2D｜港澳、新加坡、马来西亚及海外华语纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0126,无尽灯,,T01-2 Part 2D｜港澳、新加坡、马来西亚及海外华语纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0127,南洋佛教,,T01-2 Part 2D｜港澳、新加坡、马来西亚及海外华语纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0128,狮城潮音,,T01-2 Part 2D｜港澳、新加坡、马来西亚及海外华语纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0129,佛教文摘,,T01-2 Part 2D｜港澳、新加坡、马来西亚及海外华语纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0130,大马佛教研究,,T01-2 Part 2D｜港澳、新加坡、马来西亚及海外华语纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0131,佛联汇讯,,T01-2 Part 2D｜港澳、新加坡、马来西亚及海外华语纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0132,莲觉,,T01-2 Part 2D｜港澳、新加坡、马来西亚及海外华语纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0133,星洲中国佛学,,T01-2 Part 2D｜港澳、新加坡、马来西亚及海外华语纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0134,人间佛教（星洲本）,,T01-2 Part 2D｜港澳、新加坡、马来西亚及海外华语纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0135,佛教人间（星洲本）,,T01-2 Part 2D｜港澳、新加坡、马来西亚及海外华语纸本来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0136,台中佛教莲社官方网站,,T01-2 Part 3｜中文互联网／寺院／莲社／助念团／投稿平台,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0137,庐山东林寺官方网站／东林祖庭网络平台,,T01-2 Part 3｜中文互联网／寺院／莲社／助念团／投稿平台,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0138,苏州弘化社官方网站,,T01-2 Part 3｜中文互联网／寺院／莲社／助念团／投稿平台,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0139,守月亮海外净土网,,T01-2 Part 3｜中文互联网／寺院／莲社／助念团／投稿平台,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0140,雪心文教基金会网站／雪心助念团数据库,,T01-2 Part 3｜中文互联网／寺院／莲社／助念团／投稿平台,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0141,马来西亚净宗学会官方网站,,T01-2 Part 3｜中文互联网／寺院／莲社／助念团／投稿平台,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0142,新加坡佛教居士林官网,,T01-2 Part 3｜中文互联网／寺院／莲社／助念团／投稿平台,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0143,澳洲净宗学院官网,,T01-2 Part 3｜中文互联网／寺院／莲社／助念团／投稿平台,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0144,净空老法师专集网站,,T01-2 Part 3｜中文互联网／寺院／莲社／助念团／投稿平台,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0145,华藏净宗弘化网,,T01-2 Part 3｜中文互联网／寺院／莲社／助念团／投稿平台,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0146,香港佛陀教育协会官网,,T01-2 Part 3｜中文互联网／寺院／莲社／助念团／投稿平台,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0147,佛陀教育基金会官网,,T01-2 Part 3｜中文互联网／寺院／莲社／助念团／投稿平台,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0148,佛弟子文库,,T01-2 Part 3｜中文互联网／寺院／莲社／助念团／投稿平台,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0149,佛教导航,,T01-2 Part 3｜中文互联网／寺院／莲社／助念团／投稿平台,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0150,佛教在线／中华佛教在线,,T01-2 Part 3｜中文互联网／寺院／莲社／助念团／投稿平台,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0151,报佛恩网／般若文海,,T01-2 Part 3｜中文互联网／寺院／莲社／助念团／投稿平台,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0152,净土宗活动资讯网,,T01-2 Part 3B｜中文网站长尾／地方助念团／迁移与失效网站,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0153,庐山龙泉寺「极乐之光」网站,,T01-2 Part 3B｜中文网站长尾／地方助念团／迁移与失效网站,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0154,新加坡净宗学会网站,,T01-2 Part 3B｜中文网站长尾／地方助念团／迁移与失效网站,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0155,檀香寺助念网页 / Than Hsiang Zhu Nian Homepage,,T01-2 Part 3B｜中文网站长尾／地方助念团／迁移与失效网站,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0156,台湾助念团网站（郭文芳助念团 Google Sites）,,T01-2 Part 3B｜中文网站长尾／地方助念团／迁移与失效网站,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0157,弘愿寺历史官方网站,,T01-2 Part 3B｜中文网站长尾／地方助念团／迁移与失效网站,,,,,,,,历史网站／已失效或迁移,FORMAL_SELECTED,pending_review,
+SRC0158,净土宗官方 YouTube 影音（Plbamt）,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0159,净宗讲堂 YouTube / Pure Land Buddhism,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0160,东林法音 YouTube,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0161,东林法音「念佛感应故事」播放列表,,T01-3｜YouTube／法师来信型来源,,,,,,,,parent=SRC0159,FORMAL_SELECTED,pending_review,
+SRC0162,净宗法师「信函」,,T01-3｜YouTube／法师来信型来源,,,,,,,,parent=SRC0133,FORMAL_SELECTED,pending_review,
+SRC0163,净宗法师「念佛问答」,,T01-3｜YouTube／法师来信型来源,,,,,,,,parent=SRC0133,FORMAL_SELECTED,pending_review,
+SRC0164,净空老法师影音图文检索中心,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0165,《学佛答问》系列,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0166,净土宗「念佛感应故事（真实案例）」视频系列,,T01-3｜YouTube／法师来信型来源,,,,,,,,parent=SRC0158,FORMAL_SELECTED,pending_review,
+SRC0167,净土宗台北念佛会 YouTube,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0168,悟道法师佛法交流专页「莲友留言」,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0169,悟道法师《佛学问答》影音系列,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0170,华藏净宗弘化网 YouTube,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0171,马来西亚净宗学会 YouTube,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0172,定弘法师说法频道,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0173,熏闻成种｜成德法师学习分享平台,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0174,华藏净宗弘化网影音专区／数字影音库,,T01-3｜YouTube／法师来信型来源,,,,,,,,关联／parent=SRC0143,FORMAL_SELECTED,pending_review,
+SRC0175,Podcast《净土宗弘愿法门－光明遍照 唯摄念佛》,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0176,十方圆通寺 道晟法师 YouTube,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0177,十方圆通寺官方网站,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review,https://www.around-all-the-world.com/
+SRC0178,Podcast《笃定往生的净土法门》道晟师父讲座,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0179,Pure Land Buddhism USA 净土宗美国 YouTube,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0180,法界佛陀教育学院 YouTube,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0181,文殊讲堂｜慧律法师官方影音资料库,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0182,文殊讲堂 Vimeo / wenshuykl,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0183,道证法师网络专辑（般若文海／报佛恩网）,,T01-3｜YouTube／法师来信型来源,,,,,,,,保存型子来源；关联SRC0149,FORMAL_SELECTED,pending_review,
+SRC0184,道证法师《毛毛虫变蝴蝶》系列,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0185,智随法师文章｜念佛感应篇,,T01-3｜YouTube／法师来信型来源,,,,,,,,parent=SRC0133,FORMAL_SELECTED,pending_review,
+SRC0186,智随法师文章｜往生记实篇,,T01-3｜YouTube／法师来信型来源,,,,,,,,parent=SRC0133,FORMAL_SELECTED,pending_review,
+SRC0187,净土宗加州念佛会 / Pure Land Buddhist Association 官网,,T01-3｜YouTube／法师来信型来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0188,日本往生極楽記,,T01-4 Part 1｜日本历史核心来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0189,続本朝往生伝,,T01-4 Part 1｜日本历史核心来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0190,拾遺往生伝,,T01-4 Part 1｜日本历史核心来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0191,後拾遺往生伝,,T01-4 Part 1｜日本历史核心来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0192,三外往生伝／三外往生記,,T01-4 Part 1｜日本历史核心来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0193,本朝新修往生伝,,T01-4 Part 1｜日本历史核心来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0194,念仏往生伝,,T01-4 Part 1｜日本历史核心来源,,,,,,,,残卷,FORMAL_SELECTED,pending_review,
+SRC0195,今選往生伝,,T01-4 Part 1｜日本历史核心来源,,,,,,,,散佚,FORMAL_SELECTED,pending_review,
+SRC0196,扶桑寄帰往生伝,,T01-4 Part 1｜日本历史核心来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0197,女人往生伝,,T01-4 Part 1｜日本历史核心来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0198,緇白往生伝,,T01-4 Part 1｜日本历史核心来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0199,貞伝上人東域念仏利益伝,,T01-4 Part 1｜日本历史核心来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0200,現証往生伝,,T01-4 Part 1｜日本历史核心来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0201,新撰往生伝,,T01-4 Part 1｜日本历史核心来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0202,近世念仏往生伝,,T01-4 Part 1｜日本历史核心来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0203,淡海往生伝／近世淡海念仏往生伝,,T01-4 Part 1｜日本历史核心来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0204,明治往生伝,,T01-4 Part 1｜日本历史核心来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0205,明教新誌,,T01-4 Part 1｜日本历史核心来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0206,親聞妙好人伝,,T01-4 Part 1｜日本历史核心来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0207,妙好人伝（二巻本）,,T01-4 Part 1｜日本历史核心来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0208,新続妙好人伝,,T01-4 Part 1｜日本历史核心来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0209,妙好人伝（五巻本）,,T01-4 Part 1｜日本历史核心来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0210,続妙好人伝,,T01-4 Part 1｜日本历史核心来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0211,三井往生伝,,T01-4 Part 1B｜日本近世／明治往生传补漏,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0212,近世往生伝,,T01-4 Part 1B｜日本近世／明治往生传补漏,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0213,日本古今往生略伝,,T01-4 Part 1B｜日本近世／明治往生传补漏,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0214,浄土勧化三国往生伝,,T01-4 Part 1B｜日本近世／明治往生传补漏,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0215,新聞顕験往生伝,,T01-4 Part 1B｜日本近世／明治往生传补漏,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0216,総誉安西法師往生記,,T01-4 Part 1B｜日本近世／明治往生传补漏,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0217,遂懐往生伝,,T01-4 Part 1B｜日本近世／明治往生传补漏,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0218,孝感冥祥録,,T01-4 Part 1B｜日本近世／明治往生传补漏,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0219,親聞往生験記,,T01-4 Part 1B｜日本近世／明治往生传补漏,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0220,随聞往生伝,,T01-4 Part 1B｜日本近世／明治往生传补漏,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0221,近世南紀念仏往生伝,,T01-4 Part 1B｜日本近世／明治往生传补漏,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0222,日課念仏投宿編,,T01-4 Part 1B｜日本近世／明治往生传补漏,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0223,新撰念仏往生験記,,T01-4 Part 1B｜日本近世／明治往生传补漏,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0224,新選往生験記追加別伝,,T01-4 Part 1B｜日本近世／明治往生传补漏,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0225,専念往生伝,,T01-4 Part 1B｜日本近世／明治往生传补漏,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0226,入水往生伝,,T01-4 Part 1B｜日本近世／明治往生传补漏,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0227,尾陽往生伝,,T01-4 Part 1B｜日本近世／明治往生传补漏,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0228,拾遺専念往生伝,,T01-4 Part 1B｜日本近世／明治往生传补漏,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0229,三河往生験記,,T01-4 Part 1B｜日本近世／明治往生传补漏,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0230,遺身往生伝,,T01-4 Part 1B｜日本近世／明治往生传补漏,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0231,浄土宗公式サイト,,T01-4 Part 2｜日本现代来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0232,浄土宗新聞,,T01-4 Part 2｜日本现代来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0233,季刊『かるな』,,T01-4 Part 2｜日本现代来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0234,公式チャンネル浄土宗,,T01-4 Part 2｜日本现代来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0235,浄土宗全書テキストデータベース,,T01-4 Part 2｜日本现代来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0236,新纂浄土宗大辞典,,T01-4 Part 2｜日本现代来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0237,浄土宗総合研究所,,T01-4 Part 2｜日本现代来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0238,知恩院公式サイト,,T01-4 Part 2｜日本现代来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0239,知恩院公式YouTube,,T01-4 Part 2｜日本现代来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0240,増上寺公式サイト,,T01-4 Part 2｜日本现代来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0241,増上寺公式YouTube,,T01-4 Part 2｜日本现代来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0242,浄土真宗本願寺派公式サイト,,T01-4 Part 2｜日本现代来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0243,本願寺新報,,T01-4 Part 2｜日本现代来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0244,本願寺公式Webブロードキャスト／YouTube,,T01-4 Part 2｜日本现代来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0245,真宗大谷派 東本願寺公式サイト,,T01-4 Part 2｜日本现代来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0246,同朋新聞,,T01-4 Part 2｜日本现代来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0247,月刊『真宗』,,T01-4 Part 2｜日本现代来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0248,真宗大谷派 東本願寺公式YouTube,,T01-4 Part 2｜日本现代来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0249,しんらん交流館 YouTube,,T01-4 Part 2｜日本现代来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0250,真宗聖典検索,,T01-4 Part 2｜日本现代来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0251,真宗会館 YouTube,,T01-4 Part 2｜日本现代来源,,,,,,,,,FORMAL_SELECTED,pending_review,
+SRC0252,正宣寺 寺报《光寿》,,,日本,,地方寺报,DISCOVERY,CP3,AP1,1994-03-01创刊－现在,tradition_or_context=本愿寺派／大阪 | cp_at_registration=CP1 | cp_current=CP3 | key_note: 已确认现代妙好人文章；纸本寺报→官网再刊链,REGISTERED,pending_review,
+SRC0253,教念寺《教念寺新报》,,,日本,,地方寺报,DISCOVERY,CP1,AP2,1992－现在,tradition_or_context=本愿寺派／埼玉・新座 | cp_at_registration=CP1 | cp_current=(blank) | key_note: 1992创刊、月刊；后续重标为普通寺报型，最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review,
+SRC0254,教念寺《ふうむ》,,,日本,,地方寺报,DISCOVERY,CP2,AP3,创刊年Unknown；现为春・秋号,tradition_or_context=本愿寺派／埼玉 | cp_at_registration=CP2 | cp_current=(blank) | key_note: 与《教念寺新报》不同系列；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review,
+SRC0255,善巧寺「寺报」,,,日本,,地方寺报,DISCOVERY,CP1,AP1,1977－现在,tradition_or_context=本愿寺派／富山・黑部 | cp_at_registration=CP1 | cp_current=(blank) | key_note: 季刊、长期数字档案；案例并非主体，最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review,
+SRC0256,守纲寺报《清风》,,,日本,,地方寺报,DISCOVERY,CP3,AP1,连续50年以上；2025年No.630,tradition_or_context=真宗大谷派／爱知・丰田 | cp_at_registration=CP1 | cp_current=CP3 | key_note: 已确认现代妙好人、来访者经历、闻法生活等个案,REGISTERED,pending_review,
+SRC0257,《愿长寺报》,,,日本,,地方寺报,DISCOVERY,CP3,AP4,至少20世纪末以前开始；宗门报道时已169号,tradition_or_context=真宗大谷派／岐阜 | cp_at_registration=CP1 | cp_current=CP3 | key_note: 已确认住职写入失女、前坊守等信仰经历,REGISTERED,pending_review,
+SRC0258,春日山蓮浄寺だより,,,日本,,地方寺报,DISCOVERY,CP2,AP4,创刊年Unknown；2026年约161号,tradition_or_context=真宗大谷派／新潟 | cp_at_registration=CP2 | cp_current=(blank) | key_note: 记录寺院日常、门徒关系、葬仪；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review,
+SRC0259,金光寺寺报《慧光》,,,日本,,地方寺报,DISCOVERY,CP3,AP2,至少2022年第254号；2025年第283号,tradition_or_context=浄土真宗系／宫崎・五ヶ濑 | cp_at_registration=CP1 | cp_current=CP3 | key_note: 索引可检出妙好人、临终、葬仪、往生等用语,REGISTERED,pending_review,
+SRC0260,教心寺寺报《サーサナ》,,,日本,,地方寺报,DISCOVERY,CP2,AP2,至少2007-12－现在；2025年第69号,tradition_or_context=真宗大谷派／名古屋 | cp_at_registration=CP2 | cp_current=(blank) | key_note: 地方机关刊；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review,
+SRC0261,万行寺寺报,,,日本,,地方寺报,DISCOVERY,CP2,AP1,创刊年Unknown；2022年第128号，2026年第177号,tradition_or_context=本愿寺派／长野・佐久 | cp_at_registration=CP2 | cp_current=(blank) | key_note: 原寺报→note抽取再刊；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review,
+SRC0262,常髙寺寺报《あまね》,,,日本,,地方寺报,DISCOVERY,CP2,AP1,约2020－现在,tradition_or_context=本愿寺派／爱媛・今治 | cp_at_registration=CP2 | cp_current=(blank) | key_note: 官网保存第1号起PDF；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review,
+SRC0263,《顺光寺だより》,,,日本,,地方寺报,DISCOVERY,CP2,AP1,2015-12-01－现在,tradition_or_context=本愿寺派／岛根・松江 | cp_at_registration=CP2 | cp_current=(blank) | key_note: 历号与PDF完整；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review,
+SRC0264,极乐寺寺报《安心》,,,日本,,地方寺报,DISCOVERY,CP1,AP2,至少2016－现在,tradition_or_context=浄土宗西山禅林寺派／岐阜 | cp_at_registration=CP1 | cp_current=(blank) | key_note: 主题含往生・安心・念佛；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review,
+SRC0265,顺正寺寺报《遊煩悩林》,,,日本,,地方寺报,DISCOVERY,CP2,AP1,至少2018－现在,tradition_or_context=真宗大谷派／东京・练马 | cp_at_registration=CP2 | cp_current=(blank) | key_note: 定期寺报；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review,
+SRC0266,道善寺だより,,,日本,,地方寺报,DISCOVERY,CP2,AP2,创刊年Unknown；2022年第23号,tradition_or_context=真宗大谷派／富山・五箇山 | cp_at_registration=CP2 | cp_current=(blank) | key_note: 赤尾道宗相关寺院；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review,
+SRC0267,愿成寺寺报《大心海》,,,日本,,地方寺报,DISCOVERY,CP3,AP3,至少2019-01,tradition_or_context=真宗大谷派／名古屋教区第30组 | cp_at_registration=CP3 | cp_current=(blank) | key_note: 连续性未确认；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review,
+SRC0268,一心寺寺报《夢と望》,,,日本,,地方寺报,DISCOVERY,CP3,AP4,至少2017-05,tradition_or_context=真宗大谷派／名古屋教区第30组 | cp_at_registration=CP3 | cp_current=(blank) | key_note: 在线样本有限；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review,
+SRC0269,常念寺寺报《おあしす》,,,日本,,地方寺报,DISCOVERY,CP3,AP4,至少2007-02,tradition_or_context=真宗大谷派／名古屋教区第30组 | cp_at_registration=CP3 | cp_current=(blank) | key_note: 数字残片型；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review,
+SRC0270,法光寺寺报《煩悩林》,,,日本,,地方寺报,DISCOVERY,CP3,AP4,至少2005-11,tradition_or_context=真宗大谷派／名古屋教区第30组 | cp_at_registration=CP3 | cp_current=(blank) | key_note: 纸本原源存在；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review,
+SRC0271,真宗大谷派名古屋教区第30组「寺報を読む」,,,日本,,寺报聚合/数字保存入口,INFRASTRUCTURE / DISCOVERY,CP2,AP1,网站至少2011－,tradition_or_context=真宗大谷派／爱知 | cp_at_registration=CP2 | cp_current=(blank) | key_note: 聚合源，不是各寺报首发；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review,
+SRC0272,専教寺寺报,,,日本,,地方寺报,DISCOVERY,CP3,AP1,2026新年号第84号,tradition_or_context=地方净土真宗寺院 | cp_at_registration=CP1 | cp_current=CP3 | key_note: 已确认前住职住院、死亡、密葬、往生等第一人称记录,REGISTERED,pending_review,
+SRC0273,真宗大谷派浄影寺《法蔵》,,,日本,,地方寺报,DISCOVERY,CP3,AP2,至少2006－约2018,tradition_or_context=真宗大谷派 | cp_at_registration=CP1 | cp_current=CP3 | key_note: 保存住职对已故门徒及念佛生活的直接回忆,REGISTERED,pending_review,
+SRC0274,浄心寺・草加松原開教所《もとみち》,,,日本,,地方寺报,DISCOVERY,CP3,AP2,创刊时间未充分确认,tradition_or_context=净土真宗系 | cp_at_registration=CP3 | cp_current=(blank) | key_note: 有独立寺报栏目；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review,
+SRC0275,教覚寺寺报,,,日本,,地方寺报,DISCOVERY,CP2,AP3,2023－现在,tradition_or_context=净土真宗系 | cp_at_registration=CP2 | cp_current=(blank) | key_note: 年刊；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review,
+SRC0276,妙蓮寺寺报《流水》,,,日本,,地方寺报,DISCOVERY,CP2,AP3,2026年第100号,tradition_or_context=净土真宗系 | cp_at_registration=CP2 | cp_current=(blank) | key_note: 跨两代住职；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review,
+SRC0277,静蓮寺・正定寺共同寺报《和顔愛語》,,,日本,,地方寺报,DISCOVERY,CP2,AP1,2020-09创刊；2026年第23号,tradition_or_context=姊妹寺院共同刊 | cp_at_registration=CP2 | cp_current=(blank) | key_note: 两寺共同一刊，不重复建Source；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review,
+SRC0278,浄土宗摂取山念佛寺寺报《摂取》,,,日本,,地方寺报,DISCOVERY,CP1,AP1,至少2016－现在；2026年第80/81号,tradition_or_context=浄土宗 | cp_at_registration=CP1 | cp_current=(blank) | key_note: 含极乐净土、念佛等主题；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review,
+SRC0279,光源寺《光源寺新報》,,,日本,,地方寺报,DISCOVERY,CP1,AP4,1961创刊；2016年第100号,tradition_or_context=净土真宗系 | cp_at_registration=CP1 | cp_current=(blank) | key_note: 长期纸本链，但案例并非主体；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review,
+SRC0280,天真寺《月刊天真》,,,日本,,月刊寺报,DISCOVERY,CP1,AP1,2013年第439号；持续至2026,tradition_or_context=净土真宗系 | cp_at_registration=CP1 | cp_current=(blank) | key_note: 超长连续刊；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review,
+SRC0281,浄土宗大雲寺《寿光》,,,日本,,地方寺报,DISCOVERY,CP2,AP3,2025年第50号,tradition_or_context=浄土宗 | cp_at_registration=CP2 | cp_current=(blank) | key_note: 地方浄土宗出版源；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review,
+SRC0282,石狩・髙陵山光明寺《光明寺寺報》,,,日本,,地方寺报,DISCOVERY,CP1,AP2,2016-03创刊,tradition_or_context=净土真宗系／北海道 | cp_at_registration=CP1 | cp_current=(blank) | key_note: 曾讨论临终念佛、门徒葬仪、往生成仏；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review,
+SRC0283,法雲寺《ともしび → ともしび2》,,,日本,,地方寺报,DISCOVERY,CP1,AP1,1981-06《ともしび》创刊；2014改版,tradition_or_context=净土真宗系 | cp_at_registration=CP1 | cp_current=(blank) | key_note: 同一寺报连续出版链；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review,
+SRC0284,浄覚寺寺报《じゅこう》,,,日本,,地方寺报,DISCOVERY,CP2,AP1,2019-05-01创刊；2026年第88号,tradition_or_context=净土真宗系 | cp_at_registration=CP2 | cp_current=(blank) | key_note: 月刊、数字档案规整；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review,
+SRC0285,本愿寺派那珂组门徒推进员广报《領解》,,,日本,,门徒广报,DISCOVERY,CP3,AP1,2022创刊；至少至2025年第4号,tradition_or_context=本愿寺派／那珂组 | cp_at_registration=CP1 | cp_current=CP3 | key_note: 由门徒推进员主体编辑，具第一人称信仰经验潜力,REGISTERED,pending_review,
+SRC0286,《覚円寺だより》,,,日本,,地方寺报,DISCOVERY,CP1,AP2,2017-11创刊,tradition_or_context=净土真宗系 | cp_at_registration=CP1 | cp_current=(blank) | key_note: 纸本旧号→2025起note回填；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review,
+SRC0287,信光寺寺报《濟波》,,,日本,,地方寺报,DISCOVERY,CP1,AP4,1983-01创刊；2009年第126号,tradition_or_context=净土真宗系 | cp_at_registration=CP1 | cp_current=(blank) | key_note: 门徒妇人参与编辑；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review,
+SRC0288,《専徳寺報》,,,日本,,地方寺报,DISCOVERY,CP1,AP3,1957创刊,tradition_or_context=净土真宗系 | cp_at_registration=CP1 | cp_current=(blank) | key_note: 近70年连续地方寺报链；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review,
+SRC0289,《西福寺だより》,,,日本,,地方寺报,DISCOVERY,CP1,AP4,1977创刊,tradition_or_context=净土真宗系 | cp_at_registration=CP1 | cp_current=(blank) | key_note: 长期纸本刊物；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review,
+SRC0290,廣間山眞願寺寺报《響》,,,日本,,地方寺报,DISCOVERY,CP3,AP1,1997-03创刊；2021年第50号,tradition_or_context=净土真宗系 | cp_at_registration=CP1 | cp_current=CP3 | key_note: 已确认死别、看取、念佛、净土再会等直接生命经验,REGISTERED,pending_review,
+SRC0291,新潟・真宗寺寺报,,,日本,,地方寺报,DISCOVERY,CP2,AP3,至少2013创刊号后有多号,tradition_or_context=净土真宗系／新潟 | cp_at_registration=CP2 | cp_current=(blank) | key_note: 网络档案残缺；最终CP待逐条冻结（批量降为CP4–CP5范围）,REGISTERED,pending_review,
+SRC0292,隆尭《称名念仏奇特現証集》,,,日本,,念佛奇特/灵验案例集,CORE,CP1,AP3,1420–1431成立；21话,tradition_or_context=中世净土教 | cp_at_registration=CP1 | cp_current=CP1 | key_note: 作者近江周边见闻，含念佛奇特、灵梦、病者临终正念等,REGISTERED,pending_review,
+SRC0293,华光会信仰杂志《華光》,,,日本,,信仰体验杂志,CORE,CP1,AP3,1941-11-15创刊－现在,tradition_or_context=真宗／华光会 | cp_at_registration=CP1 | cp_current=CP1 | key_note: 长期刊载信仰体験記、感想集、临终/求道手记,REGISTERED,pending_review,
+SRC0294,伊藤康善《療養と求道》,,,日本,,疗养/求道病例与体验集,CORE,CP1,AP4,约1942,tradition_or_context=真宗／华光会系 | cp_at_registration=CP1 | cp_current=CP1 | key_note: 结核疗养所病床说法、求道、回心具体病例/体验,REGISTERED,pending_review,
+SRC0295,伊藤康善《仏敵―求道物語》,,,日本,,个人求道体验记录,CORE,CP2,AP4,原版至少1938；2003复刻,tradition_or_context=真宗 | cp_at_registration=CP2 | cp_current=CP2 | key_note: 个人求道/信心获得体验，规模小但原创性强,REGISTERED,pending_review,
+SRC0296,山崎隆弘「21世紀に生きる妙好人列伝」,,,日本,,现代妙好人连续列传,CORE,CP1,AP1,2015–2024约120回,tradition_or_context=现代真宗 | cp_at_registration=CP1 | cp_current=CP1 | key_note: 现代妙好人、信仰体验、疾病与临终见闻；首发载体仍待精确确认,REGISTERED,pending_review,
+SRC0297,Thích Trí Tịnh「Truyện vãng sanh có chứng nghiệm」,,,越南,,越南本土往生实证个案集,CORE,CP1,,earliest known print至少1957；后收入2006《Hương Sen Vạn Đức》,tradition_or_context=越南净土佛教 | cp_at_registration=CP1 | cp_current=CP1 | key_note: 作者刻意记录越南本土亲知往生案例,REGISTERED,pending_review,
+SRC0298,Nhóm Liên Hữu Miền Nam Đất Việt《Chuyện Vãng Sanh Ở Việt Nam》,,,越南,,现代往生案例集,CORE,CP1,,2008已有Part1录音；2014修订书面汇编,tradition_or_context=越南净土佛教 | cp_at_registration=CP1 | cp_current=CP1 | key_note: 从书、录音及亲赴往生者家庭采访搜集；大型现代越南案例集,REGISTERED,pending_review,
+SRC0299,Cư sĩ Tịnh Hải《Những Chuyện Niệm Phật Vãng Sanh Lưu Xá Lợi》,,,越南／海外越南,,念佛往生/舍利案例集,CORE,CP1,,2000美国出版；主要搜集1995–2000案例,tradition_or_context=越南语净土圈 | cp_at_registration=CP1 | cp_current=CP1 | key_note: 作者联系家属、寺院取得材料与照片；后大量转载,REGISTERED,pending_review,
+SRC0300,허응 보우《권념요록／勸念要錄》,,,韩国,,往生灵验谈编纂,CORE / DISCOVERY,CP1,,现存1637刊本；11篇往生灵验谈,tradition_or_context=朝鲜时代净土佛教 | cp_at_registration=CP1 | cp_current=CP1 | key_note: 约10篇可追中国源；需分离韩国编纂传播与CASE原产地,REGISTERED,pending_review,
+SRC0301,서길수《극락 간 사람들：한국 왕생전》,,,韩国,,韩国往生二手汇编/索引,CORE / DISCOVERY,CP1,,2022；100名人物,tradition_or_context=韩国净土研究 | cp_at_registration=CP1 | cp_current=CP1 | key_note: 14年研究汇集100名韩国往生人物；CASE阶段逐案追earliest source,REGISTERED,pending_review,
+SRC0302,《念佛感应录》系列,,,中文世界／台湾,,现代念佛感应系列案例集,CORE,CP1,,第1集2006初版；至少至第8集2026,tradition_or_context=中华净土宗协会／净土宗文教基金会 | cp_at_registration=CP1 | cp_current=CP1 | key_note: 连续收录现世感应、治病、免难、梦感、念佛/助念/超度往生等 | possible_duplicate_of:SRC0090（系列条目；T01 SRC0086–SRC0093 已按单集分别登记） | parent_of:SRC0090-SRC0097（念佛感应录第一至八集）; dedup_confirmed:owner 2026-09-21,REGISTERED,duplicate_review,
+SRC0303,《念佛癒病（一）》,,,中文世界／台湾,,念佛治病案例集,CORE,CP1,,现代出版；约108则,tradition_or_context=净土宗编辑部 | cp_at_registration=CP1 | cp_current=CP1 | key_note: 按疾病分类收念佛治病/起死回生案例；与《念佛感应录》有重叠 | possible_duplicate_of:SRC0098 | alias_of_t01:SRC0094; dedup_confirmed:owner 2026-09-21,REGISTERED,duplicate_review,
+SRC0304,林看治《念佛感应见闻记》,,,中文世界／台湾,,亲见亲闻感应案例集,CORE,CP1,,1967-02-08《菩提樹》第171期起连载；1969-07完结；1969-08单行本,tradition_or_context=台湾净土信仰圈 | cp_at_registration=CP1 | cp_current=CP1 | key_note: 记录十余年亲见亲闻，70余则，含治病、免难、临终、往生瑞相 | possible_duplicate_of:SRC0075 | alias_of_t01:SRC0071; dedup_confirmed:owner 2026-09-21,REGISTERED,duplicate_review,
+SRC0305,林慈超《念佛感应记》,,,中文世界／台湾,,念佛感应/往生案例集,CORE,CP2,,1998台湾初版,tradition_or_context=台湾净土信仰圈 | cp_at_registration=CP2 | cp_current=CP2 | key_note: 含个人感应、念佛灵异及往生四众资料 | possible_duplicate_of:SRC0086 | alias_of_t01:SRC0082; dedup_confirmed:owner 2026-09-21,REGISTERED,duplicate_review,
+SRC0306,福建莆田广化寺佛经流通处《现代往生见闻录》一、二集,,,中文世界／中国大陆,,现代往生大型案例集,CORE,CP1,,1990年代前后；两集初版先后年份待核版权页,tradition_or_context=莆田广化寺 | cp_at_registration=CP1 | cp_current=CP1 | key_note: 一集约138位、二集约100位现代四众往生资料 | possible_duplicate_of:SRC0080 | alias_of_t01:SRC0076; dedup_confirmed:owner 2026-09-21,REGISTERED,duplicate_review,
+SRC0307,宽律法师《近代往生随闻录》,,,中文世界,,近代往生案例集,CORE,CP1,,约1987,tradition_or_context=近现代净土佛教 | cp_at_registration=CP1 | cp_current=CP1 | key_note: 收集八年、100余名近代往生实例 | possible_duplicate_of:SRC0079 | alias_of_t01:SRC0075; dedup_confirmed:owner 2026-09-21,REGISTERED,duplicate_review,
+SRC0308,学谦居士《e世纪往生传》,,,中文世界／台湾,,现代海内外往生案例集,CORE,CP1,,约2002年底编印,tradition_or_context=台南市净宗学会体系 | cp_at_registration=CP1 | cp_current=CP1 | key_note: 约25篇现代海内外往生实例，多为家属/同修目击 | possible_duplicate_of:SRC0082 | alias_of_t01:SRC0078; dedup_confirmed:owner 2026-09-21,REGISTERED,duplicate_review,
+SRC0309,学谦居士《新世代念佛往生录》,,,中文世界／台湾,,现代往生案例集,CORE,CP1,,2004,tradition_or_context=台南市净宗学会体系 | cp_at_registration=CP1 | cp_current=CP1 | key_note: 《e世纪往生传》姊妹书，十余篇较新案例，多由各地净宗学会供稿 | possible_duplicate_of:SRC0083 | alias_of_t01:SRC0079; dedup_confirmed:owner 2026-09-21,REGISTERED,duplicate_review,
+SRC0310,廖荣尉《妙音居士往生见闻记》,,,中文世界／台湾,,单一深描往生案例,CORE,CP2,,约1993,tradition_or_context=现代净土信仰圈 | cp_at_registration=CP2 | cp_current=CP2 | key_note: 记录其父念佛、病床助念、断气后助念、舍利等,REGISTERED,pending_review,
+SRC0311,台中慈明寺《慈明月刊》之“往生事迹连续刊载链”,,,中文世界／台湾,,杂志连续往生栏目,DISCOVERY（栏目为CORE-level）,CP2,,《慈明》1964创刊；往生连续刊载具体卷期待锁定,tradition_or_context=台中慈明寺 | cp_at_registration=CP2 | cp_current=CP2 | key_note: 曾连续三年刊载127人往生事迹，后合辑成书,REGISTERED,pending_review,
+SRC0312,《蓮池海會—念佛往生見聞記》,,,中文世界／台湾,,助念亲历/往生见闻案例集,CORE,CP1,AP2,原始录影/VCD→文字整理/书→约2003数字化,tradition_or_context=台中莲社 | cp_at_registration=CP1 | cp_current=CP1 | key_note: 黄德川长期参与助念，据亲见亲闻录影后转写 | possible_duplicate_of:SRC0084 | alias_of_t01:SRC0080; dedup_confirmed:owner 2026-09-21,REGISTERED,duplicate_review,
+SRC0313,《明倫月刊》“念佛往生／助念案例链”,,,中文世界／台湾,,综合月刊中的案例链,DISCOVERY,CP2,AP2,长期刊载；具体期号可追,tradition_or_context=台中莲社 | cp_at_registration=CP2 | cp_current=CP2 | key_note: 有多例念佛往生、助念后身体柔软等个案 | possible_duplicate_of:SRC0078 | alias_of_t01:SRC0074; dedup_confirmed:owner 2026-09-21,REGISTERED,duplicate_review,
+SRC0314,《菩提樹》杂志,,,中文世界／台湾,,综合佛教杂志/上游首发载体,DISCOVERY,CP2,AP3,1967-02-08起刊载SRC0303；1969-07-08完结,tradition_or_context=台湾佛教期刊 | cp_at_registration=CP2 | cp_current=CP2 | key_note: SRC0303《念佛感应见闻记》的更早首发载体 | possible_duplicate_of:SRC0076 | alias_of_t01:SRC0072; dedup_confirmed:owner 2026-09-21,REGISTERED,duplicate_review,
+SRC0315,「佛教見聞錄」buddhist-experience.org.tw,,,中文世界／台湾,,案例聚合/发现站,CORE-aggregator / DISCOVERY,CP2,AP1,现代网络来源,tradition_or_context=中文网络佛教经验站 | cp_at_registration=CP2 | cp_current=CP2 | key_note: 按阿弥陀佛、临终助念等类别汇集案例；原创与转载混合,REGISTERED,pending_review,https://www.buddhist-experience.org/
+SRC0316,《佛菩薩探訪錄》,,,中文世界／台湾,,佛菩萨感应今人今事案例集,CORE,CP2,AP2,现代出版,tradition_or_context=慈雲雜誌社 | cp_at_registration=CP2 | cp_current=CP2 | key_note: 分险难、消灾、愈病、往生、综合感应等,REGISTERED,pending_review,
+SRC0317,《慈雲》杂志,,,中文世界／台湾,,综合佛教杂志/上游首发载体,DISCOVERY,CP2,AP3,1976-07-30创刊、月刊,tradition_or_context=慈雲雜誌社 | cp_at_registration=CP2 | cp_current=CP2 | key_note: SRC0315上游首发载体之一,REGISTERED,pending_review,
+SRC0318,佛學多媒體資料庫 buda.idv.tw“往生見聞”影音保存层,,,中文世界／台湾,,旧影音保存/发现基础设施,INFRASTRUCTURE / DISCOVERY,CP3,AP1,保存约1999–2006等早期RealMedia/WMV,tradition_or_context=佛学多媒体资料库 | cp_at_registration=CP3 | cp_current=CP3 | key_note: 保存李秀芬、李庆和、陈俊彦、魏国兴、王松山、苏进才、妙音居士等旧影音链,REGISTERED,pending_review,
+SRC0319,《염불보권문 / 念佛普勸文》,,,韩国,,念佛劝文/往生故事编纂,CORE / DISCOVERY,CP2,AP3,现知1704龙门寺本；后有1741/1764/1765/1776等刊本,tradition_or_context=韩国净土佛教 | cp_at_registration=CP2 | cp_current=CP2 | key_note: 含往生故事与念佛实践；多继承中国叙事，需分离传播与原产地,REGISTERED,pending_review,
+SRC0320,《안양암지 / 安養庵誌》,,,韩国,,寺志中的灵验/往生上游案例源,CORE,CP1,AP4,安震湖编，1958，约142页,tradition_or_context=安养庵 | cp_at_registration=CP1 | cp_current=CP1 | key_note: 含“当寺灵验实记”等；韩国往生传中日治时期安养庵7案上游来源,REGISTERED,pending_review,
+SRC0321,洪仁杓《연종집요 / 蓮宗集要》,,,韩国,,综合净土著作中的往生例,DISCOVERY,CP3,AP2,现代资料称1960初刊；确切初版待实物核,tradition_or_context=韩国净土佛教 | cp_at_registration=CP3 | cp_current=CP3 | key_note: 含“往生的例／念佛而往生的例”，但本土原创密度有限,REGISTERED,pending_review,
+SRC0322,韩国语“나무아미타불”案例聚合生态,,,韩国,,韩国语案例聚合生态,CORE-aggregator / DISCOVERY,CP2,AP1,现站约1436篇；含约104篇极乐往生案例、134篇念佛感应录,tradition_or_context=慧蓮；Tistory/旧Daum等 | cp_at_registration=CP2 | cp_current=CP2 | key_note: 大量转载/翻译但常保存上游线索；同一内容生态不因域名迁移重复编号,REGISTERED,pending_review,
+SRC0323,《Vajra Bodhi Sea / 金剛菩提海》,,,美国／海外华人英语生态,,中英双语综合佛教月刊,DISCOVERY,CP3,AP1,1970-04创刊；1992起中英对照,tradition_or_context=法界佛教总会／万佛圣城 | cp_at_registration=CP3 | cp_current=CP3 | key_note: 跨数十年反复刊载美国/海外华人第一人称临终、念佛、往生、感应记录,REGISTERED,pending_review,
+SRC0324,Muryoko / nembutsu.info — Speaking Personally,,,英国/澳洲系,英语,,CORE,CP2,Unknown,,第一人称 spiritual journey 栏目,FROZEN,pending_review,
+SRC0325,Three Wheels News / Newsletter Archive,,,英国,英语,,CORE,CP1,Unknown,,真宗道场通讯；皈依、念佛体验与 retreat 自述,FROZEN,pending_review,
+SRC0326,Pure Land Life,,,全球 / 浄土宗海外,英语,,CORE,CP1,Unknown,,READERS’ VOICES；跨国第一人称经历,FROZEN,pending_review,
+SRC0327,Wheel of Dharma,,,美国 / BCA,英语/日语,,CORE,CP1,Unknown,,BCA 官方月刊；长期档案与第一人称投稿,FROZEN,pending_review,
+SRC0328,BCA Connect — Sangha Voices,,,美国,英语,,CORE,CP2,Unknown,,Web-native 第一人称信仰、临终、丧亲叙事,FROZEN,pending_review,
+SRC0329,Higashi Honganji USA — Lay Voices,,,美国,英语,,CORE,CP1,Unknown,,Lay Voices 个人入信与真宗体验,FROZEN,pending_review,
+SRC0330,Living in Gratitude — 100 Years of Buddha Dharma in Canada,,,加拿大,英语,,CORE,CP2,Unknown,,百年纪念个人文章集；真宗生命史,FROZEN,pending_review,
+SRC0331,Nenju News,,,加拿大,英语,,CORE,CP2,Unknown,,JSBTC 官方刊物；Tokudo、丧亲与个人经验,FROZEN,pending_review,
+SRC0332,The Young Buddhist Editorial — Personal Reflections / Humans of Buddhism,,,北美,英语,,CORE,CP2,Unknown,,青年佛教徒个人经验与身份叙事,FROZEN,pending_review,
+SRC0333,PureLandBuddhism.org,,,国际,英语,,CORE,CP1,Unknown,,善导系英文净土平台；个人转宗、临终、疾病见证,FROZEN,pending_review,https://purelandbuddhism.org/
+SRC0334,Purelanders.com — Testimonies / PPF Testimonies,,,新加坡→全球,英语为主,,CORE,CP1,Unknown,,大型英文净土 testimonies / 感应集合 | possible_duplicate_of:SRC0005 | merged_into:SRC0005; merged_by:owner; date:2026-09-21,merged,duplicate_review,
+SRC0335,Buddhistische Gemeinschaft Jodo Shinshu Deutschland / BGJD,,,德国,德语,,CORE,CP2,Unknown,,德国真宗皈依、念佛实践与个人反思,FROZEN,pending_review,
+SRC0336,Bouddhisme Jōdo Shinshū / jodoshinshu.fr,,,法国,法语,,CORE,CP2,Unknown,,法国真宗实践、Kikyoshiki 与个人经历,FROZEN,pending_review,
+SRC0337,Sangha Luso-Hispana Jinen-kō,,,西班牙 / 葡语圈 / 拉美,西语/葡语/英语,,CORE,CP2,Unknown,,跨国线上真宗 Sangha；成员个人路径,FROZEN,pending_review,
+SRC0338,Revista Coração Confiante,,,巴西,葡语,,CORE,CP1,Unknown,,南美大谷派官方刊物；访谈与个人生命历程,FROZEN,pending_review,
+SRC0339,Bom Amigo / Comunicado Mensal do Templo,,,巴西,葡语/日语,,CORE,CP2,Unknown,,SRC0338 上游历史刊物；provenance 价值高,FROZEN,pending_review,
+SRC0340,Rainbow Sangha Brasil — Depoimentos,,,巴西,葡语,,CORE,CP2,Unknown,,第一人称信众生活与信仰见证,FROZEN,pending_review,
+SRC0341,George Gatenby — The Way of Jodo Shinshu / Notes on the Nembutsu,,,澳大利亚,英语,,CORE,CP2,Unknown,,早期英文真宗网络资料与单一作者反思,FROZEN,pending_review,
+SRC0342,Paths of Practice: Conversations on Journeys into Buddhism,,,国际,英语,,DISCOVERY,CP3,Unknown,,Podcast；佛教个人 journey，含真宗受访者,FROZEN,pending_review,
+SRC0343,The Taste of the Nembutsu / HHMH Messages,,,夏威夷 / 美国,英语,,CORE,CP2,Unknown,,部长文章与信众口述历史,FROZEN,pending_review,
+SRC0344,《藏汉平凡人往生极乐世界故事集·引路宝镜》,,,藏区 / 中国,中文（源于藏地调查）,,CORE,CP1,Unknown,,59个往生故事；藏地49、汉地10；田野采访型核心资料,FROZEN,pending_review,
+SRC0345,Amitabha Path — True Accounts of Going to Pureland,,,国际,英语,,DISCOVERY,CP2,Unknown,,SRC0344 英文传播/翻译层,FROZEN,pending_review,
+SRC0346,British Library EAP — Tibetan Delog manuscript corpus,,,藏区 / 喜马拉雅,藏文,,INFRASTRUCTURE,CP1,Unknown,,Delog 写本群；earliest-surviving witness 基础设施,FROZEN,pending_review,
+SRC0347,Delok Lingza Chökyi / Lingza Choskyit 写本传统,,,藏区,藏文,,CORE,CP2,Unknown,,历史 delog 传统；死亡与他界见闻,FROZEN,pending_review,
+SRC0348,Delok Karma Wangzin 写本传统,,,藏区,藏文,,CORE,CP2,Unknown,,历史 delog 死亡/还阳/他界叙事,FROZEN,pending_review,
+SRC0349,Dawa Drolma — Delog: Journey to Realms Beyond Death,,,西藏 / 英语出版,藏文传统/英语,,CORE,CP1,Unknown,,现代重要 delog 叙事；含 Pure Realm,FROZEN,pending_review,
+SRC0350,"Tulku Thondup — Peaceful Death, Joyful Rebirth",,,国际 / 藏传,英语,,DISCOVERY,CP2,Unknown,,综合 delog、口传、firsthand accounts 与 Pure Land rebirth,FROZEN,pending_review,
+SRC0351,Lotsawa House — Delog / Sukhāvatī corpus,,,国际 / 藏传,英语/藏文,,DISCOVERY,CP1,Unknown,,藏文净土愿文、delog 与传播材料入口,FROZEN,pending_review,
+SRC0352,Treasury of Lives — Delok biographies,,,国际 / 藏传,英语,,DISCOVERY,CP2,Unknown,,学术人物索引；作品、人物与 BDRC 关联,FROZEN,pending_review,
+SRC0353,BDRC / BUDA,,,国际 / 藏文佛教,多语,,INFRASTRUCTURE,CP1,Unknown,,藏文/佛教文献数字档案与全文检索基础设施,FROZEN,pending_review,
+SRC0354,Geshe Jampa Tinley — 《К Ясному Свету》,,,俄罗斯 / 布里亚特,俄语,,CORE,CP2,Unknown,,阿弥陀净土、临终与本地死亡叙事,FROZEN,pending_review,
+SRC0355,Geshe Jampa Tinley — 《Смерть. Жизнь после смерти. Пхова》,,,俄罗斯 / 布里亚特,俄语,,CORE,CP2,Unknown,,死亡、死后、颇瓦及临终叙事,FROZEN,pending_review,
+SRC0356,Журнал «Дже Цонкапа»,,,俄罗斯,俄语,,DISCOVERY,CP3,Unknown,,本土佛教刊物；弟子回忆、逝者纪念、社群口述入口,FROZEN,pending_review,
+SRC0357,Журнал «Буддизм России»,,,俄罗斯,俄语,,DISCOVERY,CP3,Unknown,,俄罗斯佛教历史刊物与人物/社群资料,FROZEN,pending_review,
+SRC0358,Kalmyk Scientific Center RAS — Oirat Sukhāvatī manuscript corpus,,,卡尔梅克 / 俄罗斯,卫拉特文/俄语研究,,INFRASTRUCTURE,CP2,Unknown,,Oirat Sukhāvatī 写本与历史实践,FROZEN,pending_review,
+SRC0359,Kathmandu Hongwanji,,,尼泊尔,英语/尼泊尔本地语境,,CORE,CP2,Unknown,,现代净土真宗转宗与生命史节点,FROZEN,pending_review,
+SRC0360,Buddhist Study Center / HHMH — Sonam Wangdi Bhutia 2017 Summer Session,,,夏威夷 / 尼泊尔-锡金关联,英语,,CORE,CP2,Unknown,,Sonam Wangdi Bhutia 五讲口述生命史,FROZEN,pending_review,
+SRC0361,Todd T. Lewis — “Sukhāvatī Traditions in Newar Buddhism” (1996),,,尼泊尔 / Kathmandu Valley,英语,,CORE,CP2,Unknown,,Newar 本土 Sukhāvatī 传统田野研究,FROZEN,pending_review,
+SRC0362,British Library EAP1296 — Newar Sukhāvatī manuscript corpus,,,尼泊尔,梵文/Newar,,INFRASTRUCTURE,CP2,Unknown,,Newar Sukhāvatī 写本数字化,FROZEN,pending_review,
+SRC0363,"Digital Sanskrit Buddhist Canon / Nagarjuna Institute, Nepal",,,尼泊尔 / 南亚,梵文/英语,,INFRASTRUCTURE,CP2,Unknown,,梵文佛典与 Sukhāvatīvyūha 数字文本,FROZEN,pending_review,
+SRC0364,SAMHiTA — South Asian Manuscript Histories and Textual Archive,,,南亚,多语,,INFRASTRUCTURE,CP2,Unknown,,南亚佛教手稿 provenance 基础设施,FROZEN,pending_review,
+SRC0365,"Dewachen Lhakang, Namo Buddha Monastery",,,尼泊尔,藏文/英语,,DISCOVERY,CP3,Unknown,,亡者阿弥陀佛修法与愿生极乐实践节点,FROZEN,pending_review,
+SRC0366,Buddhistdoor en Español,,,西语世界 / 拉美,西语,,DISCOVERY,CP2,Unknown,,拉美净土宗传播与访谈高效入口,FROZEN,pending_review,
+SRC0367,"Furaibo Nembutsu Dojo, Buenos Aires",,,阿根廷,西语,,CORE,CP2,Unknown,,布宜诺斯艾利斯本土念佛节点,FROZEN,pending_review,
+SRC0368,LA NACION — Gustavo Aoki direct interview/profile corpus,,,阿根廷,西语,,CORE,CP2,Unknown,,Gustavo Aoki 第一人称生命史与转折经历,FROZEN,pending_review,
+SRC0369,"Lisette Morales Aldana — Conversión, identidad y compromiso en dos grupos budistas japoneses en la ciudad de México (2002)",,,墨西哥,西语,,DISCOVERY,CP2,Unknown,,净土真宗 conversion 研究；全文访问待确认,FROZEN,pending_review,
+SRC0370,Catón E. Carini — “Southern Dharma: Outlines of Buddhism in Argentina”,,,阿根廷,英语/西语研究语境,,DISCOVERY,CP3,Unknown,,阿根廷佛教生态与地方资料发现入口,FROZEN,pending_review,
+SRC0371,Tierra Pura de la Luz Serena / budismojapones.com,,,波多黎各,西语,,CORE,CP2,Unknown,,西语第一人称宗教经历与念佛信仰,FROZEN,pending_review,
+SRC0372,Budismo Tierra Pura para Todos,,,西语世界,西语,,DISCOVERY,CP2,Unknown,,中文净土往生/感应材料翻译传播层,FROZEN,pending_review,
+SRC0373,Budismo de La Tierra Pura Online / budismolatinoamerica.com,,,拉美,西语,,DISCOVERY,CP3,Unknown,,西语参与者 testimonial 与净土传播,FROZEN,pending_review,
+SRC0374,Amidaji International Temple — Spiritual Biographies of Amidaji Members,,,国际,英语/多语,,CORE,CP1,Unknown,,结构化国际第一人称 spiritual biographies,FROZEN,pending_review,
+SRC0375,Amida-shu / Community of Amida Buddhists archive,,,英语世界 / 国际,英语,,CORE/DISCOVERY,CP2,Unknown,,西方 Pure Land 修行者、团体形成史与个人转宗,FROZEN,pending_review,
+SRC0376,South America Hongwanji Federation / official web corpus,,,南美,葡语/西语/日语,,DISCOVERY,CP3,Unknown,,本愿寺派南美官方网络与地方寺院入口,FROZEN,pending_review,
+SRC0377,British Library EAP813 — Disappearing book heritage of Siberian Buddhists,,,西伯利亚 / 布里亚特,蒙古文/藏文等,,INFRASTRUCTURE,CP2,Unknown,,阿弥陀佛祈愿、愿生 Sukhāvatī 与极乐描述手稿群,FROZEN,pending_review,
+SRC0378,Zsuzsa Majer (2018) — Preliminary Notes on Tibetan After-Death Rites and their Texts in Mongolian Buddhist Practice,,,蒙古,英语（研究蒙古实践）,,CORE/DISCOVERY,CP2,Unknown,,现代蒙古亡者仪轨；为亡者祈生阿弥陀佛 Sukhāvatī,FROZEN,pending_review,
+SRC0379,Zsuzsa Majer (2018) — Lagwī molom…helping them to a better one in Sukhāvatī,,,蒙古,英语（研究蒙古实践）,,CORE,CP3,Unknown,,蒙古愿文与往生 Sukhāvatī 实践,FROZEN,pending_review,
+SRC0380,"Karénina Kollmar-Paulenz (2025) — A Catalogue of the Mongolian Manuscripts and Xylographs of the Ernst-Collection, Sukhāvatī entries 120–124",,,蒙古文献 / 欧洲收藏,英语/蒙古文,,INFRASTRUCTURE,CP2,Unknown,,Ernst Collection 中 Sukhāvatī 文献与蒙古原创描述,FROZEN,pending_review,
+SRC0381,Tümer Karaayak (2021) — Eski Uygurca Abitaki Metinlerinin Söz Varlığı,,,中亚 / 古回鹘,土耳其语/古回鹘文,,CORE/INFRASTRUCTURE,CP2,Unknown,,汇集多地古回鹘阿弥陀/净土写本,FROZEN,pending_review,
+SRC0382,Jōdo-shū — Hōnen: A Collection of Buddhist Sermons by Jodo Shu Priests from around the World,,,国际 / 澳洲案例,英语,,CORE,CP2,Unknown,,澳洲净土宗临终关怀/净土开示个案,FROZEN,pending_review,
+SRC0383,Amitabha Hospice Service / Peaceful Passing NZ source family,,,新西兰,英语,,DISCOVERY,CP3,Unknown,,佛教临终关怀；公开资料与非公开逐访报告潜力,FROZEN,pending_review,
+SRC0384,Pure Land of Amitabha Buddha Hospice / Pure Land Home Hospice South Australia,,,澳大利亚,英语,,DISCOVERY,CP3,Unknown,,佛教价值基础居家临终关怀,FROZEN,pending_review,
+SRC0385,Amitofo Care Centre Africa — periodical / annual-report corpus,,,非洲多国,英语/中文等,,DISCOVERY,CP3,Unknown,,非洲儿童与毕业生第一人称生活材料；阿弥陀经与佛教课诵传播,FROZEN,pending_review,
+SRC0386,现代往生录（系列）,,,,,,,,,,雪心编辑室／雪心基金会；来自 T01 MVP v1.0 清单，超出原 385 条恢复范围；2026-09-21 负责人确认补登记,,pending_review,
