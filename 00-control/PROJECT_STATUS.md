@@ -60,6 +60,9 @@
 - 已提取两段 GPT 对话原文至 `notes/chatgpt_transcripts/`（2026-09-15 来源地图、2026-09-18 T02 最小架构），需求核对以此为准。
 - 已完成产品需求访谈四轮并锁定 D1–D16，写入 `10-publication-interface/PRD_DRAFT.md`；新增 `THEME_ASSISTANT_DESIGN.md` 与 `PRODUCT_AI_ROLES.md`。
 - 已建立 `00-control/ROADMAP.md`：从当前到产品落地的六阶段执行路线图。
+- 已完成 M2A v0.2 迁移 Run：负责人（owner）裁定 `ENT000001-CAND0001` 复用 `CASE000001`，十阶段全部完成，无依据/矛盾主张为 0，发布包 public。
+- 已找回 T01 全球来源注册表（385 条，三份对话导出）并归一化为 `01-global-source-directory/source_registry_v1.csv`；编号冲突经 `source_id_map.csv` 解决（现行 SRC0001-0005 不变，T01 编号保留为别名）；12 组疑似重复列入 `REVIEW_NEEDED.md` 待审。
+- 已归档并映射 MVP 精选清单（43 条，42 条映射成功；T01 SRC0386 超出恢复范围待确认）。
 
 进行中：
 
