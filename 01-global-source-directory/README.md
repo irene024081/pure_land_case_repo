@@ -28,3 +28,4 @@ The global register records Sources. Each Source's item-level inventory, batch s
 - **未验收**：`source_registry_v1.csv` 尚未经负责人审核。其中 5 条为 `pilot_mapped`、30 条为 `duplicate_review`（疑似重复，含 Purelanders 双登记、《念佛感应录》系列与单集重叠）、其余为 `pending_review`。完整待办见 `REVIEW_NEEDED.md`。
 - **注意**：`source_directory_v1.csv`（5 个试点，字段完整）与 `source_registry_v1.csv`（385 条总目，字段较粗）目前并存；前者仍是 M2/M3 运行的权威来源表。
 - **MVP 清单已映射**：T01 MVP v1.0 精选 43 条已映射为 repo 编号并生成 `MVP_SOURCE_LIST.csv`；42 条映射成功，1 条（T01 SRC0386《现代往生录》系列／雪心）超出恢复数据范围无法映射，且 MVP 的 PILOT 标记与现行 M2 试点体系不完全一致（详见 `REVIEW_NEEDED.md` 第 (d) 节）。
+- **ID 分配规则（2026-09-21 负责人确认）**：今后新登记来源的编号以 `source_registry_v1.csv` 为准接续分配，不另起编号体系；现行试点 SRC0001–0005 永久保留，不随 T01 编号重排。
