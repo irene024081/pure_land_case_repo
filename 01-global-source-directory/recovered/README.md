@@ -1,6 +1,6 @@
 # recovered/ — T01 对话时代来源注册表原件
 
-本目录保存从 ChatGPT T01 系列对话导出的三份原始来源注册表 CSV，**原样归档、未做任何修改**（找回日期：2026-09-21）。它们是历史证据，请勿编辑；日常使用请以上一级目录的 `source_registry_v1.csv` 和 `source_id_map.csv` 为准。
+本目录保存从 ChatGPT T01 系列对话导出的四份原始来源注册表 CSV，**原样归档、未做任何修改**（找回日期：2026-09-21）。它们是历史证据，请勿编辑；日常使用请以上一级目录的 `source_registry_v1.csv` 和 `source_id_map.csv` 为准。
 
 ## 文件清单与列含义
 
@@ -53,9 +53,23 @@ T01 后期对话入选来源（欧美、藏区、俄语圈、拉美等多语来�
 | `notes` | 备注 |
 | `selection_status` | 选择状态（全部为 FROZEN） |
 
+### `T01_MVP_v1.0_sources.csv`（43 条）
+
+T01 对话后期整理的 MVP 精选来源清单（v1.0），即从总池中挑出的优先落地批次。
+
+| 列 | 含义 |
+|---|---|
+| `source_id` | T01 编号（注意：含一条 SRC0386，超出前三份文件的 SRC0001–0385 范围） |
+| `source_name` | 来源名称 |
+| `current_cp` | 当时的收集优先级重评结果（可能与主注册表 CP 不一致） |
+| `recommended_phase` | 建议落地阶段（P1 / P2 / P1/P2） |
+| `pilot_status` | 试点标记（PILOT / BACKUP_PILOT / HOLD_VERIFY / 空）；注意这是 T01 时代的试点计划，与现行 M2 试点体系不完全一致 |
+
+映射为 repo 编号后的版本见 `../MVP_SOURCE_LIST.csv`。
+
 ## ⚠️ 编号冲突警告
 
-这三份文件使用 T01 对话的编号体系，其中 **T01 SRC0001–0005 是古籍**（净土论、瑞应传等）。但仓库现行运行体系中 **SRC0001–0005 是五个 M2 试点来源**（净土圣贤录、当代念佛感应集、PLBTW、PLB-SEA、Purelanders），已有 Pipeline Run、Manifest 和版权审核挂在这些 ID 上。
+这些文件使用 T01 对话的编号体系，其中 **T01 SRC0001–0005 是古籍**（净土论、瑞应传等）。但仓库现行运行体系中 **SRC0001–0005 是五个 M2 试点来源**（净土圣贤录、当代念佛感应集、PLBTW、PLB-SEA、Purelanders），已有 Pipeline Run、Manifest 和版权审核挂在这些 ID 上。
 
 **引用任何 SRC 编号时必须先确认语境**（T01 编号 vs repo 编号）。对照关系见 `../source_id_map.csv`：
 
