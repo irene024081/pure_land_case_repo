@@ -3,13 +3,14 @@
 ## Core Boundaries
 
 ```text
-Source != Article != Source Entry != Case != Text Version
+Source != Source Item != Source Entry != Source Occurrence != Case != Text Version
 ```
 
 - `Source` is a collection, publication, site, channel, book, or archive.
-- `Article` is one inventoried item in a Source. It may contain zero, one, or many cases.
-- `Source Entry` is the retained normalized evidence object for an Article.
-- `Case` is one normalized event record supported by one or more Source Entries.
+- `Source Item` is one inventoried article, book entry, video, or letter. Its current catalog column is `article_id`. It may contain zero, one, or many cases.
+- `Source Entry` is the retained normalized evidence object for a Source Item.
+- `Source Occurrence` is one Case appearing at a specific location in a Source Item, backed by retained Source Segments. Transmission links connect Occurrences.
+- `Case` is one underlying narrated episode, with one or more Source Occurrences; the record does not assert historical truth.
 - `Text Version` is an original excerpt, faithful rendering, summary, translation, or creator-facing derivative.
 
 ## Processing Layers
@@ -19,8 +20,9 @@ source profile
 -> inventory sync
 -> source capture and manifest verification
 -> Article Run: segmentation and case detection
--> assign stable Case IDs
--> Case Runs: facts, entities, dedup, reader text, creator analysis
+-> Candidate Runs: facts, entities, dedup
+-> resolve identity and assign or reuse Case ID
+-> Source Occurrence, reader text, creator analysis
 -> independent factual and rights checks
 -> publication package
 ```
@@ -36,12 +38,13 @@ data/source_entries/restricted/ local restricted evidence, ignored by Git
 data/source_entries/manifests/ tracked integrity and storage metadata
 data/pipeline_runs/         local requests, responses, and restricted payloads
 data/run_records/           tracked sanitized run provenance
+data/migrations/            proposed mappings for review, not canonical data
 data/legacy_m2/             historical review fixtures, not canonical records
 ```
 
 ## Authority
 
-Domain field definitions live in `../schemas/`. The current executable stage order lives in `../pipeline/pipeline.v1.2.json`, while historical Runs retain their recorded definition version. This document defines relationships and ownership boundaries and must not duplicate complete field lists.
+Domain field definitions live in `../schemas/`. The current executable stage order lives in `../pipeline/pipeline.v2.json`; historical Runs retain their recorded definition version. Field-level migration rules live in `T02_V02_MIGRATION.md`. This document defines relationships and ownership boundaries and must not duplicate complete field lists.
 
 ## Publication Rule
 

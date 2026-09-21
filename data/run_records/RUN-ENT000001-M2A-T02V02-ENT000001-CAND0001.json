@@ -1,0 +1,70 @@
+{
+  "run_id": "RUN-ENT000001-M2A-T02V02-ENT000001-CAND0001",
+  "run_kind": "case",
+  "pipeline_id": "pure-land-content-pipeline",
+  "pipeline_version": "0.2.0",
+  "source_id": "SRC0001",
+  "source_entry_id": "ENT000001",
+  "source_entry_hash": "71eaac499ea2173a5b3f1d349f1af300a5bdf1bba800c3534c51ff64a20c31ef",
+  "source_catalog_article_id": "SRC0001-ART000001",
+  "rights_review_id": "RR0005",
+  "external_processing": "blocked",
+  "candidate_id": "ENT000001-CAND0001",
+  "parent_article_run_id": "RUN-ENT000001-M2A-T02V02",
+  "created_at": "2026-09-21T01:49:15+00:00",
+  "updated_at": "2026-09-21T01:50:01+00:00",
+  "status": "blocked",
+  "stages": {
+    "case_extraction": {
+      "status": "completed",
+      "request_hash": "842b33e6206fcfe7ca1988a80a3bbed5ab58932e7c0b5761f000a7be2406bf17",
+      "completed_at": "2026-09-21T01:49:30+00:00",
+      "adapter": "local",
+      "model": "deterministic-v01-migration",
+      "response_hash": "21f1cf056477601c7cd8b171146a4513d464a202b0ae3166b4d5d76678e93f2a",
+      "output_hash": "21f1cf056477601c7cd8b171146a4513d464a202b0ae3166b4d5d76678e93f2a"
+    },
+    "entity_tagging": {
+      "status": "completed",
+      "request_hash": "8e16e01dbae64569ad7a9ac272e3978dd5afb5524d56697b281f4f244c03501e",
+      "completed_at": "2026-09-21T01:49:37+00:00",
+      "adapter": "local",
+      "model": "deterministic-v01-migration",
+      "response_hash": "c3ac2b94cb595b53b463b28a9e88b192162859e19d1d1b6b405ced9044437b54",
+      "output_hash": "c3ac2b94cb595b53b463b28a9e88b192162859e19d1d1b6b405ced9044437b54"
+    },
+    "deduplication": {
+      "status": "completed",
+      "request_hash": "edb0eb2e638bb6f0ce82e04077439e0977846fbf87e7e03c0be63e15c0f204ec",
+      "external_processing": "blocked",
+      "candidate_set_hash": "389bdca8d5a13932a88ce86cc21fb1b0b28710c9ef33bd274be96bc46617783d",
+      "completed_at": "2026-09-21T01:50:01+00:00",
+      "adapter": "local",
+      "model": "codex-reviewed-m2a-comparison",
+      "response_hash": "a8eba0fa5fbe80cebdcd77ec287a06f3ca63545875569fc4bedb924939cc7d50",
+      "output_hash": "a8eba0fa5fbe80cebdcd77ec287a06f3ca63545875569fc4bedb924939cc7d50"
+    },
+    "case_resolution": {
+      "status": "review_required",
+      "reason": "deduplication decision: same_case"
+    },
+    "source_occurrence": {
+      "status": "pending"
+    },
+    "reader_generation": {
+      "status": "pending"
+    },
+    "creator_analysis": {
+      "status": "pending"
+    },
+    "factual_check": {
+      "status": "pending"
+    },
+    "rights_check": {
+      "status": "pending"
+    },
+    "publication_packaging": {
+      "status": "pending"
+    }
+  }
+}

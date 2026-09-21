@@ -11,19 +11,21 @@ Article Run / 文章运行
   已验证 Source Entry / verified Source Entry
   -> 完整原文分段 / complete source segmentation
   -> 检测 0..N 个案例候选 / detect 0..N Case Candidates
-  -> 程序分配稳定 Case ID / program assigns stable Case IDs
+  -> 创建 Candidate Run，暂不分配 Case ID / create Candidate Runs without Case IDs
 
-Case Run / 案例运行，每个候选一个 / one per candidate
+Candidate Run / 候选运行，每个候选一个 / one per candidate
   原子事实 / atomic facts
   -> 实体与去重 / entities and deduplication
+  -> 身份解决并分配或复用 Case ID / identity resolution and Case ID assignment or reuse
+  -> 来源出现与传播记录 / source occurrence and transmission
   -> 读者与创作者输出 / reader and creator outputs
   -> 独立事实与版权检查 / independent factual and rights checks
   -> 发布包 / publication package
 ```
 
-当前 Stage Graph 是 `../pipeline/pipeline.v1.2.json`。Prompt、Contract、候选检索规则和 Pipeline 定义使用后不可修改；行为变化必须创建新版本。
+当前 Stage Graph 是 `../pipeline/pipeline.v2.json`。Prompt、Contract、候选检索规则和 Pipeline 定义使用后不可修改；行为变化必须创建新版本。
 
-The current Stage Graph is `../pipeline/pipeline.v1.2.json`. Prompts, Contracts, candidate-retrieval rules, and Pipeline definitions are immutable after use; behavior changes require a new version.
+The current Stage Graph is `../pipeline/pipeline.v2.json`. Prompts, Contracts, candidate-retrieval rules, and Pipeline definitions are immutable after use; behavior changes require a new version.
 
 ## 安全与溯源 / Safety And Provenance
 
@@ -35,6 +37,7 @@ The current Stage Graph is `../pipeline/pipeline.v1.2.json`. Prompts, Contracts,
 - 去重 Request 会从本地已完成 Case Run 中确定性选择候选，并记录版本、得分、理由和候选集合哈希。 / Deduplication Requests deterministically select candidates from completed local Case Runs and record the version, scores, reasons, and candidate-set hash.
 - 候选包含受限数据时，去重 Stage 只能使用本地 Adapter。 / A deduplication Stage containing restricted candidate data must use a local Adapter.
 - 失败或完成的 Output 不会被覆盖；重跑使用新 Run ID。 / Failed or completed Outputs are never overwritten; reruns use new Run IDs.
+- 接收 Response 前重新校验对应 Request 的哈希，防止运行过程中输入被改动。 / Recheck the Request hash before accepting a Response to detect changed stage inputs.
 
 ## 命令 / Commands
 
@@ -55,26 +58,44 @@ Create an Article Run, accept an AI Response, inspect status, or mark a failure:
 ```bash
 python3 scripts/run_pipeline.py create-article \
   --entry data/source_entries/public/ENT000001.normalized.json \
-  --run-dir data/pipeline_runs/RUN-ENT000001-V1
+  --run-dir data/pipeline_runs/RUN-ENT000001-V2
 
 python3 scripts/run_pipeline.py accept \
-  --run-dir data/pipeline_runs/RUN-ENT000001-V1 \
+  --run-dir data/pipeline_runs/RUN-ENT000001-V2 \
   --stage source_segmentation \
   --response path/to/response.json \
   --adapter local \
   --model model-name
 
 python3 scripts/run_pipeline.py status \
-  --run-dir data/pipeline_runs/RUN-ENT000001-V1
+  --run-dir data/pipeline_runs/RUN-ENT000001-V2
 
 python3 scripts/run_pipeline.py fail \
-  --run-dir data/pipeline_runs/RUN-ENT000001-V1 \
+  --run-dir data/pipeline_runs/RUN-ENT000001-V2 \
   --reason "source boundary requires review"
 ```
 
-接收 `case_detection` 后，Runner 会在 `RUN-ENT000001-V1/cases/` 下自动创建子 Case Run。
+接收 `case_detection` 后，Runner 会在 `RUN-ENT000001-V2/candidates/` 下创建 Candidate Run。若 `case_resolution` 停在 `review_required`，需明确做出身份决定；只能复用已知 Case ID，且必须填写审核人和理由。
 
-Accepting `case_detection` automatically creates child Case Runs under `RUN-ENT000001-V1/cases/`.
+Accepting `case_detection` creates child Candidate Runs under `RUN-ENT000001-V2/candidates/`. A `review_required` resolution needs an explicit identity decision; reuse is limited to a known Case ID and requires a reviewer and reason.
+
+已有 v0.1.x Case Run 的事实和实体标签可以用 `migrate_candidate_outputs.py` 生成候选 ID 响应。脚本核对旧输出哈希并保留来源 Run ID；这是证据迁移，不是新版 Prompt 的质量评测。
+
+Facts and entity tags from a completed v0.1.x Case Run may be converted with `migrate_candidate_outputs.py`. It checks legacy output hashes and records the source Run ID. This is an evidence migration, not an evaluation of the new Prompts.
+
+```bash
+python3 scripts/migrate_candidate_outputs.py \
+  --legacy-case-dir data/pipeline_runs/RUN-ENT000001-M2A-P011/cases/CASE000001 \
+  --candidate-id ENT000001-CAND0001 \
+  --output-dir data/pipeline_runs/RUN-ENT000001-M2A-T02V02/candidates/ENT000001-CAND0001/submissions
+```
+
+```bash
+python3 scripts/run_pipeline.py resolve-identity \
+  --run-dir data/pipeline_runs/RUN-ENT000001-V2/candidates/ENT000001-CAND0001 \
+  --action reuse --case-id CASE000001 --reviewer reviewer-id \
+  --reason "same episode confirmed against the retained source"
+```
 
 回归验收规则位于 `REGRESSION_POLICY.md`。
 

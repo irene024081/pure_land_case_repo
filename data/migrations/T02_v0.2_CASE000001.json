@@ -1,0 +1,80 @@
+{
+  "migration_status": "proposed_review_only",
+  "source_baseline_id": "M2A-ENT000001-P011",
+  "source_pipeline_version": "0.1.1",
+  "candidate_id": "ENT000001-CAND0001",
+  "source_item_id": "SRC0001-ART000001",
+  "case": {
+    "case_id": "CASE000001",
+    "record_status": "provisional",
+    "canonical_label": "陈妪随纺车声念佛",
+    "canonical_record_language": "zh-Hans",
+    "primary_subject": {
+      "state": "known",
+      "display_label": "陈妪",
+      "identity_status": "partial",
+      "case_fact_ids": ["CASE000001-FACT0001"]
+    },
+    "event_time_anchor": {
+      "state": "known",
+      "display": "顺治十年",
+      "normalized": {"start": "1653", "end": "1653", "precision": "year"},
+      "case_fact_ids": ["CASE000001-FACT0015", "CASE000001-FACT0016"]
+    },
+    "event_place_anchor": {
+      "state": "known",
+      "display": "常熟",
+      "precision": "county",
+      "case_fact_ids": ["CASE000001-FACT0002"]
+    },
+    "discovery_occurrence_id": "OCC23815674AEDE2FED",
+    "earliest_known": {
+      "status": "earlier_unresolved",
+      "occurrence_ids": ["OCC23815674AEDE2FED"]
+    },
+    "privacy_level": "public",
+    "review_status": "machine_checked"
+  },
+  "source_occurrence": {
+    "occurrence_id": "OCC23815674AEDE2FED",
+    "case_id": "CASE000001",
+    "source_id": "SRC0001",
+    "source_item_id": "SRC0001-ART000001",
+    "source_entry_id": "ENT000001",
+    "supporting_source_segment_ids": [
+      "ENT000001-SEG0001", "ENT000001-SEG0002", "ENT000001-SEG0003",
+      "ENT000001-SEG0004", "ENT000001-SEG0005", "ENT000001-SEG0006",
+      "ENT000001-SEG0007", "ENT000001-SEG0008"
+    ],
+    "locator": {
+      "type": "source_segments",
+      "source_locator": "卍新续藏第78册 No.1549《净土圣贤录》卷九，往生女人第九，陈妪",
+      "segment_ids": [
+        "ENT000001-SEG0001", "ENT000001-SEG0002", "ENT000001-SEG0003",
+        "ENT000001-SEG0004", "ENT000001-SEG0005", "ENT000001-SEG0006",
+        "ENT000001-SEG0007", "ENT000001-SEG0008"
+      ]
+    },
+    "languages": ["zh-Hans"],
+    "content_form": "biographical_entry",
+    "voice": "third_person",
+    "parent_links": [
+      {
+        "relation": "derived_from",
+        "target": {
+          "state": "unresolved_upstream",
+          "description": "《净土约说书后》, cited in the compilation; source text not retained"
+        },
+        "basis": "source_explicit",
+        "supporting_source_segment_ids": ["ENT000001-SEG0007", "ENT000001-SEG0008"],
+        "review_status": "needs_review"
+      }
+    ],
+    "review_status": "machine_checked"
+  },
+  "migration_notes": [
+    "This mapping does not create a captured occurrence for the cited upstream work.",
+    "M2A deduplication searched current_request_only; identity must be reviewed against a wider corpus before promotion.",
+    "The pilot Occurrence ID is provisional and must be collision-checked before canonical promotion."
+  ]
+}

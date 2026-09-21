@@ -1,8 +1,8 @@
 # 数据处理工作流 / Data Processing Workflow
 
-当前可执行工作流定义在 `../pipeline/pipeline.v1.2.json`。Runner 会根据每个 Run 记录的 `pipeline_version` 加载相应的历史定义。
+当前可执行工作流定义在 `../pipeline/pipeline.v2.json`。Runner 会根据每个 Run 记录的 `pipeline_version` 加载相应的历史定义。
 
-The current executable workflow is `../pipeline/pipeline.v1.2.json`. The runner resolves historical definitions from each Run's recorded `pipeline_version`.
+The current executable workflow is `../pipeline/pipeline.v2.json`. The runner resolves historical definitions from each Run's recorded `pipeline_version`.
 
 ## 1. 来源配置 / Source Profile
 
@@ -55,34 +55,36 @@ Article Run 面向一篇完整 Source Entry。它先把全文切分为没有遗�
 
 An Article Run processes one complete Source Entry. It first divides the full text into Source Segments without omissions, overlaps, or ordering changes, then detects zero, one, or many Case Candidates.
 
-AI 只识别候选边界，不分配正式 Case ID。候选识别完成后，由程序复用已有 Case ID 或分配新 ID，并为每个候选创建独立 Case Run。
+AI 只识别候选边界，不分配 Case ID。Runner 为每个候选创建独立的 Candidate Run，待原子事实、实体和去重完成后，才运行身份解决并分配或复用 Case ID。
 
-AI identifies candidate boundaries but does not assign canonical Case IDs. After detection, the program reuses an existing Case ID or allocates a new one and creates an independent Case Run for each candidate.
+AI identifies candidate boundaries but does not assign Case IDs. The runner creates one Candidate Run per candidate; it resolves identity and assigns or reuses a Case ID only after facts, entities, and deduplication are complete.
 
 ## 5. 案例运行 / Case Run
 
-每个 Case Candidate 都有独立的 Case Run，依次处理原子事实、人物地点、标签、去重、读者文本、创作者分析、事实检查、版权检查和发布打包。
+每个 Case Candidate 都有独立的 Run，先处理原子事实、人物地点和去重。身份解决后，记录 Source Occurrence，再生成读者文本与创作者分析，最后进行事实、版权与发布检查。
 
-Each Case Candidate receives an independent Case Run covering atomic facts, persons and places, tags, deduplication, reader text, creator analysis, factual checking, rights checking, and publication packaging.
+Each Case Candidate receives an independent Run. It extracts facts and entities and compares identity first. After resolution it records a Source Occurrence, generates reader and creator outputs, and performs factual, rights, and publication checks.
 
 ```text
 case_extraction
 -> entity_tagging
 -> deduplication
+-> case_resolution (automatic new ID or explicit human decision)
+-> source_occurrence
 -> reader_generation + creator_analysis
 -> factual_check + rights_check
 -> publication_packaging
 ```
 
-所有事实、读者段落和创作角度都必须引用有效的 `case_fact_id` 或 `source_segment_id`。Case Fact 表达“来源记载了什么”，不表示系统已经证明事件在历史上真实发生。
+候选阶段使用 `candidate_id` 和候选事实 ID；身份解决后才将这些事实关联到正式 Case ID。所有事实、读者段落和创作角度都必须引用有效的 `case_fact_id` 或 `source_segment_id`。Case Fact 表达“来源记载了什么”，不表示系统已经证明事件在历史上真实发生。
 
-Every fact, reader paragraph, and creator angle must cite valid `case_fact_id` or `source_segment_id` values. A Case Fact records what a source states; it does not mean the system has established the event as historical truth.
+The candidate phase uses a `candidate_id` and candidate fact IDs; facts are associated with the Case ID after identity resolution. Every fact, reader paragraph, and creator angle must cite valid `case_fact_id` or `source_segment_id` values. A Case Fact records what a source states; it does not establish historical truth.
 
 ## 6. 审核 / Review
 
-机器检查是必需步骤。常规低风险 Run 可以暂不进行人工审核；遇到去重身份不明确、新 baseline 审批、教理解释、隐私风险升级或版权规则例外时，需要人工审核。
+机器检查是必需步骤。常规低风险 Run 可以暂不进行人工审核；遇到同案或疑似同案、已有 Source Item 案例关联需要复用或变更 ID、新 baseline 审批、教理解释、隐私风险升级或版权规则例外时，需要人工审核。
 
-Machine checks are required. Human review may remain pending for routine low-risk Runs, but it is required for ambiguous deduplication, new baseline approval, doctrinal interpretation, privacy escalation, or rights overrides.
+Machine checks are required. Human review may remain pending for routine low-risk Runs. It is required for same/possible identity matches, reuse or reassignment of a Source Item's existing Case IDs, new baseline approval, doctrinal interpretation, privacy escalation, or rights overrides.
 
 通过机器检查表示输出符合当前 contract、证据引用和门槛规则，不表示对历史真实性、教理共识或法律结论作出最终保证。
 
@@ -102,9 +104,9 @@ The current Stage cannot run reliably when required source content or fields are
 
 ### 发布门槛 / Publication Gate
 
-以下问题允许保留检查结果，但发布包必须为 `withheld`，也不能提升为正式数据：事实检查出现 `unsupported` 或 `contradicted`；版权检查失败；去重结果仍为候选或需要人工判断；公开范围超过 Rights Review。这里的“证据边界不清”具体指无法确定某条主张由哪些 Source Segments 支持，或无法区分来源陈述、人物自述、转述与编者推断。
+以下问题允许保留检查结果，但发布包必须为 `withheld`，也不能提升为正式数据：事实检查出现 `unsupported` 或 `contradicted`；版权检查失败；身份解决尚未完成；Source Occurrence 本身标为 `needs_review`；公开范围超过 Rights Review。上游文献尚未取得，只要如实标为 `unresolved_upstream`，并不单独阻断发布。这里的“证据边界不清”具体指无法确定某条主张由哪些 Source Segments 支持，或无法区分来源陈述、人物自述、转述与编者推断。
 
-The outputs may be retained for diagnosis, but the publication package must be `withheld` and cannot be promoted when factual checking finds an `unsupported` or `contradicted` claim, rights checking fails, deduplication remains a candidate or needs human review, or public scope exceeds the Rights Review. An unclear evidence boundary means the system cannot identify the Source Segments supporting a claim or cannot distinguish source narration, subject report, hearsay, and editorial inference.
+Outputs may be retained for diagnosis, but the publication package must be `withheld` and cannot be promoted when factual checking finds an `unsupported` or `contradicted` claim, rights checking fails, identity resolution is incomplete, the Source Occurrence itself needs review, or public scope exceeds the Rights Review. An upstream work not yet captured does not alone block publication when marked `unresolved_upstream`. An unclear evidence boundary means the system cannot identify Source Segments supporting a claim or cannot distinguish source narration, subject report, hearsay, and editorial inference.
 
 ### 非阻塞质量问题 / Non-blocking Quality Issue
 

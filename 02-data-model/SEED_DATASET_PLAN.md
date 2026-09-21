@@ -1,5 +1,7 @@
 # Seed Dataset Plan
 
+The 50-100 Case target is a later scaling milestone, not the current M3 ten-Case gate. The required-field examples below predate T02 v0.2 and must be mapped through [T02_V02_MIGRATION.md](T02_V02_MIGRATION.md) before canonical promotion. Current sequence and acceptance live in [PROJECT_HUB.md](../00-control/PROJECT_HUB.md).
+
 Seed dataset 是产品和数据流程的验证集，不是完整资料库的开始冲量。
 
 目标是用 50-100 个高质量案例验证四件事：

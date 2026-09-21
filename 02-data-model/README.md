@@ -1,20 +1,21 @@
 # T02 数据模型 / Data Model
 
-目标：定义 Source、Case、Person、Organization、Citation、Provenance Chain、Dedup Group 等核心实体。
+目标：定义 Source、Source Item、Source Entry、Source Occurrence、Case、Person、Organization、身份判断与传播关系等核心实体。
 
-Goal: define core entities including Source, Case, Person, Organization, Citation, Provenance Chain, and Dedup Group.
+Goal: define Source, Source Item, Source Entry, Source Occurrence, Case, Person, Organization, identity decisions, and transmission relations.
 
 ## 当前原则 / Current Principles
 
 1. Source 不等于 Case。 / A Source is not a Case.
 2. Case 不等于原文段落。 / A Case is not a source paragraph.
-3. 同一个 Case 可以有多个 Citation。 / One Case may have multiple Citations.
+3. 同一个 Case 可以有多个 Source Occurrence。 / One Case may have multiple Source Occurrences.
 4. 同一个 Case 可以有多个 Text Version：原文、白话译述、摘要、创作者摘要、搜索摘要。 / One Case may have original, reader rendering, summary, creator summary, and search-summary Text Versions.
 5. 面向读者和面向创作者使用同一个 Case Detail，只切换显示模式。 / Reader and creator views use the same Case Detail with different display modes.
 
 ## 当前执行文档 / Current Operating Documents
 
 - `ARCHITECTURE.md`：核心实体边界、处理层和存储职责。 / Core entity boundaries, processing layers, and storage ownership.
+- `T02_V02_MIGRATION.md`：v0.1 字段迁移、显式未知与兼容规则。 / v0.1 field mapping, explicit unknown states, and compatibility.
 - `DATA_PROCESSING_WORKFLOW.md`：当前六步数据处理流程。 / Current six-step data processing workflow.
 - `SOURCE_ENTRY_PIPELINE.md`：Source Adapter、目录同步和 Source Entry 抓取边界。 / Source Adapters, inventory sync, and Source Entry capture boundaries.
 - `RAW_SOURCE_STORAGE.md`：原文保存、版权隔离、manifest、哈希验证和段落级溯源规则。 / Raw-source retention, rights isolation, manifests, hash verification, and segment-level provenance.
@@ -28,7 +29,8 @@ Goal: define core entities including Source, Case, Person, Organization, Citatio
 ## Schema 索引 / Schema Index
 
 - `../schemas/case_register.md`：案例登记。 / Case records.
-- `../schemas/citation_register.md`：引用和出处定位。 / Citations and source locators.
+- `../schemas/source_occurrence_register.md`：案例在来源中的出现、定位和传播关系。 / Case appearances, locators, and transmission links.
+- `../schemas/citation_register.md`：历史 Citation 字段与迁移入口。 / Legacy Citation fields and migration entry point.
 - `../schemas/source_entry_register.md`：来源条目。 / Source Entries.
 - `../schemas/source_article_catalog.md`：完整文章目录、批处理队列和审核状态。 / Complete item catalogs, batch queues, and review status.
 - `../schemas/source_segment_register.md`：原文段落、说话人和段落级溯源。 / Source segments, speakers, and segment-level provenance.

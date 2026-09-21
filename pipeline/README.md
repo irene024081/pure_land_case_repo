@@ -7,7 +7,8 @@ This directory contains immutable production inputs for the Case Pipeline.
 ```text
 pipeline.v1.json    不可变的 Pipeline 0.1.0 Stage Graph / immutable Pipeline 0.1.0 Stage Graph
 pipeline.v1.1.json  不可变的 Pipeline 0.1.1 Stage Graph / immutable Pipeline 0.1.1 Stage Graph
-pipeline.v1.2.json  当前 Pipeline 0.1.2 Stage Graph / current Pipeline 0.1.2 Stage Graph
+pipeline.v1.2.json  历史 Pipeline 0.1.2 Stage Graph / historical Pipeline 0.1.2 Stage Graph
+pipeline.v2.json    当前 Pipeline 0.2.0 Stage Graph / current Pipeline 0.2.0 Stage Graph
 contracts/          机器可读 Output 要求 / machine-readable Output requirements
 prompts/            版本化语义指令 / versioned semantic instructions
 retrieval/          版本化候选检索规则 / versioned candidate-retrieval rules
@@ -28,3 +29,7 @@ Pipeline definitions follow the same rule. The Runner selects a definition from 
 Pipeline 0.1.2 为去重请求加入版本化、本地确定性候选检索，并让 Factual Check 直接读取 `case_extraction`。候选检索只缩小比较范围，不作自动合并或同案判定。
 
 Pipeline 0.1.2 adds versioned deterministic local candidate retrieval to deduplication Requests and gives Factual Check direct access to `case_extraction`. Retrieval only narrows the comparison set; it never merges cases or decides identity automatically.
+
+Pipeline 0.2.0 创建以 Candidate ID 命名的 Run，在事实抽取和去重完成前不分配 Case ID。`case_resolution` 对无既有关联的新案例分配 ID；同案、疑似同案或已有 Source Item Case ID 需要人工明确 `new` 或 `reuse`。随后 `source_occurrence` 记录来源中的具体出现及有证据的传播边。历史 v0.1.x 输出不作原地迁移，字段映射见 `../02-data-model/T02_V02_MIGRATION.md`。
+
+Pipeline 0.2.0 creates Candidate-ID Runs and assigns no Case ID before extraction and deduplication. `case_resolution` allocates a new ID when the item has no prior Case linkage and the decision is `new_case`; same/possible matches and existing item Case IDs require an explicit human `new` or `reuse` decision. `source_occurrence` then records the concrete source appearance and supported transmission edges. Historical v0.1.x outputs remain unchanged; see `../02-data-model/T02_V02_MIGRATION.md`.
