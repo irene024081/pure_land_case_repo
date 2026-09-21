@@ -1,0 +1,29 @@
+{
+  "retrieval_version": "dedup_candidates/v2",
+  "scope": "completed_local_case_runs_legacy_and_v2",
+  "limit": 20,
+  "minimum_score": 15,
+  "weights": {
+    "same_source_entry": 100,
+    "person_exact": 100,
+    "place_and_date": 50,
+    "date_exact": 30,
+    "place_exact": 15,
+    "tag_by_class": {
+      "reported_sign": 8,
+      "event": 8,
+      "case_type": 8,
+      "occupation": 8,
+      "practice": 4,
+      "doctrinal_topic": 3,
+      "default": 2
+    }
+  },
+  "ignored_tag_classes": ["evidence_property", "source_property"],
+  "selection_rules": [
+    "Include completed legacy cases and resolved v2 candidate runs in the same local runtime root.",
+    "Compare exact normalized structured values only; never auto-merge on a retrieval score.",
+    "Keep the strongest comparison and all retained occurrence locators per existing Case ID.",
+    "A scoped no-match is not proof that the event is globally unique."
+  ]
+}

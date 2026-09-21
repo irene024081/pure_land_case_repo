@@ -36,11 +36,13 @@ PIPELINE_DEFINITIONS = {
     "0.1.0": ROOT / "pipeline" / "pipeline.v1.json",
     "0.1.1": ROOT / "pipeline" / "pipeline.v1.1.json",
     "0.1.2": ROOT / "pipeline" / "pipeline.v1.2.json",
+    "0.2.0": ROOT / "pipeline" / "pipeline.v2.json",
 }
-DEFAULT_PIPELINE_VERSION = "0.1.2"
+DEFAULT_PIPELINE_VERSION = "0.2.0"
 CONTRACT_DIR = ROOT / "pipeline" / "contracts"
 PROMPT_DIR = ROOT / "pipeline" / "prompts"
 DEDUP_RETRIEVAL_PATH = ROOT / "pipeline" / "retrieval" / "dedup_candidates.v1.json"
+DEDUP_RETRIEVAL_V2_PATH = ROOT / "pipeline" / "retrieval" / "dedup_candidates.v2.json"
 RIGHTS_DIR = ROOT / "data" / "rights_reviews"
 DEFAULT_RECORD_DIR = ROOT / "data" / "run_records"
 
@@ -179,6 +181,8 @@ def validate_semantics(
 ) -> None:
     if "case_id" in response and response["case_id"] != run.get("case_id"):
         raise SystemExit("response case_id does not match run case_id")
+    if "candidate_id" in response and response["candidate_id"] != run.get("candidate_id"):
+        raise SystemExit("response candidate_id does not match run candidate_id")
     if stage_id in {"source_segmentation", "case_detection"}:
         if response["source_entry_id"] != run["source_entry_id"]:
             raise SystemExit("source_entry_id does not match run input")
@@ -209,6 +213,58 @@ def validate_semantics(
         candidate_ids = [item["candidate_id"] for item in response["case_candidates"]]
         if len(candidate_ids) != len(set(candidate_ids)):
             raise SystemExit("candidate_id values must be unique")
+        if run["pipeline_version"] == "0.2.0":
+            for candidate_id in candidate_ids:
+                if not re.fullmatch(r"[A-Za-z0-9_-]+", candidate_id):
+                    raise SystemExit("candidate_id must be a safe path component")
+    if run["pipeline_version"] == "0.2.0" and stage_id == "case_extraction":
+        fact_ids = [item["case_fact_id"] for item in response["case_facts"]]
+        if len(fact_ids) != len(set(fact_ids)):
+            raise SystemExit("case_fact_id values must be unique")
+        if not all(re.fullmatch(rf"{re.escape(run['candidate_id'])}-FACT\d{{4}}", value) for value in fact_ids):
+            raise SystemExit("case_fact_id must use the candidate_id prefix before resolution")
+        allowed_segments = set(run["case_candidate"]["supporting_source_segment_ids"])
+        for fact in response["case_facts"]:
+            if not set(fact["supporting_source_segment_ids"]) <= allowed_segments:
+                raise SystemExit("case fact cites a Source Segment outside its candidate boundary")
+    if run["pipeline_version"] == "0.2.0" and stage_id == "deduplication":
+        request = load_json(run_dir / "requests" / "deduplication.json")
+        expected_ids = {item["candidate_case_id"] for item in request["inputs"]["dedup_candidates"]}
+        matches = response["candidate_matches"]
+        actual_ids = [item["candidate_case_id"] for item in matches]
+        if len(actual_ids) != len(set(actual_ids)) or set(actual_ids) != expected_ids:
+            raise SystemExit("deduplication must compare every supplied candidate exactly once")
+        if not isinstance(response["decision_reasons"], list) or not response["decision_reasons"]:
+            raise SystemExit("deduplication requires decision reasons")
+        decisions = {item["match_decision"] for item in matches}
+        overall = response["overall_decision"]
+        if overall == "new_case" and decisions - {"distinct_case"}:
+            raise SystemExit("new_case requires every supplied candidate to be distinct")
+        if overall == "same_case" and "same_case" not in decisions:
+            raise SystemExit("same_case requires an identified matching candidate")
+        if overall in {"possible_same_case", "needs_human_review"} and not (
+            decisions & {"same_case", "possible_same_case", "needs_human_review"}
+        ):
+            raise SystemExit("review decision requires an ambiguous or matching candidate")
+    if run["pipeline_version"] == "0.2.0" and stage_id == "source_occurrence":
+        request = load_json(run_dir / "requests" / "source_occurrence.json")
+        seed = request["inputs"]["occurrence_seed"]
+        for field, value in seed.items():
+            if response.get(field) != value:
+                raise SystemExit(f"source_occurrence must preserve occurrence_seed.{field}")
+        if not isinstance(response["locator"], dict) or not response["languages"]:
+            raise SystemExit("source_occurrence requires a locator and language")
+        known_ids = {item["occurrence_id"] for item in request["inputs"]["known_occurrences_for_case"]}
+        for link in response["parent_links"]:
+            target = link["target"]
+            if not isinstance(target, dict) or target.get("state") not in {"known", "unresolved_upstream"}:
+                raise SystemExit("parent link target needs known or unresolved_upstream state")
+            if target["state"] == "known" and target.get("occurrence_id") not in known_ids:
+                raise SystemExit("parent link points to an unknown occurrence")
+            if target["state"] == "unresolved_upstream" and not target.get("description"):
+                raise SystemExit("unresolved upstream needs a description")
+            if not set(link["supporting_source_segment_ids"]) <= set(seed["supporting_source_segment_ids"]):
+                raise SystemExit("parent link cites a segment outside this occurrence")
     if stage_id == "factual_check":
         unsupported = sum(c["verdict"] == "unsupported" for c in response["claims"])
         contradicted = sum(c["verdict"] == "contradicted" for c in response["claims"])
@@ -261,7 +317,7 @@ def sanitized_record(run: dict[str, Any]) -> dict[str, Any]:
         "source_entry_id", "source_entry_hash", "source_catalog_article_id",
         "rights_review_id", "external_processing", "case_id", "candidate_id",
         "parent_article_run_id", "created_at", "updated_at", "status", "stages",
-        "case_runs",
+        "case_runs", "resolution_review",
     )
     return {key: run[key] for key in keep if key in run}
 
@@ -415,12 +471,134 @@ def dedup_candidate_context(run: dict[str, Any], run_dir: Path) -> dict[str, Any
     return {"metadata": metadata, "candidates": selected}
 
 
+def completed_local_case_runs(runtime_root: Path) -> list[tuple[Path, dict[str, Any]]]:
+    paths = sorted(runtime_root.glob("*/cases/*/run.json"))
+    paths += sorted(runtime_root.glob("*/candidates/*/run.json"))
+    result: list[tuple[Path, dict[str, Any]]] = []
+    for path in paths:
+        value = load_json(path)
+        if value.get("run_kind") == "case" and value.get("status") == "completed" and value.get("case_id"):
+            result.append((path.parent, value))
+    return result
+
+
+def dedup_candidate_context_v2(run: dict[str, Any], run_dir: Path) -> dict[str, Any]:
+    config = load_json(DEDUP_RETRIEVAL_V2_PATH)
+    current = dedup_features(
+        load_stage_output(run, run_dir, "case_extraction"),
+        load_stage_output(run, run_dir, "entity_tagging"),
+    )
+    runtime_root = Path(run["parent_article_run_path"]).parent
+    grouped: dict[str, list[tuple[Path, dict[str, Any]]]] = {}
+    for candidate_dir, candidate_run in completed_local_case_runs(runtime_root):
+        if candidate_run.get("run_id") != run["run_id"]:
+            grouped.setdefault(candidate_run["case_id"], []).append((candidate_dir, candidate_run))
+
+    scored: list[dict[str, Any]] = []
+    for case_id, versions in grouped.items():
+        best: dict[str, Any] | None = None
+        occurrences: dict[str, dict[str, Any]] = {}
+        for candidate_dir, candidate_run in versions:
+            extraction = load_json(output_path(candidate_dir, "case_extraction"))
+            tagging = load_json(output_path(candidate_dir, "entity_tagging"))
+            score, reasons = score_dedup_candidate(
+                current, dedup_features(extraction, tagging),
+                candidate_run["source_entry_id"] == run["source_entry_id"], config,
+            )
+            occurrence_path = output_path(candidate_dir, "source_occurrence")
+            if occurrence_path.exists():
+                occurrence = load_json(occurrence_path)
+                occurrences[occurrence["occurrence_id"]] = {
+                    "occurrence_id": occurrence["occurrence_id"],
+                    "source_id": occurrence["source_id"],
+                    "source_entry_id": occurrence["source_entry_id"],
+                    "locator": occurrence["locator"],
+                    "parent_links": occurrence["parent_links"],
+                }
+            if best is None or (score, candidate_run.get("updated_at", "")) > (
+                best["selection_score"], best["updated_at"]
+            ):
+                best = {
+                    "candidate_case_id": case_id,
+                    "source_id": candidate_run["source_id"],
+                    "source_entry_id": candidate_run["source_entry_id"],
+                    "pipeline_version": candidate_run["pipeline_version"],
+                    "selection_score": score,
+                    "selection_reasons": reasons,
+                    "case_facts": extraction["case_facts"],
+                    "persons": tagging["persons"],
+                    "places": tagging["places"],
+                    "tags": tagging["tags"],
+                    "updated_at": candidate_run.get("updated_at", ""),
+                }
+        assert best is not None
+        if best["selection_score"] >= config["minimum_score"]:
+            best.pop("updated_at")
+            best["source_occurrences"] = [occurrences[key] for key in sorted(occurrences)]
+            best["external_processing"] = (
+                "allowed" if all(item[1].get("external_processing") == "allowed" for item in versions)
+                else "blocked"
+            )
+            scored.append(best)
+
+    scored.sort(key=lambda item: (-item["selection_score"], item["candidate_case_id"]))
+    selected = scored[:config["limit"]]
+    metadata = {
+        "retrieval_version": config["retrieval_version"],
+        "scope": config["scope"],
+        "eligible_completed_case_count": len(grouped),
+        "scored_candidate_count": len(scored),
+        "selected_candidate_count": len(selected),
+        "limit": config["limit"],
+        "minimum_score": config["minimum_score"],
+        "requires_local_adapter": any(item["external_processing"] != "allowed" for item in selected),
+        "selection_rules": config["selection_rules"],
+    }
+    return {"metadata": metadata, "candidates": selected}
+
+
+def known_occurrences_for_case(run: dict[str, Any]) -> list[dict[str, Any]]:
+    runtime_root = Path(run["parent_article_run_path"]).parent
+    found: dict[str, dict[str, Any]] = {}
+    for candidate_dir, candidate_run in completed_local_case_runs(runtime_root):
+        if candidate_run["case_id"] != run["case_id"]:
+            continue
+        path = output_path(candidate_dir, "source_occurrence")
+        if path.exists():
+            occurrence = load_json(path)
+            found[occurrence["occurrence_id"]] = {
+                "occurrence_id": occurrence["occurrence_id"],
+                "source_id": occurrence["source_id"],
+                "source_entry_id": occurrence["source_entry_id"],
+                "locator": occurrence["locator"],
+            }
+    return [found[key] for key in sorted(found)]
+
+
+def occurrence_seed(run: dict[str, Any]) -> dict[str, Any]:
+    entry = load_json(Path(run["source_entry_path"]))
+    segment_ids = run["case_candidate"]["supporting_source_segment_ids"]
+    key = "|".join((run["source_entry_id"], run["candidate_id"], *sorted(segment_ids)))
+    return {
+        "occurrence_id": "OCC" + sha256_text(key)[:16].upper(),
+        "case_id": run["case_id"],
+        "source_id": run["source_id"],
+        "source_item_id": run["source_catalog_article_id"],
+        "source_entry_id": run["source_entry_id"],
+        "supporting_source_segment_ids": segment_ids,
+        "locator": {"type": "source_segments", "source_locator": entry.get("locator_text", ""), "segment_ids": segment_ids},
+        "languages": [entry.get("language") or "unknown"],
+    }
+
+
 def request_payload(run: dict[str, Any], run_dir: Path, stage: dict[str, Any]) -> dict[str, Any]:
     inputs: dict[str, Any] = {
         "source_entry": load_json(Path(run["source_entry_path"])),
     }
     if run["run_kind"] == "case":
-        inputs["case_id"] = run["case_id"]
+        if "case_id" in run:
+            inputs["case_id"] = run["case_id"]
+        inputs["candidate_id"] = run["candidate_id"]
         inputs["case_candidate"] = run["case_candidate"]
         inputs["source_segmentation"] = load_stage_output(run, run_dir, "source_segmentation")
     for dependency in stage["depends_on"]:
@@ -433,6 +611,13 @@ def request_payload(run: dict[str, Any], run_dir: Path, stage: dict[str, Any]) -
         retrieval = dedup_candidate_context(run, run_dir)
         inputs["dedup_candidate_retrieval"] = retrieval["metadata"]
         inputs["dedup_candidates"] = retrieval["candidates"]
+    if stage["id"] == "deduplication" and run["pipeline_version"] == "0.2.0":
+        retrieval = dedup_candidate_context_v2(run, run_dir)
+        inputs["dedup_candidate_retrieval"] = retrieval["metadata"]
+        inputs["dedup_candidates"] = retrieval["candidates"]
+    if stage["id"] == "source_occurrence" and run["pipeline_version"] == "0.2.0":
+        inputs["occurrence_seed"] = occurrence_seed(run)
+        inputs["known_occurrences_for_case"] = known_occurrences_for_case(run)
     inputs["rights_review"] = parse_simple_yaml(Path(run["rights_review_path"]))
     prompt_path = PROMPT_DIR / stage["prompt"]
     return {
@@ -465,7 +650,58 @@ def publication_blockers(run: dict[str, Any], run_dir: Path) -> list[str]:
         dedup = load_stage_output(run, run_dir, "deduplication")
         if dedup["decision"] not in {"no_match", "distinct_case"}:
             blockers.append(f"deduplication_unresolved:{dedup['decision']}")
+    if run["pipeline_version"] == "0.2.0":
+        occurrence = load_stage_output(run, run_dir, "source_occurrence")
+        if occurrence["review_status"] == "needs_review":
+            blockers.append("source_occurrence_needs_review")
     return blockers
+
+
+def complete_case_resolution(
+    run: dict[str, Any], run_dir: Path, resolution_kind: str, decision_basis: str,
+    reviewer_id: str = "", reason: str = "", target_case_id: str = "",
+) -> None:
+    if output_path(run_dir, "case_resolution").exists():
+        raise SystemExit("case_resolution output already exists")
+    if resolution_kind == "new":
+        case_id = allocate_case_ids(1, Path(run["record_dir"]))[0]
+    elif resolution_kind == "reuse":
+        if not re.fullmatch(r"CASE\d{6}", target_case_id):
+            raise SystemExit("reuse requires an existing CASE ID")
+        candidate_ids = {
+            item["candidate_case_id"] for item in
+            load_json(run_dir / "requests/deduplication.json")["inputs"]["dedup_candidates"]
+        }
+        candidate_ids.update(run.get("preexisting_case_ids", []))
+        if target_case_id not in candidate_ids or int(target_case_id[4:]) not in existing_case_numbers(Path(run["record_dir"])):
+            raise SystemExit("reuse target is not a known candidate or prior catalog case")
+        case_id = target_case_id
+    else:
+        raise SystemExit(f"unknown resolution kind: {resolution_kind}")
+    if decision_basis == "human_review" and (not reviewer_id.strip() or not reason.strip()):
+        raise SystemExit("human identity resolution requires reviewer and reason")
+    result = {
+        "candidate_id": run["candidate_id"],
+        "case_id": case_id,
+        "resolution_kind": resolution_kind,
+        "decision_basis": decision_basis,
+        "dedup_scope": load_json(run_dir / "requests/deduplication.json")["inputs"]["dedup_candidate_retrieval"]["scope"],
+    }
+    if decision_basis == "human_review":
+        result["reviewer_id"] = reviewer_id.strip()
+        result["reason"] = reason.strip()
+        run["resolution_review"] = {"reviewer_id": reviewer_id.strip(), "reason": reason.strip(), "action": resolution_kind}
+    atomic_json(output_path(run_dir, "case_resolution"), result)
+    run["case_id"] = case_id
+    run["stages"]["case_resolution"].update({
+        "status": "completed", "completed_at": utc_now(),
+        "output_hash": sha256_file(output_path(run_dir, "case_resolution")),
+    })
+    row = find_entry_row(run["source_id"], run["source_entry_id"])
+    linked = [item for item in row.get("case_ids", "").split(";") if item]
+    if case_id not in linked:
+        linked.append(case_id)
+        update_article(run["source_id"], run["source_catalog_article_id"], {"case_ids": ";".join(linked)})
 
 
 def refresh(run: dict[str, Any], run_dir: Path) -> None:
@@ -476,6 +712,18 @@ def refresh(run: dict[str, Any], run_dir: Path) -> None:
             continue
         if not all(run["stages"][dep]["status"] == "completed" for dep in stage["depends_on"]):
             continue
+        if stage_id == "case_resolution" and run["pipeline_version"] == "0.2.0":
+            decision = load_stage_output(run, run_dir, "deduplication")["overall_decision"]
+            if decision == "new_case" and not run["preexisting_case_ids"]:
+                complete_case_resolution(run, run_dir, "new", "scoped_no_match")
+                continue
+            state["status"] = "review_required"
+            state["reason"] = (
+                "prior catalog case mapping requires review"
+                if decision == "new_case" else f"deduplication decision: {decision}"
+            )
+            run["status"] = "blocked"
+            return
         if stage_id == "publication_packaging":
             rights = load_stage_output(run, run_dir, "rights_check")
             publish_status = rights["allowed_display_scope"]
@@ -560,7 +808,7 @@ def create_article_run(args: argparse.Namespace) -> None:
     if entry.get("raw_text_hash") != sha256_text(entry.get("raw_text", "")):
         raise SystemExit("source entry raw_text_hash does not match raw_text")
     precheck = rights_precheck(entry, entry_path)
-    pipeline = definition()
+    pipeline = definition(getattr(args, "pipeline_version", DEFAULT_PIPELINE_VERSION))
     run = {
         "run_id": run_dir.name,
         "run_kind": "article",
@@ -637,8 +885,51 @@ def allocate_case_ids(count: int, record_dir: Path) -> list[str]:
 def spawn_case_runs(article_run: dict[str, Any], article_dir: Path, candidates: list[dict[str, Any]]) -> None:
     record_dir = Path(article_run["record_dir"])
     preexisting = article_run.get("preexisting_case_ids", [])
-    case_ids = preexisting if len(preexisting) == len(candidates) else allocate_case_ids(len(candidates), record_dir)
     pipeline = definition(article_run["pipeline_version"])
+    if article_run["pipeline_version"] == "0.2.0":
+        for candidate in candidates:
+            candidate_id = candidate["candidate_id"]
+            child_id = f"{article_run['run_id']}-{candidate_id}"
+            child_dir = article_dir / "candidates" / candidate_id
+            child = {
+                "run_id": child_id,
+                "run_kind": "case",
+                "pipeline_id": pipeline["pipeline_id"],
+                "pipeline_version": pipeline["pipeline_version"],
+                "parent_article_run_id": article_run["run_id"],
+                "parent_article_run_path": str(article_dir),
+                "source_id": article_run["source_id"],
+                "source_entry_id": article_run["source_entry_id"],
+                "source_entry_path": article_run["source_entry_path"],
+                "source_entry_hash": article_run["source_entry_hash"],
+                "source_catalog_article_id": article_run["source_catalog_article_id"],
+                "preexisting_case_ids": preexisting,
+                "rights_review_id": article_run["rights_review_id"],
+                "rights_review_path": article_run["rights_review_path"],
+                "external_processing": article_run["external_processing"],
+                "record_dir": article_run["record_dir"],
+                "candidate_id": candidate_id,
+                "case_candidate": candidate,
+                "created_at": utc_now(),
+                "updated_at": utc_now(),
+                "status": "running",
+                "stages": {stage["id"]: {"status": "pending"} for stage in pipeline["case_stages"]},
+            }
+            for directory in ("requests", "responses", "outputs", "checks"):
+                (child_dir / directory).mkdir(parents=True, exist_ok=True)
+            refresh(child, child_dir)
+            write_run(child, child_dir)
+            article_run["case_runs"].append({"candidate_id": candidate_id, "run_id": child_id, "status": "running"})
+        article_run["status"] = "completed" if not candidates else "case_runs_active"
+        article_run["updated_at"] = utc_now()
+        update_article(article_run["source_id"], article_run["source_catalog_article_id"], {
+            "pipeline_status": "completed" if not candidates else "running",
+            "current_stage": "" if not candidates else "case_extraction",
+            "machine_review_status": "passed" if not candidates else "not_reviewed",
+            "last_checked_at": utc_now()[:10],
+        })
+        return
+    case_ids = preexisting if len(preexisting) == len(candidates) else allocate_case_ids(len(candidates), record_dir)
     for case_id, candidate in zip(case_ids, candidates):
         child_id = f"{article_run['run_id']}-{case_id}"
         child_dir = article_dir / "cases" / case_id
@@ -689,13 +980,16 @@ def sync_parent(child: dict[str, Any]) -> None:
     for item in parent["case_runs"]:
         if item["run_id"] == child["run_id"]:
             item["status"] = child["status"]
+            if "case_id" in child:
+                item["case_id"] = child["case_id"]
     failed = any(item["status"] == "failed" for item in parent["case_runs"])
+    blocked = any(item["status"] == "blocked" for item in parent["case_runs"])
     complete = all(item["status"] == "completed" for item in parent["case_runs"])
-    parent["status"] = "failed" if failed else ("completed" if complete else "case_runs_active")
+    parent["status"] = "failed" if failed else ("blocked" if blocked else ("completed" if complete else "case_runs_active"))
     parent["updated_at"] = utc_now()
     write_run(parent, parent_dir)
     update_article(parent["source_id"], parent["source_catalog_article_id"], {
-        "pipeline_status": "failed" if failed else ("completed" if complete else "running"),
+        "pipeline_status": "failed" if failed else ("blocked" if blocked else ("completed" if complete else "running")),
         "current_stage": "" if complete else "case_runs",
         "machine_review_status": "failed" if failed else ("passed" if complete else "not_reviewed"),
         "last_run_id": child["run_id"],
@@ -712,6 +1006,9 @@ def accept_response(args: argparse.Namespace) -> None:
     state = run["stages"][args.stage]
     if state["status"] != "ready":
         raise SystemExit(f"stage is not ready: {args.stage} ({state['status']})")
+    request_path = run_dir / "requests" / f"{args.stage}.json"
+    if not request_path.exists() or sha256_file(request_path) != state["request_hash"]:
+        raise SystemExit(f"request hash mismatch: {args.stage}")
     stage_processing = state.get("external_processing", run["external_processing"])
     if args.adapter != "local" and stage_processing != "allowed":
         raise SystemExit("external adapter blocked for this stage by source or candidate rights policy")
@@ -745,7 +1042,7 @@ def accept_response(args: argparse.Namespace) -> None:
             "current_stage": next_ready_stage(run) or "case_runs",
             "last_run_id": run["run_id"], "last_checked_at": utc_now()[:10],
         })
-        if run["status"] == "completed":
+        if run["status"] in {"completed", "blocked"}:
             sync_parent(run)
     print(f"accepted {args.stage}")
 
@@ -772,14 +1069,37 @@ def fail_run(args: argparse.Namespace) -> None:
     print(f"failed {run['run_id']} at {stage_id}")
 
 
+def resolve_identity(args: argparse.Namespace) -> None:
+    run_dir = args.run_dir.resolve()
+    run = load_json(run_dir / "run.json")
+    if run["run_kind"] != "case" or run["pipeline_version"] != "0.2.0":
+        raise SystemExit("identity resolution requires a v0.2 candidate run")
+    if run["status"] != "blocked" or run["stages"]["case_resolution"]["status"] != "review_required":
+        raise SystemExit("case_resolution is not awaiting human review")
+    complete_case_resolution(
+        run, run_dir, args.action, "human_review",
+        reviewer_id=args.reviewer, reason=args.reason, target_case_id=args.case_id,
+    )
+    run["status"] = "running"
+    run["updated_at"] = utc_now()
+    refresh(run, run_dir)
+    write_run(run, run_dir)
+    sync_parent(run)
+    update_article(run["source_id"], run["source_catalog_article_id"], {
+        "current_stage": next_ready_stage(run) or "case_runs",
+        "last_run_id": run["run_id"], "last_checked_at": utc_now()[:10],
+    })
+    print(f"resolved {run['candidate_id']} as {run['case_id']} ({args.action})")
+
+
 def show_status(args: argparse.Namespace) -> None:
     run = load_json(args.run_dir.resolve() / "run.json")
-    identity = run.get("case_id", run["source_entry_id"])
+    identity = run.get("case_id", run.get("candidate_id", run["source_entry_id"]))
     print(f"{run['run_id']} kind={run['run_kind']} pipeline={run['pipeline_version']} item={identity} status={run['status']}")
     for stage_id, state in run["stages"].items():
         print(f"{stage_id}: {state['status']}")
     for child in run.get("case_runs", []):
-        print(f"{child['case_id']}: {child['status']} ({child['run_id']})")
+        print(f"{child.get('case_id', child['candidate_id'])}: {child['status']} ({child['run_id']})")
 
 
 def parse_args() -> argparse.Namespace:
@@ -789,6 +1109,7 @@ def parse_args() -> argparse.Namespace:
     create.add_argument("--entry", type=Path, required=True)
     create.add_argument("--run-dir", type=Path, required=True)
     create.add_argument("--record-dir", type=Path, default=DEFAULT_RECORD_DIR)
+    create.add_argument("--pipeline-version", choices=tuple(PIPELINE_DEFINITIONS), default=DEFAULT_PIPELINE_VERSION)
     create.set_defaults(handler=create_article_run)
     accept = commands.add_parser("accept")
     accept.add_argument("--run-dir", type=Path, required=True)
@@ -802,6 +1123,13 @@ def parse_args() -> argparse.Namespace:
     fail.add_argument("--stage")
     fail.add_argument("--reason", required=True)
     fail.set_defaults(handler=fail_run)
+    resolve = commands.add_parser("resolve-identity")
+    resolve.add_argument("--run-dir", type=Path, required=True)
+    resolve.add_argument("--action", choices=("new", "reuse"), required=True)
+    resolve.add_argument("--case-id", default="", help="Existing CASE ID when --action reuse.")
+    resolve.add_argument("--reviewer", required=True)
+    resolve.add_argument("--reason", required=True)
+    resolve.set_defaults(handler=resolve_identity)
     status = commands.add_parser("status")
     status.add_argument("--run-dir", type=Path, required=True)
     status.set_defaults(handler=show_status)

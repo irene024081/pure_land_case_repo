@@ -1,0 +1,18 @@
+{
+  "contract_version": "1.0.0",
+  "stage": "source_occurrence",
+  "required_top_level": ["occurrence_id", "case_id", "source_id", "source_item_id", "source_entry_id", "supporting_source_segment_ids", "locator", "languages", "content_form", "voice", "parent_links", "review_status"],
+  "array_rules": {
+    "parent_links": {"min_items": 0, "required_fields": ["relation", "target", "basis", "supporting_source_segment_ids", "review_status"]}
+  },
+  "allowed_values": {
+    "content_form": ["prose_entry", "biographical_entry", "letter", "email", "first_person_submission", "article", "video_segment", "audio_segment", "oral_narration", "caption", "other", "unknown"],
+    "voice": ["first_person", "third_person", "direct_witness", "oral_recount", "mixed", "unknown"],
+    "review_status": ["machine_checked", "human_checked", "needs_review"],
+    "relation": ["reprint_of", "translation_of", "quotation_of", "abridgement_of", "edited_from", "retelling_of", "oral_recount_of", "derived_from", "unknown"],
+    "basis": ["source_explicit", "machine_inference", "human_inference"]
+  },
+  "reference_rules": [
+    {"array": "parent_links", "field": "supporting_source_segment_ids", "source_stage": "source_segmentation", "source_array": "segments", "source_id": "segment_id"}
+  ]
+}

@@ -2,6 +2,8 @@
 
 `case_facts` stores atomic normalized propositions extracted from source segments. It is the factual bridge between source evidence and generated content.
 
+Pipeline 0.2.0 first emits candidate-scoped facts with `candidate_id` and IDs such as `ENT000001-CAND0001-FACT0001`. `case_id` is assigned only after `case_resolution`. Canonical promotion associates the fact with that Case without rewriting the historical Run output or losing its candidate provenance. Older v0.1.x Runs retain their `CASE...-FACT...` IDs.
+
 ## Core Fields
 
 ```text

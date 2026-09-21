@@ -1,0 +1,14 @@
+{
+  "contract_version": "2.0.0",
+  "stage": "deduplication",
+  "required_top_level": ["candidate_id", "overall_decision", "candidate_matches", "decision_reasons"],
+  "array_rules": {
+    "candidate_matches": {"min_items": 0, "required_fields": ["candidate_case_id", "match_decision", "similarities", "differences", "confidence"]}
+  },
+  "allowed_values": {
+    "overall_decision": ["new_case", "same_case", "possible_same_case", "needs_human_review"],
+    "match_decision": ["same_case", "distinct_case", "possible_same_case", "needs_human_review"],
+    "confidence": ["high", "medium", "low", "unknown"]
+  },
+  "reference_rules": []
+}

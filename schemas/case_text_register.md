@@ -9,7 +9,7 @@ Do not store long text directly in `cases`.
 ```text
 text_id
 case_id
-citation_id
+occurrence_id
 text_type
 language
 content
@@ -30,6 +30,8 @@ copyright_risk
 search_weight
 notes
 ```
+
+`occurrence_id` identifies the source appearance underlying an original or source-derived text. Historical `citation_id` values require an explicit migration alias; see `../02-data-model/T02_V02_MIGRATION.md`. Derivative texts retain their `generated_from_*` lineage and rights decisions.
 
 ## text_type
 

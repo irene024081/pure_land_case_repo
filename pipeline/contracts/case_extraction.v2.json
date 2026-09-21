@@ -1,0 +1,12 @@
+{
+  "contract_version": "2.0.0",
+  "stage": "case_extraction",
+  "required_top_level": ["candidate_id", "case_facts"],
+  "array_rules": {
+    "case_facts": {"min_items": 1, "required_fields": ["case_fact_id", "proposition_text", "fact_type", "claim_mode", "supporting_source_segment_ids", "uncertainty"]}
+  },
+  "allowed_values": {},
+  "reference_rules": [
+    {"array": "case_facts", "field": "supporting_source_segment_ids", "source_stage": "source_segmentation", "source_array": "segments", "source_id": "segment_id"}
+  ]
+}

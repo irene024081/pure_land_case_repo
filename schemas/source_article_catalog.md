@@ -8,6 +8,8 @@ data/source_catalogs/{source_id}/articles.csv
 
 The catalog is the batch queue and administrative review ledger. It records every discovered item, including excluded, duplicate, non-case, failed, and unreviewed items. Source entry files and pipeline run directories do not replace it.
 
+`Source Item` is the logical domain name for each inventoried row. The physical `article_id` field remains unchanged for CSV and runner compatibility; it also identifies book entries, videos, and letters. A Source Item can produce zero, one, or several Candidate Runs and Source Occurrences.
+
 Source-level batch defaults are stored in `source.yml` beside the CSV.
 
 ## Source YAML Fields
@@ -38,7 +40,7 @@ external_processing_default
 | `source_id` | Yes | Parent source ID. Must match the directory and `source.yml`. |
 | `source_item_key` | Yes | Stable source-facing key, URL slug, volume-entry key, video ID, or issue-page key. |
 | `source_entry_id` | No | Assigned after normalized entry creation. |
-| `case_ids` | No | Semicolon-separated case IDs produced from the item. |
+| `case_ids` | No | Semicolon-separated resolved Case IDs associated with the item; never candidate IDs or positional guesses. |
 | `title` | Yes | Source title without editorial rewriting. |
 | `canonical_url` | No | Canonical item URL. Print items use a locator instead. |
 | `language` | Yes | Source item language. |

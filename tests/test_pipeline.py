@@ -111,6 +111,7 @@ class PipelineTest(unittest.TestCase):
         old = pipeline.definition("0.1.0")
         previous = pipeline.definition("0.1.1")
         current = pipeline.definition("0.1.2")
+        next_version = pipeline.definition("0.2.0")
         old_rights = next(stage for stage in old["case_stages"] if stage["id"] == "rights_check")
         previous_rights = next(stage for stage in previous["case_stages"] if stage["id"] == "rights_check")
         previous_factual = next(stage for stage in previous["case_stages"] if stage["id"] == "factual_check")
@@ -122,6 +123,215 @@ class PipelineTest(unittest.TestCase):
             current_factual["depends_on"],
             ["case_extraction", "reader_generation", "creator_analysis"],
         )
+        next_ids = [stage["id"] for stage in next_version["case_stages"]]
+        self.assertLess(next_ids.index("deduplication"), next_ids.index("case_resolution"))
+        self.assertLess(next_ids.index("case_resolution"), next_ids.index("reader_generation"))
+
+    def start_v2_article(self, root: Path, candidates: list[dict[str, object]]) -> Path:
+        article_dir = root / "RUN-V2"
+        pipeline.create_article_run(Namespace(
+            entry=self.make_entry(root), run_dir=article_dir,
+            record_dir=root / "records", pipeline_version="0.2.0",
+        ))
+        raw_text = "甲念佛。乙听闻此事。"
+        self.accept(article_dir, root, "source_segmentation", {
+            "source_entry_id": "ENTTEST001",
+            "segments": [{
+                "segment_id": "ENTTEST001-SEG0001", "sequence": 1,
+                "start_offset": 0, "end_offset": len(raw_text),
+                "content": raw_text,
+                "content_hash": hashlib.sha256(raw_text.encode()).hexdigest(),
+                "segment_type": "narrative", "claim_mode": "unknown",
+                "speaker_or_author": "source author",
+            }],
+        })
+        self.accept(article_dir, root, "case_detection", {
+            "source_entry_id": "ENTTEST001", "case_candidates": candidates,
+        })
+        return article_dir
+
+    def v2_candidate(self, candidate_id: str) -> dict[str, object]:
+        return {
+            "candidate_id": candidate_id, "working_title": "甲念佛",
+            "supporting_source_segment_ids": ["ENTTEST001-SEG0001"],
+            "boundary_confidence": "high", "notes": "Candidate boundary in one segment.",
+        }
+
+    def accept_v2_evidence(self, root: Path, candidate_dir: Path, candidate_id: str) -> str:
+        fact_id = f"{candidate_id}-FACT0001"
+        self.accept(candidate_dir, root, "case_extraction", {
+            "candidate_id": candidate_id,
+            "case_facts": [{
+                "case_fact_id": fact_id, "proposition_text": "甲念佛。",
+                "fact_type": "practice", "claim_mode": "direct_source_statement",
+                "supporting_source_segment_ids": ["ENTTEST001-SEG0001"],
+                "uncertainty": "source_statement",
+            }],
+        })
+        self.accept(candidate_dir, root, "entity_tagging", {
+            "candidate_id": candidate_id, "persons": [], "places": [],
+            "tags": [{"tag": "name_recitation", "tag_class": "practice", "supporting_case_fact_ids": [fact_id]}],
+        })
+        return fact_id
+
+    def test_v2_assigns_case_only_after_dedup_and_records_occurrence(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            candidate_id = "ENTTEST001-CAND0001"
+            row = {"article_id": "SRCTEST-ART000001", "case_ids": ""}
+            with patch.object(pipeline, "rights_precheck", return_value=self.precheck(root)), patch.object(
+                pipeline, "find_entry_row", return_value=row
+            ), patch.object(pipeline, "update_article"):
+                article_dir = self.start_v2_article(root, [self.v2_candidate(candidate_id)])
+                child_dir = article_dir / "candidates" / candidate_id
+                article = pipeline.load_json(article_dir / "run.json")
+                child = pipeline.load_json(child_dir / "run.json")
+                self.assertNotIn("case_id", article["case_runs"][0])
+                self.assertNotIn("case_id", child)
+                self.assertFalse((article_dir / "cases").joinpath(candidate_id).exists())
+                fact_id = self.accept_v2_evidence(root, child_dir, candidate_id)
+                dedup_request = pipeline.load_json(child_dir / "requests/deduplication.json")
+                self.assertEqual(
+                    dedup_request["inputs"]["dedup_candidate_retrieval"]["retrieval_version"],
+                    "dedup_candidates/v2",
+                )
+                self.assertEqual(dedup_request["inputs"]["dedup_candidates"], [])
+                self.assertNotIn("case_id", dedup_request["inputs"])
+                self.accept(child_dir, root, "deduplication", {
+                    "candidate_id": candidate_id, "overall_decision": "new_case",
+                    "candidate_matches": [], "decision_reasons": ["No local candidates matched."],
+                })
+                child = pipeline.load_json(child_dir / "run.json")
+                case_id = child["case_id"]
+                self.assertRegex(case_id, r"^CASE\d{6}$")
+                resolution = pipeline.load_json(child_dir / "outputs/case_resolution.json")
+                self.assertEqual(resolution["decision_basis"], "scoped_no_match")
+                self.assertEqual(resolution["case_id"], case_id)
+                occurrence_request = pipeline.load_json(child_dir / "requests/source_occurrence.json")
+                seed = occurrence_request["inputs"]["occurrence_seed"]
+                self.accept(child_dir, root, "source_occurrence", {
+                    **seed, "content_form": "biographical_entry", "voice": "third_person",
+                    "parent_links": [], "review_status": "machine_checked",
+                })
+                self.accept(child_dir, root, "reader_generation", {
+                    "case_id": case_id, "reader_summary": "甲念佛。",
+                    "paragraphs": [{
+                        "paragraph_id": "P0001", "content": "资料记载，甲念佛。",
+                        "supporting_case_fact_ids": [fact_id],
+                        "supporting_source_segment_ids": ["ENTTEST001-SEG0001"],
+                    }],
+                })
+                self.accept(child_dir, root, "creator_analysis", {
+                    "case_id": case_id, "creator_metadata": {"video_fit_level": "low"},
+                    "interpretation_angles": [{
+                        "angle_id": "ANGTEST001", "title": "资料中的念佛行为",
+                        "core_claim": "资料只明确记载甲念佛。", "audience": ["researcher"],
+                        "supporting_case_fact_ids": [fact_id],
+                        "supporting_source_segment_ids": ["ENTTEST001-SEG0001"],
+                        "doctrinal_boundary": "No doctrinal conclusion is established.",
+                    }],
+                })
+                self.accept(child_dir, root, "factual_check", {
+                    "case_id": case_id, "unsupported_claim_count": 0,
+                    "contradicted_claim_count": 0, "gate_result": "pass",
+                    "claims": [{
+                        "claim_id": "CLMTEST001", "claim_text": "甲念佛。",
+                        "source_output": "reader_generation",
+                        "supporting_case_fact_ids": [fact_id],
+                        "supporting_source_segment_ids": ["ENTTEST001-SEG0001"],
+                        "verdict": "supported",
+                    }],
+                })
+                self.accept(child_dir, root, "rights_check", {
+                    "case_id": case_id, "rights_review_id": "RRTEST", "gate_result": "pass",
+                    "allowed_display_scope": "public",
+                    "checks": [
+                        {"output_id": item, "quotation_status": "none", "expression_similarity_risk": "low", "policy_result": "pass"}
+                        for item in ("reader_generation", "creator_analysis")
+                    ],
+                })
+                package = pipeline.load_json(child_dir / "outputs/publication_packaging.json")
+                self.assertEqual(package["case_id"], case_id)
+                self.assertEqual(package["publish_status"], "public")
+                self.assertEqual(pipeline.load_json(article_dir / "run.json")["status"], "completed")
+
+    def test_v2_existing_case_ids_never_reused_by_candidate_order(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            first_id = "ENTTEST001-CAND0002"
+            second_id = "ENTTEST001-CAND0001"
+            row = {"article_id": "SRCTEST-ART000001", "case_ids": "CASE000001;CASE000002"}
+            precheck = self.precheck(root)
+            precheck["row"] = row
+            with patch.object(pipeline, "rights_precheck", return_value=precheck), patch.object(
+                pipeline, "find_entry_row", return_value=row
+            ), patch.object(pipeline, "update_article"):
+                article_dir = self.start_v2_article(root, [
+                    self.v2_candidate(first_id), self.v2_candidate(second_id),
+                ])
+                first_dir = article_dir / "candidates" / first_id
+                self.assertNotIn("case_id", pipeline.load_json(first_dir / "run.json"))
+                self.accept_v2_evidence(root, first_dir, first_id)
+                self.accept(first_dir, root, "deduplication", {
+                    "candidate_id": first_id, "overall_decision": "new_case",
+                    "candidate_matches": [], "decision_reasons": ["No local candidates matched."],
+                })
+                blocked = pipeline.load_json(first_dir / "run.json")
+                self.assertEqual(blocked["stages"]["case_resolution"]["status"], "review_required")
+                self.assertNotIn("case_id", blocked)
+                pipeline.resolve_identity(Namespace(
+                    run_dir=first_dir, action="reuse", case_id="CASE000002",
+                    reviewer="test-reviewer", reason="Matched the second prior record by source identity.",
+                ))
+                resolved = pipeline.load_json(first_dir / "run.json")
+                self.assertEqual(resolved["case_id"], "CASE000002")
+                self.assertEqual(resolved["resolution_review"]["reviewer_id"], "test-reviewer")
+                self.assertEqual(pipeline.load_json(article_dir / "run.json")["case_runs"][0]["case_id"], "CASE000002")
+
+    def test_v2_rejects_missing_dedup_comparison_and_unknown_parent(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            candidate_id = "ENTTEST001-CAND0001"
+            candidate_dir = root / "RUN-V2" / "candidates" / candidate_id
+            row = {"article_id": "SRCTEST-ART000001", "case_ids": ""}
+            with patch.object(pipeline, "rights_precheck", return_value=self.precheck(root)), patch.object(
+                pipeline, "find_entry_row", return_value=row
+            ), patch.object(pipeline, "update_article"):
+                self.start_v2_article(root, [self.v2_candidate(candidate_id)])
+                self.accept_v2_evidence(root, candidate_dir, candidate_id)
+                request = pipeline.load_json(candidate_dir / "requests/deduplication.json")
+                request["inputs"]["dedup_candidates"] = [{"candidate_case_id": "CASE000099"}]
+                pipeline.atomic_json(candidate_dir / "requests/deduplication.json", request)
+                with self.assertRaisesRegex(SystemExit, "request hash mismatch"):
+                    self.accept(candidate_dir, root, "deduplication", {
+                        "candidate_id": candidate_id, "overall_decision": "new_case",
+                        "candidate_matches": [], "decision_reasons": ["No match."],
+                    })
+                with self.assertRaisesRegex(SystemExit, "every supplied candidate"):
+                    pipeline.validate_semantics("deduplication", {
+                        "candidate_id": candidate_id, "overall_decision": "new_case",
+                        "candidate_matches": [], "decision_reasons": ["No match."],
+                    }, pipeline.load_json(candidate_dir / "run.json"), candidate_dir)
+                original_request = pipeline.load_json(candidate_dir / "run.json")["stages"]["deduplication"]["request_hash"]
+                request["inputs"]["dedup_candidates"] = []
+                pipeline.atomic_json(candidate_dir / "requests/deduplication.json", request)
+                self.assertEqual(
+                    pipeline.sha256_file(candidate_dir / "requests/deduplication.json"), original_request
+                )
+                self.accept(candidate_dir, root, "deduplication", {
+                    "candidate_id": candidate_id, "overall_decision": "new_case",
+                    "candidate_matches": [], "decision_reasons": ["No match."],
+                })
+                seed = pipeline.load_json(candidate_dir / "requests/source_occurrence.json")["inputs"]["occurrence_seed"]
+                with self.assertRaisesRegex(SystemExit, "unknown occurrence"):
+                    self.accept(candidate_dir, root, "source_occurrence", {
+                        **seed, "content_form": "biographical_entry", "voice": "third_person",
+                        "review_status": "machine_checked", "parent_links": [{
+                            "relation": "derived_from", "target": {"state": "known", "occurrence_id": "OCCNOTRETAINED"},
+                            "basis": "source_explicit", "supporting_source_segment_ids": ["ENTTEST001-SEG0001"],
+                            "review_status": "needs_review",
+                        }],
+                    })
 
     def test_dedup_retrieval_selects_completed_exact_match_and_protects_rights(self) -> None:
         with tempfile.TemporaryDirectory() as temp:
@@ -225,6 +435,7 @@ class PipelineTest(unittest.TestCase):
             with patch.object(pipeline, "rights_precheck", return_value=self.precheck(root)), patch.object(pipeline, "update_article"):
                 pipeline.create_article_run(Namespace(
                     entry=self.make_entry(root), run_dir=article_dir, record_dir=record_dir,
+                    pipeline_version="0.1.2",
                 ))
                 raw_text = "甲念佛。乙听闻此事。"
                 first = "甲念佛。"

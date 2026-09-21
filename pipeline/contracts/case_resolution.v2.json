@@ -1,0 +1,11 @@
+{
+  "contract_version": "2.0.0",
+  "stage": "case_resolution",
+  "required_top_level": ["candidate_id", "case_id", "resolution_kind", "decision_basis", "dedup_scope"],
+  "array_rules": {},
+  "allowed_values": {
+    "resolution_kind": ["new", "reuse"],
+    "decision_basis": ["scoped_no_match", "human_review"]
+  },
+  "reference_rules": []
+}

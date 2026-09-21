@@ -156,9 +156,9 @@ After persistence, split the entry into `source_segments`. Generated factual uni
 1. Extraction scripts create `source_entries`; they should not decide final case truth or publishability.
 2. AI may classify entry type and propose case candidates, but must keep the raw source entry unchanged.
 3. `raw_text_hash` supports re-run checks and boundary drift detection.
-4. A `citation` should point to `source_entry_id` when the case comes from a reproducible entry.
-5. If one entry produces multiple cases, create multiple citations or case links that share the same `source_entry_id`.
-6. If one case appears in multiple entries or sources, dedup review decides whether they share one canonical `case_id`.
+4. A `SOURCE_OCCURRENCE` points to this `source_entry_id` and the segments supporting one Case appearance.
+5. If one entry produces multiple cases, create one Occurrence per resolved Case with explicit segment boundaries.
+6. If one Case appears in multiple entries or Sources, resolve identity first and create separate Occurrences; record supported transmission links between them.
 
 ## Minimum M2 Fields
 
