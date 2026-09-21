@@ -9,11 +9,12 @@
   "source_catalog_article_id": "SRC0001-ART000001",
   "rights_review_id": "RR0005",
   "external_processing": "blocked",
+  "case_id": "CASE000001",
   "candidate_id": "ENT000001-CAND0001",
   "parent_article_run_id": "RUN-ENT000001-M2A-T02V02",
   "created_at": "2026-09-21T01:49:15+00:00",
-  "updated_at": "2026-09-21T01:50:01+00:00",
-  "status": "blocked",
+  "updated_at": "2026-09-21T07:39:07+00:00",
+  "status": "completed",
   "stages": {
     "case_extraction": {
       "status": "completed",
@@ -45,26 +46,65 @@
       "output_hash": "a8eba0fa5fbe80cebdcd77ec287a06f3ca63545875569fc4bedb924939cc7d50"
     },
     "case_resolution": {
-      "status": "review_required",
-      "reason": "deduplication decision: same_case"
+      "status": "completed",
+      "reason": "deduplication decision: same_case",
+      "completed_at": "2026-09-21T07:32:40+00:00",
+      "output_hash": "3ddb0b511a2fa84ec9eb2b4dc455b02b282beaee089f8c07f58feceaf507d7e5"
     },
     "source_occurrence": {
-      "status": "pending"
+      "status": "completed",
+      "request_hash": "3ce706862d737959acb0a6d72f791a2b1dd504ed46e6caa997aab8201bfd61f0",
+      "completed_at": "2026-09-21T07:38:52+00:00",
+      "adapter": "local",
+      "model": "migration-sample-T02_v0.2_CASE000001 (kimi-code local)",
+      "response_hash": "303ace0d6a1080decd629761a3ba2528ec9fd9d45170ee619e8a3da9a7e83bb9",
+      "output_hash": "303ace0d6a1080decd629761a3ba2528ec9fd9d45170ee619e8a3da9a7e83bb9"
     },
     "reader_generation": {
-      "status": "pending"
+      "status": "completed",
+      "request_hash": "4acb4295925112e7fbae99f90194fd3f951a3ab8f1893c70691041eed41128ad",
+      "completed_at": "2026-09-21T07:38:53+00:00",
+      "adapter": "local",
+      "model": "replay-v011-accepted-response+id-rekey (kimi-code local)",
+      "response_hash": "a54831aab2b6a9ce54b3b8d66c9f4ff134925ebe48fd0e2add0de1947aed2db7",
+      "output_hash": "a54831aab2b6a9ce54b3b8d66c9f4ff134925ebe48fd0e2add0de1947aed2db7"
     },
     "creator_analysis": {
-      "status": "pending"
+      "status": "completed",
+      "request_hash": "720de20a40a1aa39c9d1e278abe3fb9faed96d4a014e1d714739d78d2635072c",
+      "completed_at": "2026-09-21T07:38:53+00:00",
+      "adapter": "local",
+      "model": "replay-v011-accepted-response+id-rekey (kimi-code local)",
+      "response_hash": "c92e0f8d05f791ffec962894c589605e0ac42fb4c5bb20dd1df3174a3df8098f",
+      "output_hash": "c92e0f8d05f791ffec962894c589605e0ac42fb4c5bb20dd1df3174a3df8098f"
     },
     "factual_check": {
-      "status": "pending"
+      "status": "completed",
+      "request_hash": "2d5b2bf62d9dcb662664938aca7d3bb6204d9c3912d3cfbc692f4f71c5c02646",
+      "completed_at": "2026-09-21T07:39:07+00:00",
+      "adapter": "local",
+      "model": "replay-v011-accepted-response+id-rekey (kimi-code local)",
+      "response_hash": "6d128bd7f60bb0839a4333845894093c3e08e9e1f53009198ee03e102bf4b7bc",
+      "output_hash": "6d128bd7f60bb0839a4333845894093c3e08e9e1f53009198ee03e102bf4b7bc"
     },
     "rights_check": {
-      "status": "pending"
+      "status": "completed",
+      "request_hash": "d022fa11ebb3be8cbaaf70395f6c9a29c12c9d02533026a741746ad9db528528",
+      "completed_at": "2026-09-21T07:39:07+00:00",
+      "adapter": "local",
+      "model": "replay-v011-accepted-response+id-rekey (kimi-code local)",
+      "response_hash": "b8062a075967b0af6cbba2f25cdbdfe545785922dca35eab7ba872f9fd9ae8fe",
+      "output_hash": "b8062a075967b0af6cbba2f25cdbdfe545785922dca35eab7ba872f9fd9ae8fe"
     },
     "publication_packaging": {
-      "status": "pending"
+      "status": "completed",
+      "completed_at": "2026-09-21T07:39:07+00:00",
+      "output_hash": "bf3293cae37e9b8e27690c305a3a9b28760c21c779179efd67db5f0e254f9cd0"
     }
+  },
+  "resolution_review": {
+    "reviewer_id": "owner",
+    "reason": "迁移重放测试：候选与 CASE000001 出自同一原文条目 ENT000001（《净土圣贤录》卷九陈妪条），人物（陈妪）、时间（顺治十年/1653）、地点（常熟）一致，确认同案复用。",
+    "action": "reuse"
   }
 }
