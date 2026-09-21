@@ -1,5 +1,7 @@
 # Next Steps
 
+For the current cross-project status, gaps, decisions, and acceptance criteria, start with [PROJECT_HUB.md](PROJECT_HUB.md). This file keeps the original milestone details.
+
 This plan starts after the v0.1 foundation commit.
 
 ## M2A: First Real Baseline (Completed 2026-09-18)
@@ -31,9 +33,22 @@ Accepted result:
 - `data/baselines/M2A_ENT000001_P011.json` is the first machine-accepted regression baseline.
 - Deduplication was limited to `current_request_only`; corpus candidate retrieval remains required before a corpus-wide no-match decision.
 
-## M2B: Unseen Article Test (Ready)
+## T02 v0.2 Bridge: M2A Migration And Real Run (Next)
 
-Goal: test generalization without changing v1 prompts.
+Goal: validate the new identity/provenance model against the accepted M2A evidence without rewriting the historical baseline.
+
+1. Review `02-data-model/T02_V02_MIGRATION.md` and `data/migrations/T02_v0.2_CASE000001.json` against retained M2A segments and facts.
+2. Run `ENT000001` with Pipeline `0.2.0` and a new Run ID. Confirm no Case ID exists before deduplication.
+3. Resolve the existing `CASE000001` link through an explicit human `reuse` decision with reviewer and reason. Record the new Occurrence and its unresolved upstream citation.
+4. Compare factual, rights, and publication gates with the historical baseline. Do not treat different prompt output or new IDs as automatically equivalent.
+
+Progress on 2026-09-21: `RUN-ENT000001-M2A-T02V02` replayed the retained v0.1 evidence with hash-checked fact/tag ID conversion. Deduplication selected the historical `CASE000001` and returned `same_case`. The Candidate Run is blocked at `case_resolution: review_required`; no Case ID has been reused. This replay validates migration mechanics, not the quality of fresh v0.2 AI extraction.
+
+Exit criteria: evidence links validate, no premature Case ID or positional reuse occurs, the new Run is reproducible, and the old baseline hashes remain unchanged. A new baseline requires separate acceptance.
+
+## M2B: Unseen Article Test (After Bridge)
+
+Goal: test generalization with the accepted v0.2 identity flow while retaining unchanged v1 reader/creator/check prompts for comparison.
 
 Select three new items:
 
@@ -48,11 +63,11 @@ Precondition completed on 2026-09-18:
 - Each Request records selected candidates, scores, reasons, scope, and a candidate-set hash.
 - Restricted candidate content forces the deduplication Stage to use a local Adapter.
 - `factual_check` now receives `case_extraction` directly.
-- The v1 semantic Prompts remain unchanged so M2B can measure generalization before prompt tuning.
+- Reader, creator, factual, and rights v1 Prompts remain unchanged; v0.2 adds versioned candidate-based extraction, deduplication, and occurrence prompts.
 
 Known non-blocking quality issues are tracked in `KNOWN_ISSUES.md`. In particular, `reader_generation/v1` is faithful but not yet sufficiently engaging, and `creator_analysis/v1` can produce generic angles. Record these failures during M2B and design v2 only after the three unseen results are comparable.
 
-Run each through inventory, capture, Article Run, fan-out, and Case Runs. Record failures before designing v2 prompts.
+Run each through inventory, capture, Article Run, Candidate Run, identity resolution, and publication checks. Record failures before tuning reader/creator prompts.
 
 Exit criteria:
 
@@ -87,7 +102,7 @@ Exit criteria:
 
 Goal: move passed Run outputs into machine-readable canonical datasets.
 
-Define promotion commands for segments, case facts, cases, text versions, citations, entities, dedup decisions, and creator metadata. Promotion is idempotent and refuses failed or superseded runs.
+Define promotion commands for segments, case facts, Cases, Source Occurrences and their parent links, text versions, entities, identity decisions, and creator metadata. Promotion is idempotent, collision-checks provisional Occurrence IDs, and refuses failed or superseded runs.
 
 Exit criteria:
 

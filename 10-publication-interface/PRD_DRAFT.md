@@ -1,5 +1,43 @@
 # PRD Draft
 
+## Locked Product Decisions / 已锁定产品决策
+
+2026-09-21 由项目负责人确认（需求访谈 Round 1）：
+
+| # | 决策点 | 决定 | 影响 |
+|---|---|---|---|
+| D1 | 访问范围 | **第一版即公开网站**，任何人可访问 | 所有上线内容必须版权核清；现代受限来源默认不进公开层 |
+| D2 | 法师选题 AI 形态 | **对话式**（多轮追问澄清后推荐） | AI 只能推荐库内案例、不得虚构；对话最终产出结构化选题单，与表单式走同一套事实与版权检查 |
+| D3 | 账号体系 | 读者免登录；创作者登录后使用选题篮、保存提纲；管理员独立后台 | 需要账号系统与创作者资产存储 |
+| D4 | 上线数据规模 | **50–100 条**案例才上线 | 原 M7 种子集目标前移为上线门槛；公开版以公版古籍批量 + 版权已清现代精品为主 |
+
+2026-09-21 由项目负责人确认（需求访谈 Round 2）：
+
+| # | 决策点 | 决定 | 影响 |
+|---|---|---|---|
+| D5 | 对话边界 | AI **只做案例检索推荐**；教理问题引导到已审核导读文章 | 对话助手的 system prompt 必须明确拒绝自由教理问答；导读文章是唯一的教理内容载体 |
+| D6 | 现代版权内容 | 现代案例**只放摘要+外链**，引导读者去原网站读全文 | 公开站可覆盖现代案例但篇幅受限；摘要长度逐案审核；详情页必须有明显的原文来源跳转 |
+| D7 | 界面语言 | 第一版**仅中文** | 多语言案例仍可入库，但界面和读者文本先做中文 |
+| D8 | 提纲交付 | **网页查看+复制文本**，不做文件导出、不生成讲稿初稿 | Creator Brief 页面化；讲稿写作留给创作者自己 |
+
+2026-09-21 由项目负责人确认（需求访谈 Round 3）：
+
+| # | 决策点 | 决定 | 影响 |
+|---|---|---|---|
+| D9 | 开发方式 | **AI 主导开发**，项目负责人决策与验收 | 技术方案需写到可照做的颗粒度；每次交付附验收方法 |
+| D10 | 技术栈 | **主流栈，方便交接**：Postgres + Python(FastAPI) + React；先单机部署，保留迁移余地 | 与 9-15 对话"SQLite→Postgres"路径一致，直接以 Postgres 起步 |
+| D11 | 产品侧 AI 功能 | 第一版三件：**对话选题推荐、搜索辅助、教理导读草稿** | 每个功能独立 prompt 版本与验收；选题单/提纲改用确定性模板组装，不经 AI 生成 |
+| D12 | 审核人力 | 项目负责人 + 少数协作者 | 审核队列按小团队设计：任务列表、认领、决定留痕，暂不做复杂权限层级 |
+
+2026-09-21 由项目负责人确认（需求访谈 Round 4）：
+
+| # | 决策点 | 决定 | 影响 |
+|---|---|---|---|
+| D13 | 商业化 | **完全公益**：无广告、无付费、无捐赠入口 | 版权审核按非商业口径；如未来改变需重审全部现代来源授权 |
+| D14 | 现代当事人隐私 | **来源实名则实名**；病情、家庭矛盾等敏感细节逐案审核 | 与原 GPT 对话默认值一致；敏感细节遮蔽标准仍需在 M3 前写成规则（G14） |
+| D15 | 导读教理审核 | 项目负责人审事实与表达；教理部分**只引用已审核的经论与祖师文献**，不做新教理发挥 | 导读写作范围收窄为"案例 + 既有教理引文"；AI 与负责人均不作教理创新 |
+| D16 | 上线节奏 | **分阶段开放**：先读者搜索阅读（古籍为主），再对话推荐，再导读 | 每阶段独立验收；公开网站可以先上线读者层 |
+
 ## Problem
 
 净土宗案例资料分散在古籍、期刊、网站、视频、法师来信和多语种资料中。法师、视频制作者和研究整理者需要可检索、可追溯、可引用的案例库，而不是零散搜索结果。
@@ -67,7 +105,9 @@ introduce creator workflow without hiding reader search
 
 ### Theme-to-case Recommendation
 
-Input fields:
+交互形态为对话式（D2）：用户以自然语言对话，系统在多轮中逐步收集以下条件。以下字段不再是表单，而是对话需要填满的条件槽（slot），完整流程见 [THEME_ASSISTANT_DESIGN.md](THEME_ASSISTANT_DESIGN.md)。
+
+Input fields (slots):
 
 ```text
 topic
@@ -471,7 +511,7 @@ unknown
 
 ## Success Criteria
 
-1. A teacher can enter a topic and get at least 5 relevant cases.
+1. On a curated topic with at least five eligible, rights-cleared Cases, a teacher can get five relevant recommendations. For thinner coverage, return fewer with a clear coverage note; never pad with weak or invented matches.
 2. Each recommendation includes a reason and a citation.
 3. A video planner can create a usable outline from selected cases.
 4. A researcher can inspect the source chain for each case.

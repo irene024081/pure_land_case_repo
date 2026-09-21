@@ -5,3 +5,4 @@ __pycache__/
 .venv/
 data/source_entries/restricted/
 data/pipeline_runs/
+notes/chatgpt_transcripts/

@@ -1,6 +1,8 @@
 # Project Status
 
-状态：Pipeline `0.1.2` 已就绪，M2A 首个真实 baseline 已完成。下一阶段是 M2B unseen article test。
+团队入口与阶段验收以 [PROJECT_HUB.md](PROJECT_HUB.md) 为准；本文件保留详细进度记录。 / The [project hub](PROJECT_HUB.md) is the team entry point and milestone gate; this file retains the detailed status log.
+
+状态：Pipeline `0.2.0` 的 Candidate-first 流程已实现；`ENT000001` 的迁移重放 Run 已完成提取和去重，停在人工身份审核。首个已接受的 M2A baseline 仍是历史 `0.1.1` Run，M2B 尚未开始。
 
 已完成：
 
@@ -32,7 +34,7 @@
 - Purelanders 明确限制复制，标记为 `restricted_internal`；SRC0002、SRC0003、SRC0004 未找到足够的全文再利用许可，标记为 `legal_review_required`。
 - 已完成五条 source entry 的正规化 JSON 保存；现代来源同时保留受限 HTML/PDF 原始载体。
 - 提取脚本现可用 `--output` 原子写入单条 JSON 或批量 JSONL。
-- 已将 T09 重构为 provider-neutral 的可复现 Pipeline：Article Run 先检测 0..N 个候选，程序随后分配 Case ID 并创建独立 Case Run。
+- 已将 T09 重构为 provider-neutral 的可复现 Pipeline：Article Run 先检测 0..N 个候选；v0.2 为每个候选创建独立 Run，提取和去重后再解决身份、分配 Case ID。
 - 已建立版本化 prompt、机器可读 contract、运行清单、依赖状态机、禁止覆盖规则和确定性 validator。
 - 已建立前五条 M2 案例的回归测试政策；事实或版权硬门槛不能被可读性评分抵消。
 - 已增加外部 AI 处理权限字段；`ai_processing_policy: unknown` 默认禁止发送完整原文。
@@ -51,6 +53,13 @@
 - Pipeline `0.1.2` 已让事实检查直接读取 `case_extraction`，并在去重身份未解决时将发布包设为 `withheld`。
 - 已区分执行阻断、发布门槛和非阻塞质量问题，并建立 `KNOWN_ISSUES.md`。
 - 已登记当前面向读者和创作者的 Output 及尚未实现的界面，见 `10-publication-interface/OUTPUT_INVENTORY.md`。
+- Pipeline `0.2.0` 已新增 Candidate-first 的 `case_resolution` 和 `source_occurrence`，将案例身份与来源传播关系分离；自动复用旧 Case ID 被禁止。
+- 已建立 T02 v0.2 字段迁移说明和 `CASE000001` 的拟迁移样例；旧 M2A baseline 与历史 contract 保持不变，尚未正式提升新 schema 数据。
+- 已创建 `RUN-ENT000001-M2A-T02V02`：重放旧 Run 的原文分段和候选检测，并通过 `migrate_candidate_outputs.py` 对 22 条事实及标签引用作可核验的 ID 转换。此 Run 未使用新版 Prompt 重新生成事实。
+- 新 Run 的去重请求在本地检索到旧 `CASE000001`；比较结果为 `same_case`，`case_resolution` 当前是 `review_required`，尚未复用 Case ID 或生成 Source Occurrence。
+- 已提取两段 GPT 对话原文至 `notes/chatgpt_transcripts/`（2026-09-15 来源地图、2026-09-18 T02 最小架构），需求核对以此为准。
+- 已完成产品需求访谈四轮并锁定 D1–D16，写入 `10-publication-interface/PRD_DRAFT.md`；新增 `THEME_ASSISTANT_DESIGN.md` 与 `PRODUCT_AI_ROLES.md`。
+- 已建立 `00-control/ROADMAP.md`：从当前到产品落地的六阶段执行路线图。
 
 进行中：
 
@@ -83,11 +92,13 @@
 - 每个 source 的 extractor 质量需要在批量导入前逐源验证。
 - M2A 使用声明为 `local` 的 `codex-gpt5` 生成标准响应；runner 仍未实现自动 API adapter，也不持有 API 密钥。
 - `reader_generation/v1` 的转述较平，`creator_analysis/v1` 的角度可能过泛；两项暂作为预览质量问题，M2B 后再设计 v2。
-- 当前去重候选检索只扫描同一运行根目录中的已完成 Case Run，并使用精确结构化值；正式案例索引和模糊召回留到 M2D。
+- 当前 v0.2 去重候选检索只扫描同一运行根目录中的已完成 Case Run，并使用精确结构化值；正式案例索引和模糊召回留到 M2D。
+- v0.2 尚未完成真实文章的端到端 Run；M2A 重放和自动化测试都不能替代新版 Prompt 的独立质量评估。
 
 下一步：
 
-- 执行 M2B：选择一条标准条目、一条复杂或多案例条目，以及一个新公版或开放许可 Source 的条目。
+- 由人工明确审核 `ENT000001-CAND0001` 是否复用 `CASE000001`，并记录审核人和理由；之后完成 Source Occurrence、生成文本、独立检查与发布门槛。
+- 再执行 M2B：选择一条标准条目、一条复杂或多案例条目，以及一个新公版或开放许可 Source 的条目。
 - 对 unseen results 执行固定回归指标；修订 prompt 时创建新版本，不覆盖已使用版本。
 - 建立第一批经过核对的净土教理引用，包含经论、祖师文献和明确归因的法师讲解。
 - 选择一条 M2 案例试做 `dharma_case_commentary`，生成逐条 claim ledger 并执行完整发布检查。

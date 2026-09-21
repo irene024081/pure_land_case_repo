@@ -292,7 +292,7 @@ risk_notes
 similar_cases
 ```
 
-两个视图共享同一个 `case_id`、`citation_id`、标签、人物、地点和证据等级。区别只是展示顺序和辅助信息。
+两个视图共享同一个 `case_id`、`occurrence_id`、标签、人物、地点和证据等级。旧 `citation_id` 需通过迁移映射关联到 Source Occurrence。区别只是展示顺序和辅助信息。
 
 `independent_factual_account` 和 `dharma_case_commentary` 不得合并成一个无标签文本。前者回答“来源记载了什么”，后者回答“经过引用核验后，可以怎样理解和实践”。
 

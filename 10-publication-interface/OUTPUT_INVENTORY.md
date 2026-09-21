@@ -4,6 +4,10 @@
 
 This document separates data already produced by the Pipeline, internal review data, and product interfaces that have not been built. Available data does not imply that the website UI exists.
 
+当前真实 M2A 输出来自 Pipeline `0.1.1`。Pipeline `0.2.0` 已在自动化测试中产生 `case_resolution` 和 `source_occurrence`，但还没有真实文章 Run 或正式库记录；以下展示状态仍以 M2A 为准。
+
+The real M2A outputs come from Pipeline `0.1.1`. Pipeline `0.2.0` produces `case_resolution` and `source_occurrence` in automated tests, but no real article Run or canonical records yet. Display status below still refers to M2A.
+
 ## 当前可展示 / Available For Display
 
 | 用户 / User | Output | 当前内容 / Current Content | 状态 / Status |
@@ -25,6 +29,7 @@ Public pages may read only publication packages that pass factual and rights gat
 - `case_extraction`：来源陈述的原子事实与证据定位。 / Atomic source claims and evidence locations.
 - `entity_tagging`：人物、地点和检索标签。 / Persons, places, and retrieval tags.
 - `deduplication`：候选同案比较及判断理由。 / Candidate identity comparisons and decision reasons.
+- `case_resolution`、`source_occurrence`：v0.2 测试中已有身份决定与来源出现元数据，真实运行待验证。 / v0.2 tests produce identity and occurrence metadata; real-run validation is pending.
 - `factual_check`：逐条生成内容事实账本。 / Claim-level factual ledger for generated content.
 - `rights_check`：逐项版权与展示范围判断。 / Per-output rights and display-scope decisions.
 
