@@ -100,15 +100,17 @@
 - SRC0004（PLB-SEA）：对话第 159 条消息给出 https://www.plb-sea.org/dharma/stories；`source_directory_v1.csv` 已录同地址。
 - SRC0005（Purelanders）：对话第 83、159 条消息给出 https://purelanders.com/；`source_directory_v1.csv` 已录具体案例页 URL。
 
-### 对话中明确写出 URL、但注册表无对应条目，未回填（4 条）
+### ~~对话中明确写出 URL、但注册表无对应条目，未回填（4 条）~~ —— resolved 2026-09-21
 
-按规则不猜测归属，登记在此供后续补登记：
+负责人确认这 4 站为对话原文明确要求的来源，已于 2026-09-21 补登记为 SRC0387–SRC0390（字段以对话记录为依据，对话未提及的留空）：
 
-| URL | 对话中的来源名 | 出处 | 未回填原因 |
+| URL | 对话中的来源名 | 出处 | 结论 |
 |---|---|---|---|
-| https://www.pure-land-buddhism.com/ | Pure Land Buddhism 英文资料站（设 Rebirth Cases 栏目） | 第 83 条消息第十节 | 注册表无对应条目；SRC0159「净宗讲堂 YouTube / Pure Land Buddhism」是 YouTube 频道，不能确认同主体 |
-| https://www.duongvecoitinh.com/category/guong-vang-sanh/ | Đường Về Cõi Tịnh：Gương Vãng Sanh（越南，40+ 页往生实例目录） | 第 83 条消息 | 注册表越南条目（SRC0297–0299 等）均为书籍，无此网站 |
-| https://www.niemphat.vn/ | Niệm Phật 越南念佛资料站 | 第 83 条消息 | 注册表无对应条目 |
-| https://www.amitabha-terre-pure.net/ | Amitabha Terre Pure 法语净土站（设 Anecdotes Véridiques Amitabha 栏目） | 第 83 条消息 | 注册表法语条目 SRC0336 是 jodoshinshu.fr，域名不同，不能合并 |
+| https://www.duongvecoitinh.com/category/guong-vang-sanh/ | Đường Về Cõi Tịnh：Gương Vãng Sanh（越南，40+ 页往生实例目录） | 第 83 条消息第十一节 | 已登记为 **SRC0387** |
+| https://www.niemphat.vn/ | Niệm Phật 越南念佛资料站 | 第 83 条消息第十二节 | 已登记为 **SRC0388** |
+| https://www.amitabha-terre-pure.net/ | Amitabha Terre Pure 法语净土站（设 Anecdotes Véridiques Amitabha 栏目） | 第 83 条消息第十七节 | 已登记为 **SRC0389**；与 SRC0336（jodoshinshu.fr）是两个不同法语站，各自保留 |
+| https://www.pure-land-buddhism.com/ | Pure Land Buddhism 英文资料站（设 Rebirth Cases 栏目） | 第 83 条消息第十节 | 已登记为 **SRC0390**；与 SRC0159（净宗讲堂 YouTube 频道）不同主体，各自保留 |
 
-以上 4 条是 T01 对话讨论过但未进入三份注册表导出的来源，建议补登记（分配新 repo 编号 SRC0387 起），待负责人确认。
+### SRC0315 域名差异 —— resolved 2026-09-21
+
+2026-09-21 实测：`buddhist-experience.org` 与 `buddhist-experience.org.tw` 均为该站活域名、同一站点内容。url 列填 `https://www.buddhist-experience.org/`，notes 已注明另一活域名；正式主域名待该来源进入详细处理时确认。

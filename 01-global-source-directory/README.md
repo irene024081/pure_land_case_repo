@@ -25,8 +25,8 @@ The global register records Sources. Each Source's item-level inventory, batch s
 
 - **385 条恢复条目已入库**：T01 对话时代的三份注册表导出（SRC0001–0385，无断档）已原样归档至 `recovered/`，并合并为归一化的 `source_registry_v1.csv`（统一 14 列；原文件没有的列留空，CP/AP 评级原样保留，未补全的评级不编造）。
 - **编号冲突已解决**：T01 的 SRC0001–0005 是古籍，与现行五个 M2 试点编号撞号。现行 ID 不变（T01 SRC0023/0110/0133/0151/0322 → repo SRC0001–0005），其余 380 条按 T01 编号顺序改配 repo SRC0006–SRC0385。对照关系见 `source_id_map.csv`。
-- **查重已执行（2026-09-21 负责人确认）**：12 组疑似重复全部处理完毕——11 条合并（registry_status=merged，含 Purelanders SRC0334 并入试点 SRC0005），《念佛感应录》系列/单集按父子关系互标不合并。注册表共 386 行（含 2026-09-21 补登记的新来源 SRC0386 现代往生录系列），其中有效条目 375 条、已合并 11 条；其余条目的 URL 核实与字段补全仍为 pending_review（见 `REVIEW_NEEDED.md`）。
-- **URL 回填（2026-09-21）**：注册表新增 `url` 列，从 2026-09-15 对话记录回填 3 条（SRC0177、SRC0315、SRC0333）；4 条对话中有 URL 但注册表无对应条目，待补登记（见 `REVIEW_NEEDED.md` (e) 节）。
+- **查重已执行（2026-09-21 负责人确认）**：12 组疑似重复全部处理完毕——11 条合并（registry_status=merged，含 Purelanders SRC0334 并入试点 SRC0005），《念佛感应录》系列/单集按父子关系互标不合并。注册表共 390 行（385 条 T01 恢复 + SRC0386 现代往生录 + SRC0387–0390 四个对话补登记网站），其中有效条目 379 条、已合并 11 条；其余条目的 URL 核实与字段补全仍为 pending_review（见 `REVIEW_NEEDED.md`）。
+- **URL 回填（2026-09-21）**：注册表新增 `url` 列，从 2026-09-15 对话记录回填 3 条（SRC0177、SRC0315、SRC0333），对话中另有 URL 但注册表缺登记的 4 个网站已补登记为 SRC0387–0390（见 `REVIEW_NEEDED.md` (e) 节，全部 resolved）。
 - **注意**：`source_directory_v1.csv`（5 个试点，字段完整）与 `source_registry_v1.csv`（385 条总目，字段较粗）目前并存；前者仍是 M2/M3 运行的权威来源表。
 - **MVP 清单已映射**：T01 MVP v1.0 精选 43 条已全部映射到 repo 编号（`MVP_SOURCE_LIST.csv`）；其中 T01 SRC0386《现代往生录》系列经负责人 2026-09-21 确认为新来源，补登记为 repo SRC0386。
 - **ID 分配规则（2026-09-21 负责人确认）**：今后新登记来源的编号以 `source_registry_v1.csv` 为准接续分配，不另起编号体系；现行试点 SRC0001–0005 永久保留，不随 T01 编号重排。
