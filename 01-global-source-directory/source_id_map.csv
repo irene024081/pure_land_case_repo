@@ -69,18 +69,18 @@ SRC0071,SRC0067,觉有情,
 SRC0072,SRC0068,妙法轮,
 SRC0073,SRC0069,佛教日报,
 SRC0074,SRC0070,中国佛教会会报／中国佛教会月刊,
-SRC0075,SRC0071,念佛感应见闻记,possible_duplicate_of:SRC0304
-SRC0076,SRC0072,菩提树／Bodhedrum,possible_duplicate_of:SRC0314
+SRC0075,SRC0071,念佛感应见闻记,possible_duplicate_of:SRC0304; merged_into:SRC0304
+SRC0076,SRC0072,菩提树／Bodhedrum,possible_duplicate_of:SRC0314; merged_into:SRC0314
 SRC0077,SRC0073,慈光半月刊,
-SRC0078,SRC0074,明伦月刊,possible_duplicate_of:SRC0313
-SRC0079,SRC0075,近代往生随闻录,possible_duplicate_of:SRC0307
-SRC0080,SRC0076,现代往生见闻录（第一、二集）,possible_duplicate_of:SRC0306
+SRC0078,SRC0074,明伦月刊,possible_duplicate_of:SRC0313; merged_into:SRC0313
+SRC0079,SRC0075,近代往生随闻录,possible_duplicate_of:SRC0307; merged_into:SRC0307
+SRC0080,SRC0076,现代往生见闻录（第一、二集）,possible_duplicate_of:SRC0306; merged_into:SRC0306
 SRC0081,SRC0077,当代往生见闻纪实,
-SRC0082,SRC0078,e世纪往生传,possible_duplicate_of:SRC0308
-SRC0083,SRC0079,新世代念佛往生录,possible_duplicate_of:SRC0309
-SRC0084,SRC0080,莲池海会念佛往生见闻记,possible_duplicate_of:SRC0312
+SRC0082,SRC0078,e世纪往生传,possible_duplicate_of:SRC0308; merged_into:SRC0308
+SRC0083,SRC0079,新世代念佛往生录,possible_duplicate_of:SRC0309; merged_into:SRC0309
+SRC0084,SRC0080,莲池海会念佛往生见闻记,possible_duplicate_of:SRC0312; merged_into:SRC0312
 SRC0085,SRC0081,不可思议之念佛功德——黄锡勋医师的生平与往生经过,
-SRC0086,SRC0082,念佛感应记（林慈超）,possible_duplicate_of:SRC0305
+SRC0086,SRC0082,念佛感应记（林慈超）,possible_duplicate_of:SRC0305; merged_into:SRC0305
 SRC0087,SRC0083,遇见弥陀：学佛感应记,
 SRC0088,SRC0084,笑着进入七宝池,
 SRC0089,SRC0085,癌细胞变快乐佛细胞,
@@ -92,7 +92,7 @@ SRC0094,SRC0090,念佛感应录 第五集,possible_duplicate_of:SRC0302
 SRC0095,SRC0091,念佛感应录 第六集,possible_duplicate_of:SRC0302
 SRC0096,SRC0092,念佛感应录 第七集,possible_duplicate_of:SRC0302
 SRC0097,SRC0093,念佛感应录 第八集,possible_duplicate_of:SRC0302
-SRC0098,SRC0094,念佛癒病（一）,possible_duplicate_of:SRC0303
+SRC0098,SRC0094,念佛癒病（一）,possible_duplicate_of:SRC0303; merged_into:SRC0303
 SRC0099,SRC0095,动物往生佛国记,
 SRC0100,SRC0096,净土宗双月刊,
 SRC0101,SRC0097,香港佛教,
@@ -332,7 +332,7 @@ SRC0330,SRC0330,Living in Gratitude — 100 Years of Buddha Dharma in Canada,
 SRC0331,SRC0331,Nenju News,
 SRC0332,SRC0332,The Young Buddhist Editorial — Personal Reflections / Humans of Buddhism,
 SRC0333,SRC0333,PureLandBuddhism.org,
-SRC0334,SRC0334,Purelanders.com — Testimonies / PPF Testimonies,possible_duplicate_of:SRC0005
+SRC0334,SRC0334,Purelanders.com — Testimonies / PPF Testimonies,possible_duplicate_of:SRC0005; merged_into:SRC0005
 SRC0335,SRC0335,Buddhistische Gemeinschaft Jodo Shinshu Deutschland / BGJD,
 SRC0336,SRC0336,Bouddhisme Jōdo Shinshū / jodoshinshu.fr,
 SRC0337,SRC0337,Sangha Luso-Hispana Jinen-kō,

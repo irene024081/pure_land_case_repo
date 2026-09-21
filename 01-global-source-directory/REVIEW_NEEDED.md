@@ -2,9 +2,24 @@
 
 生成日期：2026-09-21。来源：合并 `recovered/` 三份 T01 导出（共 385 条）生成 `source_registry_v1.csv` 时发现的待人工确认事项。**未做任何自动合并**。
 
-## (a) 疑似重复条目（12 组）
+## (a) 疑似重复条目（12 组）—— resolved 2026-09-21
 
-以下条目在 T01 不同对话中被登记了两次（内容指向同一来源）。已各分配独立 repo ID，`source_id_map.csv` 与 `source_registry_v1.csv` 的 note/notes 列已标 `possible_duplicate_of:`，请确认后决定是否合并：
+负责人已于 2026-09-21 在聊天中确认全部 12 组判断并执行完毕：10 组书籍/杂志合并（字段少的 A 并入字段全的 B）、Purelanders 双登记并入试点 SRC0005、《念佛感应录》系列/单集按父子关系处理不合并。被合并行未删除，`registry_status=merged` 并保留 T01 编号为别名（见 `source_id_map.csv` 的 `merged_into:` 标注）。每组结论：
+
+1. SRC0075 → SRC0304 念佛感应见闻记：same_source，已并入 SRC0304。
+2. SRC0076 → SRC0314 菩提树：same_source，已并入 SRC0314。
+3. SRC0078 → SRC0313 明伦月刊：same_source，已并入 SRC0313。
+4. SRC0079 → SRC0307 近代往生随闻录：same_source，已并入 SRC0307。
+5. SRC0080 → SRC0306 现代往生见闻录：same_source，已并入 SRC0306。
+6. SRC0082 → SRC0308 e世纪往生传：same_source，已并入 SRC0308。
+7. SRC0083 → SRC0309 新世代念佛往生录：same_source，已并入 SRC0309。
+8. SRC0084 → SRC0312 莲池海会念佛往生见闻记：same_source，已并入 SRC0312。
+9. SRC0086 → SRC0305 念佛感应记（林慈超）：same_source，已并入 SRC0305。
+10. SRC0098 → SRC0303 念佛癒病（一）：same_source，已并入 SRC0303。
+11. SRC0334 → SRC0005 Purelanders：same_source，已并入试点 SRC0005（试点 ID 保留；SRC0334 的名称与 notes 已由 SRC0005 吸收）。
+12. SRC0302《念佛感应录》系列 ↔ SRC0090–SRC0097 单集：父子关系，**不合并**；SRC0302 为系列父条目（parent_of:SRC0090-SRC0097），单集为子条目（child_of:SRC0302），notes 已互相标注。
+
+以下为原始疑似重复清单（存档）：
 
 | repo ID A | 名称 A | repo ID B | 名称 B |
 |---|---|---|---|
@@ -50,7 +65,7 @@
 `MVP_SOURCE_LIST.csv`（43 条，2026-09-21 由 T01 MVP 清单映射生成）中有以下待确认项：
 
 1. **T01 SRC0386 无对照、无法映射**：《现代往生录》系列（雪心编辑室／雪心基金会），MVP 清单中标 PILOT，但超出已恢复的 385 条范围（T01 编号止于 SRC0385），`source_id_map.csv` 中无记录，`MVP_SOURCE_LIST.csv` 中其 `repo_source_id` 留空。该条疑似与 SRC0140 雪心文教基金会网站／雪心助念团数据库（T01 SRC0138）相关，请确认是同一来源家族还是新来源；若为新来源需补登记并分配 repo 编号。
-2. **MVP 的 PILOT 标记与现行 M2 试点体系不一致**：MVP 清单标 PILOT 的为 T01 SRC0019（莲池《往生集》→ repo SRC0024）、SRC0133（→ repo SRC0003，与现行试点一致）、SRC0334（Purelanders → repo SRC0334）、SRC0344（《引路宝镜》→ repo SRC0344）。其中 T01 SRC0334 正是上文 (a) 中 Purelanders 疑似重复条目——现行 repo 试点 SRC0005 映射的是 T01 SRC0322，请确认 MVP 清单里的 Purelanders 试点条目应指向哪一个（疑似 T01 对话当时把重复登记的 SRC0334 当成了正式条目）。T01 SRC0019、SRC0344 在现行体系中不是试点。
+2. **MVP 的 PILOT 标记与现行 M2 试点体系不一致**：MVP 清单标 PILOT 的为 T01 SRC0019（莲池《往生集》→ repo SRC0024）、SRC0133（→ repo SRC0003，与现行试点一致）、SRC0334（Purelanders → repo SRC0334）、SRC0344（《引路宝镜》→ repo SRC0344）。~~其中 T01 SRC0334 正是上文 (a) 中 Purelanders 疑似重复条目……请确认 MVP 清单里的 Purelanders 试点条目应指向哪一个。~~ **resolved 2026-09-21**：负责人确认 MVP 的 Purelanders 试点指向 repo SRC0005；T01 SRC0334 已合并入 SRC0005，`MVP_SOURCE_LIST.csv` 中该行 repo_source_id 已改为 SRC0005 并加注。T01 SRC0019、SRC0344 在现行体系中不是试点（仍待确认是否保留其 T01 时代 PILOT 语义）。
 3. **BACKUP_PILOT / HOLD_VERIFY**：T01 SRC0110《当代念佛感应集》（→ repo SRC0002，现行试点）在 MVP 中为 BACKUP_PILOT；T01 SRC0004 飞锡《往生净土传》（→ repo SRC0009，佚失书）为 HOLD_VERIFY。
 4. MVP 清单的 `current_cp` 与主注册表 CP 评级可能存在差异（MVP 是 T01 后期的重评结果），已按 MVP 文件原样写入 `MVP_SOURCE_LIST.csv` 的 `collection_priority` 列，未与 `source_registry_v1.csv` 对齐。
 
