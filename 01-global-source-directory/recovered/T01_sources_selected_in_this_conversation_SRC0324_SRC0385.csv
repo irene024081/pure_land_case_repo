@@ -1,0 +1,63 @@
+﻿src_id,source_name,role,cp_at_selection,ap_at_selection,region,language,notes,selection_status
+SRC0324,Muryoko / nembutsu.info — Speaking Personally,CORE,CP2,Unknown,英国/澳洲系,英语,第一人称 spiritual journey 栏目,FROZEN
+SRC0325,Three Wheels News / Newsletter Archive,CORE,CP1,Unknown,英国,英语,真宗道场通讯；皈依、念佛体验与 retreat 自述,FROZEN
+SRC0326,Pure Land Life,CORE,CP1,Unknown,全球 / 浄土宗海外,英语,READERS’ VOICES；跨国第一人称经历,FROZEN
+SRC0327,Wheel of Dharma,CORE,CP1,Unknown,美国 / BCA,英语/日语,BCA 官方月刊；长期档案与第一人称投稿,FROZEN
+SRC0328,BCA Connect — Sangha Voices,CORE,CP2,Unknown,美国,英语,Web-native 第一人称信仰、临终、丧亲叙事,FROZEN
+SRC0329,Higashi Honganji USA — Lay Voices,CORE,CP1,Unknown,美国,英语,Lay Voices 个人入信与真宗体验,FROZEN
+SRC0330,Living in Gratitude — 100 Years of Buddha Dharma in Canada,CORE,CP2,Unknown,加拿大,英语,百年纪念个人文章集；真宗生命史,FROZEN
+SRC0331,Nenju News,CORE,CP2,Unknown,加拿大,英语,JSBTC 官方刊物；Tokudo、丧亲与个人经验,FROZEN
+SRC0332,The Young Buddhist Editorial — Personal Reflections / Humans of Buddhism,CORE,CP2,Unknown,北美,英语,青年佛教徒个人经验与身份叙事,FROZEN
+SRC0333,PureLandBuddhism.org,CORE,CP1,Unknown,国际,英语,善导系英文净土平台；个人转宗、临终、疾病见证,FROZEN
+SRC0334,Purelanders.com — Testimonies / PPF Testimonies,CORE,CP1,Unknown,新加坡→全球,英语为主,大型英文净土 testimonies / 感应集合,FROZEN
+SRC0335,Buddhistische Gemeinschaft Jodo Shinshu Deutschland / BGJD,CORE,CP2,Unknown,德国,德语,德国真宗皈依、念佛实践与个人反思,FROZEN
+SRC0336,Bouddhisme Jōdo Shinshū / jodoshinshu.fr,CORE,CP2,Unknown,法国,法语,法国真宗实践、Kikyoshiki 与个人经历,FROZEN
+SRC0337,Sangha Luso-Hispana Jinen-kō,CORE,CP2,Unknown,西班牙 / 葡语圈 / 拉美,西语/葡语/英语,跨国线上真宗 Sangha；成员个人路径,FROZEN
+SRC0338,Revista Coração Confiante,CORE,CP1,Unknown,巴西,葡语,南美大谷派官方刊物；访谈与个人生命历程,FROZEN
+SRC0339,Bom Amigo / Comunicado Mensal do Templo,CORE,CP2,Unknown,巴西,葡语/日语,SRC0338 上游历史刊物；provenance 价值高,FROZEN
+SRC0340,Rainbow Sangha Brasil — Depoimentos,CORE,CP2,Unknown,巴西,葡语,第一人称信众生活与信仰见证,FROZEN
+SRC0341,George Gatenby — The Way of Jodo Shinshu / Notes on the Nembutsu,CORE,CP2,Unknown,澳大利亚,英语,早期英文真宗网络资料与单一作者反思,FROZEN
+SRC0342,Paths of Practice: Conversations on Journeys into Buddhism,DISCOVERY,CP3,Unknown,国际,英语,Podcast；佛教个人 journey，含真宗受访者,FROZEN
+SRC0343,The Taste of the Nembutsu / HHMH Messages,CORE,CP2,Unknown,夏威夷 / 美国,英语,部长文章与信众口述历史,FROZEN
+SRC0344,《藏汉平凡人往生极乐世界故事集·引路宝镜》,CORE,CP1,Unknown,藏区 / 中国,中文（源于藏地调查）,59个往生故事；藏地49、汉地10；田野采访型核心资料,FROZEN
+SRC0345,Amitabha Path — True Accounts of Going to Pureland,DISCOVERY,CP2,Unknown,国际,英语,SRC0344 英文传播/翻译层,FROZEN
+SRC0346,British Library EAP — Tibetan Delog manuscript corpus,INFRASTRUCTURE,CP1,Unknown,藏区 / 喜马拉雅,藏文,Delog 写本群；earliest-surviving witness 基础设施,FROZEN
+SRC0347,Delok Lingza Chökyi / Lingza Choskyit 写本传统,CORE,CP2,Unknown,藏区,藏文,历史 delog 传统；死亡与他界见闻,FROZEN
+SRC0348,Delok Karma Wangzin 写本传统,CORE,CP2,Unknown,藏区,藏文,历史 delog 死亡/还阳/他界叙事,FROZEN
+SRC0349,Dawa Drolma — Delog: Journey to Realms Beyond Death,CORE,CP1,Unknown,西藏 / 英语出版,藏文传统/英语,现代重要 delog 叙事；含 Pure Realm,FROZEN
+SRC0350,"Tulku Thondup — Peaceful Death, Joyful Rebirth",DISCOVERY,CP2,Unknown,国际 / 藏传,英语,综合 delog、口传、firsthand accounts 与 Pure Land rebirth,FROZEN
+SRC0351,Lotsawa House — Delog / Sukhāvatī corpus,DISCOVERY,CP1,Unknown,国际 / 藏传,英语/藏文,藏文净土愿文、delog 与传播材料入口,FROZEN
+SRC0352,Treasury of Lives — Delok biographies,DISCOVERY,CP2,Unknown,国际 / 藏传,英语,学术人物索引；作品、人物与 BDRC 关联,FROZEN
+SRC0353,BDRC / BUDA,INFRASTRUCTURE,CP1,Unknown,国际 / 藏文佛教,多语,藏文/佛教文献数字档案与全文检索基础设施,FROZEN
+SRC0354,Geshe Jampa Tinley — 《К Ясному Свету》,CORE,CP2,Unknown,俄罗斯 / 布里亚特,俄语,阿弥陀净土、临终与本地死亡叙事,FROZEN
+SRC0355,Geshe Jampa Tinley — 《Смерть. Жизнь после смерти. Пхова》,CORE,CP2,Unknown,俄罗斯 / 布里亚特,俄语,死亡、死后、颇瓦及临终叙事,FROZEN
+SRC0356,Журнал «Дже Цонкапа»,DISCOVERY,CP3,Unknown,俄罗斯,俄语,本土佛教刊物；弟子回忆、逝者纪念、社群口述入口,FROZEN
+SRC0357,Журнал «Буддизм России»,DISCOVERY,CP3,Unknown,俄罗斯,俄语,俄罗斯佛教历史刊物与人物/社群资料,FROZEN
+SRC0358,Kalmyk Scientific Center RAS — Oirat Sukhāvatī manuscript corpus,INFRASTRUCTURE,CP2,Unknown,卡尔梅克 / 俄罗斯,卫拉特文/俄语研究,Oirat Sukhāvatī 写本与历史实践,FROZEN
+SRC0359,Kathmandu Hongwanji,CORE,CP2,Unknown,尼泊尔,英语/尼泊尔本地语境,现代净土真宗转宗与生命史节点,FROZEN
+SRC0360,Buddhist Study Center / HHMH — Sonam Wangdi Bhutia 2017 Summer Session,CORE,CP2,Unknown,夏威夷 / 尼泊尔-锡金关联,英语,Sonam Wangdi Bhutia 五讲口述生命史,FROZEN
+SRC0361,Todd T. Lewis — “Sukhāvatī Traditions in Newar Buddhism” (1996),CORE,CP2,Unknown,尼泊尔 / Kathmandu Valley,英语,Newar 本土 Sukhāvatī 传统田野研究,FROZEN
+SRC0362,British Library EAP1296 — Newar Sukhāvatī manuscript corpus,INFRASTRUCTURE,CP2,Unknown,尼泊尔,梵文/Newar,Newar Sukhāvatī 写本数字化,FROZEN
+SRC0363,"Digital Sanskrit Buddhist Canon / Nagarjuna Institute, Nepal",INFRASTRUCTURE,CP2,Unknown,尼泊尔 / 南亚,梵文/英语,梵文佛典与 Sukhāvatīvyūha 数字文本,FROZEN
+SRC0364,SAMHiTA — South Asian Manuscript Histories and Textual Archive,INFRASTRUCTURE,CP2,Unknown,南亚,多语,南亚佛教手稿 provenance 基础设施,FROZEN
+SRC0365,"Dewachen Lhakang, Namo Buddha Monastery",DISCOVERY,CP3,Unknown,尼泊尔,藏文/英语,亡者阿弥陀佛修法与愿生极乐实践节点,FROZEN
+SRC0366,Buddhistdoor en Español,DISCOVERY,CP2,Unknown,西语世界 / 拉美,西语,拉美净土宗传播与访谈高效入口,FROZEN
+SRC0367,"Furaibo Nembutsu Dojo, Buenos Aires",CORE,CP2,Unknown,阿根廷,西语,布宜诺斯艾利斯本土念佛节点,FROZEN
+SRC0368,LA NACION — Gustavo Aoki direct interview/profile corpus,CORE,CP2,Unknown,阿根廷,西语,Gustavo Aoki 第一人称生命史与转折经历,FROZEN
+SRC0369,"Lisette Morales Aldana — Conversión, identidad y compromiso en dos grupos budistas japoneses en la ciudad de México (2002)",DISCOVERY,CP2,Unknown,墨西哥,西语,净土真宗 conversion 研究；全文访问待确认,FROZEN
+SRC0370,Catón E. Carini — “Southern Dharma: Outlines of Buddhism in Argentina”,DISCOVERY,CP3,Unknown,阿根廷,英语/西语研究语境,阿根廷佛教生态与地方资料发现入口,FROZEN
+SRC0371,Tierra Pura de la Luz Serena / budismojapones.com,CORE,CP2,Unknown,波多黎各,西语,西语第一人称宗教经历与念佛信仰,FROZEN
+SRC0372,Budismo Tierra Pura para Todos,DISCOVERY,CP2,Unknown,西语世界,西语,中文净土往生/感应材料翻译传播层,FROZEN
+SRC0373,Budismo de La Tierra Pura Online / budismolatinoamerica.com,DISCOVERY,CP3,Unknown,拉美,西语,西语参与者 testimonial 与净土传播,FROZEN
+SRC0374,Amidaji International Temple — Spiritual Biographies of Amidaji Members,CORE,CP1,Unknown,国际,英语/多语,结构化国际第一人称 spiritual biographies,FROZEN
+SRC0375,Amida-shu / Community of Amida Buddhists archive,CORE/DISCOVERY,CP2,Unknown,英语世界 / 国际,英语,西方 Pure Land 修行者、团体形成史与个人转宗,FROZEN
+SRC0376,South America Hongwanji Federation / official web corpus,DISCOVERY,CP3,Unknown,南美,葡语/西语/日语,本愿寺派南美官方网络与地方寺院入口,FROZEN
+SRC0377,British Library EAP813 — Disappearing book heritage of Siberian Buddhists,INFRASTRUCTURE,CP2,Unknown,西伯利亚 / 布里亚特,蒙古文/藏文等,阿弥陀佛祈愿、愿生 Sukhāvatī 与极乐描述手稿群,FROZEN
+SRC0378,Zsuzsa Majer (2018) — Preliminary Notes on Tibetan After-Death Rites and their Texts in Mongolian Buddhist Practice,CORE/DISCOVERY,CP2,Unknown,蒙古,英语（研究蒙古实践）,现代蒙古亡者仪轨；为亡者祈生阿弥陀佛 Sukhāvatī,FROZEN
+SRC0379,Zsuzsa Majer (2018) — Lagwī molom…helping them to a better one in Sukhāvatī,CORE,CP3,Unknown,蒙古,英语（研究蒙古实践）,蒙古愿文与往生 Sukhāvatī 实践,FROZEN
+SRC0380,"Karénina Kollmar-Paulenz (2025) — A Catalogue of the Mongolian Manuscripts and Xylographs of the Ernst-Collection, Sukhāvatī entries 120–124",INFRASTRUCTURE,CP2,Unknown,蒙古文献 / 欧洲收藏,英语/蒙古文,Ernst Collection 中 Sukhāvatī 文献与蒙古原创描述,FROZEN
+SRC0381,Tümer Karaayak (2021) — Eski Uygurca Abitaki Metinlerinin Söz Varlığı,CORE/INFRASTRUCTURE,CP2,Unknown,中亚 / 古回鹘,土耳其语/古回鹘文,汇集多地古回鹘阿弥陀/净土写本,FROZEN
+SRC0382,Jōdo-shū — Hōnen: A Collection of Buddhist Sermons by Jodo Shu Priests from around the World,CORE,CP2,Unknown,国际 / 澳洲案例,英语,澳洲净土宗临终关怀/净土开示个案,FROZEN
+SRC0383,Amitabha Hospice Service / Peaceful Passing NZ source family,DISCOVERY,CP3,Unknown,新西兰,英语,佛教临终关怀；公开资料与非公开逐访报告潜力,FROZEN
+SRC0384,Pure Land of Amitabha Buddha Hospice / Pure Land Home Hospice South Australia,DISCOVERY,CP3,Unknown,澳大利亚,英语,佛教价值基础居家临终关怀,FROZEN
+SRC0385,Amitofo Care Centre Africa — periodical / annual-report corpus,DISCOVERY,CP3,Unknown,非洲多国,英语/中文等,非洲儿童与毕业生第一人称生活材料；阿弥陀经与佛教课诵传播,FROZEN
