@@ -1,0 +1,22 @@
+source_entry_id: ENT000006
+source_id: SRC0001
+storage_class: tracked_public
+storage_uri: data/source_entries/public/ENT000006.normalized.json
+normalized_storage_uri: data/source_entries/public/ENT000006.normalized.json
+source_artifact_uri:
+raw_capture_status: persisted_verified
+capture_representation: normalized_entry_json
+raw_text_hash: 1f5c02415ddc4cd241e1fc203332f3390aaf421b8581065605f0e52393ae2e4b
+normalized_artifact_hash: 9ca26c5dc188c410b5b1cee63467e90435bb751106e486a843bc9231b2a99a85
+source_artifact_hash:
+content_type: application/json
+byte_size: 2312
+captured_at: 2026-09-22
+rights_basis: public_domain_historical_text
+rights_status: public_domain_verified
+rights_review_id: RR0005
+terms_url:
+terms_checked_at:
+public_display_policy: full_normalized_historical_text
+retention_policy: permanent
+notes: Public-domain status applies to the historical text, not automatically to modern website code or editorial assets.
