@@ -2,7 +2,7 @@
 
 团队入口与阶段验收以 [PROJECT_HUB.md](PROJECT_HUB.md) 为准；本文件保留详细进度记录。 / The [project hub](PROJECT_HUB.md) is the team entry point and milestone gate; this file retains the detailed status log.
 
-状态：Pipeline `0.2.0` 的 Candidate-first 流程已实现；M2A 迁移重放与 M2B 第一批未见样本测试（3 个条目、4 个新 Case Run）均已完成，十阶段全部通过。首个已接受的 M2A baseline 仍是历史 `0.1.1` Run。
+状态：Pipeline `0.2.0` 的 Candidate-first 流程已实现；M2A 迁移重放与 M2B 未见样本测试（两批共 4 个条目、5 个新 Case Run）均已完成，十阶段全部通过。首个已接受的 M2A baseline 仍是历史 `0.1.1` Run。
 
 已完成：
 
@@ -67,6 +67,7 @@
   - 普通条目 `ENT000006` 卢氏（名智福）传：`RUN-ENT000006-M2B-01`，分段 14 段无遗漏重叠，去重在检索范围内无候选（CASE000001 得分低于阈值），自动裁定新案例 `CASE000006`，十阶段完成，发布包 public。
   - 多案例条目 `ENT000007`（extractor 未拆分的三则传记）：`RUN-ENT000007-M2B-01`，正确拆为 3 个候选；`CASE000007` 温静文妻、`CASE000008` 钟离夫人任氏、`CASE000009` 越国夫人王氏，去重中同条目候选均被正确判为 distinct_case，身份无混淆，三个 Case Run 全部完成，发布包均 public。
   - 零案例样本 `ENT000008`《净土圣贤录叙》（彭际清撰）：`RUN-ENT000008-M2B-01`，分段 13 段，案例检测正确输出零候选，Article Run 直接完成、不产生 Case Run。
+- 已完成 M2B 第二批新来源接入（2026-09-22，SRC0024《往生集》，明·袾宏，CBETA T51n2072 公版）：新建 `data/source_catalogs/SRC0024/`（source.yml + articles.csv）、版权记录 `data/rights_reviews/RR0006.yml`、条目 `ENT000009`（卷上·沙门往生类·僧濟）及 manifest；`RUN-ENT000009-M2B-01` 分段 13 段全覆盖，去重检索到 4 个已完成案例（CASE000001/0006/0007/0009，均仅凭流派标签得分 16 入选）并全部判 distinct_case，自动裁定新案例 `CASE000010`，十阶段完成，发布包 public。
 
 进行中：
 
@@ -107,6 +108,7 @@
 - 由人工明确审核 `ENT000001-CAND0001` 是否复用 `CASE000001`，并记录审核人和理由；之后完成 Source Occurrence、生成文本、独立检查与发布门槛。
 - 再执行 M2B 第二批：一个新公版或开放许可 Source 的条目（第一批已覆盖普通、多案例、零案例三类，均出自 SRC0001）。
 - 对 unseen results 执行固定回归指标；修订 prompt 时创建新版本，不覆盖已使用版本。
+- M2B 后续观察：extractor 对「内层标题下一段不以标题开头」的条目有拆分盲区（ENT000007 实例）；CBETA XML 尚无版本化提取脚本（ROADMAP 1.3），ENT000009 用临时解析完成。
 - 建立第一批经过核对的净土教理引用，包含经论、祖师文献和明确归因的法师讲解。
 - 选择一条 M2 案例试做 `dharma_case_commentary`，生成逐条 claim ledger 并执行完整发布检查。
 - 在公开发布前联系四个现代来源的权利人或机构，确认内部保存、AI处理、翻译和公开摘录范围。
