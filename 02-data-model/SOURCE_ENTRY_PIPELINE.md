@@ -23,6 +23,7 @@ Every normalized Source Entry records stable source and entry IDs, source-facing
 
 ```text
 extract_dazhouxian_entries.py  static historical headings
+extract_cbeta_xml.py           CBETA TEI P5 XML (head/p structure, nested-entry split)
 extract_pdf_entry.py           reviewed PDF page range
 extract_plbtw_article.py       PLBTW HTML article
 extract_plb_sea_article.py     PLB-SEA article and parallel versions

@@ -5,10 +5,10 @@ inventory_status: partial
 inventory_scope: M2B pilot entry only; CBETA T51n2072 holds 3 juan of entries, not yet inventoried
 last_inventory_scan_at: 2026-09-22
 default_language: zh-Hant
-inventory_adapter: cbeta_xml_head
+inventory_adapter: cbeta_xml
 inventory_refresh_policy: on_edition_or_extractor_change
 entry_adapter: classical_entry
-extractor_name: ad-hoc CBETA TEI P5 XML head/p parse (no versioned extractor script yet)
+extractor_name: extract_cbeta_xml.py
 rights_review_id: RR0006
 storage_class: tracked_public
 external_processing_default: blocked

@@ -70,6 +70,7 @@
 - 已完成 M2B 第二批新来源接入（2026-09-22，SRC0024《往生集》，明·袾宏，CBETA T51n2072 公版）：新建 `data/source_catalogs/SRC0024/`（source.yml + articles.csv）、版权记录 `data/rights_reviews/RR0006.yml`、条目 `ENT000009`（卷上·沙门往生类·僧濟）及 manifest；`RUN-ENT000009-M2B-01` 分段 13 段全覆盖，去重检索到 4 个已完成案例（CASE000001/0006/0007/0009，均仅凭流派标签得分 16 入选）并全部判 distinct_case，自动裁定新案例 `CASE000010`，十阶段完成，发布包 public。
 - 已建立 `09-agent-automation/PIPELINE_STAGES.md`：Pipeline v0.2.0 十五个阶段的面向人工审核文档（目的/输入输出/是否用 AI/验收标准/常见失败），开头附全流程总表。
 - 已建立 `scripts/render_case_report.py`（纯标准库）：输入 case run 或 article run 目录（或 `--all`）生成中文 HTML 审核报告到 `data/reports/`（git 跟踪）；单案例页含基本信息、原文分段、读者文本对照、事实清单、实体标签、去重记录、创作分析、事实检查、版权检查、审核状态；总览页一行一案例；受限来源原文自动遮蔽（按 manifest 的 storage_class 判断）。已为 6 个已完成案例生成报告 + 总览页。
+- 已完成 ROADMAP 1.3 CBETA XML 适配器：`scripts/extract_cbeta_xml.py` v0.1.0（extraction_method `cbeta_xml_tei_structure`）。按 TEI `<head>`+`<p>` 结构切条目，目录 `<list>` 不参与切分；嵌套条目按 div 祖先关系正确拆分并在父记录 notes 标 `contains_nested_entries`。冒烟：T51n2072 全书提取 263 条（卷上 100 / 卷中 135 / 卷下 28），僧濟条 raw_text 与既有 ENT000009 逐字一致；X78n1549 往生女人第九提取 79 条，温静文妻/任氏/王氏被正确拆成三条（修复了 dazhouxian 提取器在 ENT000007 暴露的盲区）。测试见 `tests/test_extractors.py`（合成 fixture 4 用例）。
 
 进行中：
 
