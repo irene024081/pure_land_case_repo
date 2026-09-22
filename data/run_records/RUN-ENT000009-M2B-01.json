@@ -1,0 +1,58 @@
+{
+  "run_id": "RUN-ENT000009-M2B-01",
+  "run_kind": "article",
+  "pipeline_id": "pure-land-content-pipeline",
+  "pipeline_version": "0.2.0",
+  "source_id": "SRC0024",
+  "source_entry_id": "ENT000009",
+  "source_entry_hash": "c65f42196490b500f904bd9e26f1dbc47025f99fedf99a1205fcaf434c8cc5dd",
+  "source_catalog_article_id": "SRC0024-ART000001",
+  "rights_review_id": "RR0006",
+  "external_processing": "blocked",
+  "created_at": "2026-09-22T02:37:42+00:00",
+  "updated_at": "2026-09-22T03:11:41+00:00",
+  "status": "completed",
+  "stages": {
+    "source_registration": {
+      "status": "completed",
+      "completed_at": "2026-09-22T02:37:42+00:00",
+      "evidence": "SRC0024"
+    },
+    "rights_precheck": {
+      "status": "completed",
+      "completed_at": "2026-09-22T02:37:42+00:00",
+      "evidence": "RR0006"
+    },
+    "source_capture": {
+      "status": "completed",
+      "completed_at": "2026-09-22T02:37:42+00:00",
+      "evidence": "fe12fb22220a249f6a7a79491ecae33b796e70c6c93a56904d4afa94119c7c09"
+    },
+    "source_segmentation": {
+      "status": "completed",
+      "request_hash": "f2f6f445db1f80263d44f1f7c03c5cacfbd44ad5daa3c881d9ace88ddf9d218d",
+      "completed_at": "2026-09-22T02:38:21+00:00",
+      "adapter": "local",
+      "model": "kimi-code local",
+      "response_hash": "418efc4170517d70e990d7bd19c6446efb947ed96b1711a5ad883a0be8c1b24f",
+      "output_hash": "f17ed54784521402b6c8aa071467dfa49992908438d0cdacfc3b240cf874afda"
+    },
+    "case_detection": {
+      "status": "completed",
+      "request_hash": "e33c62d41550df6a0c30a6f86cc7272b1922f19095d40ba6b27ec0b9ad275e97",
+      "completed_at": "2026-09-22T02:39:02+00:00",
+      "adapter": "local",
+      "model": "kimi-code local",
+      "response_hash": "80decd42330370c5d19bd4daa1d1ae7063d8d8e1290e9c2918da22e5c32d29ca",
+      "output_hash": "c003d373db64b8cfa6c72551171326989b096e0b9ab132c729b80be0a6630e36"
+    }
+  },
+  "case_runs": [
+    {
+      "candidate_id": "ENT000009-CAND0001",
+      "run_id": "RUN-ENT000009-M2B-01-ENT000009-CAND0001",
+      "status": "completed",
+      "case_id": "CASE000010"
+    }
+  ]
+}
