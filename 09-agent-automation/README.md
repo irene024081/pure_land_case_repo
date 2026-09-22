@@ -97,6 +97,6 @@ python3 scripts/run_pipeline.py resolve-identity \
   --reason "same episode confirmed against the retained source"
 ```
 
-回归验收规则位于 `REGRESSION_POLICY.md`。
+回归验收规则位于 `REGRESSION_POLICY.md`。各阶段的目的、输入输出与验收标准见 `PIPELINE_STAGES.md`（面向人工审核）。
 
 Regression acceptance rules are in `REGRESSION_POLICY.md`.
