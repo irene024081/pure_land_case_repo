@@ -1,0 +1,70 @@
+{
+  "run_id": "RUN-ENT000007-M2B-01",
+  "run_kind": "article",
+  "pipeline_id": "pure-land-content-pipeline",
+  "pipeline_version": "0.2.0",
+  "source_id": "SRC0001",
+  "source_entry_id": "ENT000007",
+  "source_entry_hash": "ad6dfd2e55fea609cbd26d747b394032acb1dade75fa4f9cd5e31033d5059d0a",
+  "source_catalog_article_id": "SRC0001-ART000003",
+  "rights_review_id": "RR0005",
+  "external_processing": "blocked",
+  "created_at": "2026-09-22T01:33:57+00:00",
+  "updated_at": "2026-09-22T02:15:15+00:00",
+  "status": "completed",
+  "stages": {
+    "source_registration": {
+      "status": "completed",
+      "completed_at": "2026-09-22T01:33:57+00:00",
+      "evidence": "SRC0001"
+    },
+    "rights_precheck": {
+      "status": "completed",
+      "completed_at": "2026-09-22T01:33:57+00:00",
+      "evidence": "RR0005"
+    },
+    "source_capture": {
+      "status": "completed",
+      "completed_at": "2026-09-22T01:33:57+00:00",
+      "evidence": "17fe1f78fe6e8ac2a0cec63f9567bd407d03e9670ce241afdd6273e5f2195f2a"
+    },
+    "source_segmentation": {
+      "status": "completed",
+      "request_hash": "151f3e00a6538976dc1ca2b622642ba040bc7c296cfa3239ec5968c58e5909aa",
+      "completed_at": "2026-09-22T01:37:56+00:00",
+      "adapter": "local",
+      "model": "kimi-code local",
+      "response_hash": "910e0f57a81be6791e5c708dd967c705b8f877c6e36c8b51a4f6134fc3b6e1f8",
+      "output_hash": "716f7292cc3c47eaf96fb86500792e3ba15ed9cc5f36354d28ea20650ef5fce5"
+    },
+    "case_detection": {
+      "status": "completed",
+      "request_hash": "92452c38d00b4715064a0f2a9fc41fde6c94f051d179f9fd381b7916980884c4",
+      "completed_at": "2026-09-22T01:39:12+00:00",
+      "adapter": "local",
+      "model": "kimi-code local",
+      "response_hash": "fea037ea0aba74a7e2b3d5ad82aac1dca56baab1002bdc2e63b25dd9dc0749f0",
+      "output_hash": "5e8c88f4e263ed1e3d618408e39712b8410c0ebdde677abea0a5ba195dcf00aa"
+    }
+  },
+  "case_runs": [
+    {
+      "candidate_id": "ENT000007-CAND0001",
+      "run_id": "RUN-ENT000007-M2B-01-ENT000007-CAND0001",
+      "status": "completed",
+      "case_id": "CASE000007"
+    },
+    {
+      "candidate_id": "ENT000007-CAND0002",
+      "run_id": "RUN-ENT000007-M2B-01-ENT000007-CAND0002",
+      "status": "completed",
+      "case_id": "CASE000008"
+    },
+    {
+      "candidate_id": "ENT000007-CAND0003",
+      "run_id": "RUN-ENT000007-M2B-01-ENT000007-CAND0003",
+      "status": "completed",
+      "case_id": "CASE000009"
+    }
+  ]
+}

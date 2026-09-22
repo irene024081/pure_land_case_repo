@@ -1,0 +1,104 @@
+{
+  "run_id": "RUN-ENT000007-M2B-01-ENT000007-CAND0002",
+  "run_kind": "case",
+  "pipeline_id": "pure-land-content-pipeline",
+  "pipeline_version": "0.2.0",
+  "source_id": "SRC0001",
+  "source_entry_id": "ENT000007",
+  "source_entry_hash": "ad6dfd2e55fea609cbd26d747b394032acb1dade75fa4f9cd5e31033d5059d0a",
+  "source_catalog_article_id": "SRC0001-ART000003",
+  "rights_review_id": "RR0005",
+  "external_processing": "blocked",
+  "case_id": "CASE000008",
+  "candidate_id": "ENT000007-CAND0002",
+  "parent_article_run_id": "RUN-ENT000007-M2B-01",
+  "created_at": "2026-09-22T01:39:12+00:00",
+  "updated_at": "2026-09-22T01:57:32+00:00",
+  "status": "completed",
+  "stages": {
+    "case_extraction": {
+      "status": "completed",
+      "request_hash": "f24d972d45be89f9d7ed999a920970e2cc07146cf46200a88a35eabf9a71a81f",
+      "completed_at": "2026-09-22T01:51:52+00:00",
+      "adapter": "local",
+      "model": "kimi-code local",
+      "response_hash": "92befa76e2d1a3f9a83203e10cd7a7a956583dbadb76f5fc32d48662703b7ad1",
+      "output_hash": "6691b6561bf47d93cde9647b000725fcef598dbc210bd806572013cc76a1ca82"
+    },
+    "entity_tagging": {
+      "status": "completed",
+      "request_hash": "9da0c606099df08d19cf60b49b88a6e7baa4382273497624512c74b3254e002d",
+      "completed_at": "2026-09-22T01:51:52+00:00",
+      "adapter": "local",
+      "model": "kimi-code local",
+      "response_hash": "75c58c74abda7e27ab00c4b1ac75ba47ef411b8ffd2b6e4de0f191ba82fb8795",
+      "output_hash": "101eb4586bfaa6fb6f4e13bf8ca04423d7be576005f2cc2985c19f4cf4c4a521"
+    },
+    "deduplication": {
+      "status": "completed",
+      "request_hash": "5f3e5bda1522b78a525007a3d14aad6a5798c83cf1406b35093ac8d0ee3a21a7",
+      "external_processing": "blocked",
+      "candidate_set_hash": "57b25f5b0683d9f54dc38bf0b497ee08ff6ce2b296a6348272e1edfe21c1cb52",
+      "completed_at": "2026-09-22T01:52:48+00:00",
+      "adapter": "local",
+      "model": "kimi-code local",
+      "response_hash": "6da0bc35a4e7b410d864e319c1a5d7b99612ddce2935eecbe554bd4f9ad7765b",
+      "output_hash": "6da0bc35a4e7b410d864e319c1a5d7b99612ddce2935eecbe554bd4f9ad7765b"
+    },
+    "case_resolution": {
+      "status": "completed",
+      "completed_at": "2026-09-22T01:52:48+00:00",
+      "output_hash": "acb7ccc00a3ba6bf8334ea8c16d147b8f0afdfd7eb7cdf9514b4725bff2f2eb1"
+    },
+    "source_occurrence": {
+      "status": "completed",
+      "request_hash": "3dd5147b2cdf55809dda5d576df95a457c5a16ea4f8a0bfcb03e3d42b95f1bc3",
+      "completed_at": "2026-09-22T01:57:32+00:00",
+      "adapter": "local",
+      "model": "kimi-code local",
+      "response_hash": "ef03c157dfd6497a8c8695d1a7154b4c5bacb93114e7d88ab1cbe9633f6b44b5",
+      "output_hash": "a4bed2b9bb948303315afc60c70314779913c3258afdf8188100ce10ff07e34c"
+    },
+    "reader_generation": {
+      "status": "completed",
+      "request_hash": "06640369c5a5624f28abf7c4e99e05ba620f0722f8aefa7a0d5cad83b0c5e0ca",
+      "completed_at": "2026-09-22T01:57:32+00:00",
+      "adapter": "local",
+      "model": "kimi-code local",
+      "response_hash": "235de1e139db012c8b7cf10dccf68f1957f77c7740171ead2af6af8d15042629",
+      "output_hash": "d9be070914430b9648cd3b614b12375ad99c1f63c29c6627416a4c1c1cec8ca3"
+    },
+    "creator_analysis": {
+      "status": "completed",
+      "request_hash": "01e0b406e48799120240aebb640dfef696903b211d6b0380fdb663739469c5ec",
+      "completed_at": "2026-09-22T01:57:32+00:00",
+      "adapter": "local",
+      "model": "kimi-code local",
+      "response_hash": "43e58a0e39bad74ff20d3ab8196a3c563c35b3abfc36dd8a283723c28f572b21",
+      "output_hash": "232e975ffb0116c5d2479acdba5b18f7f8a608b9bde1db0b82b4a21f1abe4782"
+    },
+    "factual_check": {
+      "status": "completed",
+      "request_hash": "45896e5dc45aace2a0970eca593d1353f3595f123f6a34f1b92c7d46e1a207e8",
+      "completed_at": "2026-09-22T01:57:32+00:00",
+      "adapter": "local",
+      "model": "kimi-code local",
+      "response_hash": "9dff8fec44df4b722dd565c522f2d516c7040c196a5a0f7f8be49e969925ea31",
+      "output_hash": "b4bf81b80c1654e173796e04969b69b408727663f15489febd0700b7b4502ad5"
+    },
+    "rights_check": {
+      "status": "completed",
+      "request_hash": "fe11c08dbb7d89f7241578807252aff6e28e30499f281db8119ac534ff1f61bb",
+      "completed_at": "2026-09-22T01:57:32+00:00",
+      "adapter": "local",
+      "model": "kimi-code local",
+      "response_hash": "f4974f0091a6ef63ea69a99ccb0ed46fc3dca76bc40d146f1aa7a50b63ac1246",
+      "output_hash": "20a1e38be7c6b604af45e76f119d3a79e2e29ba67ee45baffed34be79e2323dc"
+    },
+    "publication_packaging": {
+      "status": "completed",
+      "completed_at": "2026-09-22T01:57:32+00:00",
+      "output_hash": "e1f821bd5901c7b513ad35041c6054795ac87c09333281bbb0213dd49a8554c3"
+    }
+  }
+}
