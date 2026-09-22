@@ -1,0 +1,51 @@
+{
+  "run_id": "RUN-ENT000008-M2B-01",
+  "run_kind": "article",
+  "pipeline_id": "pure-land-content-pipeline",
+  "pipeline_version": "0.2.0",
+  "source_id": "SRC0001",
+  "source_entry_id": "ENT000008",
+  "source_entry_hash": "016fe0e89bd00302ecf7b254db94068bc05289b0ce158b5b2dffb9e9dcd04b5e",
+  "source_catalog_article_id": "SRC0001-ART000004",
+  "rights_review_id": "RR0005",
+  "external_processing": "blocked",
+  "created_at": "2026-09-22T02:15:50+00:00",
+  "updated_at": "2026-09-22T02:18:34+00:00",
+  "status": "completed",
+  "stages": {
+    "source_registration": {
+      "status": "completed",
+      "completed_at": "2026-09-22T02:15:50+00:00",
+      "evidence": "SRC0001"
+    },
+    "rights_precheck": {
+      "status": "completed",
+      "completed_at": "2026-09-22T02:15:50+00:00",
+      "evidence": "RR0005"
+    },
+    "source_capture": {
+      "status": "completed",
+      "completed_at": "2026-09-22T02:15:50+00:00",
+      "evidence": "05f3b8f048ee1d45400627bcd192d091eb98a1200c6a96a15ce7efafdc50681a"
+    },
+    "source_segmentation": {
+      "status": "completed",
+      "request_hash": "2ecb7e48e1e4d328e42af8d96204d5dd443e57a874767c630d057dda3bd787f5",
+      "completed_at": "2026-09-22T02:17:43+00:00",
+      "adapter": "local",
+      "model": "kimi-code local",
+      "response_hash": "ac92e57966dc2b74f60ab1aaa47f47acd566867d031d86e0523d22db124bcc0e",
+      "output_hash": "f371d842592b208362f281568f2c4a63b6a3dee390a4f562d87c8133ebf60e28"
+    },
+    "case_detection": {
+      "status": "completed",
+      "request_hash": "42731869ee353ce00acbbde191f4b01ab98a75288cdcbffe50722b6e9d9dfa8a",
+      "completed_at": "2026-09-22T02:18:34+00:00",
+      "adapter": "local",
+      "model": "kimi-code local",
+      "response_hash": "7cdafc91e939719248d1cd0d6e0cf0c7ce67fb3e37436466fa5b251f838eb342",
+      "output_hash": "7cdafc91e939719248d1cd0d6e0cf0c7ce67fb3e37436466fa5b251f838eb342"
+    }
+  },
+  "case_runs": []
+}

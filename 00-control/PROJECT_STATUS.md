@@ -2,7 +2,7 @@
 
 团队入口与阶段验收以 [PROJECT_HUB.md](PROJECT_HUB.md) 为准；本文件保留详细进度记录。 / The [project hub](PROJECT_HUB.md) is the team entry point and milestone gate; this file retains the detailed status log.
 
-状态：Pipeline `0.2.0` 的 Candidate-first 流程已实现；`ENT000001` 的迁移重放 Run 已完成提取和去重，停在人工身份审核。首个已接受的 M2A baseline 仍是历史 `0.1.1` Run，M2B 尚未开始。
+状态：Pipeline `0.2.0` 的 Candidate-first 流程已实现；M2A 迁移重放与 M2B 第一批未见样本测试（3 个条目、4 个新 Case Run）均已完成，十阶段全部通过。首个已接受的 M2A baseline 仍是历史 `0.1.1` Run。
 
 已完成：
 
@@ -63,6 +63,10 @@
 - 已完成 M2A v0.2 迁移 Run：负责人（owner）裁定 `ENT000001-CAND0001` 复用 `CASE000001`，十阶段全部完成，无依据/矛盾主张为 0，发布包 public。
 - 已找回 T01 全球来源注册表（385 条，三份对话导出）并归一化为 `01-global-source-directory/source_registry_v1.csv`；编号冲突经 `source_id_map.csv` 解决（现行 SRC0001-0005 不变，T01 编号保留为别名）；12 组疑似重复列入 `REVIEW_NEEDED.md` 待审。
 - 已归档并映射 MVP 精选清单（43 条，42 条映射成功；T01 SRC0386 超出恢复范围待确认）。
+- 已完成 M2B 第一批未见样本测试（2026-09-22，三个条目全部来自 SRC0001《净土圣贤录》卷九，AI 响应按 v2 prompt 全新生成，model 记为 `kimi-code local`）：
+  - 普通条目 `ENT000006` 卢氏（名智福）传：`RUN-ENT000006-M2B-01`，分段 14 段无遗漏重叠，去重在检索范围内无候选（CASE000001 得分低于阈值），自动裁定新案例 `CASE000006`，十阶段完成，发布包 public。
+  - 多案例条目 `ENT000007`（extractor 未拆分的三则传记）：`RUN-ENT000007-M2B-01`，正确拆为 3 个候选；`CASE000007` 温静文妻、`CASE000008` 钟离夫人任氏、`CASE000009` 越国夫人王氏，去重中同条目候选均被正确判为 distinct_case，身份无混淆，三个 Case Run 全部完成，发布包均 public。
+  - 零案例样本 `ENT000008`《净土圣贤录叙》（彭际清撰）：`RUN-ENT000008-M2B-01`，分段 13 段，案例检测正确输出零候选，Article Run 直接完成、不产生 Case Run。
 
 进行中：
 
@@ -96,12 +100,12 @@
 - M2A 使用声明为 `local` 的 `codex-gpt5` 生成标准响应；runner 仍未实现自动 API adapter，也不持有 API 密钥。
 - `reader_generation/v1` 的转述较平，`creator_analysis/v1` 的角度可能过泛；两项暂作为预览质量问题，M2B 后再设计 v2。
 - 当前 v0.2 去重候选检索只扫描同一运行根目录中的已完成 Case Run，并使用精确结构化值；正式案例索引和模糊召回留到 M2D。
-- v0.2 尚未完成真实文章的端到端 Run；M2A 重放和自动化测试都不能替代新版 Prompt 的独立质量评估。
+- v0.2 已就《净土圣贤录》未见条目完成端到端 Run（M2B 第一批），但 M2B 的 AI 响应由本地 adapter 人工撰写，仍不能替代新版 Prompt 在真实模型上的独立质量评估。
 
 下一步：
 
 - 由人工明确审核 `ENT000001-CAND0001` 是否复用 `CASE000001`，并记录审核人和理由；之后完成 Source Occurrence、生成文本、独立检查与发布门槛。
-- 再执行 M2B：选择一条标准条目、一条复杂或多案例条目，以及一个新公版或开放许可 Source 的条目。
+- 再执行 M2B 第二批：一个新公版或开放许可 Source 的条目（第一批已覆盖普通、多案例、零案例三类，均出自 SRC0001）。
 - 对 unseen results 执行固定回归指标；修订 prompt 时创建新版本，不覆盖已使用版本。
 - 建立第一批经过核对的净土教理引用，包含经论、祖师文献和明确归因的法师讲解。
 - 选择一条 M2 案例试做 `dharma_case_commentary`，生成逐条 claim ledger 并执行完整发布检查。
