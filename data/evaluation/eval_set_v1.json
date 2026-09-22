@@ -1,0 +1,154 @@
+{
+  "eval_set_id": "eval_set_v1",
+  "version": "1.0",
+  "created": "2026-09-22",
+  "purpose": "ROADMAP 2.3 第①步：固定评测集，用于给 reader_generation / creator_analysis 的各版本 prompt 打质量基线并做版本间对比。评分规则见 data/evaluation/quality_rubric_v1.md，使用规则见 data/evaluation/README.md。",
+  "artifacts_under_test": {
+    "reader_generation": "pipeline/prompts/reader_generation/v1.md",
+    "creator_analysis": "pipeline/prompts/creator_analysis/v1.md"
+  },
+  "case_selection_note": "从 6 个已验收案例中选题。选题依据：每个案例的题材（临终助念、病中、梦感、老年、劳作持名等）能真实支撑哪个讲法 brief；同一案例可被多个 brief 复用（产物内在维度分数不变，brief 相关维度随语境评）。6 个案例全部被至少一个 brief 覆盖。",
+  "caveats": [
+    "CASE000001 的 v1 产物是从 v0.1.1 已验收响应迁移重放的（见其 migration_note），不是 v2 流程下新生成的输出；评分仍有效，但解读时注意此背景。",
+    "B10（动物往生）在现有 6 个案例中无任何匹配案例，标记为 corpus_gap、不打分。该 brief 保留在评测集中，待语料库出现动物往生案例后补入并补评；它同时提醒：当前语料不覆盖该典型讲法主题。"
+  ],
+  "briefs": [
+    {
+      "brief_id": "B01",
+      "theme": "临终助念",
+      "title": "临终时，身边的人能做什么",
+      "audience": "助念团成员、家中有临终亲人的居士",
+      "format_duration": "15 分钟开示段落",
+      "case_id": "CASE000010",
+      "selection_rationale": "僧濟案是 6 个案例中唯一完整呈现临终陪伴链的案例：慧远授烛嘱咐、集众讽经、五更交烛给弟子，直接对应临终助念主题。",
+      "artifacts": {
+        "reader_generation": "data/pipeline_runs/RUN-ENT000009-M2B-01/candidates/ENT000009-CAND0001/outputs/reader_generation.json",
+        "creator_analysis": "data/pipeline_runs/RUN-ENT000009-M2B-01/candidates/ENT000009-CAND0001/outputs/creator_analysis.json"
+      },
+      "status": "scored"
+    },
+    {
+      "brief_id": "B02",
+      "theme": "病愈（病中得安慰）",
+      "title": "病重时见佛、病苦顿消：如何讲病中的感应",
+      "audience": "病中修行者及其家属",
+      "format_duration": "10 分钟短视频",
+      "case_id": "CASE000010",
+      "selection_rationale": "现有案例无真正病愈案例；僧濟'忽然醒来，自我检察身体，已全无病苦'是最接近病中得安慰的材料，选它以暴露产物对该主题的支撑边界。",
+      "artifacts": {
+        "reader_generation": "data/pipeline_runs/RUN-ENT000009-M2B-01/candidates/ENT000009-CAND0001/outputs/reader_generation.json",
+        "creator_analysis": "data/pipeline_runs/RUN-ENT000009-M2B-01/candidates/ENT000009-CAND0001/outputs/creator_analysis.json"
+      },
+      "status": "scored"
+    },
+    {
+      "brief_id": "B03",
+      "theme": "梦感",
+      "title": "梦中见莲池金台，能不能当真",
+      "audience": "普通信众读者",
+      "format_duration": "8 分钟短视频",
+      "case_id": "CASE000009",
+      "selection_rationale": "越国夫人王氏案是 6 个案例中唯一以梦境为主体的案例（同伴之梦、夫人之梦、莲池金台），且原文自带'能入我梦乃可信'的怀疑细节，是梦感主题的最佳样本。",
+      "artifacts": {
+        "reader_generation": "data/pipeline_runs/RUN-ENT000007-M2B-01/candidates/ENT000007-CAND0003/outputs/reader_generation.json",
+        "creator_analysis": "data/pipeline_runs/RUN-ENT000007-M2B-01/candidates/ENT000007-CAND0003/outputs/creator_analysis.json"
+      },
+      "status": "scored"
+    },
+    {
+      "brief_id": "B04",
+      "theme": "家庭共修",
+      "title": "带动一家人念佛：规矩与慈悲",
+      "audience": "想带动家人共修的在家居士",
+      "format_duration": "12 分钟开示段落",
+      "case_id": "CASE000009",
+      "selection_rationale": "王氏引导妾婢同修、逐懈怠婢女、婢女悔改精进，是 6 个案例中唯一涉及'带领他人共修与规矩'的案例。",
+      "artifacts": {
+        "reader_generation": "data/pipeline_runs/RUN-ENT000007-M2B-01/candidates/ENT000007-CAND0003/outputs/reader_generation.json",
+        "creator_analysis": "data/pipeline_runs/RUN-ENT000007-M2B-01/candidates/ENT000007-CAND0003/outputs/creator_analysis.json"
+      },
+      "status": "scored"
+    },
+    {
+      "brief_id": "B05",
+      "theme": "信心建立",
+      "title": "临终瑞相应该怎么讲，才能帮人建立信心而不讲过头",
+      "audience": "初学佛、对往生将信将疑的听众",
+      "format_duration": "10 分钟短视频",
+      "case_id": "CASE000006",
+      "selection_rationale": "卢氏案瑞相层次最全（自述见莲华化佛、未记名者摸顶灼手、法师作传附赞），是检验'讲瑞相不失实'这一信心建立常见场景的最佳样本。",
+      "artifacts": {
+        "reader_generation": "data/pipeline_runs/RUN-ENT000006-M2B-01/candidates/ENT000006-CAND0001/outputs/reader_generation.json",
+        "creator_analysis": "data/pipeline_runs/RUN-ENT000006-M2B-01/candidates/ENT000006-CAND0001/outputs/creator_analysis.json"
+      },
+      "status": "scored"
+    },
+    {
+      "brief_id": "B06",
+      "theme": "病中修行",
+      "title": "重病成为修行的转折点",
+      "audience": "病中修行者家属",
+      "format_duration": "10 分钟开示段落",
+      "case_id": "CASE000006",
+      "selection_rationale": "卢氏病中受戒、闻法、昼夜念佛半月、辞谢探望，是病中立志主题材料最完整的案例；家属如何陪伴（程李清讲华严经、勉励）也在案内。",
+      "artifacts": {
+        "reader_generation": "data/pipeline_runs/RUN-ENT000006-M2B-01/candidates/ENT000006-CAND0001/outputs/reader_generation.json",
+        "creator_analysis": "data/pipeline_runs/RUN-ENT000006-M2B-01/candidates/ENT000006-CAND0001/outputs/creator_analysis.json"
+      },
+      "status": "scored"
+    },
+    {
+      "brief_id": "B07",
+      "theme": "持名融入日常",
+      "title": "一边干活一边念佛：忙碌生活中如何保持称名",
+      "audience": "工作繁忙的上班族、家务繁重的在家居士",
+      "format_duration": "8 分钟短视频",
+      "case_id": "CASE000001",
+      "selection_rationale": "陈妪随纺车声称佛三十年，是 6 个案例中唯一'持名与重复性日常劳动结合'的案例，直接对应法师常讲的'念佛不妨做事'主题。",
+      "artifacts": {
+        "reader_generation": "data/pipeline_runs/RUN-ENT000001-M2A-T02V02/candidates/ENT000001-CAND0001/outputs/reader_generation.json",
+        "creator_analysis": "data/pipeline_runs/RUN-ENT000001-M2A-T02V02/candidates/ENT000001-CAND0001/outputs/creator_analysis.json"
+      },
+      "status": "scored"
+    },
+    {
+      "brief_id": "B08",
+      "theme": "久病持名",
+      "title": "卧床不起的人，也能修行",
+      "audience": "长期卧床的病患及其照护者",
+      "format_duration": "8 分钟短视频",
+      "case_id": "CASE000007",
+      "selection_rationale": "温静文妻久病卧床、随丈夫学念、默念两年不断，是 6 个案例中唯一以'卧床病人持名'为主线的案例。",
+      "artifacts": {
+        "reader_generation": "data/pipeline_runs/RUN-ENT000007-M2B-01/candidates/ENT000007-CAND0001/outputs/reader_generation.json",
+        "creator_analysis": "data/pipeline_runs/RUN-ENT000007-M2B-01/candidates/ENT000007-CAND0001/outputs/creator_analysis.json"
+      },
+      "status": "scored"
+    },
+    {
+      "brief_id": "B09",
+      "theme": "老年修行与预知时至",
+      "title": "修行是一辈子的事：九十八岁，走得安详明白",
+      "audience": "老年信众",
+      "format_duration": "10 分钟开示段落",
+      "case_id": "CASE000008",
+      "selection_rationale": "钟离夫人任氏平生笃志、九十八起居如常、临终前一天告诫儿子，是老年修行与预知时至主题的唯一对应案例。",
+      "artifacts": {
+        "reader_generation": "data/pipeline_runs/RUN-ENT000007-M2B-01/candidates/ENT000007-CAND0002/outputs/reader_generation.json",
+        "creator_analysis": "data/pipeline_runs/RUN-ENT000007-M2B-01/candidates/ENT000007-CAND0002/outputs/creator_analysis.json"
+      },
+      "status": "scored"
+    },
+    {
+      "brief_id": "B10",
+      "theme": "动物往生",
+      "title": "动物也能念佛往生吗",
+      "audience": "普通信众读者（短视频泛受众）",
+      "format_duration": "5 分钟短视频",
+      "case_id": null,
+      "selection_rationale": "现有 6 个已验收案例无一涉及动物往生，无可评产物。标记 corpus_gap：语料库出现匹配案例后补入并补评，此前该 brief 不参与任何版本基线均分。",
+      "artifacts": null,
+      "status": "corpus_gap"
+    }
+  ]
+}
