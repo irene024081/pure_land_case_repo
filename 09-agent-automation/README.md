@@ -81,6 +81,25 @@ Accepting `case_detection` creates child Candidate Runs under `RUN-ENT000001-V2/
 
 已有 v0.1.x Case Run 的事实和实体标签可以用 `migrate_candidate_outputs.py` 生成候选 ID 响应。脚本核对旧输出哈希并保留来源 Run ID；这是证据迁移，不是新版 Prompt 的质量评测。
 
+## AI API 适配器 / AI API Adapter
+
+`run-stage` 命令可以让 runner 直接调用 AI 厂商 API 完成一个 ready 阶段，代替"外部人工生成响应再 accept"。密钥与厂商配置不进入 Git：
+
+```bash
+cp scripts/ai_providers.example.json scripts/ai_providers.json   # 本地配置，已被 .gitignore
+export OPENAI_API_KEY=...        # 各家密钥按配置里的 api_key_env 设置
+
+python3 scripts/run_pipeline.py run-stage \
+  --run-dir data/pipeline_runs/RUN-XXX \
+  --stage source_segmentation \
+  --provider openai              # openai | anthropic | google | kimi，切换只改这一个参数
+```
+
+- 厂商、端点、模型、单价在 `scripts/ai_providers.json` 配置；`--provider` 切换厂商，同一版本化 prompt 不变。
+- 每次调用记录 prompt 版本、模型、token 用量、估算成本、重试次数、耗时到 Git 忽略的 `data/adapter_logs/calls.jsonl`；脱敏摘要写入 run.json 阶段的 `api_call` 字段并同步进 `data/run_records/`。
+- 重试为指数退避（次数与间隔可在配置 `retry` 节调整）；最终失败写入日志并中止，不静默。
+- 红线不变：阶段或来源的 `external_processing` 不是 `allowed` 时，`run-stage` 直接拒绝（与 `accept` 的外部 adapter 拦截同一规则），受限原文不会发往任何厂商。
+
 Facts and entity tags from a completed v0.1.x Case Run may be converted with `migrate_candidate_outputs.py`. It checks legacy output hashes and records the source Run ID. This is an evidence migration, not an evaluation of the new Prompts.
 
 ```bash

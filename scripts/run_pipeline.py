@@ -1047,6 +1047,47 @@ def accept_response(args: argparse.Namespace) -> None:
     print(f"accepted {args.stage}")
 
 
+def run_stage_with_adapter(args: argparse.Namespace) -> None:
+    import ai_adapter
+
+    run_dir = args.run_dir.resolve()
+    run = load_json(run_dir / "run.json")
+    stage = stage_definition(run, args.stage)
+    if stage.get("executor") != "ai":
+        raise SystemExit(f"stage is not AI-executed: {args.stage}")
+    state = run["stages"][args.stage]
+    if state["status"] != "ready":
+        raise SystemExit(f"stage is not ready: {args.stage} ({state['status']})")
+    stage_processing = state.get("external_processing", run["external_processing"])
+    if stage_processing != "allowed":
+        raise SystemExit("external adapter blocked for this stage by source or candidate rights policy")
+    request_path = run_dir / "requests" / f"{args.stage}.json"
+    if not request_path.exists() or sha256_file(request_path) != state["request_hash"]:
+        raise SystemExit(f"request hash mismatch: {args.stage}")
+    request = load_json(request_path)
+    result = ai_adapter.call_with_retry(
+        args.provider,
+        request,
+        config_path=args.config,
+        log_context={"run_id": run["run_id"]},
+    )
+    response_path = run_dir / "checks" / f"{args.stage}.adapter_response.json"
+    atomic_json(response_path, result["response"])
+    accept_args = argparse.Namespace(
+        run_dir=run_dir,
+        stage=args.stage,
+        response=response_path,
+        adapter=args.provider,
+        model=result["model"],
+    )
+    accept_response(accept_args)
+    response_path.unlink()
+    run = load_json(run_dir / "run.json")
+    run["stages"][args.stage]["api_call"] = result["summary"]
+    write_run(run, run_dir)
+    print(f"accepted {args.stage} via {args.provider}")
+
+
 def fail_run(args: argparse.Namespace) -> None:
     run_dir = args.run_dir.resolve()
     run = load_json(run_dir / "run.json")
@@ -1123,6 +1164,12 @@ def parse_args() -> argparse.Namespace:
     fail.add_argument("--stage")
     fail.add_argument("--reason", required=True)
     fail.set_defaults(handler=fail_run)
+    run_stage = commands.add_parser("run-stage")
+    run_stage.add_argument("--run-dir", type=Path, required=True)
+    run_stage.add_argument("--stage", required=True)
+    run_stage.add_argument("--provider", required=True, help="Provider name from ai_providers.json.")
+    run_stage.add_argument("--config", type=Path, default=SCRIPTS_DIR / "ai_providers.json")
+    run_stage.set_defaults(handler=run_stage_with_adapter)
     resolve = commands.add_parser("resolve-identity")
     resolve.add_argument("--run-dir", type=Path, required=True)
     resolve.add_argument("--action", choices=("new", "reuse"), required=True)

@@ -24,11 +24,9 @@ Follow-up: create a fixed evaluation set and rubric, study presentation methods 
 
 Follow-up: evaluate relevance, distinctiveness, narrative usability, required context, and misinterpretation risk against real topic briefs before creating a new Prompt version.
 
-## KI-003 AI Adapter 尚未自动执行 / AI Adapter Is Still Manual
+## KI-003 ~~AI Adapter 尚未自动执行~~（已解决 2026-09-24）/ AI Adapter Is Still Manual (resolved)
 
-Runner 会生成固定 Request 并校验 Response，但当前仍需在外部完成模型调用，再通过 `accept` 导入结果。Runner 不管理 API 密钥。
-
-The Runner generates a fixed Request and validates the Response, but model execution still happens outside the Runner and is imported through `accept`. The Runner does not manage API keys.
+**已解决**：`scripts/ai_adapter.py` + `run_pipeline.py run-stage` 已让 runner 可直接调用 OpenAI / Anthropic / Google / Kimi API（配置在 Git 忽略的 `scripts/ai_providers.json`，密钥走环境变量）。同一版本化 prompt 可切换厂商；成本、token、重试、耗时逐次记录（`data/adapter_logs/` + run 记录 `api_call` 摘要）；`external_processing` 非 allowed 时一律拒绝外发。受限来源（当前 SRC0001–SRC0024 均 blocked）仍走本地 adapter 流程，不受影响。真实厂商联调待负责人提供密钥后进行。
 
 ## KI-004 正式数据提升尚未实现 / Canonical Promotion Is Not Implemented
 

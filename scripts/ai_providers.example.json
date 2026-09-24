@@ -1,0 +1,42 @@
+{
+  "retry": {
+    "max_attempts": 3,
+    "base_delay_seconds": 1.0,
+    "max_delay_seconds": 30.0
+  },
+  "providers": {
+    "openai": {
+      "endpoint": "https://api.openai.com/v1/chat/completions",
+      "model": "gpt-4o-mini",
+      "api_key_env": "OPENAI_API_KEY",
+      "cost_per_1k_input": 0.00015,
+      "cost_per_1k_output": 0.0006,
+      "enabled": true
+    },
+    "anthropic": {
+      "endpoint": "https://api.anthropic.com/v1/messages",
+      "model": "claude-3-5-haiku-latest",
+      "api_key_env": "ANTHROPIC_API_KEY",
+      "max_tokens": 8192,
+      "cost_per_1k_input": 0.0008,
+      "cost_per_1k_output": 0.004,
+      "enabled": true
+    },
+    "google": {
+      "endpoint": "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
+      "model": "gemini-2.0-flash",
+      "api_key_env": "GOOGLE_API_KEY",
+      "cost_per_1k_input": 0.0001,
+      "cost_per_1k_output": 0.0004,
+      "enabled": true
+    },
+    "kimi": {
+      "endpoint": "https://api.moonshot.cn/v1/chat/completions",
+      "model": "kimi-k2-0711-preview",
+      "api_key_env": "MOONSHOT_API_KEY",
+      "cost_per_1k_input": 0.004,
+      "cost_per_1k_output": 0.016,
+      "enabled": true
+    }
+  }
+}
