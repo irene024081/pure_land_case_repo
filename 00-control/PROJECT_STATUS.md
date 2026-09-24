@@ -71,6 +71,7 @@
 - 已建立 `09-agent-automation/PIPELINE_STAGES.md`：Pipeline v0.2.0 十五个阶段的面向人工审核文档（目的/输入输出/是否用 AI/验收标准/常见失败），开头附全流程总表。
 - 已建立 `scripts/render_case_report.py`（纯标准库）：输入 case run 或 article run 目录（或 `--all`）生成中文 HTML 审核报告到 `data/reports/`（git 跟踪）；单案例页含基本信息、原文分段、读者文本对照、事实清单、实体标签、去重记录、创作分析、事实检查、版权检查、审核状态；总览页一行一案例；受限来源原文自动遮蔽（按 manifest 的 storage_class 判断）。已为 6 个已完成案例生成报告 + 总览页。
 - 已完成 ROADMAP 1.3 CBETA XML 适配器：`scripts/extract_cbeta_xml.py` v0.1.0（extraction_method `cbeta_xml_tei_structure`）。按 TEI `<head>`+`<p>` 结构切条目，目录 `<list>` 不参与切分；嵌套条目按 div 祖先关系正确拆分并在父记录 notes 标 `contains_nested_entries`。冒烟：T51n2072 全书提取 263 条（卷上 100 / 卷中 135 / 卷下 28），僧濟条 raw_text 与既有 ENT000009 逐字一致；X78n1549 往生女人第九提取 79 条，温静文妻/任氏/王氏被正确拆成三条（修复了 dazhouxian 提取器在 ENT000007 暴露的盲区）。测试见 `tests/test_extractors.py`（合成 fixture 4 用例）。
+- 已完成 ROADMAP 1.4 最小正式数据提升（M2D 精简版，三样交付）：`data/canonical/schema.sql`（11 张表：cases、case_facts、entities、case_tags、source_occurrences、text_versions、identity_decisions、rights_decisions、dedup_index、promotion_log、schema_migrations；DDL 同时兼容 SQLite 与 Postgres）+ `scripts/canonical_store.py`（SQLite 落地 `data/canonical/canonical.db`，Git 忽略可重建）+ `scripts/promote_run.py`（promote/status/verify 三命令）。技术选型：本机暂无 Postgres，先以 SQLite 落地同一 schema，生产按 D10 切 Postgres 时只换存储层连接（详见 `data/canonical/README.md`）。提升幂等（同 Run 同指纹重复执行无操作）、拒绝未完成/已被取代的 Run、提升前校验全部 fact→segment、tag→fact、occurrence→entry、生成文本引用完整性；持久去重索引 dedup_index 按 `dedup_candidates.v2.json` 的归一化特征（persons/places/dates/tags）落库，供去重检索从扫目录升级为查库。6 个已完成案例（CASE000001、0006-0010）全部提升，verify 通过；删除 DB 后由 Run 证据重建内容哈希一致。
 
 进行中：
 
