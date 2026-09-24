@@ -1,0 +1,6 @@
+channel_name,channel_id,teacher,repo_source_id,watch_priority,discovery_method,transcript_chain,notes
+净土宗 Pure Land Buddhism,,净本/净平,SRC0159,high,youtube_data_api,"1. plb-sea.org 官网文字稿(SRC0004) 2. 视频 description 3. 频道授权字幕 4. 合法本地转写","对话记录(2026-09-15 #159)标为重点实时；与官网家族 SRC0004 关联；channel_id pending（需人工到频道页确认）"
+十方圆通寺 道晟法师,,道晟,SRC0176,high,youtube_data_api,"1. 十方圆通寺官网(SRC0177) 2. PLBTW 整理文字稿(SRC0003) 3. 视频 description 4. 频道授权字幕 5. 合法本地转写","对话记录标为重点实时（听众来信+感应重点源）；channel_id pending"
+净土宗官方（Plbamt）,,慧净/净宗,SRC0158,medium,youtube_data_api,"1. plbtw.com 文字稿(SRC0003) 2. 视频 description 3. 频道授权字幕","对应净土宗官方网站 SRC0003；channel_id pending"
+信愿法师佛学讲座,,信愿,,medium,youtube_data_api,"1. 本愿山官网文字稿 2. 视频 description 3. 频道授权字幕","注册表 source_registry_v1.csv 无对应 repo 行（2026-09-24 核实）；repo_source_id pending"
+华藏净宗弘化网,,净空体系,SRC0170,low,youtube_data_api,"1. 官网文字稿 2. 视频 description","低频+历史内容；channel_id pending"
