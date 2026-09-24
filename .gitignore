@@ -8,4 +8,5 @@ data/pipeline_runs/
 data/canonical/*.db
 data/adapter_logs/
 scripts/ai_providers.json
+gpt_export/
 notes/chatgpt_transcripts/
