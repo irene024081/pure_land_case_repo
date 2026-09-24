@@ -1,0 +1,14 @@
+entry_url: https://plb.tw/tc/story_1.aspx?cid=129&pn=1
+list_url_template: https://plb.tw/tc/story_1.aspx?cid=129&pn={page}
+start_page: 1
+max_pages: 40
+link_selector: a
+include_pattern: story_1_in\.aspx\?.*cid=129
+key_from: href
+key_pattern: [?&]id=(\d+)
+key_prefix: story:id=
+url_strip_pattern: (&amp;|&)chk=[^&]*|(&amp;|&)param=[^&]*
+title_from: text
+scan_scope: full
+default_rights_status: pending
+default_content_type: article

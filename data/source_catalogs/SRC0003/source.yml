@@ -1,9 +1,9 @@
 source_id: SRC0003
 catalog_version: 1.0.0
 catalog_status: active
-inventory_status: partial
-inventory_scope: M2 pilot item only; story archive pagination not yet cataloged
-last_inventory_scan_at: 2026-09-17
+inventory_status: complete
+inventory_scope: story archive cid=129 fully cataloged (481 items, 2026-09-24 scan)
+last_inventory_scan_at: 2026-09-24
 default_language: zh-Hant
 inventory_adapter: paginated_html
 inventory_refresh_policy: weekly_incremental

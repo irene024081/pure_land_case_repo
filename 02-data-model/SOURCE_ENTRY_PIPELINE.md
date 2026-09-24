@@ -9,7 +9,18 @@ inventory: static_headings | sitemap | rss | wordpress_archive | paginated_html 
 entry: classical_entry | html_article | wordpress_article | pdf_page_range | transcript | custom
 ```
 
-`data/source_catalogs/{source_id}/source.yml` records the chosen adapters, implementation, refresh policy, rights review, and storage class.
+`data/source_catalogs/{source_id}/source.yml` records the chosen adapters, implementation, refresh policy, rights review, and storage class. Adapter-specific discovery rules live in `inventory.yml` beside it (flat key: value — entry/list URL templates, selectors, key patterns, page limits, scan scope).
+
+## Inventory Discovery
+
+`scripts/inventory_adapters.py` implements the four inventory families; `scripts/run_inventory.py` runs a scan and syncs `articles.csv`:
+
+```bash
+python3 scripts/run_inventory.py scan --source-id SRC0003 --dry-run   # diff only
+python3 scripts/run_inventory.py scan --source-id SRC0003             # write catalog
+```
+
+Sync semantics: known keys keep their rows untouched; new keys are appended as unreviewed rows (rights pending by default); keys missing from a full-scope scan are marked `discovery_status=removed`, never deleted. Discovery is metadata-level and fetches index pages only — it grants no processing or publication rights.
 
 ## Lifecycle
 
