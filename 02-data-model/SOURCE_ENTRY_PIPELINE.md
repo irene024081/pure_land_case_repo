@@ -1,5 +1,7 @@
 # Source Adapters And Entry Capture
 
+各适配器的目的、验证状态与已知限制以 `../09-agent-automation/ADAPTERS.md` 总账为准；本文件只保留接口约定。
+
 ## Adapter Model
 
 Different Sources need different selectors and boundary rules, but they should reuse adapter families:
