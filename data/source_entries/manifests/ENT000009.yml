@@ -7,16 +7,19 @@ source_artifact_uri:
 raw_capture_status: persisted_verified
 capture_representation: normalized_entry_json
 raw_text_hash: fe12fb22220a249f6a7a79491ecae33b796e70c6c93a56904d4afa94119c7c09
-normalized_artifact_hash: c65f42196490b500f904bd9e26f1dbc47025f99fedf99a1205fcaf434c8cc5dd
+normalized_artifact_hash: 51497d2f5cc23baa6f8b2cd2fd38cd1f40679dce242c2e62e314881697059b42
 source_artifact_hash:
 content_type: application/json
-byte_size: 2127
+byte_size: 2399
 captured_at: 2026-09-22
-rights_basis: public_domain_historical_text
-rights_status: public_domain_verified
+rights_basis: CC-BY-NC-SA-4.0
+rights_status: open_license_verified
 rights_review_id: RR0006
-terms_url:
-terms_checked_at:
-public_display_policy: full_normalized_historical_text
+license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+terms_url: https://cbeta.org/copyright
+terms_checked_at: 2026-09-25
+source_version: CBETA 2026.R2
+source_revision: dbdea41071e1e260ad84b72faefd4587333cf76d
+public_display_policy: full_normalized_text_with_CBETA_attribution_license_version_and_modification_notice
 retention_policy: permanent
-notes: Public-domain status applies to the historical text, not automatically to modern website code or editorial assets.
+notes: The underlying Ming-dynasty work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition and is distributed noncommercially under CC BY-NC-SA 4.0; see data/NOTICE.md for attribution and modifications.

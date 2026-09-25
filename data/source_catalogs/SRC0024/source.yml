@@ -13,4 +13,4 @@ rights_review_id: RR0006
 storage_class: tracked_public
 external_processing_default: blocked
 batch_selection_field: pipeline_status
-notes: Ming-dynasty public-domain text (Lianchi Zhuhong) via CBETA XML P5 delivery copy; CBETA delivery assets are not reused.
+notes: The Ming-dynasty work is public domain; normalized text from the CBETA XML P5 electronic edition is handled under CC BY-NC-SA 4.0 with attribution, version, modification notice, noncommercial use, and share-alike. CBETA site code and unrelated assets are excluded.

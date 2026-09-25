@@ -11,7 +11,9 @@
   "language": "zh-Hant",
   "raw_text": "僧濟\n\n　　晉僧濟。入廬山從遠公學。達嘆曰。紹隆大法。其在爾乎。後疾篤。誠期淨土。遠遺燭一枝曰。汝可運心安養。濟執燭憑几。停想無亂。又集眾諷淨土經。五更濟以燭授弟子元弼。令隨眾行道。頃之。覺自秉一燭。乘空而行。見阿彌陀佛。接置於掌。遍至十方。歘然而覺。且悲且慰。自省四大。了無疾苦。明夕。忽起立。目逆虛空。如有所見。須臾還臥。容色愉悅。謂傍人曰。吾行矣。右脅而逝。時方炎暑。三日而體不變。異香郁然。\n\n　　贊曰。濟以聖師指示。而生淨土。然則臨終助念。孰曰無功乎。而留龕溽暑。體發異香。梵行之精堅驗矣。",
   "raw_text_hash": "fe12fb22220a249f6a7a79491ecae33b796e70c6c93a56904d4afa94119c7c09",
-  "source_url": "https://raw.githubusercontent.com/cbeta-org/xml-p5/master/T/T51/T51n2072.xml",
+  "source_url": "https://raw.githubusercontent.com/cbeta-org/xml-p5/dbdea41071e1e260ad84b72faefd4587333cf76d/T/T51/T51n2072.xml",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "大正新脩大藏經第51冊 No.2072《往生集》卷上，沙門往生類，僧濟（CBETA XML P5，T51n2072_p0128a17 起）",
   "extraction_method": "CBETA TEI P5 XML: entry = <head> title + following <p> blocks (biography and 贊曰); intra-paragraph <lb> line breaks removed",
   "extractor_name": "ad-hoc CBETA TEI P5 XML head/p parse (no versioned extractor script yet)",
@@ -24,5 +26,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": [],
   "review_status": "extracted",
-  "notes": "Public-domain Ming-dynasty text. M2B second batch: first entry from a new source (SRC0024). Entry boundaries follow explicit CBETA head/p markup."
+  "notes": "The underlying Ming-dynasty work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0. Entry boundaries follow explicit CBETA head/p markup; TEI apparatus and intra-paragraph line breaks were removed. See data/NOTICE.md."
 }
