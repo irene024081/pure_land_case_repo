@@ -5,12 +5,12 @@ inventory_status: partial
 inventory_scope: M2 pilot item only; source-wide extractor found 70 entries in the selected section
 last_inventory_scan_at: 2026-09-16
 default_language: zh-Hans
-inventory_adapter: static_headings
+inventory_adapter: cbeta_xml
 inventory_refresh_policy: on_edition_or_extractor_change
 entry_adapter: classical_entry
-extractor_name: extract_dazhouxian_entries.py
+extractor_name: extract_cbeta_xml.py
 rights_review_id: RR0005
 storage_class: tracked_public
 external_processing_default: blocked
 batch_selection_field: pipeline_status
-notes: Public-domain historical text only; exclude modern site code and assets.
+notes: Public-domain historical text only; exclude modern site code and assets. Batch capture since 2026-09-25 uses the CBETA delivery (traditional characters); pilot entries ENT000001/6/7/8 used the dazhouxian delivery (simplified).

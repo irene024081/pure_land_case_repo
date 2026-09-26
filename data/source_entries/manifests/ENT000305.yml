@@ -1,0 +1,21 @@
+source_entry_id: ENT000305
+source_id: SRC0001
+storage_class: tracked_public
+storage_uri: data/source_entries/public/ENT000305.normalized.json
+normalized_storage_uri: data/source_entries/public/ENT000305.normalized.json
+source_artifact_uri:
+raw_capture_status: persisted_verified
+capture_representation: normalized_entry_json
+raw_text_hash: c42631bd3637caa7027135d0d6659d5baf2f7a02465fa362be6755cf0abcf43e
+normalized_artifact_hash: 83c34193bd0719d559374bb0ee167ae337e3d6d5f81deed9d66a8f277b45f86f
+source_artifact_hash:
+content_type: application/json
+byte_size: 2040
+captured_at: 2026-09-25
+rights_basis: public_domain_historical_text
+rights_status: public_domain_verified
+rights_review_id: RR0005
+terms_url:
+terms_checked_at:
+public_display_policy: full_normalized_historical_text
+retention_policy: permanent

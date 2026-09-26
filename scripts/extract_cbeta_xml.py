@@ -40,7 +40,7 @@ from pathlib import Path
 from source_entry_io import emit_records
 
 
-EXTRACTOR_VERSION = "0.1.0"
+EXTRACTOR_VERSION = "0.1.1"
 EXTRACTION_METHOD = "cbeta_xml_tei_structure"
 
 TEI = "{http://www.tei-c.org/ns/1.0}"
@@ -140,8 +140,13 @@ def extract_entries(
     events: list[dict],
     start_heading: str | None,
     end_heading: str | None,
+    juan: str | None = None,
 ) -> list[dict]:
-    """Group the event stream into entry records under the boundary rules."""
+    """Group the event stream into entry records under the boundary rules.
+
+    With `juan` set, only entries in that volume (by the nearest preceding
+    juan marker) are returned; structural headings outside it are ignored.
+    """
     volume = ""
     section = ""
     entries: list[dict] = []
@@ -168,6 +173,9 @@ def extract_entries(
             continue
         if event["kind"] == "head":
             title = event["text"]
+            if juan is not None and volume != juan:
+                # Outside the selected volume: track nothing.
+                continue
             if not started:
                 if title == start_heading:
                     started = True
@@ -190,6 +198,8 @@ def extract_entries(
             continue
         # paragraph
         if not started or event["in_list"]:
+            continue
+        if juan is not None and volume != juan:
             continue
         if pending_head is not None:
             # The pending head has real content: it is an entry.
@@ -238,33 +248,23 @@ def make_entry_key(source_id: str, volume: str, section: str, title: str, digest
     return ":".join(part for part in parts if part)
 
 
-def main() -> int:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--input", required=True, help="Local CBETA XML path or URL.")
-    parser.add_argument("--source-id", required=True)
-    parser.add_argument("--source-title", required=True)
-    parser.add_argument("--source-url", required=True)
-    parser.add_argument("--sutra-no", default="", help="CBETA text number, e.g. T51n2072.")
-    parser.add_argument("--language", default="zh-Hant")
-    parser.add_argument("--volume-labels", default="", help="Comma-separated juan labels, e.g. 卷上,卷中,卷下.")
-    parser.add_argument("--start-heading", help="First head to include (exact text).")
-    parser.add_argument("--end-heading", help="Head at which to stop (exclusive).")
-    parser.add_argument("--entry-id-prefix", default="ENT")
-    parser.add_argument("--start-sequence", type=int, default=1)
-    parser.add_argument("--output", default="", help="Optional .jsonl or single-record .json output path.")
-    args = parser.parse_args()
-
-    labels = [label for label in args.volume_labels.split(",") if label]
-    root = load_xml(args.input)
-    body = root.find(f"{TEI}text/{TEI}body")
-    if body is None:
-        raise SystemExit("no TEI body found in input")
-    events = stream_events(body)
-    entries = extract_entries(events, args.start_heading, args.end_heading)
-
+def build_records(
+    entries: list[dict],
+    *,
+    source_id: str,
+    source_title: str,
+    source_url: str,
+    sutra_no: str,
+    language: str,
+    volume_labels: list[str],
+    entry_id_prefix: str,
+    start_sequence: int,
+    extraction_command: str,
+) -> list[dict]:
+    """Turn extracted entries into normalized source-entry records."""
     records = []
-    for index, entry in enumerate(entries, start=args.start_sequence):
-        volume = volume_label(entry["volume"], labels)
+    for index, entry in enumerate(entries, start=start_sequence):
+        volume = volume_label(entry["volume"], volume_labels)
         raw_text = entry["title"] + "\n\n" + "\n\n".join(
             "　　" + paragraph for paragraph in entry["paragraphs"]
         )
@@ -277,26 +277,26 @@ def main() -> int:
                 + ". " + notes
             )
         records.append({
-            "source_entry_id": make_entry_id(args.entry_id_prefix, index),
-            "source_entry_key": make_entry_key(args.source_id, volume, entry["section"], entry["title"], digest),
-            "source_id": args.source_id,
+            "source_entry_id": make_entry_id(entry_id_prefix, index),
+            "source_entry_key": make_entry_key(source_id, volume, entry["section"], entry["title"], digest),
+            "source_id": source_id,
             "parent_entry_id": "",
-            "source_title": args.source_title,
+            "source_title": source_title,
             "volume": volume,
             "section": entry["section"],
             "entry_title": entry["title"],
             "entry_sequence": index,
-            "language": args.language,
+            "language": language,
             "raw_text": raw_text,
             "raw_text_hash": digest,
-            "source_url": args.source_url,
+            "source_url": source_url,
             "locator_text": "，".join(
-                part for part in [args.sutra_no, f"《{args.source_title}》", volume, entry["section"], entry["title"]] if part
+                part for part in [sutra_no, f"《{source_title}》", volume, entry["section"], entry["title"]] if part
             ),
             "extraction_method": EXTRACTION_METHOD,
             "extractor_name": Path(__file__).name,
             "extractor_version": EXTRACTOR_VERSION,
-            "extraction_command": " ".join(sys.argv),
+            "extraction_command": extraction_command,
             "captured_at": date.today().isoformat(),
             "access_date": date.today().isoformat(),
             "boundary_status": "script_extracted",
@@ -307,6 +307,45 @@ def main() -> int:
             "review_status": "extracted",
             "notes": notes,
         })
+    return records
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--input", required=True, help="Local CBETA XML path or URL.")
+    parser.add_argument("--source-id", required=True)
+    parser.add_argument("--source-title", required=True)
+    parser.add_argument("--source-url", required=True)
+    parser.add_argument("--sutra-no", default="", help="CBETA text number, e.g. T51n2072.")
+    parser.add_argument("--language", default="zh-Hant")
+    parser.add_argument("--volume-labels", default="", help="Comma-separated juan labels, e.g. 卷上,卷中,卷下.")
+    parser.add_argument("--start-heading", help="First head to include (exact text).")
+    parser.add_argument("--end-heading", help="Head at which to stop (exclusive).")
+    parser.add_argument("--juan", help="Only include entries in this volume number (cb:juan n).")
+    parser.add_argument("--entry-id-prefix", default="ENT")
+    parser.add_argument("--start-sequence", type=int, default=1)
+    parser.add_argument("--output", default="", help="Optional .jsonl or single-record .json output path.")
+    args = parser.parse_args()
+
+    labels = [label for label in args.volume_labels.split(",") if label]
+    root = load_xml(args.input)
+    body = root.find(f"{TEI}text/{TEI}body")
+    if body is None:
+        raise SystemExit("no TEI body found in input")
+    events = stream_events(body)
+    entries = extract_entries(events, args.start_heading, args.end_heading, juan=args.juan)
+    records = build_records(
+        entries,
+        source_id=args.source_id,
+        source_title=args.source_title,
+        source_url=args.source_url,
+        sutra_no=args.sutra_no,
+        language=args.language,
+        volume_labels=labels,
+        entry_id_prefix=args.entry_id_prefix,
+        start_sequence=args.start_sequence,
+        extraction_command=" ".join(sys.argv),
+    )
 
     emit_records(records, args.output)
     print(f"extracted {len(records)} entries", file=sys.stderr)
