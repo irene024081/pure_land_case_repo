@@ -12,6 +12,8 @@
   "raw_text": "張無盡丞相\n\n　　宋張商英。初以夫人向氏激發。留神內典。號無盡居士。甞著發願文云。思此世界。五濁亂心。無正觀力。無了因力。自性唯心。不能悟達。謹遵釋迦世尊金口之教。專念阿彌陀佛。求彼世尊願力攝受。待報滿時。往生極樂。如順水乘舟不勞自力而至矣。\n\n　　贊曰。無盡悟禪宗於兜率悅公。而拳拳乎安養是念。其為計審矣。自香山至此四公。雖西方瑞應史未詳錄。而據因以考果。不生西方將奚生哉。",
   "raw_text_hash": "2d1052a1a3354647cefbe053a7f2b71d0eb020937bdf6455dd3f8b2b79fe5cdf",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，王臣往生類，張無盡丞相",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

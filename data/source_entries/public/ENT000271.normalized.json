@@ -12,6 +12,8 @@
   "raw_text": "總論\n\n　　念佛法門。人知為亡歿之歸宿。而不知生存之利益。是故聞持呪得靈通。即改而持呪。聞講演得聰辯。即改而講演。聞營造得福報。聞齋會得人緣。乃至聞攝養得長壽。種種變易。曾無執持。安在其一心不亂。而望淨業之有成耶。吾故集此。姑以斷時人之外慕。據實而論。求生淨土。本為成佛度生。既非圖身後之樂。復何計身前之利與否哉。\n\n　　西方有佛。開法藏於六八。正覺積功唱寶號於彌陀。恒演大光。普塞惡道。廣放智眼。滅此昏盲。瑤林矗地。珠寶麗空。池流八德。華發眾光。身土微妙全是不二矣。蓋寶地雖研。實不離當處。且神識雖去。曾不出自心。修有上下。益該淺深。若信之則甚近而不遠。若迷之則增遠而無人。誠信深行至者。剎那超於苦海。盍咄聲念甘永迷矣。今也志一而不撓。為諸善之母。無乃純粹而無雜。為眾行之本故。修淨業者。所以務本也。其本立而道生。惟念佛三昧歟。縱向塵緣。連乎無傾。若遇業風。確乎不拔矣。古有言。淨土往生萬牛不能挽焉。深信之功。往生之用。德高易進至矣。盡矣。爰有一大德。號蓮池禪師。姓沈氏。古杭人。法諱上袾下宏。生而頴異。世味澹如。少遊黌校。有聲而已。覺世無常。年三十一而傾心於至道。投于無門洞性天理和尚。祝髮乞於昭慶寺無塵玉律師。受具簟瓢隻杖。遊學諸方。遍參知識。宗教精通。晚居于雲棲。遙踵伏虎跡。專興蓮宗。慕惠遠之風。念佛往生。超耀昔日見。著述有部。今秉其一也。以此書行于世。先哲有孝。後學有助。古云。見賢思齊。予今依之功身。嗚呼。高己而蔑如於淨土。得恥於當時。招苦於來際。殊告修淨業者。上慎旃哉。代代前賢事跡。往往雖載傳錄焉。知來者靡曠。其人該羅別錄。芟繁補闕。類成九種。增廣新聞間。作之贊。發其隱義。緇素並列。隱顯畢收。可謂融鉺鐺釵釧於釜。會江河淮濟於一海矣。予雖學術空疎。後生有恥。加倭點。及未闋繡良。梓行後世。觀之者。務進悟之者。深信願共登三藐之山。入薩雲之海云。\n\n　　慶安歲次壬辰夷則自恣日\n\n　　遊方軒釋子慧竟謹跋",
   "raw_text_hash": "617e236a7a58f07349cb79f3f9a8147db329b725a9c2dceef507ad9428b2abb4",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷下，生存感應類，總論",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

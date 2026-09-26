@@ -12,6 +12,8 @@
   "raw_text": "法喜\n\n　　隋法喜。常行方等懺法。忽一雉索命。有神人呵曰。法師當往生淨土。豈償汝命。後於病中。發願以一生行業。回向西方。至心念佛。即見佛菩薩來迎。端坐而化。\n\n　　贊曰。經稱假使百千劫。所作業不忘。因緣會遇時。果報還自受。喜惡得以生淨土不償雉命。良由一生淨土。永絕輪迴。因緣何從而得會遇。若其忍悟無生。入塵利物。縱有報償。則所謂將頭臨白刃。一似斬春風者矣。豈與凡夫六道等耶。",
   "raw_text_hash": "caa315a8be95ae82583daad36beeda8568a47ebeae55ef0e7e6d7e24356312e2",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，法喜",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

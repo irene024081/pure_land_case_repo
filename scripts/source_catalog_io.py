@@ -113,8 +113,10 @@ def validate_source_catalog(
             else:
                 if manifest.get("source_id") != source_id:
                     errors.append(f"{label}: manifest source_id mismatch")
-                if row["rights_review_id"] and manifest.get("rights_review_id") not in ("", row["rights_review_id"]):
+                if row["rights_review_id"] and manifest.get("rights_review_id") != row["rights_review_id"]:
                     errors.append(f"{label}: rights_review_id differs from manifest")
+                if row["rights_status"] and manifest.get("rights_status") != row["rights_status"]:
+                    errors.append(f"{label}: rights_status differs from manifest")
     return errors
 
 

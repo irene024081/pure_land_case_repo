@@ -657,6 +657,25 @@ def publication_blockers(run: dict[str, Any], run_dir: Path) -> list[str]:
     return blockers
 
 
+def publication_rights_notice(run: dict[str, Any]) -> dict[str, Any] | None:
+    review = parse_simple_yaml(Path(run["rights_review_path"]))
+    if review.get("rights_status") != "open_license_verified":
+        return None
+    manifest = manifest_fields(run["source_entry_id"])
+    return {
+        "rights_review_id": review["rights_review_id"],
+        "rights_holder": review.get("rights_holder", ""),
+        "license_type": review.get("license_type", ""),
+        "license_url": manifest["license_url"],
+        "terms_url": manifest["terms_url"],
+        "source_version": manifest["source_version"],
+        "source_revision": manifest["source_revision"],
+        "modification_notice": manifest["modification_notice"],
+        "commercial_use_policy": review.get("commercial_use_policy", ""),
+        "dataset_distribution_policy": review.get("dataset_distribution_policy", ""),
+    }
+
+
 def complete_case_resolution(
     run: dict[str, Any], run_dir: Path, resolution_kind: str, decision_basis: str,
     reviewer_id: str = "", reason: str = "", target_case_id: str = "",
@@ -741,6 +760,9 @@ def refresh(run: dict[str, Any], run_dir: Path) -> None:
                     "source_entry_hash": run["source_entry_hash"],
                 },
             }
+            rights_notice = publication_rights_notice(run)
+            if rights_notice:
+                package["rights_notice"] = rights_notice
             atomic_json(output_path(run_dir, stage_id), package)
             state.update({"status": "completed", "completed_at": utc_now(), "output_hash": sha256_file(output_path(run_dir, stage_id))})
             run["status"] = "completed"
@@ -770,9 +792,9 @@ def rights_precheck(entry: dict[str, Any], entry_path: Path) -> dict[str, Any]:
     config, _ = read_catalog(source_id)
     row = find_entry_row(source_id, entry["source_entry_id"])
     require_batch_eligible(row)
-    review_id = config.get("rights_review_id", "")
-    if not review_id or row["rights_review_id"] != review_id:
-        raise SystemExit("source config and article catalog must identify the same rights review")
+    review_id = row.get("rights_review_id", "") or config.get("rights_review_id", "")
+    if not review_id:
+        raise SystemExit("article catalog must identify a rights review")
     review_path = RIGHTS_DIR / f"{review_id}.yml"
     review = parse_simple_yaml(review_path)
     if review.get("source_id") != source_id:
@@ -782,6 +804,20 @@ def rights_precheck(entry: dict[str, Any], entry_path: Path) -> dict[str, Any]:
     manifest = manifest_fields(entry["source_entry_id"])
     if manifest.get("source_id") != source_id or manifest.get("raw_capture_status") != "persisted_verified":
         raise SystemExit("source manifest is not verified for this source")
+    if manifest.get("rights_review_id") != review_id:
+        raise SystemExit("source manifest rights review differs from article catalog")
+    if manifest.get("rights_status") != review.get("rights_status"):
+        raise SystemExit("source manifest rights status differs from rights review")
+    if manifest.get("public_display_policy") != review.get("public_display_policy"):
+        raise SystemExit("source manifest public display policy differs from rights review")
+    if review.get("rights_status") == "open_license_verified":
+        required_license_fields = (
+            "license_url", "terms_url", "terms_checked_at", "source_version",
+            "source_revision", "modification_notice",
+        )
+        missing = [field for field in required_license_fields if not manifest.get(field)]
+        if missing:
+            raise SystemExit(f"open-license source manifest is missing: {', '.join(missing)}")
     if manifest.get("normalized_storage_uri") != str(entry_path.relative_to(ROOT)):
         raise SystemExit("source manifest normalized path mismatch")
     if manifest.get("normalized_artifact_hash") != sha256_file(entry_path):

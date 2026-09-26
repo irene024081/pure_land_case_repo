@@ -12,6 +12,8 @@
   "raw_text": "朱氏\n\n　　大明陳母朱氏。吳郡嘉定人。濬川居士室也。孝慈天植。素向三寶。年八十一。其子參雲棲歸。導以念佛往生。遂篤志淨業。越二載示疾。卒之前三日。堂前大呼母名者三。母云。有二青衣在此。時病久孱困。忽躍起竪脊端坐。諸子勸其寢息。乃吉祥而逝。迎尸中堂。仰臥之。尸自轉西向。一時駭異。以為精誠所感致云。\n\n　　贊曰。郝父陳母。俱有青衣童子之祥。當生人天。既而一則佛現蓮臺。一則不忘西向。又當生淨土。二相俱時。生方未可定也。即不生。生且不遠矣。",
   "raw_text_hash": "cb41b3d637e5c9fd49b475a27ad83624ccb90aa20e8a1e299daff956ab424e24",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，畜生往生類，朱氏",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

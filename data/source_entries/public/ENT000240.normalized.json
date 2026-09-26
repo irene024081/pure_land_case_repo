@@ -12,6 +12,8 @@
   "raw_text": "杜居士\n\n　　大明杜居士。順天府宛平縣人。隱西山瑞光寺側古齋堂中。置家事不問。三十年專志念佛。予鄉人童廣策詣之。居士問所從來。答曰杭州。曰君杭人。識雲棲宏公否。策答曰。吾師也。居士合掌念佛。更無他語。將終禮懺九日。至懺文懇切處。輒流涕哽咽。遂絕食惟飲水少許。懺畢坐脫。浹旬顏貌如生。人望見有五色彩雲。盤旋屋上云。",
   "raw_text_hash": "580cae880d5ba4f8ab1860b3e20f4b194d7026bedfdba361211275ffde34663f",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，畜生往生類，杜居士",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

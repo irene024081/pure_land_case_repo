@@ -12,6 +12,8 @@
   "raw_text": "鸜鵒\n\n　　宋元祐間，長沙郡人養一鸜鵒，俗呼為八八兒者也。偶聞一僧念阿彌陀佛，即隨口稱念，旦暮弗絕。其家因以與僧。久之鳥亡，僧具棺以葬之。俄口中生蓮華一枝，或為題曰：有一靈禽八八兒，解隨僧口念阿彌。死埋平地蓮華發，我輩為人豈不知？又天台黃巖正等寺觀師畜一鸜鵒，常隨人念阿彌陀佛。一旦立死籠中，乃穴土而葬之，舌端生紫蓮華。大智律師為偈頌之。",
   "raw_text_hash": "41d053bc7fb5d4b22511bddc349bd8096539c29fb1711b98c0716cd80cff1fef",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/X78n1549",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "X78n1549，《净土圣贤录》，卷九，往生物類第十，鸜鵒",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

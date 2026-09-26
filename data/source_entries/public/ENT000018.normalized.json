@@ -12,6 +12,8 @@
   "raw_text": "道敬\n\n　　晉道敬。瑯琊人。祖凝之刺江州。因從遠公出家年十七。博通經論。日記萬言。篤志念佛。蚤夜弗替。宋永初元年。謂眾曰。先師見命。吾其行矣。端坐唱佛而化。眾見光明滿室。彌時方滅。\n\n　　贊曰。冲年高才。鮮不自恃。而篤志念佛。非宿植淨因者乎。今沙彌略涉經論。我慢放逸。白首而無歸。不得已而談西方晚矣。",
   "raw_text_hash": "6c4f2e4655ce5c2ede9880031c2bcfa3219e3b7bcb0b5ead3e989c2e96ccd437",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，道敬",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

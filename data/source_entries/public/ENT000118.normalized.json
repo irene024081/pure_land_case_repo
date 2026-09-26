@@ -12,6 +12,8 @@
   "raw_text": "王龍舒國學\n\n　　宋王日休。龍舒人。端靜簡潔博極經史。一旦捐之曰。是皆業習。非究竟法。吾其為西方之歸。自是精進念佛年六十。布衣蔬食。日課千拜。夜分乃寢。作淨土文勸世。將卒三日前。遍別親識。有不復相見之語。至期讀書罷如常禮念。忽厲聲稱阿彌陀佛唱言。佛來迎我。屹然立化。如植木矣。邦人有夢。二青衣引公西行者。自是家家供事云。\n\n　　贊曰。龍舒勸發西方。最為激切懇到。非徒言之。亦允蹈之。至於臨終之際。殊勝奇特。照耀千古。嗚呼。豈非淨土聖賢入廛垂手者耶。",
   "raw_text_hash": "c14597981562c127f039ec571f943eceaa4fa91f0030490a2060eead076a9975",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，王臣往生類，王龍舒國學",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

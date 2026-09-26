@@ -12,6 +12,8 @@
   "raw_text": "張善和\n\n　　唐張善和。殺牛為業。臨終見群牛。作人語索命。於是大怖。喚其妻云。速延僧為我懺悔。僧至諭之曰。觀經中說。臨終惡相現者。至心念佛即得往生。和云。地獄至急。不暇取香爐矣。即以右手擎火。左手拈香。面西專切稱佛。未滿十聲。自言佛來迎我。即化去。\n\n　　贊曰。觀其地獄至急。手作香爐蓋勢迫。情極懇苦精誠。更無第二念矣。雖云十念寧不遠過悠悠者百千萬億念。決定往生理實如是。或疑菩薩示現者容有之。而不盡然也。",
   "raw_text_hash": "ca9affc45fd4a474ec751866213b010ce63fc00c4fa7770d49737c71bf23ee8b",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，惡人往生類，張善和",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

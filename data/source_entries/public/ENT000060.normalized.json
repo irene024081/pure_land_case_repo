@@ -12,6 +12,8 @@
   "raw_text": "永明壽禪師\n\n　　錢氏吳越延壽。杭州餘杭人。依四明翠岩禪師出家。參天台韶國師。發明心要。甞行法華懺。中夜見普賢。蓮花忽然在手。因思宿願未決。登智者岩。作二鬮。一曰。一心禪定。一曰。萬行修淨土。冥心精禱。七拈皆得淨土。於是一意專修。後住永明。日課一百八事。夜往別峯行道念佛。旁人時聞螺貝天樂之音。忠懿王嘆曰。自古求西方。未有如此之專切者也。乃立西方香嚴殿。以成其志。在永明十五年。弟子千七百人。常與眾授菩薩戒。施鬼神食。放諸生命。皆悉迴向莊嚴淨土。時號慈氏下生。開寶八年二月二十六日。晨起焚香告眾。趺坐而化。後有僧來自臨川。經年遶其塔。人問故曰。我病入冥。見殿左供一僧像。王勤致禮敬。密詢其人則曰。此杭州永明壽禪師也。凡死者皆經冥府。此師已徑生西方上上品矣。王重其德。故禮敬耳。\n\n　　贊曰。永明佩西來直指心印。而刻意淨土。自利利他廣大行願。光昭於萬世。其下生之慈氏歟。其再生之善導歟。",
   "raw_text_hash": "4e49973f22ad61f506cdd9b757e6645752730261f65f85fe71023a519f44a4a4",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，永明壽禪師",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

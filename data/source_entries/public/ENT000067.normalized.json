@@ -12,6 +12,8 @@
   "raw_text": "慈照宗王\n\n　　宋子元。號萬事休。平江崐山人。少習止觀。定中聞鴉聲悟道。頌曰。二十餘年紙上尋。尋來尋去轉沈吟。忽然聽得慈鴉叫。始信從前錯用心。於是利他心切。普勸念佛。代為法界眾生。禮佛懺悔。祈生安養。剏白蓮懺堂。述四土三觀。選佛圖。開示蓮宗眼目。逆順境中。未甞動念。高宗皇帝召見。賜號慈照。後於鐸城。三月二十三日。告眾曰。吾化緣已畢。時當行矣。言訖合掌示寂。荼毘舍利無數。勅賜最勝之塔。",
   "raw_text_hash": "3897d2b7163d92e6e89d1ed0fc52d6820187c3748d07013d2ed04ad9c25dd004",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，慈照宗王",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

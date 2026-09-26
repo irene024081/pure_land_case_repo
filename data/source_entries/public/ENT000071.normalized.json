@@ -12,6 +12,8 @@
   "raw_text": "若愚\n\n　　宋若愚。居雲川仙潭。建無量壽閣。勸道俗念佛。精勤三十年。與道潛則章二師為友。潛能詩近名。愚與章惟務實行。將順世。夢神人告曰。汝同學則章。得普賢行願三昧。已生淨土。彼正待汝。愚乃沐浴更衣。命眾諷觀經。端坐默然忽云。淨土現前。吾當行矣。書偈而化。偈曰。本自無家可得歸雲邊有路許誰知。溪光搖落西山月。正是仙潭夢斷時。又曰。空裏千花羅網。夢中七寶蓮池。踏得西方路穩。更無一點狐疑。\n\n　　贊曰。愚與潛章為友。而潛以耽詩。親名失淨土之利。黜世智疎世緣。求西方者。當書諸紳。",
   "raw_text_hash": "36318c4e2136ddea0a5e87e252de5666b412a270b9ba565f19af447b4fdf145c",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，若愚",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

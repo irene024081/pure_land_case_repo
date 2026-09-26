@@ -12,6 +12,8 @@
   "raw_text": "師贊\n\n　　宋師贊。雍州人。為僧童。年十四。念佛不絕。忽遇疾暴亡。俄而復甦。謂師及父母曰。阿彌陀佛來此。兒當隨行。隣人見空中寶臺。五色異光。向西而沒。",
   "raw_text_hash": "4108c6e509d5c31147f6c528a716cc265865065a6a5477472f710aa3eee176d9",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，師贊",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

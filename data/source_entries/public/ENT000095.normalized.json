@@ -12,6 +12,8 @@
   "raw_text": "孤山圓法師\n\n　　宋智圓。居西湖孤山。廣解諸經。刻心淨土。造彌陀疏及西資鈔。勸發往生將終。以陶器合瘞。後十五年。積雨山頹。啟視陶器。形質儼然。爪髮俱長。\n\n　　贊曰。傳稱沒後如故。不說臨終往生何也。據沒所現。徵存所脩。正其白業堅固。所感決定往生何疑。",
   "raw_text_hash": "ce1df26ca62d27aca6ed6b36cec6fa6ef508e264283f1fb9759d2c5e8a6f3ff7",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，孤山圓法師",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

@@ -12,6 +12,8 @@
   "raw_text": "宗利\n\n　　宋宗利。居新城碧沼。修念佛三昧者十年。後入道味山。築菴名曰一相。越十五年。忽謂弟子曰。吾見碧蓮花。遍滿空中三日。復曰佛來矣。即書偈云。吾年九十頭雪白。世上應無百年客。一相道人歸去來。金臺坐斷乾坤窄。奄然而化。",
   "raw_text_hash": "d70272618aaefdd5c9174bb0f77a15186540dddcf79379f15acb38b7db880db8",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，宗利",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

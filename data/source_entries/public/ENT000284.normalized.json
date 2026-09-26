@@ -12,6 +12,8 @@
   "raw_text": "張愛\n\n　　張愛，明萬歷間中官也。晚持金剛經，閱數年病死。至一王者所，謂曰：汝合向人間受胎。答曰：愛持金剛經，願生淨土，不願受胎。王者曰：汝持經功少，奈何？愛曰：曾聞十念成就，況其久乎？王者曰：且放還，聽持經去。既甦，遂去之西山碧雲寺，專誦金剛經。又十一年，一日集眾曰：我以持經力，今西去矣。沐浴更衣，端坐而逝。",
   "raw_text_hash": "7d20a5f6c1b7264ad8ed125d12525b1c89ef7b2aeb0930fa42e260738457502c",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/X78n1549",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "X78n1549，《净土圣贤录》，卷九，往生雜流第八，張愛",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

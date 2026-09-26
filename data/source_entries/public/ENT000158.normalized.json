@@ -12,6 +12,8 @@
   "raw_text": "唐世良\n\n　　宋唐世良。會稽人。持戒念佛。年老疾病。猶不就枕。誦彌陀經十萬過。謂家人云。佛來接我。言訖作禮。即便坐逝。利行人時在道味山。夜夢西方異光。旛華天樂。空中聲云。唐世良已歸淨土。",
   "raw_text_hash": "3e3237f32aab64f1bbad22b748718dfb3c9e0ecd045356747dd929f57e285408",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，處士往生類，唐世良",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

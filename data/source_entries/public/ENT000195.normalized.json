@@ -12,6 +12,8 @@
   "raw_text": "孫氏\n\n　　宋四明孫氏。寡居念佛。三十年不懈。一日微恙。夢八僧繞行懺宮。己身掛縵衣。隨僧行。既覺沐浴淨衣。請僧行懺。於大眾前。端坐誦經。至一心不亂。左手結印而逝。遠近皆聞空中樂音。",
   "raw_text_hash": "668c649f59c1758e8c5b6f74d059febcb2c6eb9a52a9df017da1e8b73227b7eb",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，婦女往生類，孫氏",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

@@ -12,6 +12,8 @@
   "raw_text": "費氏\n\n　　費氏，湖州雙林鎮沈春郊妻也。少寡，織紡自饍，持齋數十年。供養三世佛畫像，及檀香大士。日誦金剛經一卷，佛名千聲，寒暑不輟。崇禎十一年大疫，壻張世茂迎費氏往居其家，止𢹂大士以行。費氏居一樓，日課回向，祝願此香直達佛所。如是三載，忽空中有香繞樓。數日，粉墻上湧現三世佛像，莊嚴精妙。遠邇詫傳，瞻禮日眾。或以淨巾擦之，色逾光明。又四年，一日告壻曰：吾欲返故居。入門即灑掃焚香，參佛誦經。至第三日早，沐浴更衣，端坐念佛。午刻大呼：佛來也，我行矣。別眾而逝，年七十有三。",
   "raw_text_hash": "fb0a7dce67e9dbb573a258a29a39d30c63a4662fc64576850ca4e4ae4ba90bca",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/X78n1549",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "X78n1549，《净土圣贤录》，卷九，往生女人第九，費氏",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

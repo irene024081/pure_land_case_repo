@@ -12,6 +12,8 @@
   "raw_text": "胡長婆\n\n　　宋胡長婆李氏。上虞人。夫喪後。日夜高聲念佛。及誦彌陀經凡十餘年。一日見有僧覆以緋蓋。曰汝十五日子時往生。問師何人。曰是汝所念者。婆遂會別諸親。至期有異香光明。端坐而逝。七日焚化。齒如白玉。舌如紅蓮。睛如葡萄。皆精堅不壞。舍利不可數計。次日焚處生一花。如白罌粟云。\n\n　　贊曰。諸根不壞。舍利無數。世譏女人五漏之體。無乃不可乎。",
   "raw_text_hash": "13d75f3b4590969acd4aec6af72be368940c7b527d44a3aeb293499d4d4e551b",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，婦女往生類，胡長婆",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

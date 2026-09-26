@@ -12,6 +12,8 @@
   "raw_text": "法祥\n\n　　唐法祥。住楊都大興國寺。三十年修安養之業。凡有饒益。必用迴向。因疾弟子。聞祥稱佛聲甚厲。又見房西壁有光若鏡。現淨土相頻伽鼓翼。乃倏然而化。\n\n　　贊曰。祥見頻伽。前智舜見鸚鵡孔雀。不見佛而見眾鳥何耶。經云。是諸眾鳥。皆阿彌陀佛變化所作。故知。正報依報。俱淨土相也。幸無疑焉。",
   "raw_text_hash": "c49921d56a22e0b72322b02a2b670d23c95a72a84988ce92f00b0a0a4a07de82",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，法祥",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

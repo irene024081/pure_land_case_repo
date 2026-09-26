@@ -12,6 +12,8 @@
   "raw_text": "張迪助教\n\n　　宋張迪。錢塘人。官助教。從圓淨律師。受菩薩戒。咨問淨業法門。篤志修持。誓生安養。每念佛時。揚聲勇猛。至失音猶不已。一日謂圓淨曰。定中見白色頻伽鳥飛舞於前。又三年。西向端坐。念佛而化。\n\n　　贊曰。見頻伽。不見佛何也。蓋是初時暫見。終當見佛耳。謂漸入佳境非耶。",
   "raw_text_hash": "6d43c3730302fe0b7ad2fab848cb6cefc3f0b6350f47ac1a5cd18155541512c2",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，王臣往生類，張迪助教",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

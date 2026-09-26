@@ -41,7 +41,8 @@ class BatchCaptureTest(unittest.TestCase):
         xml_path.write_text(CBETA_FIXTURE, encoding="utf-8")
         (source_dir / "inventory.yml").write_text(
             f"xml_path: {xml_path}\nsource_title: 测试集\nsource_url: https://example.invalid/\n"
-            "sutra_no: T99n9999\nvolume_labels: 卷上\n",
+            "sutra_no: T99n9999\nvolume_labels: 卷上\n"
+            "source_version: TEST 1.0\nsource_revision: abc123\n",
             encoding="utf-8",
         )
         (self.rights_dir / "RRTEST.yml").write_text(
@@ -75,7 +76,7 @@ class BatchCaptureTest(unittest.TestCase):
         return batch_capture.capture_cbeta_source(
             "SRCTEST", source_config, inventory_config, args,
             {"catalog_root": self.catalog_root, "public_dir": self.public_dir,
-             "manifest_dir": self.manifest_dir},
+             "manifest_dir": self.manifest_dir, "rights_dir": self.rights_dir},
         )
 
     def test_capture_writes_entries_manifests_and_catalog(self) -> None:
@@ -88,7 +89,8 @@ class BatchCaptureTest(unittest.TestCase):
         # integration with the storage verifier: every manifest checks out
         for manifest in manifests:
             verify_source_entry_storage.verify_manifest(manifest)
-        rows = list(csv.DictReader((self.catalog_root / "SRCTEST" / "articles.csv").open(encoding="utf-8")))
+        with (self.catalog_root / "SRCTEST" / "articles.csv").open(encoding="utf-8") as handle:
+            rows = list(csv.DictReader(handle))
         self.assertEqual(len(rows), 3)
         parent = next(row for row in rows if row["title"] == "乙一")
         self.assertIn("contains_nested_entries", parent["notes"])
@@ -101,7 +103,8 @@ class BatchCaptureTest(unittest.TestCase):
         self.assertEqual(len(second["captured"]), 0)
         self.assertEqual(len(second["skipped"]), 3)
         self.assertEqual(snapshot, {p.name: p.read_bytes() for p in self.public_dir.glob("*.json")})
-        rows = list(csv.DictReader((self.catalog_root / "SRCTEST" / "articles.csv").open(encoding="utf-8")))
+        with (self.catalog_root / "SRCTEST" / "articles.csv").open(encoding="utf-8") as handle:
+            rows = list(csv.DictReader(handle))
         self.assertEqual(len(rows), 3)
 
     def test_failure_is_recorded_and_batch_continues(self) -> None:
@@ -129,6 +132,35 @@ class BatchCaptureTest(unittest.TestCase):
         source_config = batch_capture.parse_simple_yaml(self.catalog_root / "SRCTEST" / "source.yml")
         reason = batch_capture.rights_gate("SRCTEST", source_config, rights_dir=self.rights_dir)
         self.assertIn("legal_review_required", reason)
+
+    def test_inventory_rights_review_overrides_source_default(self) -> None:
+        (self.rights_dir / "RROPEN.yml").write_text(
+            "rights_review_id: RROPEN\nsource_id: SRCTEST\n"
+            "rights_status: open_license_verified\nlicense_type: CC-BY-NC-SA-4.0\n"
+            "license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/\n"
+            "terms_url: https://example.invalid/terms\nterms_checked_at: 2026-09-26\n"
+            "internal_retention_basis: CC-BY-NC-SA-4.0\n"
+            "public_display_policy: full_text_with_attribution\n",
+            encoding="utf-8",
+        )
+        inventory_path = self.catalog_root / "SRCTEST" / "inventory.yml"
+        inventory_path.write_text(
+            inventory_path.read_text(encoding="utf-8") + "rights_review_id: RROPEN\n",
+            encoding="utf-8",
+        )
+
+        report = self.run_capture()
+
+        self.assertEqual(len(report["captured"]), 3)
+        manifest = batch_capture.parse_simple_yaml(next(self.manifest_dir.glob("ENT*.yml")))
+        self.assertEqual(manifest["rights_review_id"], "RROPEN")
+        self.assertEqual(manifest["rights_status"], "open_license_verified")
+        self.assertEqual(manifest["rights_basis"], "CC-BY-NC-SA-4.0")
+        self.assertEqual(manifest["source_version"], "TEST 1.0")
+        with (self.catalog_root / "SRCTEST" / "articles.csv").open(encoding="utf-8") as handle:
+            rows = list(csv.DictReader(handle))
+        self.assertEqual({row["rights_review_id"] for row in rows}, {"RROPEN"})
+        self.assertEqual({row["rights_status"] for row in rows}, {"open_license_verified"})
 
 
 if __name__ == "__main__":

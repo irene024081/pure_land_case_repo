@@ -12,6 +12,8 @@
   "raw_text": "李氏\n\n　　李氏，劉道隆之母也。年四十，長齋奉佛，除靜室一間，供奉觀音大士。朝夕禮拜，唱佛名千聲，雖大寒暑不輟。刻金剛經以施人。每遇誕日，誡子婦毋置酒，唯禮懺一日或三日，如是二十五年。將終前一歲，延僧誦經七晝夜，夢所奉大士持數珠一串示之曰：以此授汝，珠數乃汝往生淨土之期。數之得五十三，覺而識之。至明年五月十三日，忽告家人曰：吾今日往西方矣，可為我同聲唱佛名，助我西行。子婦輩坐榻前唱佛，李氏面西端坐而逝。道隆述其事，為世勸焉。",
   "raw_text_hash": "995f5d25f3b55867cc20906345f5c804d8dd0611d10d34e2bfaf2f765572821d",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/X78n1549",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "X78n1549，《净土圣贤录》，卷九，往生女人第九，李氏",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

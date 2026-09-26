@@ -12,6 +12,8 @@
   "raw_text": "總論\n\n　　佛以姨母出家。嘆正法由此而減。使女人出家者皆如上五人。正法其彌昌乎。而勢所不能。佛之懸記非過矣。噫真正出家之男子。邇來尚不多得。而況女眾歟。吾於是乎有感。",
   "raw_text_hash": "ff965e49a947a02b88ef4dfc34d7f10f141c1b338a66a991b8540f5426b1f64d",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，尼僧往生類，總論",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

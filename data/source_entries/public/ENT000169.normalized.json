@@ -12,6 +12,8 @@
   "raw_text": "華居士\n\n　　大明華居士。江干人。醇朴無偽。與人不款曲。中年屬業諸子。獨處一室。不涉世事。朝暮惟孜孜念佛而已。後將卒。自知時至。更衣正寢。手整冠端坐。別眾而逝。其子先已作棺。於是易龕。如沙門故事。舉龕之日觀者如堵。遠近嚮慕焉。",
   "raw_text_hash": "6c6eb415cb1a8c27befc0851715afaa3d02dc41f95b3a5ec539cd0a9da0da098",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，處士往生類，華居士",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

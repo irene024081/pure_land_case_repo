@@ -12,6 +12,8 @@
   "raw_text": "盧氏\n\n　　盧氏，名智福，徽州程李清妻也，晚遷湖州。季清奉佛甚䖍，力營福業，盧氏竭資為助長齋，日課佛名二三萬，約己惠下，未嘗詈人。崇禎五年，得危疾，請古德法師授五戒，咨淨土法要，遂一意西歸。季清為誦華嚴經，至入法界品五十三門，為一一講說，盧氏悉領解。季清復䇿之曰：百劫千生，在此一舉，努力直往，毋猶豫也。遂高聲唱佛，夜以繼晝，如是半月。其母及女來問視，悉謝遣之曰：毋亂人意。十一月八日，忽覩蓮華現前，化佛垂手，身心踊躍，急索香水沐浴，西向叉手，連稱佛名，右脅而逝。時方午，及暮，捫其頂，熱可灼手，年三十九。藕益法師為之傳，系以贊曰：哀哉三界，愛欲為根，根株不拔，奚望西生。蓮華國土，永離塵情，此緣能斷，彼質斯成。勇矣智福，女中之英，一日一夜，淨念功殷。華臺接引，眼識分明，子母恩愛，枯木寒氷。吉祥善逝，長辭苦輪，我今隨喜，願共羣倫。頓除愛網，證入元門。",
   "raw_text_hash": "634d474fdea626b5bca7cb32286e6b6062b6cc7226b702edb6ceef9cc5e37284",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/X78n1549",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "X78n1549，《净土圣贤录》，卷九，往生女人第九，盧氏",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

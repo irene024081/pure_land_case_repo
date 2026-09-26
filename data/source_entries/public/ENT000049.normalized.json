@@ -12,6 +12,8 @@
   "raw_text": "道綽\n\n　　唐道綽。并州汶水人。十四出家。習經論。晚事瓚禪師學禪。又篤志神鸞淨土之業。有僧定中。見綽數珠如七寶大山。平居為眾講無量壽觀經。將二百遍。人各掐珠。口稱佛號。或時散席。嚮彌林谷。六時禮敬。初不廢缺。念佛日以七萬為限。貞觀二年四月八日歸寂。聞而赴者。滿於山寺。見化佛住空。天花下散焉。",
   "raw_text_hash": "372d635e0c7c527fa3aa3282ac4ef34ac99c948e5647478880d82f87352091e8",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，道綽",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

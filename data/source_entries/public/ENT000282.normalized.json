@@ -12,6 +12,8 @@
   "raw_text": "倪道者\n\n　　倪道者，仁和人。棄家建小庵，專意念佛，欲焚身代一切眾生供養諸佛。於是集眾唱佛名，來者至萬人。焚身前一夕，其地忽有金光，高半尺許，語人曰：我焚身時，必有紫青二色雲，從東北過西南，是我往生之相也。已而發炬端坐，其中二色雲現，火盡乃滅。",
   "raw_text_hash": "731b9750aea6e01a63ec6da0ccb5aaea567f70b3fca331c87ae9c2d9c89361e6",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/X78n1549",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "X78n1549，《净土圣贤录》，卷九，往生雜流第八，倪道者",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

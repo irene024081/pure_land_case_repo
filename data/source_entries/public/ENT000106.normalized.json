@@ -12,6 +12,8 @@
   "raw_text": "楚琦\n\n　　大明楚琦。蜀人篤信西方。因抵燕京。聞樓鼓聲大徹。洪武初三詔。說法京都皇情大悅。後築室號西齋。一意淨業。甞見大蓮花充滿世界。彌陀在中。眾聖圍遶。將示寂。書偈示眾曰。吾行矣。人問何生。答曰。西方。又問。西方有佛。東方無佛耶。乃厲聲一喝。泊然而化。",
   "raw_text_hash": "0fc7778363427ee12c9435032b4b13cc452564f583000d097be3c4ed774893ed",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，楚琦",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

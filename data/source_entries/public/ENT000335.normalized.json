@@ -12,6 +12,8 @@
   "raw_text": "孟氏\n\n　　孟氏，醴泉人。既嫁，得痼疾，有僧教以專持佛名。行之三年，忽謂夫曰：可急報諸親屬，吾將去矣。已而送者畢集，孟氏焚香與眾唱佛名。頃之，見一沙門振錫空中，曰：汝當往生。俄而旛葢翩翻，佛與菩薩同時俱至，遂化去。",
   "raw_text_hash": "bd39e9c109d4e508d3b1de231140130bb56908e20cab3ea8fe1e45cbac5bb13d",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/X78n1549",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "X78n1549，《净土圣贤录》，卷九，往生女人第九，孟氏",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

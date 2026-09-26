@@ -12,6 +12,8 @@
   "raw_text": "何曇迹\n\n　　元何曇迹。年十八。持菩薩戒念佛。一宵四鼓即起念誦。人云太早。答云。見佛金相。旛花來迎。遂脫去。",
   "raw_text_hash": "c4853e6fe62aeac150170b4c79348ebf13676d7ea6c21ed0bcc378e30a7e98f7",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，處士往生類，何曇迹",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

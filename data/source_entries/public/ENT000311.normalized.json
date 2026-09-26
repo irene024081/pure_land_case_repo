@@ -12,6 +12,8 @@
   "raw_text": "王氏\n\n　　王氏，明州人。日持金剛經，懷孕二十八月，羸瘦日甚。偶倚門立，一異僧過之，謂曰：汝有善根，何不印施金剛經千卷？王氏從之。又齋千僧，誦金剛經千卷。至夜三更，見金剛神以杵指王氏腹，及覺，已生二男在牀矣。王氏遂持齋誦經不輟，年六十一暴卒。二使者引見冥王，自言從幼持金剛經。王賜金牀，命坐殿側，朗誦一遍。王問：何不念呪？答云：世間無本。勅鬼吏於藏中取呪本付王氏，囑曰：汝至陽間，展轉流通，切勿遺墜。汝向後壽終，徑生極樂世界，不復來此處矣。王氏遂還。後至九十一歲，無疾坐化。其補闕真言曰：唵呼嚧呼嚧社曳穆契莎訶。事在紹興九年。",
   "raw_text_hash": "55f580a1ac7144f4ed610fa99b5a3976eaae3c67698f1bde1ad57cae91d1c659",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/X78n1549",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "X78n1549，《净土圣贤录》，卷九，往生女人第九，王氏",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

@@ -12,6 +12,8 @@
   "raw_text": "俘囚脫難\n\n　　元至正十五年冬。張士誠攻湖州。江浙丞相與戰。獲四十人。囚檻送官。夜宿西湖鳥窠寺。適大猷謀禪師。徐步廊下。囚者見師。神觀閒雅。持誦不輟。因告曰。長老救我。師曰。我不能救。但至誠念南無救苦救難阿彌陀佛。却救得爾曹也。中有三人。信受其語。念不絕口。天曉發囚。易枷鎖。偶至三人。刑具不足。惟繫以繩耳。既而審鞠。乃良民被虜者。遂得釋。\n\n　　贊曰。普門品云。或囚禁枷鎖。手足被杻械。念彼觀音力。釋然得解脫。古今人信之矣。念佛解脫。人或未信。此狃於常見也。佛之威神。更超菩薩。不知其幾。爾不見。斫截手足。念釋迦如來。而四體重生乎。肢截尚可重生。何有於杻械。而信之者寡。吾故表而出之。",
   "raw_text_hash": "1dfff177c75efc37f6e1b59a5973967873aabb5147d3252b74e7d0b89fe207e6",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷下，生存感應類，俘囚脫難",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

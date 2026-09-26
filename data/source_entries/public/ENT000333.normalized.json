@@ -12,6 +12,8 @@
   "raw_text": "蔣十八妻\n\n　　蔣十八妻者，海鹽人。中歲與其夫合志修行，斷除愛慾，日誦大乘經，歷四十餘年。一日，各洗潄更衣，炷香唱佛名，並書一頌而逝。蔣頌曰：這箇幻身，四大合成，今日分散，各歸其根。諸幻既滅，灰飛烟絕，如空中風，猶碧天月。既無障礙，又能皎潔，一切永斷，無有言說。四十年來，脫離嗜慾，惟闡大乘，朝誦暮讀。今朝撒手西歸，自有現成果足。其妻頌曰：看過蓮經萬四千，平生香火有因緣，西方自是吾歸路，風月同乘般若船。",
   "raw_text_hash": "c59190ef705a189c2863c6515ac5e9690c55ddb019ec658f2da92fc681364ce8",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/X78n1549",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "X78n1549，《净土圣贤录》，卷九，往生女人第九，蔣十八妻",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

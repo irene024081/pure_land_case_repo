@@ -12,6 +12,8 @@
   "raw_text": "懷感\n\n　　唐懷感。居長安千福寺。入念佛道場。三七日不覩靈瑞。自恨障深。欲絕食畢命。善導大師不許。勸令精虔三載感如所教。後見佛金色玉毫。得念佛三昧。製決疑論七卷。臨終合掌云。佛來迎我。遂卒。\n\n　　贊曰。諺有之。惟貴功深。杵可作針。吾於感有徵矣。畫地自限者思之。",
   "raw_text_hash": "d6a0f660f65ac126e5b83c7dc34523ea47a32ea16a20a5050d331c67404c780a",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，懷感",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

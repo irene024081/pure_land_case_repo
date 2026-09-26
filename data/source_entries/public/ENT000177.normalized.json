@@ -12,6 +12,8 @@
   "raw_text": "隋皇后\n\n　　隋文帝。后獨孤子。雖處王宮。深厭女質。常念阿彌陀佛。以八月甲子命終。時永安宮北。種種音樂。自然震响。異香滿室。從空而至。帝問闍提斯那。是何祥瑞。對曰。淨土有佛。號阿彌陀。皇后業高。超登彼國。故現斯瑞耳。\n\n　　贊曰。捨中宮之貴寵。志淨土而往生。古有韋提。今見之矣。",
   "raw_text_hash": "7831fc2069546847927de5002a509d6ae3d20f7c7ecf0dfe406ad1786202ac87",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，婦女往生類，隋皇后",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

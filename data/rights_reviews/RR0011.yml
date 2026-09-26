@@ -1,5 +1,7 @@
 rights_review_id: RR0011
 source_id: SRC0315
+record_layer: research
+informs_rights_review_id:
 review_status: confirmed
 confirmed_by: owner
 confirmed_date: 2026-09-26
@@ -7,16 +9,16 @@ rights_status: legal_review_required
 rights_holder: 中华佛教居士会（佛教見聞錄栏目）
 original_author: 多为转载/编辑（明空、光明心等），原作者链条需逐条追溯
 publisher_or_platform: buddhist-experience.org
-license_type: 
-license_url: 
-terms_url: 
+license_type:
+license_url:
+terms_url:
 terms_checked_at: 2026-09-26
-source_jurisdiction: 
+source_jurisdiction: Taiwan
 intended_publication_jurisdictions: global_web
 internal_retention_basis: unknown
 automated_access_policy: no statement found
 ai_processing_policy: unknown
-external_ai_processing_policy: blocked_until_provider_review
+external_ai_processing_policy: blocked_pending_rights_basis_and_provider_review
 public_display_policy: metadata_summary_link_and_minimal_excerpt
 allowed_excerpt_scope: minimal_excerpt_with_attribution
 translation_policy: unknown
@@ -31,4 +33,4 @@ review_evidence: 2026-09-26 复核 https://www.buddhist-experience.org/ 页脚�
 
 reviewed_by: AI-assisted operational review (research layer only)
 reviewed_at: 2026-09-26
-next_review_at: after owner decision and permission contact
+next_review_at: before publication or on permission response

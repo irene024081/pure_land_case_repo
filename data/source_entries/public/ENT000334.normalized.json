@@ -12,6 +12,8 @@
   "raw_text": "沈媼\n\n　　沈媼，錢塘人。持佛號十餘年，日益精進。嘗屬畫師繪八尺阿彌陀像。及有疾，安設牀前，晨夕繫念，並請僧同持佛號。忽語眾曰：有一大僧，授我金座，吾當乘之。遂聳身前席，眾唱佛益力。媼曰：念佛功德，已登蓮臺，吾其往矣。遂瞑。",
   "raw_text_hash": "d2579a048c99e1532b876ac1ebb90926d533a237f01faefb980a3fc05dc1eb60",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/X78n1549",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "X78n1549，《净土圣贤录》，卷九，往生女人第九，沈媼",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

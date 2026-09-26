@@ -12,6 +12,8 @@
   "raw_text": "圓淨常法師\n\n　　宋省常。錢塘人。七歲出家。淳化中住南昭慶。慕廬山之風。乃刺血書華嚴經淨行品。易蓮社以淨行。士大夫預會者。稱淨行弟子。而王文正公且為之首。一時公卿伯牧百二十人。比丘千人焉。翰林蘇易簡。作淨行品序。至謂予當布髮以承其足。剜身以請其法。猶尚不辭。況陋文淺學而有惜哉。天禧四年正月十二日端坐念佛。有頃厲聲唱云佛來也。泊然而化。\n\n　　贊曰。始遠公。次善導。既而南嶽五會。永明臺岩。終於法師。號蓮社七祖。勸化之盛。蓋耀古彌今矣。雖然覈其自脩。則罔不精勤刻勵。如所以示人者。今沙門知勸人。而不知勸己。欲竊附於前輩。不幾狂乎。",
   "raw_text_hash": "a0b1cd270b62b9cfede3bbac23a5d2c0ad2e727958667a6344fe8b0abcea3101",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，圓淨常法師",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

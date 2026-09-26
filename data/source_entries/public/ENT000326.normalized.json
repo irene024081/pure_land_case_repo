@@ -12,6 +12,8 @@
   "raw_text": "王氏女\n\n　　王氏女，吉安人。少慕淨業，日誦彌陀、觀音、金剛諸經。母病亡，將殮，流血被體。女誓曰：若我孝心真實，願母體不生臭穢。誓已，流血即止。及殮，即之，絕無穢氣。已而父娶繼室，與同修淨業。一日，女得疾，請僧說淨土觀門。俄起索衣，吉祥而臥，手攬觀音像前寶幡，奄然示寂。將殮，繼母篩灰於室，出蓮華數朵。",
   "raw_text_hash": "0968b0fda8991c1ad0704fd62698609b99887577b32ad5fb1159e1b0eafd2d72",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/X78n1549",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "X78n1549，《净土圣贤录》，卷九，往生女人第九，王氏女",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

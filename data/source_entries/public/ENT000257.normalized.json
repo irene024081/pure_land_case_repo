@@ -12,6 +12,8 @@
   "raw_text": "略舉尊宿\n\n　　百丈海禪師。馬祖傳道嫡子。萬世叢林大宗。其立法祈禱病僧。化送亡僧。悉歸淨土○黃龍新禪師。參覺老得旨。繼席黃龍。宗風大振而切意淨業。有勸念佛文。行世令人發哀起信○真歇了禪師。嗣丹霞諄公。洞下一宗。至師大顯。後卓菴補陀。菴名孤絕。專意西方。有淨土說。普勸四眾○慈受深禪師。得法於長蘆信公。專心念佛。謂修行捷徑。無越淨邦。建西方道場。苦口勸眾。翕然化之○石芝曉法師。嗣月堂詢公。洞徹教部。以淨業化人。甞集大藏諸書。有樂邦文類行世○寂堂元禪師。學禪於密菴傑公。篤行念佛三昧。感金甲神自天而降。夢紅蓮花從地而出。由是十州蓮宗大行○中峯本禪師。得法於高峯妙公。人仰之如山斗。有懷淨土詩百篇。盛傳於世○王以寧待制。自稱彌陀弟子○晁悅之翰林。答趙子昂書。稱西方淨土是真語實語○陳瓘待制。作延慶寺淨土院記。極贊念佛○優曇宗主。居廬山東林善法堂。著蓮宗寶鑑。奉旨板行。為淨土中興云。\n\n　　贊曰。始百丈。終優曇。歷代尊宿。無不奉行淨土。嗚呼盛哉。",
   "raw_text_hash": "c2941713d6a71eef77b8c17440d2f44eeabfe2a1e2a691ebba0d32e261c455a8",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷下，諸聖同歸類，略舉尊宿",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

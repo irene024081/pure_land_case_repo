@@ -12,6 +12,8 @@
   "raw_text": "張掄都總\n\n　　宋張掄。官兩浙都總管。期生淨土。刻勵念佛。闔門長幼。靡不從化。鑿池栽蓮。日率妻子課佛萬遍。孝宗皇帝親書蓮社二字賜焉。",
   "raw_text_hash": "b3116dd33d716637638eaae3540b4edc564bab40ea51487642c868d7e08a9c0b",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，王臣往生類，張掄都總",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

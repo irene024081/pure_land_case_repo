@@ -12,6 +12,8 @@
   "raw_text": "馮氓\n\n　　馮氓，上虞人，少事遊獵。有巨蛇為鄉民患，氓殺之。慮蛇為怨，乃皈心佛法，回向西方修懺，誦佛名，如是十年。一夕，請淨業友數人，同誦阿彌陀經，唱佛號。次誦普賢懺罪往生偈已，即端坐合掌而終。",
   "raw_text_hash": "1e2b29ae46c19dca92306b61241386cd0ae25439932e6fbc5791a22e3481df99",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/X78n1549",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "X78n1549，《净土圣贤录》，卷九，往生雜流第八，馮氓",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

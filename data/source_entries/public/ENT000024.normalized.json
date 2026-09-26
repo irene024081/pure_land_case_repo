@@ -12,6 +12,8 @@
   "raw_text": "法琳\n\n　　晉法琳。臨卭人。專精戒品。止成都靈建寺修淨業。常持彌陀觀音二經。轉誦之時。輒見一偉貌沙門。屹然在前。建武二年寢疾。注念西方。禮懺不息。見諸賢聖皆集空中。合掌而逝。\n\n　　贊曰。琳誦經有沙門現前。蓋誠感耳無足為異。其生西方。不係乎是。修淨業者。毋取相希慕焉。",
   "raw_text_hash": "fd3ea88e4abc05b6934e751089ad524b572aa8f68aa1927e1b7ae64d5fe46dbb",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，法琳",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

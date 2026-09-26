@@ -12,6 +12,8 @@
   "raw_text": "潘氏\n\n　　潘氏名廣潭，工部主事餘杭李陽春之妻也。陽春故好施，晚常誦西方佛名。既逝踰年，見神於潘氏。登樓啟窗，作洪語曰：要修行，要修行。潘氏通古今，初好排觝釋教，晚而皈禮雲棲。斷葷血，習禪定，夜常跏趺達旦。兼修諸功德，散錢票不訾。萬歷三十九年冬，得疾。明年正月，自知不起，遺囑家財。已而謂人曰：吾三世梵僧，今且偕大士而西矣。稱佛名不絕口，屈三指而化。及斂，支體輕軟，貌如生。",
   "raw_text_hash": "8f6650985b3389be372c0abd93c9f8278956fb72a9e48af5f7d7b4647e4e155c",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/X78n1549",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "X78n1549，《净土圣贤录》，卷九，往生女人第九，潘氏",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

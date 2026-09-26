@@ -12,6 +12,8 @@
   "raw_text": "睡寢得安\n\n　　宋劉仲慧。湖州長興人。患夜夢恐怖。有教以念佛者。遂至誠高念一百八遍。然後就寢。當夜神魂晏然。自是繼念不輟。\n\n　　贊曰。古人喻睡眠。為小死。此語最善。蓋夢寐之顛倒。較生死之昏迷幾何而寢息神安。命盡之時。庶稍稍有自由分。善導大師。教人臨睡入觀。良有以哉。",
   "raw_text_hash": "f1074f5289c51538d2e12a90f72a490b200b4eed43ad140abb04b1845c9e0cae",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷下，生存感應類，睡寢得安",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

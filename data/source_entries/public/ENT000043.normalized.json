@@ -12,6 +12,8 @@
   "raw_text": "自覺\n\n　　唐自覺。住真州。常發願。願因觀音。得見阿彌陀佛。於是鑄觀音像。高四十九尺。既成祝願。夜三更。忽有金光二道。阿彌陀佛。自光中而下。二大士左右隨之。佛垂手摩覺頂曰。守願勿易。利物為先。寶池生處。孰不如願。後十一年七月望夕。見一人形似天王。雲間現身。謂覺曰。安養之期至矣。即於觀音像前。趺坐而化。",
   "raw_text_hash": "28c9b5aeef6a4a951f6f833cbeafd21fa7754493436657880054a403647dbad6",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，自覺",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

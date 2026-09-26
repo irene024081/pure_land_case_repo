@@ -12,6 +12,8 @@
   "raw_text": "許氏婦\n\n　　大明許氏婦。杭郡人。生平恭順質實。惟以念佛為事。將卒呼家人與訣別。著淨衣端坐。手執天目白花。自簪之。安然而逝。",
   "raw_text_hash": "cb431fc0bb851d4c4c0fcad0c6e962c6ed8c41ac0bfabb7fe79dfa8e8e8c2df2",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，婦女往生類，許氏婦",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

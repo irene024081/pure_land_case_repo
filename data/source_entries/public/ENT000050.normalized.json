@@ -12,6 +12,8 @@
   "raw_text": "寶相\n\n　　唐寶相。雍州長安人。十九出家。頭陀自靜。六時禮懺。垂四十年。夜分誦彌陀經七遍。念佛六萬聲。病既革。誦念不捨。囑道俗曰。念佛為先。勿虛度世。當於西方相待。又曰。燒散吾尸。不勞銘塔。言訖而逝。\n\n　　贊曰。玉念佛日。記五萬綽七萬。相今六萬。三老者皆高僧。而日課有常數。今人忽之曰。此愚夫婦所作也。獨何歟。",
   "raw_text_hash": "c08a790f3f99da8836050e6784ca03837dde79eeb74cc850cfb26f3e985121a6",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，寶相",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

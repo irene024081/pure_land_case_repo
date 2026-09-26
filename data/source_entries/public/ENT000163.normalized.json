@@ -12,6 +12,8 @@
   "raw_text": "李知遙\n\n　　唐李知遙。善淨土教。率眾五會念佛。後因疾忽云。佛來迎我。洗漱更衣。索香爐出堂頂禮。聞空中說偈。有引君生淨土。將爾上金橋之句。就床端坐而化。眾聞異香焉。",
   "raw_text_hash": "12cde028e4d4a48690c2176a511c30e912eaba9a5c77ca3f460353cecb414ba3",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，處士往生類，李知遙",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

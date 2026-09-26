@@ -12,6 +12,8 @@
   "raw_text": "智者大師\n\n　　隋智顗。號智者大師。頴川人。孩幼之時。見像即禮。逢僧必拜。十八出家於果願寺。後禮南嶽思大禪師。弘法緣畢。在剡東石城寺。將入滅謂弟子曰。吾知命在此。不復前進。輟斤絕弦於今日矣。唱觀無量壽佛經題竟。復曰。四十八願。莊嚴淨土。華池寶樹。易往無人。火車相現。一念改悔者。尚得往生。況戒定熏修。聖行道力。功不唐捐矣。智朗請云。未審大師證入何位。沒此何生。師曰。吾不領眾。必淨六根。損己利人。但登五品。汝問何生者。吾諸師友。侍從觀音。皆來迎我。言訖唱三寶名。如入三昧。\n\n　　贊曰。大師道德崇重一家教觀。萬代宗仰。而捨壽之際。惟西方是歸。乃至疏觀經。著十疑論。恒於此諄諄焉。意可知矣。或曰。疏稱心觀為宗。淨土其非實歟。噫大師謂。約心觀佛。不謂無佛。如其無佛。心觀何施。正報既然。依報亦爾。學台教者審之。",
   "raw_text_hash": "19902358694ccb6bd34a717c24d528728fd9ee0aeabecff60518530009ea25ca",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，智者大師",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

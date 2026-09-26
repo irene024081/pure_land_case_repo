@@ -12,6 +12,8 @@
   "raw_text": "郭大林\n\n　　大明郭大林。湯陰人。平生端潔雅素。出世為懷。遇僧教以念佛。遂一心淨土。年七十六。一日無疾。與子別云。明午當去。至日坐脫。",
   "raw_text_hash": "43f57f4100551e241249dab8a574d81d727ef5218eecf02e02c51f85d727ebb9",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，畜生往生類，郭大林",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

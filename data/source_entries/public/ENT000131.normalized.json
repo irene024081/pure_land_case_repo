@@ -12,6 +12,8 @@
   "raw_text": "錢象祖郡守\n\n　　宋錢象祖。號止菴。守金陵日。以淨土真修為念。常於鄉州建接待十處。皆以淨土極樂等名之。創止菴高僧寮。為延僧談道之所。自左相辭歸。益進淨業。嘉定四年二月微疾。書偈曰。菡萏香從佛國來。琉璃地上絕纖埃。我心清淨超於彼。今日遙知一朵開。後三日。僧有問疾者。公曰。我不貪生。不怖死。不生天。不為人。惟求生淨土耳。言訖跏趺而逝。後有人夢。空中云。錢丞相已生西方。蓮宮為慈濟菩薩。",
   "raw_text_hash": "f1d65b58f40c58b3e46c271c20c34f00505a7cc07ce3cc5deca77a0dc2b64c0f",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，王臣往生類，錢象祖郡守",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

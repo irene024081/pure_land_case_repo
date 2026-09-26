@@ -12,6 +12,8 @@
   "raw_text": "李氏\n\n　　李氏，上虞胡生之妻也。夫喪後，日誦佛名及阿彌陀經，夜以繼晝，聲徹內外，凡十餘年。一日，方端坐念佛，有僧現前，覆以緋葢，曰：十五日子時，汝當往生。問：師何人？曰：汝所念者李氏。遂別諸親故。至期，異香󳬂然，光明照室，端坐而逝。七日茶毗，齒舌目睛皆不壞，舍利無數。次日，茶毗處生一華，色白，周圓二寸餘，莫知其何名也。",
   "raw_text_hash": "6a4b3eca1bad120583fbd06718a7dd3b91e8bce8cf0990bad1507e14124f5e9c",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/X78n1549",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "X78n1549，《净土圣贤录》，卷九，往生女人第九，李氏",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

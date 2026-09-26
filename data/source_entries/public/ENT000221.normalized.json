@@ -12,6 +12,8 @@
   "raw_text": "鴝鵒\n\n　　宋黃巖正等寺觀公。畜鴝鵒。能言常念佛不輟。一日立化穴上葬之。俄而舌端出紫蓮花一朵。靈芝律師甞為之讚。有立亡籠閉渾閒事。化紫蓮花也太奇之句焉。\n\n　　又\n\n　　潭州人。有養鴝鵒者。常念佛既斃。以棺葬之。忽生蓮花一朵。自其口出有頌之者。云有一靈禽。號八哥。解隨僧口念彌陀。死埋平地蓮花發。人不回心爭奈何。\n\n　　贊曰。鸚鵡鴝鵒。人教以念佛。蓋常事耳。今胡不見往生。噫譬諸世人。均聞念佛之教。有信心念者。有輕心念者。是以念佛人多往生人少。彼鸚鵡鴝鵒。何獨不然乎。",
   "raw_text_hash": "8910fe456d519835530a54f2b2ac88aaab8b4da84d1c657aac790613ac9915a5",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，畜生往生類，鴝鵒",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

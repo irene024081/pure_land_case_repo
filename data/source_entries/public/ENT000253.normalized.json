@@ -12,6 +12,8 @@
   "raw_text": "得忍往生\n\n　　菩薩生地經云。佛言。時摩差竭。得不起法忍。五百清信士。二十五清信女。皆得不退轉地壽終。俱生無量壽佛清淨國。\n\n　　贊曰。求生西方。為欲悟無生忍登不退地也。已得忍已得不退。而復求生。菩薩之樂近如來乃如此。今具縛凡夫。忍力未充。退緣無限。而不刻心淨土。謂之何哉。是則名為可憐憫者。",
   "raw_text_hash": "23f340bc2ee4134eb6a27c2e11780eb0f9e512d844da27b5aacc50fb181472bd",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷下，諸聖同歸類，得忍往生",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

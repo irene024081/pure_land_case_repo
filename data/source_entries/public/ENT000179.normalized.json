@@ -12,6 +12,8 @@
   "raw_text": "溫靜文妻\n\n　　唐溫靜文妻。并州人。久患在床。靜文勸令念佛。一年忽覩淨土。告其夫云。我已見佛。後月當去。囑父母云。今得隨佛往生。願專心念佛。他日西方相見耳。言訖而逝。",
   "raw_text_hash": "f91c461891dcf3a181969e3fd4ff5af8ca188a0a9cab892d679832c2068c671d",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，婦女往生類，溫靜文妻",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

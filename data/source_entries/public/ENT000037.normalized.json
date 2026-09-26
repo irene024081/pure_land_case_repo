@@ -12,6 +12,8 @@
   "raw_text": "慧海\n\n　　隋慧海。住江都安樂寺。善經論。精誠念佛。有僧道銓者。至自齊州。齎阿彌陀佛像。微妙工巧。世所未有。問之則云。此天竺雞頭摩寺五通菩薩。乘空往彼安樂世界。圖繪而來。海感慶逢遇虔篤禮敬。乃覩神光炤爍。於是模寫懇苦。願生彼國。後微疾。夜忽起。依常面西禮竟。跏趺至曉而逝。儼然如生。\n\n　　贊曰。極樂世界過此十萬億佛土。亦非乘空所可到者。慧海之精誠感佛。彼道銓安知。非淨土之賢聖乎。",
   "raw_text_hash": "5b4a48a6e99501f6f59e3bd457a740b26641d6d16d076e75a91ba86a51250cb8",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，慧海",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

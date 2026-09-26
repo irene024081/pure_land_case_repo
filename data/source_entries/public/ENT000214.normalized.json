@@ -12,6 +12,8 @@
   "raw_text": "瑩珂\n\n　　宋瑩珂。受業霅川瑤山。酒炙無所擇。忽自念梵行虧缺。恐從流轉。令同住取戒珠禪師所編往生傳讀之。凡讀一傳為一首肯。既而室中面西。設禪椅絕食。念佛越三日。夢佛告曰。汝尚壽十年。且當自勉。珂白佛言。設有百年。閻浮濁惡。易失正命。所願早生安養。奉事眾聖。佛言。汝志如是。後三日當迎汝。至期命眾。誦彌陀經。乃曰。佛及大眾俱至。寂然而化。",
   "raw_text_hash": "85a7a8854cd62ed9b9e8675c6a34a1a167f9dddf48203e1eb062f727920a153b",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，惡人往生類，瑩珂",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

@@ -12,6 +12,8 @@
   "raw_text": "姚婆\n\n　　姚婆，不知何許人。專修淨業，觀念無間。一日，方向西念佛，忽見日輪中現阿彌陀佛，相好具足。因請僧思淨圖其像。僧法怡為之讚曰：極樂世界有方所，祗在尋常日沒處。所以佛教韋提希，諦觀落日如懸鼓。善哉姚氏一老嫗，能以是心求淨土。暮觀朝想無歲年，行持坐念忘寒暑。彌陀忽從心想生，恍惚之間明了覩。是時虗空絕纖雲，桑榆尚駐羲和御。佛日晃耀奪陽輝，紺目玉毫妙相具。目駭心驚喜且悲，走告導師彌陀喻。具陳所見實希有，願寫金容託毫素。我聞勝事歎善哉，為說偈言開未悟。當知去佛本不遠，闡提那得明其故。雖過剎土十萬億，一念超越如跬步。若有迷人問路頭，向道恁麼驀直去。",
   "raw_text_hash": "78b60fb88271b3129a61c52e3ccb4feeb0f64f2fb1ded3f51e52a7849efc5c0d",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/X78n1549",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "X78n1549，《净土圣贤录》，卷九，往生女人第九，姚婆",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

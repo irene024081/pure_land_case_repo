@@ -12,6 +12,8 @@
   "raw_text": "道珍\n\n　　梁道珍。住廬山修淨業。夢有人乘船海中。問之。云往彌陀佛國。珍乞隨行。船人云。汝未營浴室。及誦彌陀經。未可也。覺而浴僧誦經。歷年不輟。忽房內池面。降白銀臺。因默記其事。書經函中。命盡之夕。半山以上。如烈火千炬。交相輝映。邑人遙見。謂是諸王禮覲。及旦乃聞珍卒。後檢經函。知珍瑞應。宜生淨土久矣。\n\n　　贊曰。遠公三覩聖相而不言。珍公池降銀臺而默記。古德之厚重類如此。彼淺丈夫者。纔有少異。曉曉自鳴。小則失其所有。大則增其魔事矣。可弗慎諸。",
   "raw_text_hash": "d97015918ee025dae6a341bc1c86f0da50033142f70516324a333cc7302accf6",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，道珍",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

@@ -12,6 +12,8 @@
   "raw_text": "陸沅道\n\n　　宋陸沅道。號省菴居士。住明之橫溪。晨起焚香趺坐。目不他瞬。首倡偈曰。盥手清晨貝葉開。不求諸福不禳災。世緣斷處從他斷。劫火光中舞一迴。然後念誦不緩不急。聲如貫珠。每日法華一遍。彌陀萬聲。一意西馳。年八十五。四月六日沐浴整衣而逝。洎殮忽聞蓮華馥郁之氣。皆不知來處。近挹之蓋出自口中也。",
   "raw_text_hash": "758689c87c1a52fc94d5a715fa62f6a36faeaa45c44402187edb6578fc43d728",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，處士往生類，陸沅道",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

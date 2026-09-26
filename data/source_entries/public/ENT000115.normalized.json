@@ -12,6 +12,8 @@
   "raw_text": "馬子雲縣尉\n\n　　唐馬子雲。舉孝廉為涇邑尉。押租赴京。遭風舟溺被繫。乃專心念佛。五年遇赦。入南陵山寺隱居。一日謂人曰。吾一生精勤念佛。今西方業成。行且往生安養。明日沐浴新衣端坐合掌。異香滿戶。喜曰。佛來迎我。言已而逝。\n\n　　贊曰。身被繫。心念佛。終以赦免。即囚禁枷鎖。念觀音而得解脫者也。今五欲纏縛。豈非被繫。念佛一聲滅八十億劫生死重罪。豈非赦書。而束手五欲。不知念佛。抱罪永劫。終無赦時。悲哉。",
   "raw_text_hash": "50b6d05d08074bcc64d9dbcb57a3d3e69b83cf5727e4247eb9d52660312305d7",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，王臣往生類，馬子雲縣尉",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

@@ -12,6 +12,8 @@
   "raw_text": "遠祖師\n\n　　晉慧遠。雁門樓煩人。博綜六經。尤善莊老。聞安法師講般若經。豁然大悟。因剃染事之。太元六年過潯陽。見廬山閒曠。可以息心。遂感山神現夢。一夕雷雨。林木自至。刺史桓伊。乃為建殿。名曰神運。以慧永先住西林。故遠所居號東林焉。遠住東林。三十年跡不入俗。剋志西方。高僧鉅儒。凡百四十人。共為淨社。蓮漏六時禪誦不輟。澄心繫想。三覩聖相而沈厚不言。後十九年七月晦夕。於般若臺。方從定起。見阿彌陀佛身滿虛空。圓光之中。無量化佛。觀音勢至。左右侍立。又見水流光明。分十四支。洄注上下。演說妙法。佛言。我以本願力故。來安慰汝。汝七日後。當生我國。又見佛陀耶舍。慧持。慧永。劉遺民。在佛之側。揖曰。師志在先。何來之晚耶。既知時至。謂門人曰。吾始居此三覩聖相。今復再見。當生淨土必矣。至期端坐入寂。時義熙十二年八月六日也。\n\n　　贊曰。晉以前。淨土之旨。雖聞於震旦。而弘闡力行。俾家喻戶曉。則自遠師始。故萬代而下。淨業弟子。推師為始祖。可謂。釋迦再說西方。彌陀現身東土者也。厥功顧不偉歟。予昔遊廬山。酌虎溪之泉。瞻三咲之堂。徘徊十八賢之遺跡。見其規模弘遠。足稱萬僧之居。而殿閣塵埃。鍾鼓閴寂。寥寥然戶異其扃。室殊其爨矣。哲人云亡。芳躅無繼。嗟夫。",
   "raw_text_hash": "ed3bf6f1a8c9208ee651f28f9216bd40dca6a07804b9f248d191023193772e47",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，遠祖師",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

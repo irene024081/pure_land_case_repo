@@ -12,6 +12,8 @@
   "raw_text": "鄭氏\n\n　　元鄭氏淨安。錢塘人。念佛日無虛度。得疾聞空中聲。曰汝行有期。毋得自怠。又見佛身金色。即奮起面西端坐。召其出家子義修。諷彌陀經。倏然而化。其女夢。母報曰。吾已得生淨土。可聞諸修師云。",
   "raw_text_hash": "3bf7eac13e114a32b85491e0bf5d277fc34b46af44e3389048a54539a461dda5",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，婦女往生類，鄭氏",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

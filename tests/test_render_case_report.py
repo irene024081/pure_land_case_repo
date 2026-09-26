@@ -14,12 +14,24 @@ import render_case_report  # noqa: E402
 
 
 ROOT = Path(__file__).resolve().parents[1]
+CBETA_CASE_DIR = (
+    ROOT / "data/pipeline_runs/RUN-ENT000009-M2B-01/candidates/ENT000009-CAND0001"
+)
 COMPLETED_CASE_DIR = (
     ROOT / "data" / "pipeline_runs" / "RUN-ENT000006-M2B-01" / "candidates" / "ENT000006-CAND0001"
 )
 
 
 class RenderCaseReportTest(unittest.TestCase):
+
+    def test_open_license_report_renders_license_notice_and_stale_warning(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            target = render_case_report.render_case(CBETA_CASE_DIR, Path(temp))
+            page = target.read_text(encoding="utf-8")
+        self.assertIn("CC-BY-NC-SA-4.0", page)
+        self.assertIn("CBETA 2026.R2", page)
+        self.assertIn("Historical rights-check wording predates", page)
+
     def test_renders_completed_case_and_index(self) -> None:
         with tempfile.TemporaryDirectory() as temp:
             out_dir = Path(temp)

@@ -12,6 +12,8 @@
   "raw_text": "神鸞\n\n　　後魏曇鸞。少遊五臺。感靈異出家。而性嗜長生。受陶隱君仙經十卷。後遇菩提流支。乃問曰。佛有長生不死術乎。支笑曰。長生不死。吾佛道也。乃授十六觀經曰。學此則三界無復生。六道無復往。其為壽也。河沙劫石。莫能比焉。此吾金仙氏之長生也。鸞大喜。遂焚仙經而修淨業。寒暑疾痛曾無少懈。魏主號為神鸞。一夕室中見梵僧。謂曰。吾龍樹也。久居淨土。以汝同志故來相見。鸞自知時至。集眾教誡曰。勞生役役。其止無日。地獄諸苦。不可以不懼。九品淨業。不可以不修。因令弟子高聲念佛。西向稽顙而終。眾聞天樂自西而來。良久乃已。\n\n　　贊曰。黃冠者恒言曰。釋氏有死。神仙長生。今支公謂佛有長生。仙無長生。此論痛快簡當。高出千古。鸞法師捨偽歸真。如脫敝屣。豈非宿有正因者哉。",
   "raw_text_hash": "f267f68a001a3eb7adc45bd7271b086e9d173930a72603128cc72f9e66b7e265",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，神鸞",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

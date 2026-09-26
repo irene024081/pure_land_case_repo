@@ -12,6 +12,8 @@
   "raw_text": "續錄\n\n　　今時往生者。隨聞見續入。故另附二卷末。不分門類。不別先後。",
   "raw_text_hash": "bd1d945b1563ef609bdf699f7b965f8c8a7c692c252be1e9c1238d9bf48e5b51",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，畜生往生類，續錄",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "contains_nested_entries: the TEI structure nested these headings inside this entry and they were split out: 僧明本、朱綱少府、于媼、顧居士、方氏、張母、祖香、郭大林、劉通志、孫氏母、唐體如文學、楊嘉禕文學、郝熙載文學、朱氏、徐氏、戈廣泰居士、杜居士、孫大玗居士、吳居士、吳居士. Entry requires AI or human classification before case normalization."
+  "notes": "contains_nested_entries: the TEI structure nested these headings inside this entry and they were split out: 僧明本、朱綱少府、于媼、顧居士、方氏、張母、祖香、郭大林、劉通志、孫氏母、唐體如文學、楊嘉禕文學、郝熙載文學、朱氏、徐氏、戈廣泰居士、杜居士、孫大玗居士、吳居士、吳居士. Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

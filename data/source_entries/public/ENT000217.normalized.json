@@ -12,6 +12,8 @@
   "raw_text": "金奭\n\n　　宋金奭。會稽人。網魚為業。忽猛省。持戒精進。日課佛號萬聲。久而弗替。後無疾。語家人云。阿彌陀佛。與二菩薩俱來迎我。我歸淨土去也。焚香端坐而化。邑人聞異香天樂。終日不散。\n\n　　贊曰。奭之事與善和鍾馗異。彼則生平造業。臨歿輸誠。此則預革前非。久修善業。往生品位。必過於二人矣。",
   "raw_text_hash": "bd076a231c187b9086c1d6b5ef3e90503e64e2e061771435e07c4b16ee43a5a3",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，惡人往生類，金奭",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

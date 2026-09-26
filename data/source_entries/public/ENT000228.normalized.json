@@ -12,6 +12,8 @@
   "raw_text": "方氏\n\n　　大明方氏。諸生吳應道室也。三十而寡。守志歸佛。專修淨土。一老媼亦齋戒。相隨逐二十年。萬曆乙酉。時年五十矣。小疾呼老媼相對念佛不輟無一語及他務卒前一日。沐浴更衣。明晨然香禮佛。還坐一榻而逝。有子用先。第進士不妄語人也。為予道始末如此。",
   "raw_text_hash": "3ac9804a82d259bb4952670ae5d05b76d1ee30fdd65f2e93df8a9f08b86018c9",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，畜生往生類，方氏",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

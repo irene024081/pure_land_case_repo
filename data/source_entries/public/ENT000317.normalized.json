@@ -12,6 +12,8 @@
   "raw_text": "沈氏\n\n　　沈氏名妙智，慈溪人，歸章氏。幼而長齋，日課佛號。既嫁，篤志不變，憐憫有情，周其凍餒。已而得微疾，念佛益切。忽見阿彌陀佛踴現虗空，菩薩聖眾左右圍繞，放白毫光至行者所，若長虹駕空，千燈普照。頃之，吉祥而逝。事在端平二年。",
   "raw_text_hash": "c4a29daa97085671aadaf8318ae9b362ccdba87ba2ad81efd35b3a1551534f67",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/X78n1549",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "X78n1549，《净土圣贤录》，卷九，往生女人第九，沈氏",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

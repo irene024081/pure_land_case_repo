@@ -12,6 +12,8 @@
   "raw_text": "孫良\n\n　　宋孫良。錢塘人。隱居閱大藏。尤得華嚴之旨。依大智律師。受菩薩戒。日誦佛萬聲。二十年不輟。忽日。命家人請僧念佛。以助往生僧集。念佛方半餉。望空合掌云。佛及菩薩。已荷降臨。退坐而化。\n\n　　贊曰。華嚴合論謂。求生淨土菩薩。未達一乘大道。而此老得華嚴之旨。何乃求生淨土。蓋合論且為一分取相凡夫。破其執見。是得事淨土。未得理淨土者。此老事理圓通。華藏蓮池。是一非二。正爾求生。不足疑也。論淨土者。當據華嚴行願品為主。而以合論參之。",
   "raw_text_hash": "83c77ce5a866077230cb7b9a976f01b6d692608f41089fceb50a51d3df8909a4",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，處士往生類，孫良",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

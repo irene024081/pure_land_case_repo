@@ -20,6 +20,7 @@ terms_url: https://cbeta.org/copyright
 terms_checked_at: 2026-09-25
 source_version: CBETA 2026.R2
 source_revision: dbdea41071e1e260ad84b72faefd4587333cf76d
+modification_notice: TEI structure extracted and normalized to UTF-8 JSON; see data/NOTICE.md
 public_display_policy: full_normalized_text_with_CBETA_attribution_license_version_and_modification_notice
 retention_policy: permanent
-notes: The underlying Ming-dynasty work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition and is distributed noncommercially under CC BY-NC-SA 4.0; see data/NOTICE.md for attribution and modifications.
+notes: The Ming-dynasty work is public domain. The retained text was extracted from CBETA's modern electronic database and is handled under CBETA's CC BY-NC-SA 4.0 terms. This review does not cover CBETA site code, images, or unrelated assets.

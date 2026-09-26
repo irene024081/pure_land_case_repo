@@ -12,6 +12,8 @@
   "raw_text": "孫氏\n\n　　宋錢唐孫氏女。常念佛持呪。因病請清照律師。至謂曰。久病厭世願求往生。師為談淨土因緣。大喜至夜夢。師持藥一盞服之。流汗身心輕安。三日後語侍人曰。迦葉尊者來此。好金蓮華座。即瞑目結印而化。",
   "raw_text_hash": "dc81fab8df31e68a54380bd3ce22e4fea65717c92ba3047eafa1dfc508b3665c",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，婦女往生類，孫氏",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

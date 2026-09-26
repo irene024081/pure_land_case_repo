@@ -12,6 +12,8 @@
   "raw_text": "魏氏女\n\n　　魏氏女，梁郡人。其父兄皆修淨業，女亦篤志往生。無何化去，七日復甦。即升高座，誦無量壽經。既畢，下啟父言：兒去便往無量壽國。此寶池中，兒及父兄，各有一大蓮華，當生其內。唯母獨無，不勝此悲，故來相報。語訖而瞑。母自是亦奉法焉。",
   "raw_text_hash": "1e1d3d81e1d422429ce30cbd4279dd9132c5367944f160241a7f6c45243cc2ba",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/X78n1549",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "X78n1549，《净土圣贤录》，卷九，往生女人第九，魏氏女",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

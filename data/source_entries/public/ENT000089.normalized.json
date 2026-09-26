@@ -12,6 +12,8 @@
   "raw_text": "清照律師\n\n　　宋慧亨。住武林延壽寺。初依靈芝習律。專修淨業。六十年。每對人必以念佛為勸。建寶閣立三聖像。最稱殊特。有江自任者。忽夢寶座從空而下。云亨律師當升此坐。適社友孫居士。預啟別亨。即在家作印而化。師往炷香。歸而謂其徒曰。孫君已去。吾亦行矣。乃集眾念佛。為說偈曰。彌陀口口稱。白毫念念想。持此不退心。決定生安養。端坐而化。號清照律師。\n\n　　贊曰。六十年專修淨業。臨終瑞應何疑焉。世有以少時之力。而咎淨土之無徵。謬矣。",
   "raw_text_hash": "1500dfdf7a836e578c6f47f1d01d542443e746314b5b2c6c48825f0c34889c62",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，清照律師",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

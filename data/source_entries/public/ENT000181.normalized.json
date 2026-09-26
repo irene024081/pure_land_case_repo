@@ -12,6 +12,8 @@
   "raw_text": "鄭氏\n\n　　宋鄭氏。錢塘人。日課觀音經。念佛不輟。後病中索浴。浴畢西向坐。問家人云。聞磬聲乎。淨土諸聖且至。已而合掌喜躍曰。佛菩薩來。觀音手執金臺。如來接我登座。遂奄然而化。",
   "raw_text_hash": "0fcdcea587a7b9d162b227c66fddcdbba8c3a7ff0ff58ef430d4d93f82862763",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，婦女往生類，鄭氏",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

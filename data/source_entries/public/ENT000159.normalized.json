@@ -12,6 +12,8 @@
   "raw_text": "計公\n\n　　宋計公。四明桃源鐵工也。年七十。兩目喪明。里中𭨚學諭。以擘窠圖印施。勸人念佛。計公初受一圖。念滿三十六萬聲。念至四圖兩目瞭然。如是三載。念滿十七圖。一日念佛忽氣絕。半日復蘇曰。佛令分六圖與𭨚學諭。是勸導之首。分一圖與李二公。是俵圖之人。囑其子往謝之。言訖沐浴西向而化。",
   "raw_text_hash": "4bb15b7f69854c8395c7b5b788a90ee751357560c4654f7c4982d81b380d146d",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，處士往生類，計公",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

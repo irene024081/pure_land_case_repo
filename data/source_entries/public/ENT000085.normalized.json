@@ -12,6 +12,8 @@
   "raw_text": "齊玉\n\n　　宋齊玉。號慧覺。初於霅川寶藏寺。建淨土會。後住上竺。夜半頂彌陀像行道念佛。一日謂首座曰。床前多寶塔現。非吾願也。所欲則淨土耳。可為我集眾念佛。首座鳴鍾。僧至將百餘。玉云。今已見佛。瞑目端坐而逝。\n\n　　贊曰。多寶塔亦佛國也。玉何以不願。昔韋提希。遍觀淨土而獨求安養。蓋非專修。功弗克就。知此可與言西方矣。",
   "raw_text_hash": "530e934dc1a2ea205b94e99054539f6fab4f787a5ad79eb8572b14ca597a5530",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，齊玉",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

@@ -12,6 +12,8 @@
   "raw_text": "基法師\n\n　　宋基法師。學於寶雲。住太平興國寺。精意念佛。一日示疾。為弟子廣談玄旨。眾忽見。西方現光。空中奏樂。師曰。阿彌陀佛與二大士俱至。即右脇西向而化。門人夢阿彌陀佛授記。為超世如來。或夢師坐青蓮花臺者。法智禪師嘆曰。臥病談玄。臨終見佛。是可敬也。\n\n　　贊曰。或疑。基曷為即得授記。噫親見如來無量光。見前授我菩提記。子知之乎。",
   "raw_text_hash": "3c7d28ed636b0a18059726b195aea02d9de507fa718fe52719ad156e33330929",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，基法師",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

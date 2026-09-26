@@ -12,6 +12,8 @@
   "raw_text": "法智\n\n　　隋法智。髫年出家。晚歲聞徑直之門。莫如念佛。乃謂人曰。我聞。經言。犯一吉羅。歷一中劫。入地獄可信。又言。一稱阿彌陀佛。滅八十億劫生死重罪。則未之信。有明者示云。汝大邪見。俱是佛言。何得不信。遂於國清寺兜率臺。晝夜精勤念佛。忽辭道俗云。某生西方去也。中夜無疾而化。時有金色光明。照數百里。江上漁人謂是天曉。遲久方明。始知智之往生云。\n\n　　贊曰。佛云吾言如蜜。中邊皆甜。悉宜信受。是故信少惡入地獄。而不信一念生西方。此誠可謂邪見矣。近世喜持呪者。見陀羅尼所說功德。能易山海役鬼神。滿種種求願。則躍然而信。見淨土所說功德。能直入聖階。立超三界。則恬然不介意。其為邪見等耳。可慨也夫。",
   "raw_text_hash": "402214c0a8ba38a69b756ba629bdd510e45d950cb9e2f2e42d8d325faf80bf46",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，法智",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

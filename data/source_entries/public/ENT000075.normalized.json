@@ -12,6 +12,8 @@
   "raw_text": "慧明\n\n　　宋慧明。號晦菴。學於慧光。晚依蓄山常照寺。修淨業。日課法華楞嚴圓覺。持彌陀聖號萬數。慶元己未春示疾。謂弟子曰。吾學大乘。求生淨土。今果遂矣。累足坐逝。眾聞天樂西來。徘徊頂上。荼毘五色舍利無數。",
   "raw_text_hash": "bfbc116c3cdad9053a1122d65c42bb9debd0bdbecdc40a0c9c634e56d7f3c183",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，慧明",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

@@ -12,6 +12,8 @@
   "raw_text": "馮濟川諫議\n\n　　宋馮檝。號濟川。遂寧人。由太學登第。初訪道禪林。晚年專崇淨業。作西方文彌陀懺儀。後以給事中出帥瀘南。率道俗作繫念會。及知卭州。於後廳設高座。望闕肅拜。著僧衣。登座謝官吏。橫柱杖按膝而化。\n\n　　贊曰。傳燈錄載公。初參龍門遠。次參妙喜。各有證悟。臨終刻期陞座。拈柱杖按膝脫去。其自在顯赫。宛有宗門諸大老操略。然都不言念佛往生何也。良由著述家。彼此立義。為門不同。各隨所重而已。彼重直指人心。自應專取了明心地而略淨土。如懷玉金臺再至圓照蓮蕋標名。皆不錄是也。此重指歸淨土。故詳其生平念佛。報盡往生。而了明心性自在其中。如所謂既得見彌陀何愁不開悟是也。喻如重德則顏子列德行之科。而不言政事。重才則顏子具王佐之器。而不言德行。亦為門不同耳。淨業人願篤信無惑。",
   "raw_text_hash": "88bf552d560861bc33c18af488f76334c8bc8f544fbaa882637c37cbc7879a00",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，王臣往生類，馮濟川諫議",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

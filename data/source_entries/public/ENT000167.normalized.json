@@ -12,6 +12,8 @@
   "raw_text": "黃打鐵\n\n　　宋黃公。潭州人。本軍伍。以打鐵為生。每鉗鎚時。念佛不輟口。一日無疾。託隣人為寫頌云。叮叮噹噹。久鍊成剛。太平將近。我往西方。即化去。其頌盛傳湖南。人多念佛。\n\n　　贊曰。據黃公別無他能。止是念佛不輟口耳。世人不肯依樣行持。而尋奇覓巧。遂成虔度。噫非所謂翻嫌易簡却求難耶。",
   "raw_text_hash": "5c5e5db132041d45cb414ec190d7900da0bf11bc2b65687fee59ba56b5f36674",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，處士往生類，黃打鐵",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

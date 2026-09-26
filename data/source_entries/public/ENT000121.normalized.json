@@ -12,6 +12,8 @@
   "raw_text": "李秉中官\n\n　　宋李秉。紹興中官也。領御藥院。初學禪於淨慈輝公。有省。晚閱龍舒淨土文。遂日課佛號。與閣長元美殿長林師文等。數十人。結淨會於傳法寺。忽有疾。夢阿彌陀佛。以金圓光戴其首。越七日。又見金花滿房。乃囑別親屬。端坐結印而終。",
   "raw_text_hash": "501d370ef9d177ed8f04d3726398115898668a812bd8406a464f66792bdc16d9",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，王臣往生類，李秉中官",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

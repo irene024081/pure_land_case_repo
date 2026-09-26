@@ -63,9 +63,30 @@ def existing_entry_numbers(public_dir: Path, manifest_dir: Path) -> set[int]:
     return numbers
 
 
+def selected_rights_review_id(source_config: dict, inventory_config: dict | None = None) -> str:
+    return (inventory_config or {}).get("rights_review_id", "") or source_config.get("rights_review_id", "")
+
+
+def load_rights_review(source_id: str, source_config: dict, inventory_config: dict | None = None,
+                       rights_dir: Path = RIGHTS_DIR) -> dict[str, str]:
+    review_id = selected_rights_review_id(source_config, inventory_config)
+    review_path = Path(rights_dir) / f"{review_id}.yml"
+    if not review_id or not review_path.exists():
+        raise ValueError(f"no rights review ({review_id or 'none'})")
+    review = parse_simple_yaml(review_path)
+    if review.get("source_id") != source_id:
+        raise ValueError(f"rights review {review_id} source_id mismatch")
+    return review
+
+
 def write_manifest(entry_id: str, source_id: str, entry_path: Path, record: dict,
-                   rights_review_id: str, manifest_dir: Path) -> Path:
+                   review: dict[str, str], inventory_config: dict,
+                   manifest_dir: Path) -> Path:
     rel = os.path.relpath(entry_path.resolve(), Path(ROOT).resolve())
+    rights_basis = review.get("license_type") or review.get("internal_retention_basis", "")
+    modification_notice = inventory_config.get("modification_notice", "")
+    if review.get("rights_status") == "open_license_verified" and not modification_notice:
+        modification_notice = "TEI structure extracted and normalized to UTF-8 JSON; see data/NOTICE.md"
     manifest = f"""source_entry_id: {entry_id}
 source_id: {source_id}
 storage_class: tracked_public
@@ -80,26 +101,31 @@ source_artifact_hash:
 content_type: application/json
 byte_size: {entry_path.stat().st_size}
 captured_at: {record['captured_at']}
-rights_basis: public_domain_historical_text
-rights_status: public_domain_verified
-rights_review_id: {rights_review_id}
-terms_url:
-terms_checked_at:
-public_display_policy: full_normalized_historical_text
+rights_basis: {rights_basis}
+rights_status: {review.get('rights_status', '')}
+rights_review_id: {review.get('rights_review_id', '')}
+license_url: {review.get('license_url', '')}
+terms_url: {review.get('terms_url', '')}
+terms_checked_at: {review.get('terms_checked_at', '')}
+source_version: {inventory_config.get('source_version', '')}
+source_revision: {inventory_config.get('source_revision', '')}
+modification_notice: {modification_notice}
+public_display_policy: {review.get('public_display_policy', '')}
 retention_policy: permanent
+notes: {review.get('notes', '')}
 """
     target = manifest_dir / f"{entry_id}.yml"
     target.write_text(manifest, encoding="utf-8")
     return target
 
 
-def rights_gate(source_id: str, source_config: dict, rights_dir: Path = RIGHTS_DIR) -> str:
+def rights_gate(source_id: str, source_config: dict, inventory_config: dict | None = None,
+                rights_dir: Path = RIGHTS_DIR) -> str:
     """Return '' when capture is allowed, else the refusal reason."""
-    review_id = source_config.get("rights_review_id", "")
-    review_path = Path(rights_dir) / f"{review_id}.yml"
-    if not review_id or not review_path.exists():
-        return f"no rights review ({review_id or 'none'})"
-    review = parse_simple_yaml(review_path)
+    try:
+        review = load_rights_review(source_id, source_config, inventory_config, rights_dir)
+    except ValueError as exc:
+        return str(exc)
     status = review.get("rights_status", "")
     if status in SETTLED_RIGHTS:
         return ""
@@ -129,6 +155,9 @@ def append_catalog_rows(source_id: str, source_config: dict, new_rows: list[dict
 def capture_cbeta_source(source_id: str, source_config: dict, inventory_config: dict,
                          args: argparse.Namespace, paths: dict) -> dict:
     """Capture a CBETA-backed classical source. Returns the summary report."""
+    review = load_rights_review(
+        source_id, source_config, inventory_config, paths.get("rights_dir", RIGHTS_DIR)
+    )
     report = {"captured": [], "skipped": [], "failed": []}
     _, catalog_rows = read_catalog(source_id, catalog_root=paths["catalog_root"])
     known_keys = {row["source_item_key"]: row for row in catalog_rows}
@@ -163,6 +192,15 @@ def capture_cbeta_source(source_id: str, source_config: dict, inventory_config: 
         start_sequence=1,
         extraction_command="batch_capture.py " + " ".join(sys.argv[1:]),
     )
+    for record in records:
+        record["source_version"] = inventory_config.get("source_version", "")
+        record["source_revision"] = inventory_config.get("source_revision", "")
+        if review.get("rights_status") == "open_license_verified":
+            notice = (
+                "This normalized entry is derived from the CBETA XML P5 electronic edition "
+                "under CC BY-NC-SA 4.0; see data/NOTICE.md."
+            )
+            record["notes"] = f"{record.get('notes', '').rstrip()} {notice}".strip()
 
     used_numbers = existing_entry_numbers(paths["public_dir"], paths["manifest_dir"])
     next_number = max(used_numbers, default=0) + 1
@@ -198,7 +236,7 @@ def capture_cbeta_source(source_id: str, source_config: dict, inventory_config: 
                 paths["manifest_dir"].mkdir(parents=True, exist_ok=True)
                 emit_records([record], str(entry_path))
                 write_manifest(entry_id, source_id, entry_path, record,
-                               source_config.get("rights_review_id", ""), paths["manifest_dir"])
+                               review, inventory_config, paths["manifest_dir"])
             report["captured"].append((key, entry_id))
             if key not in known_keys:
                 highest_art += 1
@@ -214,8 +252,8 @@ def capture_cbeta_source(source_id: str, source_config: dict, inventory_config: 
                     "content_type": "book_entry",
                     "discovery_status": "discovered",
                     "selection_status": "unreviewed",
-                    "rights_review_id": source_config.get("rights_review_id", ""),
-                    "rights_status": "public_domain_verified",
+                    "rights_review_id": review.get("rights_review_id", ""),
+                    "rights_status": review.get("rights_status", ""),
                     "capture_status": "verified",
                     "boundary_status": "script_extracted",
                     "pipeline_status": "not_started",
@@ -248,13 +286,13 @@ def main() -> int:
     inventory_path = Path(args.catalog_root) / args.source_id / "inventory.yml"
     inventory_config = parse_simple_yaml(inventory_path) if inventory_path.exists() else {}
 
-    refusal = rights_gate(args.source_id, source_config)
+    refusal = rights_gate(args.source_id, source_config, inventory_config)
     if refusal:
         print(f"SKIP {args.source_id}: {refusal}")
         return 0
 
     paths = {"catalog_root": Path(args.catalog_root), "public_dir": Path(args.public_dir),
-             "manifest_dir": Path(args.manifest_dir)}
+             "manifest_dir": Path(args.manifest_dir), "rights_dir": RIGHTS_DIR}
     extractor = source_config.get("extractor_name", "")
     if extractor == "extract_cbeta_xml.py":
         report = capture_cbeta_source(args.source_id, source_config, inventory_config, args, paths)

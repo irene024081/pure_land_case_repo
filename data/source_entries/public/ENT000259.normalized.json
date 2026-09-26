@@ -12,6 +12,8 @@
   "raw_text": "鬼不敢噉\n\n　　佛世有一國。隣於羅剎。羅剎食人無度。王約自今國人。家專一日。以次送與。勿得枉殺。有奉佛家。止生一子。次當克行。父母哀號。囑令至心念佛。以佛威力。鬼不得近。明晨往視。見子尚在。歡喜將還。自是羅剎之患遂絕。國人慶慕焉。",
   "raw_text_hash": "012ebd3e0dd9446cd2c94c8ee8b3f6a33e09e4571c99a6be4cef4262d5aa9fd6",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷下，生存感應類，鬼不敢噉",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

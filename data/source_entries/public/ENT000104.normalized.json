@@ -12,6 +12,8 @@
   "raw_text": "久法華\n\n　　宋可久。居明州。常誦法華。願生淨土。時號久法華。元祐八年。年八十一坐化。越三日。還謂人曰。吾見淨土境。與經符契。蓮花臺上。皆標合生者名。一金臺標。成都府廣教院勳公。一標明州孫十二郎。一標可久。一銀臺。標明州徐道姑。言訖復化去。五年徐道姑亡。異香滿室。十二年孫十二郎亡。天樂迎空。皆如久所云。\n\n　　贊曰。蓮花標名。至此蓋屢見矣。幻歟真歟噫。幻心而念幻佛。幻花而標幻名。乃至得記成佛。夫孰非幻乎。吾且幻生焉。何論其真與否也。",
   "raw_text_hash": "bb23245535782d2d67503a853fcae9a5dd9e423daa4578052da40f237951c602",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，久法華",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

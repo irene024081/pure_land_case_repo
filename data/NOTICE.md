@@ -10,14 +10,16 @@ License: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 Provider terms: [CBETA Copyright Declaration](https://cbeta.org/copyright)
 
-Current tracked source:
+Current tracked sources:
 
 - Work: `T51n2072`, `往生集`, Taisho Tripitaka volume 51
 - Underlying author: 袾宏 (Lianchi Zhuhong, died 1615)
+- Work: `X78n1549`, `净土圣贤录`, Xuzangjing volume 78
+- Underlying author: Peng Xisu (died 1793)
 - CBETA release: `CBETA 2026.R2`
 - XML revision: `dbdea41071e1e260ad84b72faefd4587333cf76d`
 - Revision record: <https://github.com/cbeta-org/xml-p5/commit/dbdea41071e1e260ad84b72faefd4587333cf76d>
-- Captured: 2026-09-22
+- Captured: 2026-09-22 through 2026-09-25
 
 Transformations made by this project:
 

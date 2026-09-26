@@ -12,6 +12,8 @@
   "raw_text": "惟恭\n\n　　唐惟恭。住法性寺。慢上凌下。親狎非類。酒徒博侶。交集於門。暇則念佛。寺僧靈巋者。同惡相濟。里人為之語曰。靈巋造惡。惟恭繼跡。地獄千重。莫厭雙入。恭聞曰。我雖積業罪無所迯。然賴淨土教主。憫我愆尤。拔我塗炭。豈復墮惡道耶。乾寧二年病革。巋自外還見伶人數輩。少年麗服問所從來。答曰。西來迎恭上人耳。一人懷中出金瓶。瓶中蓮花其合如拳俄頃增長。如盤盂。光彩交映。望寺疾馳而忽不見。巋至寺聞鍾聲。恭已逝矣。",
   "raw_text_hash": "ac4091b5b6ad27dfa2f9e87ebb7e2602a2e33fc1c2ecd65580ebeff6688cb275",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，惡人往生類，惟恭",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

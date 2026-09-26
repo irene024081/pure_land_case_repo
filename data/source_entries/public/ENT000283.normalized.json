@@ -12,6 +12,8 @@
   "raw_text": "大善寺行童\n\n　　大善寺行童，常隨師善輝持誦佛名。一夕，夢婦人持數珠示之。童曰：欲得一串，恨無錢買耳。婦人曰：我當與汝，汝可開口。即以數珠投口中。童寤，以告師。輝曰：此是大勢至菩薩授汝念佛三昧也。過數日，童見二大士持華座與之，曰：更過七日，當乘此來生淨土也。童即語人云：我七日當行也。至期，忽自唱曰：菩薩來矣。即座而化。",
   "raw_text_hash": "3312c8619a175817fddee09d850f01a2c8aca65d0add3b72eb9f848c3fd1fdc8",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/X78n1549",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "X78n1549，《净土圣贤录》，卷九，往生雜流第八，大善寺行童",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

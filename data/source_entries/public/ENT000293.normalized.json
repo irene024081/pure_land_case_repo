@@ -12,6 +12,8 @@
   "raw_text": "獨孤皇后\n\n　　獨孤皇后，河南雒陽人，周大司馬河內公信之女也。隋文帝未貴時，娶為夫人。及受禪，立為皇后。性賢明，朝廷政事，多所匡益。然頗妬忌後宮，希得進御。帝宏護佛法，勅諸州郡，徧造靈塔，安置舍利，多感瑞應。后亦敬慕大乘，常持佛名。當持名時，必先易淨衣，嚼沈水香盥口，以為常。仁壽二年八月甲子，崩於永安宮，年五十。于時異香滿空，天樂振響。帝問梵僧闍提斯那：是何祥也？對曰：淨土有佛，名阿彌陀。皇后往生，故現斯瑞耳。",
   "raw_text_hash": "c40b76ba2b95231870c7abf62ff0561515ab666c7741465c22d1655799c0fd66",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/X78n1549",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "X78n1549，《净土圣贤录》，卷九，往生女人第九，獨孤皇后",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

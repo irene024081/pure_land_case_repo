@@ -1,0 +1,36 @@
+rights_review_id: RR0013
+source_id: SRC0001
+rights_status: open_license_verified
+rights_holder: CBETA Foundation for the electronic database; underlying historical text is public domain
+original_author: 彭希涑
+publisher_or_platform: CBETA XML P5 delivery copy (cbeta-org/xml-p5, Xuzangjing X78n1549)
+license_type: CC-BY-NC-SA-4.0
+license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+terms_url: https://cbeta.org/copyright
+terms_checked_at: 2026-09-26
+source_jurisdiction: historical China (Qing dynasty); current delivery platform CBETA (Taiwan)
+intended_publication_jurisdictions: global_web
+internal_retention_basis: CC-BY-NC-SA-4.0
+automated_access_policy: use versioned CBETA XML P5 text; preserve attribution, license, source version, and modification notice
+ai_processing_policy: allowed_for_noncommercial_project_processing_under_CC-BY-NC-SA-4.0
+external_ai_processing_policy: allowed_only_when_project_use_remains_noncommercial_and_provider_data_controls_are_recorded
+allowed_ai_providers: provider_must_meet_project_data_controls
+provider_data_retention_requirement: disclose_and_record_before_use
+provider_training_opt_out_required: true
+cross_border_transfer_status: record_provider_region_before_use
+public_display_policy: full_normalized_text_with_CBETA_attribution_license_version_and_modification_notice
+allowed_excerpt_scope: full_text_for_noncommercial_use_under_CC-BY-NC-SA-4.0
+translation_policy: noncommercial_only_with_attribution_change_notice_and_sharealike
+commercial_use_policy: permission_required_or_replace_with_independently_sourced_public_domain_edition
+dataset_distribution_policy: noncommercial_CC-BY-NC-SA-4.0_with_attribution_version_and_sharealike
+independent_factual_account_policy: allowed
+dharma_commentary_policy: allowed_subject_to_factual_and_doctrinal_checks
+expression_similarity_threshold: normal
+substitution_risk_threshold: normal
+applicable_jurisdictions: global_web_noncommercial_publication
+legal_exception_basis:
+review_evidence: CBETA copyright declaration; cbeta-org/xml-p5 README; CBETA 2026.R2 revision dbdea41071e1e260ad84b72faefd4587333cf76d; source-entry manifests
+reviewed_by: AI-assisted operational review
+reviewed_at: 2026-09-26
+next_review_at: before commercial use or changing the retained edition, CBETA release, or delivery source
+notes: The Qing-dynasty work is public domain. The retained traditional-character text was extracted from CBETA's modern electronic database and is handled under CBETA's CC BY-NC-SA 4.0 terms. This review does not cover CBETA site code, images, or unrelated assets.

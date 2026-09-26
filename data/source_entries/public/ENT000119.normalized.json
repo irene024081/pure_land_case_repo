@@ -12,6 +12,8 @@
   "raw_text": "江公望司諫\n\n　　宋江公望。釣臺人。官諫議。蔬食清修。述菩提文念佛方便文。以勸道俗。有子早亡。託夢云。大人修道。功業已成。冥府有金字額。題云。嚴州府江公望。身居言責。志慕苦空。躬事熏修。心無愛染。動靜不違佛法。語默時契宗風。名已脫乎閻浮。身必歸於淨土。宣和末知廣德軍。一旦無疾。面西端坐而化。\n\n　　贊曰。或謂題額之事。恐未必然。噫永明常繪像於冥司矣。苟繞塔之僧不妄。何獨於公望而疑之。",
   "raw_text_hash": "5dd0e6daaea72627fe7170b5ccffd455db2920a76937d5deb2395ac6d95eecc5",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，王臣往生類，江公望司諫",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

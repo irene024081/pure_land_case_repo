@@ -12,6 +12,8 @@
   "raw_text": "吳氏女\n\n　　吳氏女，太倉人。生時趺坐而下，稍長皈心佛乘。事親孝，不願有家。人或勸之，輒指天為誓。初從昆弟析諸字義，已而誦佛經，悉通曉大意，朝夕禮拜甚䖍。俄夢神授以梵書準提呪，有病瘧者，以梵字治之，立愈。嘗於夢中得通宿命，自言曾為宋高僧，此來專為父母，年二十三當成道果。崇禎四年，年二十三矣，閉關一室，專修淨土。仲冬之末，示微疾，作偈辭世，勉親堅修勿懈。日方午，索玉戒指，佩之右脅而逝。將殮，紅光溢於面，母為理髮，異香從頂中出，達於戶外，經夕不散。居四年，茶毗，骨瑩如玉，頂作黃金色，為起塔以奉之。",
   "raw_text_hash": "dd3d2a63f5ae77a023eb46ba425fa77846260cc2e5a65417f4d88edc1d21a4df",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/X78n1549",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "X78n1549，《净土圣贤录》，卷九，往生女人第九，吳氏女",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

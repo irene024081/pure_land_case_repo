@@ -12,6 +12,8 @@
   "raw_text": "楊嘉禕文學\n\n　　大明楊嘉禕字邦華。泰和人。世家子也。年十三持不殺戒。蚤虱無所傷。二十三肄業南雍。俄疾作。以萬曆乙巳仲冬十九日卒。卒之先夢遊地獄。見地藏大士於冥陽殿。覺而放諸生命。延僧誦經念佛。謂人曰吾將逝矣。青蓮花現吾前。得非淨土境乎。遂晝夜念佛不輟。命息燭曰。汝輩假燭為明。吾不須燭。常在光明中耳。問何所見。曰蓮開四色。問見彌陀否。曰見彌陀現千丈身。問觀音。曰身與彌陀等。問勢至。曰不見也。言訖忽躍起拈香。連聲語曰。彌陀經功德不可說。不可說。不可說。吾已得上品矣。寂然而逝。\n\n　　贊曰。邦華好學天植。書無所不讀。已獨潛心於內典。又獨加意於內典之淨土法門。其臨沒也。謂彌陀經功德不可說。而三稱之。見之真故。言之切也。仲兄嘉祚。傳其事。而矢之曰。予所誑語墮拔舌獄。其亦見真而言切歟。不信淨土者可思已。",
   "raw_text_hash": "f2a6445366eb1d93719206fd31faf67911f85a6215f2a71eade421f80269c3ce",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，畜生往生類，楊嘉禕文學",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

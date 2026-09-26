@@ -12,6 +12,8 @@
   "raw_text": "僧叡\n\n　　晉僧叡。冀州人。遊學諸方。遠歷天竺。還關中。從羅什法師。稟受經義。後預廬山蓮社。宋元嘉十六年。忽告眾曰。吾將行矣。面西合掌而化。眾見叡榻前一金蓮花。倏爾而隱。五色香煙。從其房出。",
   "raw_text_hash": "46a4b6724542b850173e18925fa7ab9ee9317428ecc7a6e78a03ac83c62662e6",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，僧叡",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

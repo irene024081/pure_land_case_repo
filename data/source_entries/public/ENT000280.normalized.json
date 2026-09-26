@@ -12,6 +12,8 @@
   "raw_text": "沈三郎\n\n　　沈三郎，臨安賈人也。晚而奉佛甚謹。一日臥病，請僧講彌陀經。設像，日夕西顧，易衣而終。頃之，膝微屈，如欲起坐者。二子曳脛直之，忽瞿然起坐，遂易龕。茶毗，有白鶴翔雲西去。",
   "raw_text_hash": "59a704629c87d1720c027b28c225a45d7d0e0a2500ab4f55b3b83179eea7d73d",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/X78n1549",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "X78n1549，《净土圣贤录》，卷九，往生雜流第八，沈三郎",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

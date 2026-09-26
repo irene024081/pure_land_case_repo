@@ -22,6 +22,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 PIPELINE_RUNS = ROOT / "data" / "pipeline_runs"
 MANIFEST_ROOT = ROOT / "data" / "source_entries" / "manifests"
+RIGHTS_ROOT = ROOT / "data" / "rights_reviews"
 DEFAULT_OUT_DIR = ROOT / "data" / "reports"
 
 REDACTED = "【受限原文：该来源的存储级别不允许在报告中展示，请到受限存储核对】"
@@ -54,14 +55,20 @@ def esc(value: Any) -> str:
     return html.escape(str(value))
 
 
-def manifest_storage_class(source_entry_id: str) -> str:
+def manifest_fields(source_entry_id: str) -> dict[str, str]:
     path = MANIFEST_ROOT / f"{source_entry_id}.yml"
     if not path.exists():
-        return "unknown"
+        return {}
+    fields: dict[str, str] = {}
     for line in path.read_text(encoding="utf-8").splitlines():
-        if line.startswith("storage_class:"):
-            return line.split(":", 1)[1].strip()
-    return "unknown"
+        if line and not line.startswith("#") and ":" in line:
+            key, value = line.split(":", 1)
+            fields[key.strip()] = value.strip()
+    return fields
+
+
+def manifest_storage_class(source_entry_id: str) -> str:
+    return manifest_fields(source_entry_id).get("storage_class", "unknown")
 
 
 def output_or_empty(run_dir: Path, stage: str) -> dict[str, Any]:
@@ -97,8 +104,10 @@ def render_case(run_dir: Path, out_dir: Path) -> Path | None:
     segmentation = output_or_empty(parent_dir, "source_segmentation")
     seg_by_id = {s["segment_id"]: s for s in segmentation.get("segments", [])}
 
-    storage_class = manifest_storage_class(entry.get("source_entry_id", ""))
+    manifest = manifest_fields(entry.get("source_entry_id", ""))
+    storage_class = manifest.get("storage_class", "unknown")
     is_public = storage_class == "tracked_public"
+    is_open_license = manifest.get("rights_status") == "open_license_verified"
 
     def seg_text(seg_id: str) -> str:
         segment = seg_by_id.get(seg_id)
@@ -141,13 +150,35 @@ def render_case(run_dir: Path, out_dir: Path) -> Path | None:
         ("身份裁定", f"{resolution.get('resolution_kind', '')}（{resolution.get('decision_basis', '')}）"),
         ("Run ID", run["run_id"]),
         ("Pipeline 版本", run.get("pipeline_version", "")),
-        ("原文是否展示", "是（公版）" if is_public else "否（受限）"),
+        ("原文是否展示", "是（按开放许可证条件）" if is_open_license else ("是（公版）" if is_public else "否（受限）")),
     ]
     for label, value in info_rows:
         parts.append(f"<tr><th>{esc(label)}</th><td>{esc(value)}</td></tr>")
     parts.append("</table>")
     if not is_public:
         parts.append(f'<p class="note">{esc(REDACTED)}</p>')
+    if is_open_license:
+        review_path = RIGHTS_ROOT / f"{manifest.get('rights_review_id', '')}.yml"
+        review = {}
+        if review_path.exists():
+            for line in review_path.read_text(encoding="utf-8").splitlines():
+                if line and not line.startswith("#") and ":" in line:
+                    key, value = line.split(":", 1)
+                    review[key.strip()] = value.strip()
+        parts.append("<h2>授权与署名</h2><table>")
+        license_rows = [
+            ("数据来源", review.get("rights_holder", "")),
+            ("许可证", review.get("license_type", "")),
+            ("许可证链接", manifest.get("license_url", "")),
+            ("来源条款", manifest.get("terms_url", "")),
+            ("来源版本", manifest.get("source_version", "")),
+            ("来源修订", manifest.get("source_revision", "")),
+            ("本项目修改", manifest.get("modification_notice", "")),
+            ("商业使用", review.get("commercial_use_policy", "")),
+        ]
+        for label, value in license_rows:
+            parts.append(f"<tr><th>{esc(label)}</th><td>{esc(value)}</td></tr>")
+        parts.append("</table>")
 
     # 原文分段
     parts.append("<h2>原文分段</h2><table><tr><th>段</th><th>类型</th><th>报告性质</th><th>说话人/作者</th><th>原文</th></tr>")
@@ -307,6 +338,12 @@ def render_case(run_dir: Path, out_dir: Path) -> Path | None:
                 )
             )
         parts.append("</table>")
+        rights_text = json.dumps(rights, ensure_ascii=False).lower()
+        if is_open_license and "public domain under" in rights_text:
+            parts.append(
+                '<p class="note">Historical rights-check wording predates the current '
+                'CBETA license review. Use the license notice above for publication.</p>'
+            )
 
     # 审核状态
     parts.append("<h2>审核状态</h2>")

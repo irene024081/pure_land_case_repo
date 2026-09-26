@@ -12,6 +12,8 @@
   "raw_text": "庾銑\n\n　　梁庾銑。新野人。武帝召為黃門侍郎。不赴六時念佛。一夕見道人。自稱願公。呼銑為上行先生。授香而去。後四年願復至。遂化去。空中言。上行先生。已主安養。",
   "raw_text_hash": "777e9fdd50274cbe1da8f84cbf3ebf2f99e35564b47a38c4df508457461b1da7",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，處士往生類，庾銑",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

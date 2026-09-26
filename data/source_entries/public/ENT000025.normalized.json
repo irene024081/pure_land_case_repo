@@ -12,6 +12,8 @@
   "raw_text": "曇鑒\n\n　　宋曇鑒。平生片善。迴向西方。誓願見佛。一日定中。見阿彌陀佛。水洒其面。曰滌汝塵垢。浴汝心念。及汝身口。皆悉嚴淨。又於瓶中。出蓮花一枝授之。定起乃與寺僧敘別。夜漸深。獨步廊下念佛。至五鼓。其聲彌厲及明。弟子依常問訊。趺坐不動。就而視之。逝矣。",
   "raw_text_hash": "64d41ed782bb6ddeae14470832e459f6843d1ef7c875245aa8b435cba48b0cab",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，曇鑒",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

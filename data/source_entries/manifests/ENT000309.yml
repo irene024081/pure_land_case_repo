@@ -7,15 +7,20 @@ source_artifact_uri:
 raw_capture_status: persisted_verified
 capture_representation: normalized_entry_json
 raw_text_hash: 75bb1c16995e3ae87eee2a83963dbed3fb644d2207d884f227c726245b601352
-normalized_artifact_hash: a1e4e7bde60e9afa33dcc8b447f883e08976b7acec3915ab5696ab4d448ac884
+normalized_artifact_hash: a476f98b86c2ebc4447f5bfce84e389b588bbdb8f964b60475cd40c222d36c0a
 source_artifact_hash:
 content_type: application/json
-byte_size: 1410
+byte_size: 1678
 captured_at: 2026-09-25
-rights_basis: public_domain_historical_text
-rights_status: public_domain_verified
-rights_review_id: RR0005
-terms_url:
-terms_checked_at:
-public_display_policy: full_normalized_historical_text
+rights_basis: CC-BY-NC-SA-4.0
+rights_status: open_license_verified
+rights_review_id: RR0013
+license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+terms_url: https://cbeta.org/copyright
+terms_checked_at: 2026-09-26
+source_version: CBETA 2026.R2
+source_revision: dbdea41071e1e260ad84b72faefd4587333cf76d
+modification_notice: TEI structure extracted and normalized to UTF-8 JSON; see data/NOTICE.md
+public_display_policy: full_normalized_text_with_CBETA_attribution_license_version_and_modification_notice
 retention_policy: permanent
+notes: The Qing-dynasty work is public domain. The retained traditional-character text was extracted from CBETA's modern electronic database and is handled under CBETA's CC BY-NC-SA 4.0 terms. This review does not cover CBETA site code, images, or unrelated assets.

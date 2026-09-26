@@ -12,6 +12,8 @@
   "raw_text": "韋文晉觀察\n\n　　宋韋文晉。立行孤潔。建淨業道場。普度含識。六月某日。忽面西跏趺。合掌念佛而化。異香內外皆聞。",
   "raw_text_hash": "2284769a35e1e32a07a4b47e9c7df6067b74a16f927ec53570d88fc1f4405dd5",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，王臣往生類，韋文晉觀察",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

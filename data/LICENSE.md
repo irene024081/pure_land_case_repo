@@ -6,7 +6,7 @@ This repository contains mixed-rights data. There is no single license for the e
 
 Normalized source text and adaptations derived from the CBETA XML P5 electronic database are distributed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license](https://creativecommons.org/licenses/by-nc-sa/4.0/), subject to CBETA's [copyright declaration](https://cbeta.org/copyright).
 
-This applies to records whose provenance identifies CBETA XML P5 or `cbeta-org/xml-p5`, including the SRC0024 / T51n2072 material currently tracked in this repository. It also applies to CBETA-derived portions of reports, run artifacts, translations, and other adaptations.
+This applies to records whose provenance identifies CBETA XML P5 or `cbeta-org/xml-p5`, including the SRC0024 / T51n2072 material and the CBETA-delivered SRC0001 / X78n1549 material currently tracked in this repository. The four SRC0001 pilot entries delivered by Dazhouxian remain governed by their separate manifests and RR0005. The CBETA terms also apply to CBETA-derived portions of reports, run artifacts, translations, and other adaptations.
 
 Required conditions include:
 

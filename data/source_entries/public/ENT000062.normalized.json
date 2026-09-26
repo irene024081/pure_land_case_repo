@@ -12,6 +12,8 @@
   "raw_text": "晤恩\n\n　　宋晤恩。姑蘇常熟人。年十三聞誦彌陀經。遂求出家。終日一食。不離衣鉢。不畜財寶。臥必右脅。坐必跏趺。每布薩涕泗不止。遍誨人以西方淨業。及一乘圓旨。有疑不逗機者。答曰。與作毒鼓之緣耳。雍熙二年八月朔日。夜覩白光自井而出。謂門人曰。吾將逝矣。絕粒禁言。一心念佛。夢一沙門。執金爐焚香。三遶其室。自言灌頂。來此相迎。夢覺呼門人至。猶聞異香二十五日。說止觀指歸及觀心義畢端坐而化。人聞管絃鈴鐸之音嘹亮空中。漸久漸遠。自西而去。\n\n　　贊曰。財食不貪。廉潔心也。坐臥不苟。敬慎心也。衣鉢不離。持重心也。布薩垂泣。誠信心也。四心皆淨因。宜其往生矣。至於誨人。則西方淨業。與一乘圓教並施。恩其深入念佛法門者乎。",
   "raw_text_hash": "36ee0eef9664de59bee1217a5d89a9e7ce83598b2ad883694233fdabbc5bcb94",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，晤恩",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

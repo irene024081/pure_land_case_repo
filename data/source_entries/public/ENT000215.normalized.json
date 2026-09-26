@@ -12,6 +12,8 @@
   "raw_text": "仲明\n\n　　宋仲明。居山陰報恩寺。素無戒檢。因感疾。謂同學道寧曰。我今心識散亂。何藥可治。寧教以隨息念佛。明如所教。至七日力已困憊。寧又令想目前佛像。久之忽見二菩薩。次復見佛。瞑目而逝。",
   "raw_text_hash": "e303168ae565d9dcc2b27fc3fe36669e77af41ef27c92896465fb42313bbee77",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，惡人往生類，仲明",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

@@ -12,6 +12,8 @@
   "raw_text": "崔婆\n\n　　宋東平梁氏乳媼崔婆。淄州人。平生茹素極愚。不能與同輩爭長短。主母晁夫人留意禪學。崔朝夕在旁。但誦阿彌陀佛。虔誠不少輟。不持數珠。莫知其幾千萬遍。年七十二得疾。洞泄不下床。然持念愈篤。忽若無事時。倡偈曰。西方一路好修行。上無條嶺。下無坑。去時不用。著鞋襪脚踏蓮花步步生。諷咏不絕口。人問何人語。曰我所作。曰婆婆何時可行。曰申時去。果以其時去。用僧法焚之。舌獨不化。如蓮花然。",
   "raw_text_hash": "1c9567c96ac68fa2f7798eeb82e9b0f35324324003949d742fdf77fbc4de7dce",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，婦女往生類，崔婆",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

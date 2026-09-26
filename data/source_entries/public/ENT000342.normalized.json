@@ -12,6 +12,8 @@
   "raw_text": "薛氏\n\n　　薛氏，武塘世家女也。母夢長庚入懷，而薛氏生。後歸周，生子五人而寡。專心淨業，好施不倦。室中供觀音大士，香烟吐蘂，結成蓮華，人皆見之。萬歷十五年五月，得疾。醫進乳糜，却之，遂斷食。至九月六日，延僧禮懺，曰：四日足，吾事畢矣。設西方佛像，晝夜繫念。令諸子同唱佛名，婦女毋得入。至第五日晨起，索水盥手，誦甘露真言。著新淨衣，戴誌公帽，長跪佛前，唱然香讚佛偈。及三自皈依，禮三拜，誦佛名一百八聲。方午，趺跏結印而化，神氣熈然。家人聞蓮華香滿室中。遺令具龕，毋用棺槨，毋迎眚神，毋燒紙錢，毋殺牲以祭。諸子皆從之。",
   "raw_text_hash": "e4c0def7eb653ea9645a2f33e4a2dfdb4deafdd38147df0ff59c29b59362f9e0",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/X78n1549",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "X78n1549，《净土圣贤录》，卷九，往生女人第九，薛氏",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

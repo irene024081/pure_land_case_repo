@@ -12,6 +12,8 @@
   "raw_text": "陸俊\n\n　　宋陸俊。錢塘人。少事公門。久之棄去。以淨土為業。每對佛懺悔。垂淚交頤。道友相見。說淨土因緣。纔十餘句。便悲咽感嘆。臨終。請圓淨律師。開示西方。諷觀經至上品。淨曰。可以行矣。俊曰。眾聖未齊。姑待之。少頃忽起就竹床。面西端坐而逝。\n\n　　贊曰。無量壽經云。聞說阿彌陀佛。淚即出者。皆宿世善根所致。俊之悲咽。本乎中心而達之面目。往生固其宜矣。今戲調而談淨土奚可哉。",
   "raw_text_hash": "8ce5f0b345185ae2fc9dd8098a94db7d4d251a81bb61e9753bb4a5362d564f56",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，處士往生類，陸俊",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

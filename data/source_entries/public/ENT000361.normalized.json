@@ -12,6 +12,8 @@
   "raw_text": "楊氏\n\n　　楊氏，張秩斯之妻也。父次弁，虞山嚴氏出。嚴家世學佛，故楊氏自幼即歸心大法。既適張，尋禮僧德真，受三皈五戒，斷除愛慾。年二十七，病劇，發願求生西方。室中供接引佛像，高唱佛名。五日，室中聞栴檀香。至七日，瞑目頃之，見觀音大士謂曰：蓮華種子已有半功，其半看汝手段。問：從何處著力？答曰：撒手便行。即合掌唱佛，趺坐而逝。",
   "raw_text_hash": "aaaf7f6bb0c5c5793411acfa69fb444de0f33cff3e21048c6004bd17fe57f3f0",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/X78n1549",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "X78n1549，《净土圣贤录》，卷九，往生女人第九，楊氏",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

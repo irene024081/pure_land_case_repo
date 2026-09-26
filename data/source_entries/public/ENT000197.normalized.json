@@ -12,6 +12,8 @@
   "raw_text": "秦氏\n\n　　宋秦氏淨堅。家松江厭惡女身。與夫各處。精持齋戒。閱華嚴法華光明般若經。無虛日。晨昏修彌陀懺。禮佛千拜久之。有光明入室。面西安坐而終。",
   "raw_text_hash": "9ffa6478fbbd2985e42de2a98c9926734cae970ea420caa7d7a69c47b317917f",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，婦女往生類，秦氏",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

@@ -12,6 +12,8 @@
   "raw_text": "白居易少傳\n\n　　唐白居易。官中大夫太子少傅。捨宅為香山寺。號香山居士。晚歲患風痺。出俸錢三萬。繪西方極樂世界一部依正莊嚴。悉按無量壽經。靡不曲盡頂禮發願。以偈贊曰。極樂世界清淨土。無諸惡道及眾苦。願如我身老病者。同生無量壽佛所。\n\n　　贊曰。人傳蓬萊有樂天名。樂天辭以偈曰。海山不是吾歸處。歸即須歸兜率天。今復捨兜率。而求淨土。豈所謂披砂揀金。愈擇而愈精者耶。",
   "raw_text_hash": "911b19de14c43b09bff9d9f175918f4726d59794c02c7f21b679f8f8ce5e3ea3",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，王臣往生類，白居易少傳",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

@@ -12,6 +12,8 @@
   "raw_text": "總論\n\n　　極樂國土。實無女人。女既得生。悉具大丈夫相。今人繪九品圖。而作女相者非也。殆存其本因。以彰雜類之同生耳。清淨界中。覓男相尚不可得。況女相乎。雖然女更有三病焉。孝翁姑不如其父母一也。御婢僕不如其子孫二也。知布施而不知息其貪心。知慕男身。而不知革其女習。知奔走寺宇恭事沙門。而不知反求諸己三也。明於此三未出娑婆。而居然比丘矣。夫何慮不生淨土。",
   "raw_text_hash": "7297dabe8532f22741b102e29363c008cb8efb0f361fbacbe9cdb0f10388cce6",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，婦女往生類，總論",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

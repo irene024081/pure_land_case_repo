@@ -12,6 +12,8 @@
   "raw_text": "王氏夫人\n\n　　宋荊王夫人王氏。專修淨業。曉夕勤至。給侍之人。無不則效。惟一妾懈慢。夫人責之。遂悔悟精進。忽無疾而逝。致夢他妾云。蒙夫人誨。已生安養。夫人未信也。俄而亦夢。與妾同遊寶池。見一花天衣飄揚。題曰。楊傑一華朝服而坐。題曰。馬圩復見金臺光明晃耀。妾指曰。此夫人生處也。既覺彌加精進。年八十一。慶誕之晨。秉燭然香。望觀音閣而立。左右方具儀獻壽已立化矣。\n\n　　贊曰。集至此。女人立化。蓋三人焉。金臺晃耀。亦上品之流矣。孰曰閨閣無人哉。",
   "raw_text_hash": "11b38244a15620d3c0a115dcc05d44f8e69fe0815eb1911229d8dd8b649101d8",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，婦女往生類，王氏夫人",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

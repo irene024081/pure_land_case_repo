@@ -12,6 +12,8 @@
   "raw_text": "劉通志\n\n　　大明劉通志。京都人。精懇念佛。年五十二得疾。念益切。隣人李白齋先卒。通氣絕。自旦至午復甦。謂家人曰。適見一舟。云往淨土。乘舟三十六人。白齋與焉。我亦一數。但衣未鮮潔。又忘帶念珠。命我易衣取珠。舟艤相待。家人急為易衣。珠掛其項須臾而逝。",
   "raw_text_hash": "9b96ae9607abeabef8f56f998d5827e71c366ef930625b9a9560234152595cd0",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，畜生往生類，劉通志",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

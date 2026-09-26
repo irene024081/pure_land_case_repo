@@ -12,6 +12,8 @@
   "raw_text": "范儼\n\n　　宋范儼。仁和人。絕心世務。其子不能治家。儼不之顧。但云。我自是寄客耳。日誦法華。念阿彌陀佛。專心不懈。忽見普賢菩薩乘六牙白象放金色光。報儼云。明日卯時當行。越一夕。佛菩薩來迎。就座合掌而逝。",
   "raw_text_hash": "d68c6732d12a48ef949554e633a8361e1641486b5b5ef38060f2ab7f7a153eff",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，處士往生類，范儼",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

@@ -12,6 +12,8 @@
   "raw_text": "陳君璋\n\n　　元陳君璋。黃岩人。端重寡言。年四十。與室葉氏。披誦法華。念佛惟謹。年六十疾篤。一夕命其子景星。扶之坐謂曰。吾歸去。曰歸何處去。曰沒處去。又曰。我死宜依桑門闍維法。言訖合掌。稱南無阿彌陀佛而逝。",
   "raw_text_hash": "7a61ee2f177d8dad2956c00f7e495e01a1b158f280d74c09c1558d1d87e2a27a",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，處士往生類，陳君璋",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

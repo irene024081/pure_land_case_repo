@@ -12,6 +12,8 @@
   "raw_text": "顧居士\n\n　　大明顧源。金陵人。自號寶幢居士。幼能詩善草書。中年一志淨業。後微疾。集僧俗道友。十念阿彌陀佛。唱和相續。語人云。我決定往生矣。人問何故。曰我見阿彌陀佛。身滿虛空。世界金色。佛以袈裟覆我。我身已坐蓮花中。時一眾聞蓮花香。諸子悲戀不已。居士曰。汝謂我往何處。何處即此處。此處若明何處不了。乃屏人曰。毋多言亂我心。空中諸佛迎我。三鼓行矣。至期怡然含咲而逝。少宗伯殷秋溟先生。為之傳云。\n\n　　贊曰。身已坐蓮花中。生則決定生也。何處即此處。去則實不去也。居士之生。當不在中下品矣。",
   "raw_text_hash": "f2cd158a58c48d2636134c561f35f38e6914086ef8cefbd39257c9274bd524b7",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，畜生往生類，顧居士",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

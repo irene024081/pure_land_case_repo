@@ -12,6 +12,8 @@
   "raw_text": "宋世子\n\n　　宋魏世子。父子三人。俱修西方。惟妻不修。女年十四死。七日更生啟母云。兒見西方七寶池上。父兄三人已有蓮花。沒當生彼。母獨無。是以暫歸相報。幸母留意。母感女言。頓發信心。念佛不倦。後命終亦生安養云。\n\n　　贊曰。始乏淨緣。終生樂國。信不信故也。經云惟除不信諒夫。",
   "raw_text_hash": "18b2f4c401e3650eadf4e8f4cc541634053a25a4f494ff546406b6dd4d4c6295",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，王臣往生類，宋世子",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

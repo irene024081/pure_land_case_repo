@@ -12,6 +12,8 @@
   "raw_text": "智廉\n\n　　宋智廉。居上虞化度寺。初遍參宗門。晚節一意西方。慶元改元秋八月。別眾曰。我夢中見阿彌陀佛。大眾圍繞說法。佛云。諸善人等。當須專心淨業來生我國。我見勝相。往生必矣。乃書偈曰。雁過長空。影沈寒水。無滅無生。蓮花國裏。書畢回身。向西結印而逝。",
   "raw_text_hash": "7be1435ce5b514e4b71ac744b877e0c3e465d8f74aec1419a81a1147d11f8732",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，智廉",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

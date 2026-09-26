@@ -12,6 +12,8 @@
   "raw_text": "張抗學士\n\n　　宋張抗。積善向佛。誓誦大悲陀羅尼十萬遍。求生淨土。年六十餘。寢疾一心念佛。謂家人曰。西方淨土只在堂前。阿彌陀佛坐蓮花上。翁兒在金地禮佛。言訖念佛而逝。翁兒抗孫也。三歲而亡。\n\n　　贊曰。心淨則西方觸目。心穢則地獄隨身。抗之淨心成就。堂前見佛何疑乎。",
   "raw_text_hash": "376f55e5e264e448e499b64b93cd6d6dfb0eac274be61bb1eaeb61ed83403601",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，王臣往生類，張抗學士",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

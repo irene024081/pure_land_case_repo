@@ -12,6 +12,8 @@
   "raw_text": "馮氏\n\n　　廣平郡夫人馮氏，名法信。贈少師珣之女，鎮洮軍承宣使陳思恭之妻也。少多病，及歸陳，病日劇。時慈受深禪師居王城，唱導佛法。夫人造其室，求却病方。慈受教以持齋，誦西方佛名。夫人信受，還家未踰月，遂屏葷血，却膏沐，衣埽塔衣，修西方淨觀。自翻經行道，及起居動靜，一以西方為歸。頃之，病良已。理家事如初，亦不廢淨業。如是十年，無惰容，無矜色，心安體舒，神氣日王。一日，索筆書偈曰：隨緣任業許多年，枉作耕牛大可憐。打疊身心早脫去，免將鼻孔被人牽。見者怪之，夫人曰：清淨界中，失念至此。支那緣盡，行即西歸。適我願兮，何怪之有？其年九月示疾，至十二月一夕，語侍者云：吾已神遊淨土，面禮慈尊。觀音左顧，勢至右盼。百千萬億清淨佛子，稽首慶我得生其國。至如宮殿林沼，光明神麗，與十六觀經所說，無二無別。到者方知，非可以語汝曹也。侍者呼思恭至，語其故。乃相與合掌，誦佛名。至明晨，右脇而逝。三日而殮，家人輒聞妙香。及茶毗啟視，面如生。時年三十六。",
   "raw_text_hash": "3f5388432234046ca44f7017588141b7117915f69c16ff53afcea597dd623547",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/X78n1549",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "X78n1549，《净土圣贤录》，卷九，往生女人第九，馮氏",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

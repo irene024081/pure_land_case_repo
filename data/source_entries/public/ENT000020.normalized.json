@@ -12,6 +12,8 @@
   "raw_text": "慧恭\n\n　　晉慧恭。豫章酆城人。與慧蘭僧光等同學。蘭光繫念淨土。臨終皆有奇應。又五年恭病篤。雨淚叩頭。誓心安養。念不少間。見阿彌陀佛。以金臺前迎。恭乘其上。又見蘭等。於臺上光明中。告曰。長老受生已居上品。吾等不勝喜慰。恨五濁淹延。相依之晚耳。恭欣然奮迅而逝。",
   "raw_text_hash": "c42837b7907ae5f47d626a7a2df1a054b6465083524306f5b93e61e5cfed281b",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，慧恭",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

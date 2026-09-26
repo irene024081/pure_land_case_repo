@@ -12,6 +12,8 @@
   "raw_text": "張太宜人\n\n　　張太宜人金氏，緜州人，普安知府張懷麓妻也。家世貴盛，而自奉甚薄。中年失偶，教諸子有法度。子正道、正學，皆以科名顯。太宜人晚得淨土書讀之，遂注心極樂，晨夕禮誦。一夕，戒諸孫曰：爾輩好讀祖父書，吾其去矣。呼侍女焚香端坐而逝。數日後，見夢於孫曰：適從西方來。始知太宜人實生淨土云。",
   "raw_text_hash": "feb4c28040e78191ef675b555ea0f627f4f23da114f2abb6fc2e9cd62e147d77",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/X78n1549",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "X78n1549，《净土圣贤录》，卷九，往生女人第九，張太宜人",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

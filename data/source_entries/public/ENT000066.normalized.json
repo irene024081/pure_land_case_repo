@@ -12,6 +12,8 @@
   "raw_text": "宗坦疏主\n\n　　宋宗坦。潞州黎城人。五十年名播講林。晚於唐州青臺鎮。專求淨土。三業四儀。曾無暫忘。政和四年四月二十七日。夢阿彌陀佛。謂曰。汝說法止六日。當生淨土。覺而白眾。至五月四日。集眾告曰。因緣聚散。固當有時。淨土勝緣。惟憑時刻。願眾念佛助我往生。言已坐脫。滿空雷鳴。白雲覆地。三日方歇。所持瑪瑙數珠。盤於指上。眾取之。竟不能得。感應事繁。具如別說。\n\n　　贊曰。雷者法音之吼。雲者慈蔭之深。手珠不脫。念力之牢強見矣。",
   "raw_text_hash": "ebed4b788e2ae6c9e241a15e6b8d2bec607cec5c02b0b51cff92342196159b20",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，宗坦疏主",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

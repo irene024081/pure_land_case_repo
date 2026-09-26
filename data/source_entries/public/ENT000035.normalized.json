@@ -12,6 +12,8 @@
   "raw_text": "道喻\n\n　　隋道喻。居開覺寺。念阿彌陀佛。日夜不廢。造像僅三寸。後於定中。見佛謂曰。汝造我像何小。喻曰。心大即大。心小即小。言訖見像。身遍滿虛空。告曰。汝當澡浴清淨明星出時。我來迎汝。至時果見佛來。光明滿室。遂坐而化。\n\n　　贊曰。心大即大。心小即小。然則心穢即穢。心淨即淨審矣。而喻見一佛遍空。前僧柔慧光。見多佛遍空。蓋一即多。多即一。非有優劣也。",
   "raw_text_hash": "3e5d768adf2b3f3c2294f00f3287f0695b2b21ced2425db86215dfd1fba96f7d",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，道喻",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

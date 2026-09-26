@@ -12,6 +12,8 @@
   "raw_text": "崔婆\n\n　　崔婆，淄州人，東平梁氏之乳媼也。為人朴愿，早斷葷血。主母晁氏，留意禪學。婆在旁，唯日誦阿彌陀佛，未嘗有閒，亦莫計其數。年七十二，下痢，持念益力。忽唱一偈曰：西方一路好修行，上無條嶺下無阬。去時不用著鞋襪，為有蓮華步步生。或問婆：何時當去？曰：申時。已而果然。茶毗時，舌獨不化，若蓮華然。",
   "raw_text_hash": "93725b90b08544c96bfc46f791bde43147071792ae5e28ed7b1ab52f8bd12d1c",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/X78n1549",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "X78n1549，《净土圣贤录》，卷九，往生女人第九，崔婆",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

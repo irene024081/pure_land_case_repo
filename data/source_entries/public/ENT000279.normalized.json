@@ -12,6 +12,8 @@
   "raw_text": "徐六公\n\n　　徐六公，嘉興農夫也。長齋念佛，設像瞻禮，如是四十年。屢夢遊淨土，預作一龕。臨行之日，易布衣草屩，入龕端坐。頃之，即曰：佛來迎我。泊然而逝。",
   "raw_text_hash": "ee176bb2dd4cb8e9c5dd7486a3106129079915d98088bbc642faf1972df2cdf0",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/X78n1549",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "X78n1549，《净土圣贤录》，卷九，往生雜流第八，徐六公",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

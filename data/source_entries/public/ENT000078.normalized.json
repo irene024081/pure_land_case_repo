@@ -12,6 +12,8 @@
   "raw_text": "了然\n\n　　宋了然法師。號智涌。住白蓮寺二十四年。夢二龍戲空中。一化為神人。袖出簡云。師七日當行。既寤集眾說法。大書曰。因念佛力。得生樂國。凡汝諸人。可不自勉。即沐浴更衣。令眾誦彌陀經。至西方世界處。倏然而化。能仁寺行人。皆聞天樂之音。祥光上燭天表。",
   "raw_text_hash": "d460f09d4369d0ee2ad5119681737e271990f0639cb8bfe19254e9bdbb86059f",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，了然",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

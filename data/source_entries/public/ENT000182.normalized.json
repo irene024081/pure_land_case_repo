@@ -12,6 +12,8 @@
   "raw_text": "陳氏媼\n\n　　宋陳氏媼。錢塘人。從靈芝律師。受菩薩戒。專心念佛日課千拜。甞有舍利散於經案。臨終見佛來迎。顧語旁人。未及半已凝然不動矣。",
   "raw_text_hash": "70069776369350e0b3565c2bbfc4ad12ea27ce8bd4b4fe3eee5903ffcfa6fa07",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，婦女往生類，陳氏媼",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

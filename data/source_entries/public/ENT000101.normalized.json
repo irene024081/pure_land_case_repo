@@ -12,6 +12,8 @@
   "raw_text": "曇懿\n\n　　宋曇懿。居錢塘。以醫為業。晚年修念佛三昧。出平時所蓄。供佛飯僧。造像設浴。如是二十年。後微疾。屏藥石。延七僧念佛。次日見蓮花大如屋。又一日。見梵僧臨榻問訊。夜半眾聞念佛聲低。視之泊然長往矣。",
   "raw_text_hash": "26fc3ed67cb7b73921152f3183291a2ad59b76e1e2b574ba124e551a73a18135",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，曇懿",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

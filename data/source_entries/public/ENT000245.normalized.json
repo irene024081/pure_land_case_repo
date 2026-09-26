@@ -12,6 +12,8 @@
   "raw_text": "往生無數\n\n　　大無量壽經云。彌勒白佛言。於此世界。有幾菩薩。往生極樂。佛告彌勒。於此世界。有六十二億不退菩薩。往生彼國。小行菩薩不可稱計。不但此國。他方佛土。如遠照佛剎。有百八十億菩薩。皆當往生。乃至十方佛剎。往生者甚多無數。我若具說。一劫猶未能盡。\n\n　　贊曰。此界他方。往生無量。淨土何以容之。噫滄海尚納百川。虛空猶含萬象。而無邊剎海。不出普賢一毛孔中。然則舉淨土針鋒之地。而容無盡之往生。不亦恢恢乎。有餘裕哉。",
   "raw_text_hash": "e234971404a9d314f1e7c639d9093181a333624df7fb26f1eee632d20f981718",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷下，諸聖同歸類，往生無數",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

@@ -12,6 +12,8 @@
   "raw_text": "法持\n\n　　宋法持。居化度寺。修彌陀懺。願促閻浮之壽。早生安養。後小疾。雨淚悲號。祈垂接引。厲聲念佛不絕。忽見佛身丈六。立於池上。即自言曰。我已得中品生。西向而化。\n\n　　贊曰。人情莫不欲壽。促算而求安養。非欣厭之極乎。雖然發願可也。赴海投崖。而疊薪自燼。則魔矣。",
   "raw_text_hash": "9e5d870bc7a47a71f45c48ef40bfea64976bb29c4e575ffcf6366e683a6b33ac",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，法持",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

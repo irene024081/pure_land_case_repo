@@ -12,6 +12,8 @@
   "raw_text": "陳嫗\n\n　　陳嫗，常熟人，居於城南，以紡為業，篤信佛法。隨紡車聲唱阿彌陀佛，終日不絕口，如是三十年。一日，忽呼其子謂曰：而不見空中寶葢幡幢乎？吾其逝矣。因拍手大笑，取湯沐浴竟，即合掌化去。事在順治十年。翁尚書叔元方微時，聞其事，親往視之，見嫗凝然危坐室中，香氣襲人。晚著淨土約說，書其事以證焉。",
   "raw_text_hash": "af43f7860873e4e53a3f0258483a60c5e6efcbace11b7ce83922868cba2e8e76",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/X78n1549",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "X78n1549，《净土圣贤录》，卷九，往生女人第九，陳嫗",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

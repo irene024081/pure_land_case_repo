@@ -12,6 +12,8 @@
   "raw_text": "朱綱少府\n\n　　大明朱綱。京都人。業儒中鄉舉。三上春官不第。乃就職官二府致仕。專修淨土。日課佛三萬。十五年無少怠倦。臨終坐榻上。兩手擎珠。念佛不輟。異香滿室。乃云佛來也。連聲稱念而逝。",
   "raw_text_hash": "dfdc37d212ed5f2d487d3bdf4d3d51574460e57aec5005bdb48d6cdcb3660916",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，畜生往生類，朱綱少府",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

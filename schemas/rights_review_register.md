@@ -77,6 +77,35 @@ notes
 
 An item review is required when attribution, license, embedded third-party material, intended use, or publication scope differs from the source default.
 
+## Research-layer Fields
+
+Research records that inform but do not replace an operational review use:
+
+```text
+record_layer: research
+informs_rights_review_id
+review_status
+confirmed_by
+confirmed_date
+tier_internal_retention
+tier_ai_processing
+tier_summary_link
+tier_full_text
+tier_translation
+```
+
+An operational source or catalog must continue to reference the operational review until a research record is explicitly promoted.
+
+## Intended-use Decision Status
+
+These values apply to one proposed use, not to the source-level `rights_status` field:
+
+```text
+allowed_by_documented_exception
+metadata_only
+permission_required
+```
+
 ## Rules
 
 1. Review a source before systematic extraction or publication.

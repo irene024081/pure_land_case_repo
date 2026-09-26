@@ -12,6 +12,8 @@
   "raw_text": "周續之\n\n　　宋周續之。雁門人。十二通五經五緯。號十經童子。養志間居。公卿交辟皆不就。事廬山遠法師預蓮社。文帝踐祚。召對辨析。帝大悅。或問身為處士。時踐王庭可乎。答曰。心馳魏闕者。以江湖為桎梧。情致兩亡者。市朝亦岩穴耳。時稱通隱先生。後居鍾山。專心念佛。愈老愈篤。一日向空云。佛來迎我。合掌而逝。\n\n　　贊曰。續之能岩穴市朝。則亦可以西方東土矣。而必念佛求生。其真知利害者乎。古有頌云。高山平地總西方。未到家者請勿戲論。",
   "raw_text_hash": "119bf4f7f4610ffec7b0ce6160cac5292f1d85ebfd5314acf2c041989373b219",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，處士往生類，周續之",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

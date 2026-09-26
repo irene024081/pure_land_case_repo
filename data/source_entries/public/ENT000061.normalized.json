@@ -12,6 +12,8 @@
   "raw_text": "志通\n\n　　石晉志通。鳳翔人。因見智者大師淨土儀式。不勝欣忭。自是不向西唾。不背西坐。專心念佛。後見白鶴孔雀成行西下。又見蓮花開合於前。通云曰。白鶴孔雀淨土境也。蓮花光相。受生處也。淨土現矣。乃起禮佛而終。茶毘有五色祥雲。環覆火上。舍利鱗砌於身。\n\n　　贊曰。唾必西避。坐必西向。繫念如斯。何事不辦。今以輕心淺心。而欲往生難矣。或曰。不已着乎。噫諦觀落日。經有明文。智者大師。始生而面西趺坐。乃至淨業諸賢。西向坐脫者。不着而能之乎。耽心濁境。終世安然。纔念淨邦。便憂其着。顛倒乃爾。嗟乎異哉。",
   "raw_text_hash": "c19d3ab58d02a7e4b99a8ad1682cfa353ff995deaf7f18b1af3168f9fdac8c9a",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，志通",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

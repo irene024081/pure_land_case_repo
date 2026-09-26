@@ -12,6 +12,8 @@
   "raw_text": "烏萇國王\n\n　　烏萇國王。萬機之暇。雅好佛法。甞謂侍臣曰。朕為國王。雖享福樂。不免無常。聞西方淨土。可以棲神。朕當發願求生彼國。於是六時行道念佛。每供佛飯僧。王及夫人。躬自行膳。三十年不廢。臨崩容色愉悅化佛來迎。祥瑞不一。\n\n　　贊曰。末世聞法信受。無位者多。有位者少。有位而極於尊貴者倍復少。所以者何。位彌高則欲彌廣。欲彌廣則染彌重。勢所恒然。鮮克免者今也。享南面之樂。不忘西方之歸。非宿植勝因。何以致此。雖然自古及今。帝王之留神內典者。奚不錄。曰茲傳淨土。意有所專主。故不泛紀云。",
   "raw_text_hash": "35aa0864376a5d385ddc20ad4204cae084046333d2fdb558266876cddfa0ac59",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，王臣往生類，烏萇國王",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

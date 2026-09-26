@@ -12,6 +12,8 @@
   "raw_text": "吳瓊\n\n　　吳瓊，不詳其所出。先為僧，已而返俗作庖人。當切肉時，口中稱佛名不輟。每教邨中人誦經修懺，念阿彌陀佛。後眼郭生瘤，大如雞子。乃惶怖，分遣妻子，造一草庵，晝夜焚修。紹興二十三年秋，告邨中人曰：瓊來日戌時去也。人皆笑之。次日晚，報諸道友曰：時至矣，好來念佛相助。復將布衫質酒，飲盡，即寫頌曰：把盞空空，問甚禪宗？今日珍重，明日清風。端坐合掌稱佛名，忽大聲曰：佛來也。即化去。",
   "raw_text_hash": "c05fa8bc2650a0b63cc44c6e384fe4114a622dd9925e4999cecb6ed1cf34eed5",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/X78n1549",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "X78n1549，《净土圣贤录》，卷九，往生雜流第八，吳瓊",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

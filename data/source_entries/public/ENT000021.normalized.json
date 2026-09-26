@@ -12,6 +12,8 @@
   "raw_text": "慧虔\n\n　　晉慧虔。少出家戒行精確。義熙年中。投山陰嘉祥寺。苦身率眾後寢疾。屬想安養。祈誠觀音。北寺有淨嚴尼者。宿德篤行。夜夢觀音從西郭門入。清輝妙狀。光映日月。幢幡華蓋。七寶莊嚴。尼驚異作禮。問大士何往。答云。往嘉祥迎虔公耳。虔疾雖困。神色如常侍者皆聞異香。泊然而化。\n\n　　贊曰。臨終見佛。或疑純是自己想心。今他人亦見之何也。當知感應道交。不可思議。慎哉言乎。",
   "raw_text_hash": "3f96d9897d43ddad20380ad47e472dec946b855dccfe4be399dc2df0fd251c02",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，慧虔",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

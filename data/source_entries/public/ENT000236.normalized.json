@@ -12,6 +12,8 @@
   "raw_text": "郝熙載文學\n\n　　大明郝熙載。錢塘人。法名廣定。生平忠信不欺。以德行稱於黌校。晚歸佛。禪誦夙夜匪懈。萬曆辛亥春二月得疾。每睡覺云。吾夢於山中求見佛。佛未見。見百鳥叢集。如是累日。至二十七食時。忽舉首視窓外。謂其子世翰曰。今日別是一乾坤矣。顧家人為置銀錢。俄而曰。吾向恐見官備用。今無用此。三鼓云。有二童子來迎。佛坐蓮花臺現吾前。吾往矣。吉祥而逝。",
   "raw_text_hash": "06f9ec0eef3c5a61276e605288d79b56228a6fe96218360700d26ee448ddffa7",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，畜生往生類，郝熙載文學",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

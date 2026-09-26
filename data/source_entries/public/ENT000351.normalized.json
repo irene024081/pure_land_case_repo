@@ -12,6 +12,8 @@
   "raw_text": "楊選一妻\n\n　　楊選一妻，南昌人，客居南京。年三十生子，即與夫別居，聽夫置妾。自是長齋念佛，閱十五年。其年八月，疽發於背，痛入骨。見一惡鬼持刀逼之，有大力神驅之去，其痛頓息。旋謂夫曰：吾將行矣，有童子四人相迎，可以清茶供之。問：將何往？曰：往西方。合掌唱佛名而逝。",
   "raw_text_hash": "c75a065e4350f8060bf570045992bcd91ebdd3a62aafd1c23c81e36c6cfaf7e3",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/X78n1549",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "X78n1549，《净土圣贤录》，卷九，往生女人第九，楊選一妻",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

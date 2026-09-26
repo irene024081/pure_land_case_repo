@@ -12,6 +12,8 @@
   "raw_text": "曇詵\n\n　　晉曇詵。廣陵人。幼師遠公。勤修淨業。兼善講說。註維摩經行於世。元嘉十七年。趺坐念佛而逝。",
   "raw_text_hash": "b9a626a35e29668d6399c52cda4a8346752a5d00c3f80b7024d88aab1f01cf03",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，曇詵",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

@@ -12,6 +12,8 @@
   "raw_text": "勝會書名\n\n　　長蘆賾禪師。遵遠祖遺範。建蓮花勝會。普勸念佛。一夕夢。一人烏巾白衣。風貌清美。揖而曰。欲入公蓮花勝會。乞書一名。賾問何名。答曰。普慧書已。又云家兄普賢亦乞併書。賾覺而檢華嚴離世間品。有二菩薩名。遂以為會首云。\n\n　　贊曰。凡僧結社。古聖書名甚哉。淨土之非小緣也。良由事出真誠。則冥通靈應。一有偽焉。人世自好者不屑。而況古聖乎。今之所謂佛會者。賾公見之。當為太息矣。",
   "raw_text_hash": "87af073a402021131b5d870d3cf13f9222bf222769585a14c8dca90c75068c8f",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷下，諸聖同歸類，勝會書名",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

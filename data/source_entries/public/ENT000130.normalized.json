@@ -12,6 +12,8 @@
   "raw_text": "鍾離景融大夫\n\n　　宋鍾離景融。官朝請大夫。常誦觀經。念佛不輟。掛冠結茅儀真東園側。甞曰。不識彌陀彌陀。更在西方外。識得彌陀彌陀祇在自己家。一夕命僧妙應。誦普賢行願品。炷香敬聽。兩手作印而化。",
   "raw_text_hash": "86871ac72060513d0a06e4d10f96419b0c50d02f36936a795e900c3492850796",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，王臣往生類，鍾離景融大夫",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

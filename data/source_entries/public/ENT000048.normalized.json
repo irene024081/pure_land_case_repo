@@ -12,6 +12,8 @@
   "raw_text": "道昂\n\n　　唐道昂。魏郡人。師靈裕法師。常於寒陵山寺。講華嚴地論。稽洽博詣。志結西方。願生安養後自知命極。預期八月。人未之測也。至八月朔日無所患。問齋時至未。即昇高座。身含奇相。爐患異香。引四眾受菩薩戒。詞理切至。聽者寒心。昂舉目高視。見天眾繽紛。管絃嘹喨。告眾曰。兜率陀天迎我。然天道乃生死根本。由來非願常祈心淨土。如何此誠不果遂耶。言訖天樂還滅。便見西方香花伎樂。充塞如雲。飛湧而來旋環頂上。舉眾皆見。昂曰。今西方靈相來迎事須願往。但見香爐墜手。即於高座而逝。足下有普光堂等字。遐邇驚嘆。\n\n　　贊曰。却天宮而求淨土。前有光公。後有洪公及昂。蓋三人焉而時逼須臾。猶能導四眾以毘尼。據高座而歸寂。靈相紛然駭人心目。嗚呼異哉。",
   "raw_text_hash": "472ad8c64266c59d8b1fde1d58514b93f76bbe6d3d2ee3a18a8383c1cfcb8179",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，道昂",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

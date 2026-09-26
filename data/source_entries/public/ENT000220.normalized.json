@@ -12,6 +12,8 @@
   "raw_text": "鸚鵡\n\n　　唐貞元中。河東裴氏。畜鸚鵡。常念佛。過午不食。臨終十念氣絕。火化之得舍利十餘粒。烱然耀目。僧慧觀者。用陶甓建塔。以旌其異。成都尹韋臯為之記。有了空相於無念。留真骨於已斃之句云。",
   "raw_text_hash": "b04bd61bd276b1b429f813e389b0e64f28230329e4c3db57b7198c8d4b07a113",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，畜生往生類，鸚鵡",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

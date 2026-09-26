@@ -12,6 +12,8 @@
   "raw_text": "淨觀\n\n　　宋淨觀。住嘉禾寂光庵。修淨土懺法十餘年。謂弟子曰。我後二十七日行矣。至期二日前。見紅蓮花。次日又見黃花滿室。皆有化生孩兒。坐於花上。仙帶結束。三日入龕端坐。命眾念佛。頃之脫去。\n\n　　贊曰。念佛人預知時至。蓋娑婆緣盡。淨土緣成。自然聖境冥現。如遠公七日。今觀二十七日之類是也。世人生無實德。死欲效嚬。扭揑粧點。取笑於識者。甚則生身活焚。搖動遠邇。不知附鬼着邪。流入惡趣。尤可憐憫。復使無眼之徒。欣羨而希則之。其為害也大矣。我集往生。何無一人活焚其軀者。願智人觀此。普以告世。救諸愚民。",
   "raw_text_hash": "65660a57d8df8e5209aa94eb79764dc882e127693fb22e11e7a5ed1778838504",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，淨觀",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

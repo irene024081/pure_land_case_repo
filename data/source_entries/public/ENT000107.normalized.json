@@ -12,6 +12,8 @@
   "raw_text": "寶珠\n\n　　大明寶珠。常遊杭郡嘉禾間。冬夏一衲。乞食自活。宿無恒居。平時惟念佛不絕口。人喚之纔應對。即連聲念佛。更無雜語。後於海門寺。忽若癲狂者。將半月餘。僧呵曰。爾平生實行。當與世人作眼目。何得乃爾。珠曰。既如是吾行矣。索浴畢安然立化。",
   "raw_text_hash": "18c4a8f3d17f3c48208b7c2b906a3ad9bd99c848a9d42435a7d793c0b675735e",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，寶珠",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

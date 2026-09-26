@@ -12,6 +12,8 @@
   "raw_text": "葛繁大夫\n\n　　宋葛繁。澄江人。少登科第。官至朝散。凡公署私居。必營淨室。設佛像。甞入室禮誦。舍利從空而下。平時以淨業。普勸道俗。多服其化。有僧定中神遊淨土。見繁在焉。後無疾面西端坐而化。\n\n　　贊曰。士大夫信佛者不無其人。然猶避世譏嫌。外護形跡。公署不忘設像。葛君其篤信不回者乎。坐脫往生。良非偶然矣。",
   "raw_text_hash": "3059262bde063b667283659fad27cae87c8150d93a1842fe092c44ccc842394e",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，王臣往生類，葛繁大夫",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

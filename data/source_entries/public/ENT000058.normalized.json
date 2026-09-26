@@ -12,6 +12,8 @@
   "raw_text": "大行\n\n　　唐大行。居泰山修普賢懺法三年。感大士現身。晚歲入大藏。陳願隨手取卷。得彌陀經。晝夜誦咏。至三七日。覩琉璃地上。佛及二大士現身。僖宗皇帝聞其事。詔入內賜號常精進菩薩。後一年琉璃地復現。即日而終。異香經旬。肉身不壞。\n\n　　贊曰。瑠璃地上下明徹。淨德所感也。而慧永僧衒異香七日。慧通三日。行今浹旬。孰非梵行之芬芳也哉。",
   "raw_text_hash": "3ef8f77b5b968ed5424e785dd2fcfdbfbb4ff9ea38259681586e0b08e160e898",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，大行",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

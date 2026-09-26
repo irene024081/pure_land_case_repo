@@ -12,6 +12,8 @@
   "raw_text": "許氏婦\n\n　　許氏婦，杭州人。為人謹厚，日課佛名，久而彌篤。一日，呼家人與訣曰：吾將去矣。著淨衣端坐，取天目白華簪之，安然而逝。",
   "raw_text_hash": "92a61b84b06311dfabef254c46177c0307e141368d7a6462a3c0e3a2ea90932c",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/X78n1549",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "X78n1549，《净土圣贤录》，卷九，往生女人第九，許氏婦",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

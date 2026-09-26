@@ -12,6 +12,8 @@
   "raw_text": "總論\n\n　　天如禪師謂。今人鄙視淨土。非鄙愚夫愚婦也。是鄙文殊普賢馬鳴龍樹也。吾故集群經。以實其說。或者猶疑菩薩道大。似已不必求生。噫自非位登妙覺。雖等地大聖。不能一日離佛。況其下者乎。蓋甞譬之爵彌尊。則覲主彌密。彼荷擔挾鋤之輩。侶漁樵以自足。絕望於九重。而囂囂然曰。明主之不足親也。可哂也夫。",
   "raw_text_hash": "dc46851910b5856c4990ffd74e8814d4f681a1ef062a77ccb608ba9c3cd6d686",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷下，諸聖同歸類，總論",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

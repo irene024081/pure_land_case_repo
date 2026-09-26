@@ -12,6 +12,8 @@
   "raw_text": "圓照本禪師\n\n　　宋宗本。常州無錫人。初參天衣懷禪師。念佛有省。後遷淨慈。奉詔入東京慧林寺。召對延和殿稱旨。平居密修淨業。雷峯才法師。神遊淨土。見一花殊麗。問之曰。待淨慈本禪師耳。又資福曦公。至慧林禮足。施金而去。人詰其故。曰。吾定中見金蓮花。人言以俟本公。又蓮花無數。云以待受度者。或有萎者。云是退墮人也。有問。師傳直指。何得蓮境標名。答曰。雖在宗門。亦以淨土兼修耳。後臨終安坐而逝。諡圓照禪師。\n\n　　贊曰。昔中峯天如。謂禪與淨土。理雖一而功不可並施。今曰兼修者何。蓋兼之義二。足躡兩船之兼。則誠為不可。圓通不礙之兼。何不可之有。況禪外無淨土。則即土即心。原非二物也。安得更謂之兼。",
   "raw_text_hash": "9825352cf8f5382953419d9e436bed1e17f8e976122766bd434213dc22a5e4f6",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，圓照本禪師",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

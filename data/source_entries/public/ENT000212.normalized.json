@@ -12,6 +12,8 @@
   "raw_text": "雄俊\n\n　　唐雄俊。寓成都。膽勇過人。不守戒律。甞罷道從戎。尋復為僧。因聞經言。一稱佛名。滅八十億劫生死重罪。乃大喜曰。賴有此耳。自是雖為惡。而念佛不輟。丁未二月暴亡。經宿忽甦。言至冥司。主者曰。誤追汝。然汝念佛。本無深信。今還人世。宜倍精進。人以為地獄漏網。既而入山。齋戒念佛越四年。辛亥三月。緇輩咸集告曰。吾時至矣。爾輩還城見吾親知。為吾語曰。俊以念佛得生淨土。毋以為地獄漏網人也。語笑之間。端坐而化。\n\n　　贊曰。薰蕕不同器。寧有且造惡且念佛而得往生者乎。噫觀賴有此耳之一言。其於稱佛滅罪之語。蓋信入骨髓矣。即此一念。力重萬鈞。臨終轉業往生。又何疑哉。",
   "raw_text_hash": "062f1c0e5ee04091a3df15e8a4782ca8bf961d561f3fac186fdd674c72f6503b",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，惡人往生類，雄俊",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

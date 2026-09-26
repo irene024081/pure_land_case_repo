@@ -12,6 +12,8 @@
   "raw_text": "吳氏女\n\n　　宋吳氏縣君。齋戒清修。有侍女亦精進念佛。忽見金蓮捧足者三。數日見膝。又數日見身。又數日見其面目。中乃阿彌陀佛。左右則觀音勢至也。又悉見堂殿國界。皎如指掌。如是三載。常儼然在目。後忽感疾。自言往生乃終。\n\n　　贊曰。吳氏女。時時見佛。有之乎。觀力精進。理固有之。但魔佛須辯。邪正或殊。女人遇此。當速質諸明者。",
   "raw_text_hash": "2f7c0761569e43097edf75f2bfc44afa5aa70fb9117ec539801bb1d5799d2080",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，婦女往生類，吳氏女",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

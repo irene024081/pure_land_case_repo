@@ -12,6 +12,8 @@
   "raw_text": "慧光\n\n　　齊慧光。居洛陽。著華嚴涅槃十地等疏。妙盡權實之旨。一日有疾。見天眾來迎。光曰。我所願歸安養耳。已而淨土化佛。充滿虛空。光曰。惟願我佛攝受。遂我本願。即彈指罄咳。言氣俱盡。\n\n　　贊曰。天多欲樂。兼有女人非解脫處。古謂。假饒修到非非想不若。西方歸去來。是以贊淨土者。謂上品即發彼岸。下生猶勝天宮。今光於命盡之際。而詳審堅固所願確然。可謂明且勇矣。",
   "raw_text_hash": "998ce5eb1c0e0792a13579e7afdacefc7d91cc4cbbc2f5cc0b5faa98c7b7d502",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，慧光",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

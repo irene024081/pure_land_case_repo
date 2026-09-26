@@ -12,6 +12,8 @@
   "raw_text": "周婆\n\n　　周婆，鄞縣人，精修淨土。遇歲首，常持不語戒，晝夜端坐，盡月而止。暑月則施茶湯，歷久不廢。一夕，夢大蓮葉徧覆市衢，己手執數珠，經行葉上。既而微疾，鄰人夜見寶葢旛幡自空中來，入其門內。黎明，合掌唱佛而逝。",
   "raw_text_hash": "0055d068c9bc562c3714c97304fb27314c98a5b7f2400439e1bcfaac047371ae",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/X78n1549",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "X78n1549，《净土圣贤录》，卷九，往生女人第九，周婆",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

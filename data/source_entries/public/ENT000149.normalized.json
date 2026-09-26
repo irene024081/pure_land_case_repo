@@ -12,6 +12,8 @@
   "raw_text": "汾陽老人\n\n　　唐汾陽老人。於法忍山。借一空房止宿。晝夜念佛。貞觀五年。命終時。太光遍照。面西而逝。人見乘蓮臺去。",
   "raw_text_hash": "835d5394e666cf591d1c372607d8dc5a5d72e520e8e1bff2e3d122b415504816",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，處士往生類，汾陽老人",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

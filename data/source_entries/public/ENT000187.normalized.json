@@ -12,6 +12,8 @@
   "raw_text": "周氏\n\n　　宋周氏妙聰。周元卿之女也。因感其母華臺往生之瑞。篤志念佛。期生安養。病中請僧行懺。自見其身。著新淨衣。在樓閣上。作禮念佛。謂家人曰。勤修淨業。西方相待。右脅西向而逝。",
   "raw_text_hash": "9fab4bc598a43c34cd0f4197b273a0f00b58caba8228bf7621a8717e16852668",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，婦女往生類，周氏",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

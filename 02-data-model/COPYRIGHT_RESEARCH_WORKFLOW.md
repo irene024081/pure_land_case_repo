@@ -179,7 +179,7 @@ whether translation or close adaptation requires permission
 
 Factual fidelity and rights safety are separate review dimensions. Rewriting more freely does not permit factual invention. Writing faithfully does not permit copying protected expression.
 
-## Decision Status
+## Intended-use Decision Status
 
 ```text
 public_domain_verified
@@ -195,6 +195,8 @@ unknown
 ```
 
 `allowed_by_documented_exception` requires a written jurisdiction-specific rationale and reviewer. AI cannot assign it without an approved rule or human legal review.
+
+These values describe a decision for one intended use. They are separate from the source-level `rights_status` enum in `schemas/rights_review_register.md`; for example, one source can remain `legal_review_required` while a specific metadata-only use is `metadata_only`.
 
 ## Publication Gate
 

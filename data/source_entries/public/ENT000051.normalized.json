@@ -12,6 +12,8 @@
   "raw_text": "惟岸\n\n　　唐惟岸。并州人。約淨土為真歸之地。行方等懺。服勤無缺微疾。見觀音勢至二菩薩現於空中。岸召畫工。無能畫者。忽有二人。自言能畫。畫畢不見。岸乃告諸弟子曰。吾今往生。誰偕行者。有童子願往。岸令辭父母。父母謂為戲言未信也。頃之沐浴更衣。入道場念佛而化。岸撫其背曰。小子何得先吾行耶。因索筆讚二菩薩。有願以慈悲手。提獎共西行之句。讚畢長逝。\n\n　　贊曰。岸之事無惑矣。彼童子非久積淨業。胡脫化之神異噫。爾不見十念成功乎。不然則宿世善根熟耳。修淨業者。或今身不克往生。觀此可以自慰。",
   "raw_text_hash": "15f87221404a3256d59ac05107242edc5f815cb270229e2a3619e2cb4814396e",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，惟岸",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

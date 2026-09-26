@@ -83,6 +83,37 @@ class PipelineTest(unittest.TestCase):
         self.assertEqual(result["external_processing"], "blocked")
         self.assertEqual(result["review"]["rights_review_id"], "RR0005")
 
+    def test_entry_level_rights_review_override_is_used(self) -> None:
+        entry_path = ROOT / "data/source_entries/public/ENT000273.normalized.json"
+        config, rows = pipeline.read_catalog("SRC0001")
+        row = next(item for item in rows if item["source_entry_id"] == "ENT000273")
+        ready_row = dict(row)
+        ready_row.update({
+            "selection_status": "selected",
+            "capture_status": "verified",
+            "pipeline_status": "ready",
+        })
+        with patch.object(pipeline, "read_catalog", return_value=(config, [ready_row])), patch.object(
+            pipeline, "find_entry_row", return_value=ready_row
+        ):
+            result = pipeline.rights_precheck(pipeline.load_json(entry_path), entry_path)
+        self.assertEqual(config["rights_review_id"], "RR0005")
+        self.assertEqual(result["review"]["rights_review_id"], "RR0013")
+        self.assertEqual(result["review"]["rights_status"], "open_license_verified")
+
+    def test_open_license_publication_notice_contains_required_provenance(self) -> None:
+        notice = pipeline.publication_rights_notice({
+            "rights_review_path": str(ROOT / "data/rights_reviews/RR0013.yml"),
+            "source_entry_id": "ENT000273",
+        })
+        self.assertEqual(notice["license_type"], "CC-BY-NC-SA-4.0")
+        self.assertEqual(notice["source_version"], "CBETA 2026.R2")
+        self.assertEqual(
+            notice["source_revision"],
+            "dbdea41071e1e260ad84b72faefd4587333cf76d",
+        )
+        self.assertIn("NOTICE.md", notice["modification_notice"])
+
     def test_rights_output_cannot_exceed_source_policy(self) -> None:
         with tempfile.TemporaryDirectory() as temp:
             rights_path = Path(temp) / "RR.yml"

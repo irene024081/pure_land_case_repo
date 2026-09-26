@@ -12,6 +12,8 @@
   "raw_text": "却鬼不現\n\n　　宋陳企。龍舒人。甞殺人。後見鬼現。企大怖。急念阿彌陀佛。鬼不得近。因念佛不已。鬼遂不現。\n\n　　贊曰。負命之鬼。云何念佛。而得却之。良以阿彌陀佛。功德威神。不可思議。一稱其名。鬼獲超濟。故不現耳。豈尋常禁呪。驅逐此耶。",
   "raw_text_hash": "8e6fe6426bf7a53a7cd2c1c0da37128136d58788c46a2ff443eca99960fcf1f3",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷下，生存感應類，却鬼不現",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

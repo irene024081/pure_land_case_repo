@@ -12,6 +12,8 @@
   "raw_text": "張母\n\n　　大明張母。陶氏。為長水守約居士繼室。居士奉佛。母化之。日課誦無間。居士出禮普陀。母謂二子曰。吾平日參是心作佛是心是佛二語今始悟初四日吾行矣。及期端坐而逝。次日居士歸成殮。俄而棺上出青蓮花五朵。居士大駭異。自愧恒常與俱。不知其道行如此。遠近見聞。靡不嘆慕。",
   "raw_text_hash": "47e9f0cdcb8f110ae72289be0246c9353bdfa70f85fea85614d09ad5d87021e9",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，畜生往生類，張母",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

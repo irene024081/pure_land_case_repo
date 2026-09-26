@@ -12,6 +12,8 @@
   "raw_text": "總論\n\n　　或問。淨名龐老何以不聞求生。答曰。爾試自評之。如其未及二公求生固不必論。即使再來金粟。何妨更見彌陀。苟為不然。淨名不覲釋迦。龐老不參馬祖矣。且夫心淨土淨。非淨名語歟。不與萬法為侶。非龐老語歟。爾一朝踏著淨地。當云何期自念。本自清淨。何期自念。不侶萬法。何期二公常在淨土。復奚疑哉。",
   "raw_text_hash": "5bae36b382eb26c8ac5fa131a31cfd889aac525abb6e484cfdc4abf6ce97b3a7",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷中，處士往生類，總論",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

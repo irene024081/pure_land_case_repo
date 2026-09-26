@@ -12,6 +12,8 @@
   "raw_text": "總論\n\n　　無量壽經。論三輩往生。其上輩者。曰捨家離俗。而作沙門。一向專念阿彌陀佛。捨家離俗。身出家也。一向專念心出家也。身心俱淨。焉得不生淨土。世有狂僧。或曰。淨土往生。接引在家二眾。吾沙門。吾何屑乎是。或曰。淨土往生。接引僧中鈍根。吾明教。吾明宗。吾何屑乎是。噫是惡知。遠祖而下諸大老。或弘經法。而聲震人天。或握祖印。而道彌今古。彼固昧於宗教。非沙門乎哉。又惡知淨土之外。無宗教無沙門乎哉。吾因以告夫狂者。",
   "raw_text_hash": "c6245fee68c81d4319d981b8111af33be8eaef3144c1ba5138fc21e14508e47a",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，總論",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

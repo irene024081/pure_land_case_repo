@@ -12,6 +12,8 @@
   "raw_text": "五會法師\n\n　　唐法照。大歷二年。止衡州雲峯寺。慈忍戒定。為時所宗。甞於鉢內覩五色雲。有梵剎曰大聖竹林寺。後詣五臺見異光。果得竹林寺。入講堂則文殊在西。普賢在東。萬眾圍繞而為說法。照作禮問曰。末代凡夫。未審修何法門。文殊告曰。諸修行門無如念佛。我以念佛得一切種智。又問當云何念。曰此世界西。有阿彌陀佛。彼佛願力。不可思議。汝當繼念毋令斷絕。決定往生。後臘月朔。在華嚴院淨業道場。方憶二大士記我往生。乃一心念佛。忽見梵僧佛陀波利。謂曰。汝華臺已就。後三年華開矣。至期謂眾曰。吾行矣。端坐而逝。師甞於湖東寺。開五會念佛。感祥雲寶閣。覩阿彌陀佛及二菩薩身滿虛空。又於并州五會念佛。感代宗皇帝宮中聞念佛聲。遣使追尋。乃見師勸化之盛。遂詔入京。教宮人念佛亦及五會。號五會法師。\n\n　　贊曰。感夢於前。覩境於後。其可信明矣。然則諸修行門。無如念佛。文殊口授也。顧不足信歟。三載之前。花臺預就。所謂信心纔起。蓮蕋標名。隨其勤惰而或鮮或萎。又不足信歟。噫冥現靈蹤。預符聖記。化行五會。音徹九重。豈非乘悲願而生者哉。",
   "raw_text_hash": "5d370342d1b8dfd0ed32712593d81fea0021d9a988de38669648f9fe47699c80",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，五會法師",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

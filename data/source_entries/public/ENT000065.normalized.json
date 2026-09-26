@@ -12,6 +12,8 @@
   "raw_text": "慈雲懺主\n\n　　宋遵式。台州臨海縣人。學行高古。名冠兩浙。專志安養。甞行般舟三昧。九十日苦學嘔血。入道場兩足皮裂。以死自誓。忽如夢中。見觀音垂手指其口。引出數虫。又指端出甘露。注其口。覺身心清涼。疾遂愈。著淨土決疑行願。及淨土懺法。行於世天聖間。將化之日。炷香禮佛。願諸佛證明。往生安養。至晚坐脫。人見大星隕於靈鷲峯。時號慈雲懺主云。\n\n　　贊曰。克勤懺法。自行而垂憲萬世。古今一人而已。至於寶手出虫甘露灌口。非精誠之極疇能然乎。",
   "raw_text_hash": "68ed1ed377ba40932d8b2bbfffb7b9209d03cb364766529e286785d08bb23cf1",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/T51n2072",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "T51n2072，《往生集》，卷上，沙門往生類，慈雲懺主",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }

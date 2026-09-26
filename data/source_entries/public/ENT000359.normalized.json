@@ -12,6 +12,8 @@
   "raw_text": "張寡婦\n\n　　張寡婦，常熟人，居小東門外。安貧守節，專持佛號，不擇淨穢，未嘗少間。以下痢終，遺一破裙，臭不可近，棄之中流。忽見蓮華交發，五色燦然，散布水面。見者驚異，乃取裙還送一庵，作佛座前案圍。事在順治間。",
   "raw_text_hash": "27d2f7ceb55e818e9f671b87af4489043eb74fb20f087e44833b646cd4e9b5e5",
   "source_url": "https://cbetaonline.dila.edu.tw/zh/X78n1549",
+  "source_version": "CBETA 2026.R2",
+  "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
   "locator_text": "X78n1549，《净土圣贤录》，卷九，往生女人第九，張寡婦",
   "extraction_method": "cbeta_xml_tei_structure",
   "extractor_name": "extract_cbeta_xml.py",
@@ -25,5 +27,5 @@
   "ai_case_candidate_count": "",
   "linked_case_ids": "",
   "review_status": "extracted",
-  "notes": "Entry requires AI or human classification before case normalization."
+  "notes": "Entry requires AI or human classification before case normalization. The underlying historical work is public domain. This normalized entry is derived from the CBETA XML P5 electronic edition under CC BY-NC-SA 4.0; see data/NOTICE.md."
 }
