@@ -1,0 +1,32 @@
+rights_review_id: RR0011
+source_id: SRC0315
+review_status: draft_pending_owner_review
+rights_status: legal_review_required
+rights_holder: 中华佛教居士会（佛教見聞錄栏目）
+original_author: 多为转载/编辑（明空、光明心等），原作者链条需逐条追溯
+publisher_or_platform: buddhist-experience.org
+license_type: 
+license_url: 
+terms_url: 
+terms_checked_at: 2026-09-26
+source_jurisdiction: 
+intended_publication_jurisdictions: global_web
+internal_retention_basis: unknown
+automated_access_policy: no statement found
+ai_processing_policy: unknown
+external_ai_processing_policy: blocked_until_provider_review
+public_display_policy: metadata_summary_link_and_minimal_excerpt
+allowed_excerpt_scope: minimal_excerpt_with_attribution
+translation_policy: unknown
+commercial_use_policy: unknown
+dataset_distribution_policy: unknown
+tier_internal_retention: unknown（页脚仅“版權所有 © 2013”，无流通声明）
+tier_ai_processing: unknown
+tier_summary_link: restricted（多为二手转载，摘要需注明原始出处链而非仅链到镜像）
+tier_full_text: unknown
+tier_translation: unknown
+review_evidence: 2026-09-26 复核 https://www.buddhist-experience.org/ 页脚“中華佛教居士會 版權所有 © 2013”；文章多为编辑转载第三方内容
+
+reviewed_by: AI-assisted operational review (research layer only)
+reviewed_at: 2026-09-26
+next_review_at: after owner decision and permission contact

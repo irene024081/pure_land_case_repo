@@ -1,0 +1,32 @@
+rights_review_id: RR0007
+source_id: SRC0002
+review_status: draft_pending_owner_review
+rights_status: legal_review_required
+rights_holder: 庐山东林寺（恭印）/ 净土门佛教网（发布下载）
+original_author: multiple contributors (《净土》杂志 2003-2021 文章汇编)
+publisher_or_platform: 庐山东林寺; 净土门佛教网 jingtumen.com
+license_type: 
+license_url: 
+terms_url: 
+terms_checked_at: 2026-09-26
+source_jurisdiction: 
+intended_publication_jurisdictions: global_web
+internal_retention_basis: provisional_research_copy_from_publisher-provided_download
+automated_access_policy: download offered publicly; no automated-access statement found
+ai_processing_policy: unknown
+external_ai_processing_policy: blocked_until_provider_review
+public_display_policy: metadata_summary_locator_and_minimal_excerpt
+allowed_excerpt_scope: minimal_excerpt_with_attribution
+translation_policy: unknown
+commercial_use_policy: unknown
+dataset_distribution_policy: unknown
+tier_internal_retention: restricted（jingtumen 声明文章资料可转载流通，但该对象为其托管的第三方汇编书；意向非明确许可）
+tier_ai_processing: unknown（无任何 AI 处理声明）
+tier_summary_link: allowed（M2 共同规则：元数据+事实摘要+外链+最小引用）
+tier_full_text: unknown（流通意向可能覆盖，但汇编者与所收期刊文章的权利链未核清）
+tier_translation: unknown
+review_evidence: 2026-09-26 复核 https://jingtumen.com/ 首页声明“本站所有的文章资料都可以转载流通！”；下载页 https://jingtumen.com/download/2033.html 标明东林寺恭印版；PDF 扉页无明确许可范围
+
+reviewed_by: AI-assisted operational review (research layer only)
+reviewed_at: 2026-09-26
+next_review_at: after owner decision and permission contact

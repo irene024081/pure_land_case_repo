@@ -1,0 +1,32 @@
+rights_review_id: RR0010
+source_id: SRC0005
+review_status: draft_pending_owner_review
+rights_status: restricted_internal
+rights_holder: Purelanders（Upasaka Shen Shian）
+original_author: Purelanders site author; testimony authors
+publisher_or_platform: purelanders.com
+license_type: 
+license_url: 
+terms_url: 
+terms_checked_at: 2026-09-26
+source_jurisdiction: 
+intended_publication_jurisdictions: global_web
+internal_retention_basis: provisional_research_copy; explicit no-copy notice on site
+automated_access_policy: copying disabled on site
+ai_processing_policy: unknown（站内禁复制声明倾向于禁止）
+external_ai_processing_policy: blocked_until_provider_review
+public_display_policy: metadata_summary_link_and_minimal_excerpt
+allowed_excerpt_scope: minimal_excerpt_with_attribution
+translation_policy: permission_required（“Recirculation of English text is to be with permission via purelanders.com/contact only.”）
+commercial_use_policy: unknown
+dataset_distribution_policy: unknown
+tier_internal_retention: restricted（站点明示禁复制；现有副本保留待许可）
+tier_ai_processing: restricted（禁复制声明涵盖范围待确认，从严）
+tier_summary_link: allowed（元数据+事实摘要+外链）
+tier_full_text: permission_required
+tier_translation: permission_required
+review_evidence: 2026-09-26 复核 https://purelanders.com/2021/05/24/jinglun/ 页脚“Recirculation of English text is to be with permission via purelanders.com/contact only.”与“(Copying is disabled…)”
+
+reviewed_by: AI-assisted operational review (research layer only)
+reviewed_at: 2026-09-26
+next_review_at: after owner decision and permission contact
