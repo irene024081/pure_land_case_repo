@@ -1,6 +1,8 @@
 # 现代来源版权研究汇总（2026-09-26）
 
-研究层产出，非最终决定。每个来源一份 RR 草案在 `../data/rights_reviews/`（RR0007–RR0012，状态 `draft_pending_owner_review`），请负责人逐项确认后草案才转为正式审核记录。
+> **2026-09-26 负责人全部确认（RR0007–RR0012）；外联暂缓。** 六份草案已在 `../data/rights_reviews/` 转为 `review_status: confirmed`（confirmed_by: owner）。唯一同步到现行审核的变化：RR0004（SRC0005）的 AI 处理从 unknown 收紧为 restricted_pending_permission；其余各档不变，未放宽任何 AI 处理或公开展示档位。
+
+研究依据与证据保留如下。每个来源的审核记录在 `../data/rights_reviews/`（RR0007–RR0012，已于 2026-09-26 经负责人确认）。
 
 规则：找不到明确声明就是 unknown；"网上能访问"不等于"可以再利用"；草案不改变现行 RR0001–RR0004 的操作口径。
 

@@ -1,6 +1,8 @@
 rights_review_id: RR0010
 source_id: SRC0005
-review_status: draft_pending_owner_review
+review_status: confirmed
+confirmed_by: owner
+confirmed_date: 2026-09-26
 rights_status: restricted_internal
 rights_holder: Purelanders（Upasaka Shen Shian）
 original_author: Purelanders site author; testimony authors

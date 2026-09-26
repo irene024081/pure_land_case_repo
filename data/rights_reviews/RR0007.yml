@@ -1,6 +1,8 @@
 rights_review_id: RR0007
 source_id: SRC0002
-review_status: draft_pending_owner_review
+review_status: confirmed
+confirmed_by: owner
+confirmed_date: 2026-09-26
 rights_status: legal_review_required
 rights_holder: 庐山东林寺（恭印）/ 净土门佛教网（发布下载）
 original_author: multiple contributors (《净土》杂志 2003-2021 文章汇编)

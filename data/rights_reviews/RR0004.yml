@@ -12,7 +12,7 @@ source_jurisdiction: Singapore
 intended_publication_jurisdictions: global_web
 internal_retention_basis: provisional_research_copy; legal_basis_not_confirmed
 automated_access_policy: copying_restricted_by_site_notice
-ai_processing_policy: unknown
+ai_processing_policy: restricted_pending_permission
 external_ai_processing_policy: blocked_until_provider_review
 allowed_ai_providers:
 provider_data_retention_requirement: unknown
@@ -33,4 +33,4 @@ review_evidence: site copyright and no-copy notice; English recirculation permis
 reviewed_by: AI-assisted operational review
 reviewed_at: 2026-09-17
 next_review_at: on_permission_response_or_before_publication
-notes: Do not publish full text, substantial translation, or close substitute rendering without permission review.
+notes: Do not publish full text, substantial translation, or close substitute rendering without permission review. 2026-09-26 负责人确认 RR0010 研究稿后，AI 处理从 unknown 收紧为 restricted_pending_permission（从严）。
