@@ -227,6 +227,8 @@ record the decision and restoration conditions
 
 ## Primary Reference Starting Points
 
+分法域的 AI 处理与发布法律依据汇总见 `COPYRIGHT_JURISDICTION_NOTES.md`（日本/新加坡/马来西亚/台湾/中国大陆）。
+
 - WIPO, copyright limitations and exceptions: https://www.wipo.int/en/web/copyright/limitations/index
 - U.S. Copyright Office, copyright basics: https://www.copyright.gov/what-is-copyright/
 - U.S. Copyright Office, fair use FAQ: https://www.copyright.gov/help/faq/faq-fairuse.html
